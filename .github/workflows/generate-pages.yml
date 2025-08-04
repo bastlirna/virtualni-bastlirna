@@ -12,13 +12,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./generator
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
+        cache-dependency-path: generator/package-lock.json
         node-version: '22.x'
         cache: 'npm'
-    - run: cd generator
     - run: npm ci
     - run: npm run generate
