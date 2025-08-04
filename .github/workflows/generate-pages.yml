@@ -25,3 +25,15 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run generate
+
+    - name: Deploy to Server
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+      with:
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASS }}
+        server: ${{ secrets.FTP_HOST }}
+        port: ${{ secrets.FTP_PORT }}
+        local_path: './public/*'
+        remote_path: '/'
+        sftp_only: true
+        sftpArgs: '-o ConnectTimeout=5'
