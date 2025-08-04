@@ -1,0 +1,127 @@
+====== ⚡ Virtuální Bastlírna XVIII. (5.9.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:30 |
+^ Celkem se vystřídalo | 44 účastníků |
+^ Ve špičce    | 47 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * prasácká implementace 10BASE-T pro RP2040
+    * https://github.com/kingyoPiyo/Pico-10BASE-T
+    * je to hrozně blbý, umí to jenom vysílat, jen UDP
+    * existuje i CAN v PIO
+  * redukce na SMA, aby šlo dotahovat rukou
+  * uPython + assembler
+    * Překlad Pythonu na bytekód
+    * diskuze o bytekódově orientovaných jazycích
+    * https://github.com/dany74q/pyebpf
+    * https://www.root.cz/clanky/lexikalni-a-syntakticka-analyza-zdrojovych-kodu-programovaciho-jazyka-python/
+    * Z-machine a Brainfuck
+    * Interpret Brainfucku v Brainfucku
+      * https://github.com/canoon/bfbf/blob/master/bf.bf
+    * MOVfuscator
+      * https://github.com/xoreaxeaxeax/movfuscator
+  * https://wokwi.com/
+    * Emulátor procesorů
+    * Umí emulovat spoustu architektur včetně ESP32 s funkční WiFi
+    * http://www.visual6502.org/JSSim/
+    * Rozhovor s autorem
+      * https://theamphour.com/599-an-interview-with-uri-shaked-wokwi-com/
+    * Ghidra
+      * https://ghidra-sre.org/
+  * TinySA a LiteVNA
+    * https://www.tinysa.org/wiki/
+    * https://www.aliexpress.com/item/32493905426.html 
+    * https://signalhound.com/
+    * DSA8xx a naprosto nefunkční SW
+    * Realtime vs. klasické spektráky
+    * ADC s velkým rozlišením na 80 MSa/s
+      * https://eu.mouser.com/ProductDetail/Texas-Instruments/ADS5562IRGZT?qs=wCchVgLzAYywbxqVnfy1wA%3D%3D
+    * Red Pitaya má model s vysokým rozlišením
+    * Osciloskopy do ruky
+      * Rohde & Schwarz má dobrý, má plovoucí vstupy, ale drahý
+    * Micsig
+      * https://www.micsig.com.cn/product2/
+  * Osazování PCB
+    * osazuji.cz
+    * Eurocircuit - profi, rychlé, drahé
+    * JLCPCB - levné, rozumné
+    * Dá se obvykle domluvit na tom, že si sami seženou součástky
+    * Aisler (Nizozemí) - velmi drazí
+    * Beta (Anglie) - umí i nestandardní plošňáky
+  * Materiály na PCB
+    * FR-4 vs. Rogers, teflon atd.
+    * Odporové vrstvy na PCB (Ticer) - jde dělat ztrátové mikrovlnné prvky
+  * Inventree
+  * Diskuze o EDA
+    * Altium, KiCAD a další
+    * Kreslení fixou, lepicí páskou, broušení atd.
+    * Vrabčí hnízda!
+  * Pítrskovo diplomka
+    * CFA zesilovač, jeden výkonový zesilovač s velkým zkreslením a slabý korigující zkreslení
+  * ESD vybavení
+    * Bizár
+      * https://www.uzemnise.cz/
+    * LNA a KF520 jako tester ESD a jiné humorné historky
+  * Dotaz na používané PCB editory, 25 respondentů
+    * KiCAD - 11 lidí (44 %)
+    * Eagle - 8 lidí (32 %)
+    * Altium - 6 lidí (24 %)
+    * Nic nekreslí - 6 lidí (24 %)
+    * OrCAD - 1 člověk (4%)
+    * EasyEDA - 1 člověk (4 %)
+  * Diskuze o CADech pro mechaniku na domácí použití a do firmy
+    * Známé věci jako Inventor, SolidWorks, Catia, Fusion360
+    * Solid Edge Community - zdarma pro hobby
+    * ZW3D, Onshape, Kiri:Moto
+  * Opakovaný dotaz z minule od Adama - v metru je NFC samolepka v každém reklamním rámu
+    * https://www.nxp.com/docs/en/data-sheet/058031.pdf
+  * Appnote od Pítrska
+    * https://www.omicron-lab.com/applications/detail/news/op-amp-stability-spice-model#
+  * Co dát na propagační vizitku ve formě plošňáku (bez baterii)
+    * NFC s Attiny
+      * https://hackaday.com/2018/01/05/attiny-chip-abused-in-rfid-application/
+    * https://www.nonan.net/nkruse/simplenfc - zajímavý projekt, ale potřebuje baterie
+    * https://www.nxp.com/products/rfid-nfc/nfc-hf/nfc-tags-for-electronics/ntag-ic-plus-2k-nfc-forum-type-2-tag-with-ic-interface:NTAG_I2C
+    * Press fit konektory na testy
+    * https://www.we-online.com/catalog/en/REDFIT_IDC_SKEDD
+    * Energy harvesting
+    * https://twitter.com/horcicaa/status/1384975779650543619
+  * Digilent Discovery
+    * vstup-výstup, jednoduché programování, I2C
+    * https://digilent.com/shop/digital-discovery-portable-usb-logic-analyzer-and-digital-pattern-generator/
+  * Dotazy na implementaci I2C slave na procesoru
+    * erraty procesorů, jak na I2C softwarově
+  * Podtácek z PCB který by vážil nádobu
+    * Diskuze o tenzometrech
+    * TODO doplnit jméno IC a jak hledat tenzometr (load cell, load gauge, strain gauge)
+    * Doplněno - HX711
+    * Alternativa - průhyb a měření kapacity, příp. zneužít odpory pod silou
+      * https://www.analog.com/media/en/technical-documentation/data-sheets/4311fa.pdf
+    * https://github.com/IvDm/Z-probe-on-smd-resistors-2512 
+    * Balonek a senzor tlaku
+    * OTDR
+    * Rezonanční plošina
+    * Měření úhlu náklonu akcelerometrem
+  * Prokovy bez mezikruží
+    * údajně spolehlivější než s nimi
+    * https://resources.altium.com/p/landless-vias
+    * Laser vias, plněné prokovy, via-in-pad
+    * https://www.youtube.com/watch?v=0s8sWtM_4iU
+    * Ukázky využití nepájivé masky v rámci thermal padu, aby se zabránilo pronikání pasty do vias a jednotlivým částem pasty ve spojování a následném plavání součástky
+  * Další VB 4.10.2022 (asi)
+  * Den otevřených dveří buď 3.11. (aby se neměnil plakát) nebo 1.11. (minimalizace změn plakátu, stačí mít 2 a každé 3 roky vyměnit)
+  * TDR, jak měřit, kde vzít
+    * https://github.com/loxodes/tdr
+    * https://hackaday.io/project/170276-tdr-samplerpulse-generator-pod-tdr-g3
+    * https://hackaday.io/project/169386-standalone-digital-tdr-tdr-g2
+  * Frézky na plošňáky
+    * Nespolehlivé měniče nástrojů na LPKF
+    * Carvera, wegstr
+  * Kluk z ČR, co programuje PS1, C64 atd.
+    * https://youtu.be/o6RtnOU-5ss
+  * NFC tag s einkem
+    * https://www.cnx-software.com/2022/08/26/hipo-batteryless-nfc-powered-3-52-inch-e-paper-display-spi-interface/
+    * vyrábí i Waveshare

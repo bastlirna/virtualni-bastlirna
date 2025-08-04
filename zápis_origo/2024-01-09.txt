@@ -1,0 +1,106 @@
+====== ⚡ Virtuální Bastlírna XXXIV. (9.1.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:14 (pokračovalo se neoficiálně dál bez Bastlírny) |
+^ Celkem se vystřídalo | 50 účastníků |
+^ Ve špičce | 37 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Dotaz na Thread/Matter a jestli to už funguje jako smart home
+    * IKEA by to měla podporovat, ale možná až později s nějakým updatem
+    * Byla přednáška na OpenAltu s ukázkami
+    * https://www.mironet.cz/sonoff-zbdonglee-zigbee-30-usb-dongle-plus-smart-usb-brana+dp624785/
+      * Dá se přeflashovat na všechny protokoly
+    * https://www.reddit.com/r/LGOLED/comments/13gimvt/lg_tvs_can_be_used_as_matter_smart_home/
+    * https://www.theverge.com/23997548/matter-smart-home-2023-platforms
+    * https://youtu.be/tpZnLFlz22Y?si=4-aZLMKix30qxTk4 
+  * Údajně jde upravit teploměry od Xiaomi pro Zigbee (standardně umí jen BLE)
+    * Xiaomi dělá nově chytrý knoflík s kulatým AMOLED displejem a rotačním enkodérem okolo
+  * Jendův projekt kicad2scad - dělá custom díly pro zapojování konektorů do plošňáků, umožňuje zapojení konektorů bez prohnutí desky a poškození komponent okolo. Dělá plastovou desku a pod každým THT vývodem udělá kapsu.
+    * https://github.com/Meteopresscz/kicad2scad
+    * Doporučení na KiKit
+  * ZofzPCB
+    * https://www.zofzpcb.com/
+    * Free licence pro OSHW
+    * V Altiu je lepší nepoužívat power plany
+    * Lamentace nad chybami Altia
+    * Circuitmaker je pořád zdarma
+  * Chystá se nový KiCAD
+  * Dotaz na DB pro IoT
+    * Sborově se ozývá InfluxDB
+    * Přívětivý jazyk pro dotazy, umožňuje jednoduše operace, jako je seřazení dat
+    * Nový Influx 3 zahodí Flux jazyk, čímž přijde o velkou výhodu. Navíc se změní princip databáze. Taky to bude celkem 6 různých produktů s různými vlastnostmi, takže hrozný maglajz.
+    * VictoriaMetrics (https://victoriametrics.com/) 
+      * Cern na něj přešel z Influxu
+      * https://news.ycombinator.com/item?id=37581145
+    * Prometheus - jen na čísla
+      * Pěkná integrace do Grafany
+      * Dobře použitelné na metriky ze serverů
+    * Loki - jen na logy, čistě stringy
+      * Napsali lidi z Grafany, protože jim nestačil na všechno Prometheus
+      * Snadno se dá nasadit do cloudu
+  * Proběhl Chaos Communication Congress
+    * Přednáška o upravených cartridgích pro Gameboy, které ze sběrnice čtou průběh programu a po USB poskytují pomocí RP2040 videostream obrazovky. Zajímavé metody komprese videa, zpracování barev atd., aby to zvládla USB periferie RP2040.
+      * https://media.ccc.de/v/37c3-11928-reconstructing_game_footage_from_a_game_boy_s_memory_bus
+  * https://media.cc.de
+    * Záznamy všech přednášek
+  * Polské vlaky
+    * https://media.ccc.de/v/37c3-12142-breaking_drm_in_polish_trains
+    * Uvnitř PLC s procesory Tricore
+    * I jen popis architektury je pod NDA
+  * Byl dohrán Tetris
+    * https://www.youtube.com/watch?v=GuJ5UuknsHU
+    * https://www.youtube.com/watch?v=n-BZ5-Q48lE
+  * https://media.ccc.de/v/37c3-12074-apple_s_iphone_15_under_the_c
+    * Detaily o fungování USB-C na iPhonu
+  * iPhony už údajně nejdou hacknout Flipperem
+    * https://smartmania.cz/iphone-uz-pomoci-flipper-zero-nehacknete-apple-po-3-mesicich-vydal-opravu/
+  * Lamentace nad nefunkčním nabíjením elektroaut třeba u Lidlu
+    * Nabíjení se zapíná přes prohlížeč, transakci z karty, QR kód a další kroky. K vypnutí nabíjení je potřeba opět do prohlížeče… kde mezitím už stránka vytimeoutovala, takže nejde odjet před plným nabitím auta.
+    * https://www.youtube.com/watch?v=ZJOfyMCEzjQ
+  * Odskok k mechanickým pinballům
+    * https://www.youtube.com/watch?v=E3p_Cv32tEo
+  * Rozebrání rozdílů mezi Pinecil V2 a TS101
+    * čínský předehřev kontaktní
+      * stojí asi 400 Kč, noname
+    * čínský předehřev horkovzdušný
+      * Kada 853B
+    * nástroje na zapouštění matiček
+      * https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free
+    * Diskuze, kde sehnat silikonové kabely
+      * https://vi.aliexpress.com/item/1005001454836110.html
+      * https://vi.aliexpress.com/item/1005001568846789.html
+      * TME?
+    * Bateriová TS1C a filosofování nad použitelností
+  * Bude Installfest! Už 16.-17.3.
+  * Další VB 12.2. a 6.3.
+  * Nové e-cigarety používají lithiovku v pouzdře jako má elektrolyt
+    * https://youtu.be/aPm_Sd0fCrA?si=MCHicHGRnE0PjX9z
+  * Studijní materiály pro embedded
+    * https://github.com/m3y54m/Embedded-Engineering-Roadmap?tab=readme-ov-file#embedded-systems-engineering-roadmap
+    * https://roadmap.sh
+    * https://github.com/Developer-Y/cs-video-courses
+    * https://github.com/riscv/learn
+    * https://github.com/m3y54m/Embedded-Engineering-Roadmap?tab=readme-ov-file#embedded-systems-engineering-roadmap
+    * https://github.com/sindresorhus/awesome?tab=readme-ov-file#contents
+  * Odbočka - v březnu před Installfestem proběhne Trpaslicon, v dubnu bude ComicCon, kde bude Rimmer. Na konci ledna bude TolkienCon.
+  * Krátká diskuze o rozdílech ve výrobě klobás, jitrnic a levných jitrnic a strojích na ně
+  * Nordic a jak funguje BLE, advertising, whitelist, GUID, aliasy
+    * Senzory, které se spárují s hodinkami, ale jiné zařízení je nedokáže vyhledat
+    * Jde dosáhnout něco podobného s vlastním zařízení a BLE
+    * Možná je to Protokol ANT+
+  * Dotaz, čím nahradit křižíka+autotrafo
+  * Napájecí zdroje a lamentace nad 
+  * Rušení GPS
+    * https://m.zive.cz/clanky/v-polsku-resili-zahadne-ruseni-signalu-gps-agentura-pro-leteckou-navigaci-varovala-pred-anomaliemi/sc-3-a-225885/
+    * Jak funguje https://gpsjam.org/ a rušičky GPS
+  * Video o problémech s HW v jaderné elektrárně Temelín, tin whiskers
+    * https://youtu.be/e90Q328jVmA?si=rjCeD331fJtv1j3q
+  * Počítač SKALA z Černobylu
+    * https://www.youtube.com/watch?v=ZbaptQh2AM4
+    * ta samá čtečka s českou kopií počítače HP
+    * https://www.youtube.com/watch?v=_5yRUpJScNM
+  * Nejrychlejší přenos ve vesmíru, který se dodnes realizoval
+    * https://www.jpl.nasa.gov/news/nasas-tech-demo-streams-first-video-from-deep-space-via-laser
+  * Všemožný náhodný bizár

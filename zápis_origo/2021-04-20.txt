@@ -1,0 +1,66 @@
+====== ⚡ Virtuální Bastlírna II. (20.4.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:30 |
+^ Celkem se vystřídalo | 33 účastníků |
+^ Ve špičce    | 19 účastníků online |
+
+===== Témata (a odkazy co jste nestihli opsat) =====
+
+  * Malý procesor PIC10F322, recenze PICKit 4
+  * Diskuse o procesorech a jejich dostupnosti
+  * “Mini přednáška” o nedostatku procesorů, polovodičů, plastů, grafických karet, …
+    * https://docs.google.com/presentation/d/1Fh014UWjcSLRlGYfxxkgjWsQf3LG_48Y3GTmD-zRwrQ/edit?usp=sharing
+    * Diskuze o nedostatku součástek, zmíněny alternativy STM32 - GD32, ceny na shopech, nedostupnost, otázka, na co přejít, aby to taky nedošlo
+  * Přechod přes nedostupnost/cenu FPGA na projekt nad FPGA:
+  * Diskuze o projektu Jendy Hracha - připojení rychlého 12b ADC k PC kvůli měření z radaru na 5602 MHz (měření na cca 80 MSa/s?)
+  * Diskuze o zpracování dat přímo na FPGA versus až na PC
+  * Srovnání reflektometrie vs. radary
+  * Hledání zesilovačů na 6 GHz a diskuze o zesilování VF na řádu kilowattů
+  * bladeRF SDR - syntéza RF pomocí SDR přes Python
+  * Radioamatérský smalltalk o radarech, korelačním příjmu, omezení příjmu šumem
+  * Ultrazvuk v autech a jak se ovlivňují různá auta navzájem a jak na to má vliv aerodynamika, vzdušné víry, interference od cizích ultrazvuků
+  * Zesilovače na 6 GHz z alíka a rozbor chyb v návrhu jejich PCB, diskuze o koplanárních vedení, mikropáscích, konektorech, zesilovače
+  * Reverzní inženýrství 40 GHz výkonového detektoru Ceyear 87231
+  * Zmínka o 1200W RF zesilovači s GaN tranzistory
+    * https://rfhic.com/products/radar-1200w-c-band-amplifier-rrp54591k2-42/
+  * Koaxy u BTSek - proč se používaly dřív kvalitní nízkoztrátové, technické detaily historických BTSek versus současné minimalistické rozměry
+  * Corrugated coax
+  * Diskuze o technologiích u DVB-T vysílačů - vakuum vs. solid state - účinnost, velikost, praktičnost
+    * https://www.root.cz/clanky/na-navsteve-na-jestedu-technologie-v-unikatni-stavbe/
+  * geostacionární QO100 družice na 2.4 GHz up, 10 GHz down - transvertor, občas se používá na amatérskou televizi, je na websdr.org, československý cubesat komunikující přes APRS
+  * přistání na Marsu, komunikace skrzevá vesmírem, marsovská vozítka a helikoptéra, diskuze o problémech se zaprášením panelů
+    * https://media.ccc.de/v/35c3-9783-the_mars_rover_on-board_computer
+  * LoRa měřidlo Dragino LHT65 - kompletní zařízení včetně baterie, hermeticky utěsněné, problém s vybitím po 7 měsících místo, oprava baterkou za 50 korun od TME, hecování k rozebrání a detekci označení čipu, cena cca 40$ - je tam RFM9něco, procesor STM32Lněco, okukování neznámé komponenty, rozebírání výdrže baterky
+    * https://cz.farnell.com/microchip/rn2483a-i-rm105/transceiver-module-300kbps-870mhz/dp/2932051
+    * https://www.laskarduino.cz/lilygo-ttgo-lora32-t3_v1-6-433mhz-0-96--sma-wifi-modul/
+    * LoRA modul od Laird, rozebrána oboustranná komunikace včetně potvrzování komunikace, navazování na přerušené spojení - poslání neodeslaných dat
+    * Senlab T+H, hermeticky uzavřené, ovládání magnetickým kontaktem
+    * Meteostanice od Barani, napájení z 18650, solární panel, chybí ochrany proti přebíjení nebo promrznutí
+    * https://www.baranidesign.com/meteohelix-pro-weather-station
+  * NFC - technologie, jednoduché tagy, aplikace pro mobil, problémy s Apple ohledně API pro NFC přes prohlížeč
+  * QUCSStudio, návrh filtrů, QUCS-S s normálním SPICE corem, obyčejný QUCS je asi mrtvý, TNT Field Solver, CST Studio
+  * NanoVNA, klony, generace, použitelnost, alternativy
+    * https://www.sdr-kits.net/introducing-DG8SAQ-VNWA3
+    * https://nanorfe.com/nanovna-v2.html
+  * Radioamatéřina, silent key, QSL, radiosporty, morseovka, radioamatérské zkoušky, PMR, DMR, digitální komunikace a telegrafie
+  * Příspěvek o možnosti koupit si od ČTÚ kanál o šířce 12,5 kHz za pár tisíc ročně, ASMKS - Tamara hledající zdroje rušičů, hledání zdrojů nelegálního vysílání a rušících wifin (pojítka na vysokých mikrovlnách)
+  * Kanály pro WiFi pojítka, včetně placených a jejich ceny
+  * Optika pro přenos videa (ofiko je drahé, ale jsou DYI řešení převod SDI na SFP)
+  * Buzení LED pásků (~ 5A, 24V) MOSFET a jak je budit z MCU 
+  * Ukázka LED display z vlaku a jak ho řídit
+  * Terčíkové displeje (magnetické, překlápěcí) a jak to funguje
+    * https://en.wikipedia.org/wiki/Flip-disc_display (https://de.wikipedia.org/wiki/Bistabiles_Anzeigeelement je víc obrázů) 
+    * http://plc-automatizace.cz/knihovna/hmi/technologie/mechanicke.htm
+    * https://www.youtube.com/watch?v=SJU2-1X8kHQ omg
+    * https://flipdots.com/
+    * https://hackaday.io/project/159415-flip-dot-display-diy-controller/log/149181-a-bit-about-pricing-and-sourcing
+  * Releové počítače
+    * https://www.youtube.com/watch?v=NXeBR-lbnjI
+    * https://www.youtube.com/watch?v=-ReqdyCxZ9I
+  * MicroTik se shořelým konektorem a bádání, jak k tomu došlo
+  * Modul Aria s ARM9
+  * Zkoumání Zynq 7000 modulů na Aliexpressu
+    * https://hackaday.com/2020/12/10/a-xilinx-zynq-linux-fpga-board-for-under-20-the-windfall-of-decommissioned-crypto-mining/
+  * https://blog.atx.name/gfc/

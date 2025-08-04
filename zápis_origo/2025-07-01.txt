@@ -1,0 +1,98 @@
+====== ⚡ Virtuální Bastlírna LII. (1.7.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:40 (s pokusem o konec v 22:40) |
+^ Celkem se vystřídalo | 32 účastníků |
+^ Ve špičce | 27 účastníků online |
+
+===== Úvodník =====
+Přemýšlíte, jak začít prázdniny? Už 1. července se bude konat Virtuální Bastlírna, tedy online setkání bastlířů, techniků, vědců i akademiků, kde se ve volné diskuzi probírají novinky ze světa techniky, ale i jiných zajímavých témat.
+
+Za poslední měsíc jsme byli svědky plamenů několika raket. Zatímco malá raketa od Hondy se úspěšně vznesla a opět přistála, raketa od SpaceX se rozhodla letět všemi směry najednou. Díkybohu méně bombastické je nahlédnutí do jaderných výzkumů odehrávajících se v Řeži, kam se brzy můžete sami podívat. V ČR vznikla první open-source SLS 3D tiskárna a Linux začleňuje do kernelu podporu GPIB.
+
+Za hardware je tu Pro verze HackRF, průhledné plošňáky od JLC PCB nebo open-source e-ink informační panel. Za software tentokrát snad jen obtíže KiCADu se součansým stavem Waylandu a přechodu mnoha distribucí na něj. A jako vždy dojde i na bizarnější záležitosti, třeba flexibilní nebo barevné Arduino.
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Vychází HackRF Pro
+    * Mírná inovace HackRF one - mírně širší pásmo, 16b pro nízký sample rate, lepší FPGA
+    * BladeRF je asi lepší (a není o moc dražší), ale není open-source
+  * Oprava 20 GHz generátoru
+    * https://xdevs.com/fix/psg-a/
+  * Open source SLS tiskárna z ČR
+    * https://www.ekonews.cz/protext/sls4all-prvni-laserova-sls-open-source-3d-tiskarna-otevira-nove-moznosti/
+    * Nutno se registrovat pro stažení dat
+  * Jaderný ústav v Řeži slaví 35 let provozu
+    * https://www.youtube.com/watch?v=OIU8bHrpQow
+    * https://fjfi.cvut.cz/en/26-cz/aktuality/8868-zveme-verejnost-na-35-narozeniny-reaktoru-vr-1
+  * Arduino bizáry
+    * https://youtu.be/S9VHnmVI19w?si=DY6BiKkm5I8J2qc0
+    * https://www.aliexpress.com/item/1005008525873639.html
+  * Průhledné plošňáky z JLC
+    * https://jlcpcb.com/blog/jlcpcb-launches-transparent-fpc-see-innovation-in-a-new-light
+  * Otázka na domácí měření EMC
+    * Co vlastně znamená měření EMC (vyzařování, vedení, injektování rušení …)
+    * Něco doma jde, něco je drahé a něco je objemné (bezodrazová komora)
+    * Spektrák a sondy na měření blízkého pole jdou snadno (viz předchozí VB)
+  * Doporučení na měření high-side proudů
+    * https://www.aimtti.com/product-category/current-probes/aim-i-prober-520
+    * https://www.micsig.com/SigOFIT/
+  * Rakety a vesmír
+    * SpaceX explodovala náhodně SuperHeavy mimo start
+      * https://www.novinky.cz/clanek/veda-skoly-muskova-vesmirna-lod-pri-testu-vybuchla-obri-explozi-zachytila-kamera-40526603
+      * diskuze o tom, co všechno padá z vesmíru
+      * https://www.space.com/space-exploration/private-spaceflight/mexico-threatens-lawsuit-against-spacex-over-starship-explosion-debris
+    * Honda dělá malé rakety, testovací provoz
+      * https://hackaday.com/2025/06/24/theres-a-new-reusable-rocket-and-its-a-honda/
+  * Ukázka tisku z Bambu H2D
+    * Dotaz na zkušenosti s Prusa Core One - ohlasy spíše vlažné
+  * Tropic TS01 je na Láskakitu
+    * https://www.laskakit.cz/vyhledavani/?string=Tropic%20Square
+    * Diskuze o dalších kryptočipech
+  * Němeček udělal Pong na CH32V002 s VGA
+    * https://x.com/NemecekPanda38/status/1939326977183285298
+  * Vyšel samostatný rádiový modul od Rapsberry (Wifi+BT)
+    * https://www.raspberrypi.com/news/raspberry-pi-radio-module-2-available-now-at-4/
+  * Nová P2P mesh síť NPR
+    * https://uart.cz/2773/the-new-packet-radio/
+    * Radioamatérský provoz nesmí být kódovaný - je tohle povolené v ČR? (pravidlo 25.10 ITU Regulations 2004)
+  * Kritika Waylandu ze strany KiCADu
+    * https://www.kicad.org/blog/2025/06/KiCad-and-Wayland-Support/
+    * rozebírání X11 vs Wayland vs XLibre, jak funguje síťové propojení (Waypipe)
+    * Ukázka X11 na Windows přes Xming
+  * LinuxDays vyhlásily Call for papers do 30.8.
+    * https://pretalx.linuxdays.cz/linuxdays-2025/cfp
+  * NodeRED chystá konferenci
+    * https://nrcon.nodered.org/
+  * Rpishop prodává konzole a PiCalc od ClockworkPi (aktuálně jsou vyprodané)
+  * Do kernelu Linuxu se dostává podpora GPIB
+    * https://www.phoronix.com/news/Linux-6.16-Staging
+  * Řešíme s Jendou, jak funguje simulace falešných leteckých cílů pomocí meteoradarů
+  * LTZ1001 se dá už koupit
+    * https://cz.mouser.com/ProductDetail/Analog-Devices/ADR1001AEZ
+  * Optický 12kanálový indikátor v Černobylu
+    * https://www.youtube.com/watch?v=cWUCD_ZtlLA
+  * Blackout ve Španělsku, oficiální zpráva
+    * https://www.marigold.cz/item/spanelsko-blackout-kdo-za-to-muze/
+    * https://www.marigold.cz/assets/ebook/Informe-no-confidencial-Comite-de-analisis-28Acs.pdf
+    * https://www.seznamzpravy.cz/clanek/ekonomika-nejbohatsi-lide-cesky-majitel-turbin-ve-spanelsku-blackout-byli-jsme-pripraveni-naskocit-275344
+  * RS232–485 driver s automatickým řízením toku
+    * https://www.analog.com/media/en/technical-documentation/data-sheets/max13487e-max13488e.pdf
+  * “psaní” plošňáků v TypeCADu
+    * https://hackaday.io/project/202664-typecad
+  * KiCanvas se stále lehce vyvíjí
+  * KiCAD + AI - existují 2 model context protokoly, omezeně funguje
+  * Problémy s Pinecil a komunikací Power Delivery
+    * TS21 - nová páječka od Miniware s JBC hroty
+    * Pájecí pinzeta od Sequre
+      * https://www.electroniclinic.com/sequre-ht140-2-in-1-hot-tweezers-review-testing-soldering-desoldering-test/
+  * Eink terminál pro zobrazování dat
+    * https://usetrmnl.com/
+    * jde postavit i z čteček e-booků
+  * Nikdo nemluví, nikdo nereaguje - končíme
+  * Nebo ještě ne
+  * Dodatečná diskuze o AI a interaktivní vývoj kódu
+    * Tryproxy, Copilot, …
+  * Jak nainstalovat aktuální Windows 11 bez MS účtu
+    * https://www.youtube.com/watch?v=SiDLgdbFdtM
+    * start ms-cxh:localonly

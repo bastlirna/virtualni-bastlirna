@@ -1,0 +1,120 @@
+====== ⚡ Virtuální Bastlírna XX. (7.11.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:30 |
+^ Celkem se vystřídalo | 39 účastníků |
+^ Ve špičce    | 33 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Nový KiCAD 6.0.8 a 6.0.9
+    * https://www.kicad.org/blog/2022/10/KiCad-6.0.9-Release/
+    * Databázové knihovny
+    * https://twitter.com/joncraftyjon/status/1588522615836094464?t=itRcLK52qQr_jDY0OA3qww&s=19
+  * Rozvaděče, v čem je kreslit
+    * Eaton má nějaký software - ale je pouze pro věci od Eatonu
+    * https://www.youtube.com/watch?v=5_aAeh2nyZg
+    * Eplan - placený, ale prý dobrý, asi 20k/rok/člověka
+    * ProfiCAD - údajně umí být docela potvora
+    * Cadware PCSchematic
+      * https://www.cadware.cz/elektrotechnika/pcschematic#download
+  * RP2040 nefunguje na MacOS
+    * https://github.com/raspberrypi/pico-sdk/issues/1081
+    * https://www.raspberrypi.com/news/the-ventura-problem/
+  * Doma dělané tepelné čerpadlo
+    * Jak řídit třífázový motor s permanentními magnety
+    * Vysvětlení rozdílů mezi buzením 3f asynchronů, BLDC, PMSM a dalších motorů
+  * Tenzometr z 2512 odporů
+    * https://twitter.com/scottbez1/status/1586234572663971840
+    * https://github.com/IvDm/Z-probe-on-smd-resistors-2512
+    * Smartknob
+      * https://github.com/scottbez1/smartknob
+    * https://www.youtube.com/watch?v=KFCRB4d991E
+  * Kondíky 
+    * Čím menší kapacita, tím větší šum - občas se objeví/zmizí elektron a podle V=Q/C vznikne napěťový skok
+  * Joulescope
+    * https://www.joulescope.com/
+    * max 12V 3A, certifikovaný i pro průmysl, lze objednat i s kalibračním listem
+    * Rozhovor s autorem Joulescope v The Amp hour podcast
+      * https://theamphour.com/607-the-joulescope-upgrade-with-matt-liberty/
+    * Levnější alternativa Power Profiler II od Nordicu (umí jenom proud, ale funguje zase i jako zdroj, nemá ale skoro žádnou garanci měřených hodnot), existují ale i mnohem dražší zařízení od Keysightu…
+    * Evaluation kit obsahuje RP2040, pomocí MicroPythonu simuluje různé průběhy zátěží
+  * Nový levný procesor CH32V003 - náhrada STM32F030
+    * https://www.cnx-software.com/2022/10/22/10-cents-ch32v003-risc-v-mcu-offers-2kb-sram-16kb-flash-in-sop8-to-qfn20-packages/
+    * https://www.hackster.io/news/wch-launches-a-sub-10-risc-v-microcontroller-while-a-6-90-dev-board-gets-you-started-90b1ffd7490a
+    * Diskuze o procesorech - Atmegy jsou už zase skladem ve velkých množstvích
+    * RP2040 stále nejdostupnější
+    * ESP32 na těžší výpočty
+    * na tenzorové aplikace věci od Kendryte
+      * https://canaan.io/product/kendryteai
+  * Jak vyřešit věc na krokáči s překmitem
+    * Neodborná rada: změřit přechodovou charakteristiku při zastavení, udělat Fouriera, inverzní filtr, zpětného Fouriera, vzít výslednou přechodovou charakteristiku
+    * PID přístup - kritické tlumení
+    * Jednodušší řešení - vyzkoušené max. zrychlení
+      * https://www.airspayce.com/mikem/arduino/AccelStepper/
+  * Meteopress má nový bloček, svítí
+    * https://twitter.com/pesvklobouku/status/1582345179645677570?t=YlqZch_fIzqEJ3B1p0azqA&s=19
+    * USB-C konektor bez konektoru
+  * Filament NonOilen, vydrží 110°C, dá se kompostovat, je vodotěsný
+    * https://fillamentum.com/collections/nonoilen-filament/
+  * Multimetr od Parkside
+    * https://twitter.com/atc1441/status/1583738148286132225?t=5WIlt1pk80X0ytTn4KjMaA&s=19
+    * https://www.youtube.com/watch?v=N7TCcBJoDrc
+    * data chodí v binárním formátu, data odpovídají segmentům na displeji
+  * Zmínka o laserových dálkoměrech
+    * Zážitky z testů TMF8820 (3x3 lidar za stopade, přesnost na milimetry)
+    * Praktické zkušenosti z využití TMF8820 v laserové řezačce
+  * UWB radary, principy funkce
+  * Měření vzdálenosti pro laserovou řezačku pro zaostření (je potřeba alespoň 1mm nebo lépe)
+  * Měření objektivů laserem, měření chyb v řádu nanometrů
+    * https://www.youtube.com/watch?v=x2BiM7BGQMU
+    * Diskuze o objektivech a bizarních fotografech
+    * Dírková komora
+  * Diskuze o čočkách a brýlích - různé korekce, doporučení používat materiály s malou disperzí, doporučení na Optiscont (čínské obroučky + místní čočky) a ZenniOptical (lepší materiály)
+    * https://phys.org/news/2022-04-lensless-imaging-advanced-machine-image.html
+    * https://cs.wikipedia.org/wiki/D%C4%9Brovan%C3%A9_br%C3%BDle
+    * https://www.zennioptical.com/
+    * https://www.optiscont.cz/
+    * Různé informace o tom, jak probíhá vývoj očí při dospívání s očními vadami
+  * Diskuse o všem možném - levorukost vs. dobývání hradů po schodišti, rozchody mezi kolejemi odpovídají britským cestám, ty odpovídají římským cestám a ty odpovídají starověkým koním
+  * Tektronix a pokusy s rozbíjením obrazovek
+    * https://youtu.be/DEPo2SvOHPA
+    * Zkušenosti s CRtčkama, problémy s elektronovými mikroskopy poblíž tramvají, zpomalení času u referenčních hodin při plném parkovišti
+    * Jednotky TV (legrace)
+      * https://necyklopedie.org/wiki/Soustava_jednotek_TV
+      * https://www.vaclavaky.cz/#num=25&mul=0&unit=kg
+  * Bude let k Měsíci
+  * Diskuze o smyslu bytí, rybářství a protahovačkách na dřevo
+    * Makita 2012NBX - protahovačka (+stolek)
+    * https://www.simek.eu/2012nbx-protahovacka-se-stojanem-304-x-155-mm-1650-w/
+    * https://www.uni-max.cz/produkty/drevoobrabeni/drevoobrabeci-stroje/hoblovky-a-protahy/protahy/tloustkovaci-frezka-triton-317-mm-tpt-125?wdph=on&gclid=EAIaIQobChMIscigxa7H-gIViQIGAB1r2gIgEAQYASABEgJe2_D_BwE
+  * Problémy Pillsfree, HKfree, Oslavany.net a dalších spolků poskytujících internet
+    * Jak předělat rotoped na zdroje elektrického proudu
+    * Vrcholový sportovec dá ve špičce až 750W, běžný člověk trvale do 150-200W
+      * https://www.youtube.com/watch?v=emK-qIbuJ-k
+    * Distribuční síť ve světě budoucnosti, kde každý bude mít i nějaké svoje zdroje kromě hlavní distribuce
+  * Jaderná fúze a její vyhlídky
+    * Problém - nízkoteplotní supravodiče hrozně sežerou na chlazení
+    * Commonwealth Fusion System - vyvíjí vysokotepl. supravodiče
+    * Tokamak Energy - soukromý výzkum v Británii
+    * https://www.tokamakenergy.co.uk/careers/jobs/#
+    * https://jobs.lever.co/cfsenergy
+    * https://www.ipp.cas.cz/o-ufp/volna-mista/
+    * Dlouhá diskuze o smysluplnosti a směřování výzkumu
+  * Aukce použitých bateriových polí
+    * https://batteryhookup.com/
+  * Krutá smršť přednášek
+    * https://ksp.mff.cuni.cz/akce/smrst/2022/
+    * https://ksp.mff.cuni.cz/encyklopedie/zaznamy/
+    * https://popelka.ms.mff.cuni.cz/~hrach/
+  * Další VB ve středu 7.12.
+  * Náhrady OpenSCADu
+    * https://github.com/CadQuery/cadquery
+    * https://github.com/jscad/OpenJSCAD.org
+    * Rhino 3D
+      * problémy s následným přenosem dat do mechanických CADů, rozbíjejí se plochy
+    * Grasshopper 3D
+      * https://www.grasshopper3d.com/
+  * LVGL
+    * Jak dobře to chodí na mikrokontrolérech a jak se používá

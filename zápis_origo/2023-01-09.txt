@@ -1,0 +1,105 @@
+====== ⚡ Virtuální Bastlírna XXII. (9.1.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:55 |
+^ Celkem se vystřídalo | 56 účastníků |
+^ Ve špičce    | 44 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Nový Vindriktning od IKEA s displejem
+    * Zatím se neví, jestli opravdu existuje
+    * Nový hub DIRIGERA - Zigbee+Thread+WiFi+ethernet
+      * Jak funguje Thread a Matter
+    * Už má FCC ID, od listopadu, od května se zveřejní další informace ze strany FCC
+      * https://fccid.io/FHO-E2112 
+    * Mimochodem fccid.io je super web
+      * Na fotkách bývá vidět vnitřek zařízení, dá se použít k identifikaci čipu
+  * Uprdkávač dostal k Vánocům osciloskop MSO5074
+    * UNI-T UT181A - multimetr s grafickým displejem a statistikou + Bluetooth - Matyáš
+    * Open circuits kniha - rozříznutá elektronika - Adam
+    * Omnifixo - chiptron
+    * Tiny SA Ultra - Tyfoza - údajně stojí za to
+  * Ukázka mikrovýbrusu supravodiče
+    * Krátká přednáška o supravodičích
+  * Tip na Prumex pro kupování imperiálních šroubů v česku
+    * Dají se koupit protikusy jako závitové vložky do plastu na eshopu Průši
+    * Gorilla pod - stativ z polopevných kuliček
+  * Maker Badge
+    * český výrobek, funguje jako demoboard s ESP32
+    * Podobný, menší - Badger2040 (má ještě druhou verzi od GitHubu)
+      * Zajímavě řešené řízení napájení
+    * Adam - přibastlil I2C NFC paměť jako metodu pro zapsání dat do displeje
+      * Ukázka zápisu
+      * Stížnosti na chybějící dokumentaci k ovládání displeje, nedodělaná podpora
+  * KiCAD 6.0.10 a KiCAD 7.0rc1
+    * https://docs.kicad.org/master/en/pcbnew/pcbnew.html#custom_design_rules
+    * Video od autorů KiCADu o vývoji, častějším vydávání verzí
+      * https://youtu.be/iQrdXf7SLkw 
+    * Podcast o reverse engineering PCB
+      * https://unnamedre.com/episode/62
+    * KiCAD Canvas - webový prohlížeč
+      * https://twitter.com/theavalkyrie/status/1608274303232970753?t=gzuJAxtmKMiB6ZcaQGs0Ug&s=19
+  * Nový LTSpice 7.1 beta
+    * Bacha, prasí staré soubory! (později se ukázalo, že šlo o problém ve spojitosti s Google Drive)
+    * Dokáže rychle počítat frekvenční analýzu spínaných zdrojů (dřív trvalo dlouho)
+    * Nové výpočetní jádro, rychlejší, ale ještě má bugy
+    * Binding na Python (už bylo ve starších verzích!)
+    * Adam - na Amp Hour byl podcast s autorem - vysvětluje, čím je LTSpice jiný od klasických SPICE
+      * https://theamphour.com/tag/ltspice-world-circuit/ 
+    * Diskuze o tom, kde brát funkční modely ke spínaným zdrojům
+  * Dotaz na decapping integráčů laserem
+    * Nevíme
+    * https://zeptobars.com/en/read/how-to-open-microchip-asic-what-inside
+    * Diskuze o vysoké toxicitě kyseliny fluorovodíkové
+      * Dá se neutralizovat ???glukuronátem/glykosamidem/??? vápenatým??? (asi vytvoří něco jako fluorit? úplně jsme nestíhali zapissovat)
+  * Dotaz na vyhlazování KML souborů - Qgis
+    * Možná do SVG, posterizaci v Inkscape a zpět do KML?
+    * GPS Babel? https://github.com/gpsbabel/gpsbabel
+    * Dotaz na konverzi GeoJSON z Googlu do GPX pro Darktable - nejspíš QGIS
+    * Tisk výškové mapy ČR NA 3D tiskárně
+    * TouchTerrain - geo nástroj pro generování KML souborů z mapy
+    * Jendův plán na zatopení Evropy
+      * https://www.abclinuxu.cz/blog/jenda/2021/4/pouziti-topografickych-dat-srtm-ceska-prehrada
+      * prehrada.hrach.eu
+      * http://web.archive.org/web/20211202063537/https://www.ceskaprehrada.cz/
+  * Nový ESP ESP32-P4
+    * 2 procesory, 1x dvoujádro, 1x jednojádro, H264, JPEG, CAN, displeje, kamery, AI, 50 GPIO atd.
+    * https://www.espressif.com/en/news/ESP32-P4
+  * Digitální izolátory
+    * čínská firma Chipanalog, velké portfolio, nejspíš kopie Si864x, cena <$1
+      * https://www.lcsc.com/brand-detail/12055.html
+    * Náhrady zdrojů SN650x - VPSC (Very power Semiconductor), vyrábí i vhodná trafíčka pro push-pull
+    * https://www.lcsc.com/brand-detail/12739.html
+    * Obojí na LCSC
+    * Decapping kapacitního Si8641
+      * https://zeptobars.com/en/read/SiLabs-Si8641-digital-isolator
+    * Decapping ADUMu
+      * https://www.youtube.com/watch?v=fPsNrbhGRMw&t=161s 
+    * Malý jitter - HCPL7721
+    * V čem se řešil zero-drift operák a low-jitter oddělení
+      * https://gitlab.com/pikron/projects/sumintadc/deliverables
+      * https://gitlab.com/pikron/projects/sumintadc/deliverables/-/blob/master/FP/SumIntADC-PIKRON-FP.pdf
+      * MCP6021 - ten je OK
+      * TLC2652 - super, není ale pro space
+      * LMP2012QML-SP - pro space, ale blbne, leze z něj hrozně bordelu
+      * Srovnání zero-drift a chopper-stabilized
+        * https://www.analog.com/en/analog-dialogue/articles/zero-drift-operational-amps.html
+        * AD8628 - má obojí :-D
+      * LT1044, LT1052 - filtry se spínanýmí kondenzátory
+      * https://wiki.analog.com/university/courses/alm1k/alm-lab-az-amp
+      * https://www.analog.com/media/en/technical-documentation/data-sheets/1052fa.pdf
+  * Přesné měření
+    * Keysight 3458A - 8.5 místa
+    * Diskuze o přesných operácích (viz výše)
+    * Linear Technologies - appnote o speciálním oscilátoru s nízkým zkreslením pro kalibraci ADC
+    * izolované delta-sigma modulátory -  AD7402 AD7403 AD7405
+  * Diskuze o snižování napětí z 56 na 48V na topné spirále u FVE
+    * LM2596, Meanwell SD25C12
+    *  http://oplocky.cz/
+  * Příští VB 7.2.2022
+  * Únik citlivých dat z biometrických čteček americké armády
+    * https://pctuning.cz/article/vyzkumnik-koupil-na-aukci-vojenske-biometricke-ctecky-a-nestacil-se-divit-co-v-nich-objevil
+  * Uprdkávačův spektrometr (TDR-avalanche, TDR-splitter, TDR-G2, TDR-G3)
+  * Otázky na installfest - bude?

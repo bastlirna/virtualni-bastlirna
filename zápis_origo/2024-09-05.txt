@@ -1,0 +1,114 @@
+====== ⚡ Virtuální Bastlírna XLII. (5.9.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:38 |
+^ Celkem se vystřídalo | 50 účastníků |
+^ Ve špičce | 39 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * 555 simulovaná na Attiny85
+    * https://github.com/shraiwi/ATTiny555
+    * https://hackaday.io/project/183013-attiny555
+    * Kromě 555, 556 a 558 existuje i varianta se zrcadlově otočenými piny
+  * Diskrétní operáky
+    * https://sparkoslabs.com/discrete-op-amps/
+    * https://doc.soundimports.nl/pdf/brands/Sparkos/SS3601_SS3602.pdf
+  * Yubikey má problém s kryptografickou knihovnou
+    * k hacknutí je ve skutečnosti potřeba drahé vybavení, 10 hodin času, pájení a znalostí
+    * Chyba v ECDSA knihovně od Infineonu v rámci systému JavaCard, nelze opravit
+    * https://arstechnica.com/security/2024/09/yubikeys-are-vulnerable-to-cloning-attacks-thanks-to-newly-discovered-side-channel/
+    * https://ninjalab.io/wp-content/uploads/2024/09/20240903_eucleak.pdf
+    * norma ETSI-EN-303-645 popisuje kyberbezpečnost pro tyto případy
+  * V říjnu budou LinuxDays, běží hlasování o přednáškách, v listopadu bude OpenAlt
+    * https://www.linuxdays.cz/2024/
+  * Ve Frankfurtu bude mistrovství světa v řízení tramvají
+    * https://www.tramem.eu/blog/tram-em-2024-comes-to-frankfurt
+  * Dotaz na SBC vhodný pro domovní zvonek s kamerou
+    * tip na NanoPi (má i mikrofonní vstup)
+    * https://www.laskakit.cz/lilygo-t-camera-s3-0-96-oled-wifi-modul/
+    * 2N používá desky s ARMem od AXISu (ARTPEC) - asi se nedá běžně sehnat
+    * https://boilingsteam.com/vision-five-2-board-review/
+    * https://www.cnx-software.com/2024/05/10/sipeed-maixcam-risc-v-ai-camera-devkit-5mp-camera-2-3-inch-display-gpio/
+    * Diskuse jak funguje eth. po dvoudrátu, že se možná chystá že se výrobci dohodnou na standardu aby fungovala komunikace univerzále (dnes je sice 2drát řešený v IEEE 802.něco něco, ale je tam hodně závislého na implementaci)
+    * Zamyšlení jestli by pro staré domovní rozvody využít model (něco ala DSL), ale pravděpodobně by to bylo drahé
+  * NanoKVM na RISC-V, prý funguje dobře - video, sériovka, ovládání PC, emulace myši+klávesnice
+    * https://sipeed.com/nanokvm
+    * https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/1_intro.html
+    * Zvládá FullHD, při plném framerate 720p
+    * Použitý CPU (T-Head XuanTie C910) obsahuje bezpečnostní chybu v RISC-V jádře
+      * https://www.phoronix.com/news/GhostWrite-Vulnerability-RISC-V
+      * https://ghostwriteattack.com/
+  * RP2350
+    * https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/
+    * Zajímavosti z datasheetu a erraty
+      * RISC-V + Arm, 2x2 jádra (najednou vždy jen 2)
+      * 520 - 541 kB SRAM podle konfigurace
+      * Varianta s více piny nebo 2 MB Flash
+      * Serializátory na TMDS (DVI-D / HDMI)
+    * Měnič blbne s některými cívkami podle orientace pole
+      * https://www.eevblog.com/forum/projects/inductor-polarity/
+    * Fotky čipu
+      * https://electronupdate.blogspot.com/2024/08/pi-pico-2-extreme-teardown.html?m=1
+    * Hackování pomocí EM glitchingu
+      * https://x.com/barsteward/status/1831365943169270077
+    * Blbnou pulldowny
+      * https://forum.buspirate.com/t/rp2350-bus-pirate-5xl-and-6/529
+    * Jak unbricknout špatně napartitionovanou Flash
+      * https://www.cnx-software.com/2024/09/03/how-to-recover-a-bricked-raspberry-pi-pico-2-or-other-rp2350-board/
+    * RNG má nízkou entropii
+      * https://x.com/NemecekPanda38/status/1826703492670783714
+    * Oficiální desky zatím nejsou k dispozici, 3rd party už ano
+      * https://shop.pimoroni.com/products/tiny-2350?variant=42092638699603
+  * Jaký 60 V laboratorní zdroj koupit
+    * Hejt na Owony kvůli velkému ripple a nízké přesnosti
+    * Doporučení na Rigol DP932 - 2x 30V
+    * Aim TTI MX180TP - ale furt hučí
+    * TDK Lambda
+    * Keysight E36300
+  * Nové radary Meteopressu v Brazílii a Tonze
+    * https://blog.meteopress.com/tonga-radar-project-democratization-of-weather-radars-2/
+  * Nové monitory už mají USB-C, huby, ethernet, případně i KVM
+    * https://www.alza.cz/27-dell-p2723qe-professional-d7071610.htm
+  * Backdoor v MIFARE kartách z číny (Fudan)
+    * žádost na autorizaci neexistujícího bloku paměti vrací nonce
+    * Nonce je zranitelný, takže se povedlo extrahovat klíč
+    * Jakmile se autorizuje ona neexistující část paměti, otevře se read-only celá karta bez uživatelského klíče
+    * Vyskytuje se u mnoha výrobců včetně “západních” - Infineon, NXP
+      * Pravděpodobně přidán do nějaké nelicencované kopie před mnoha lety, ostatní výrobci jen zkopírovali
+    * Backdoor existuje přes 20 let
+    * http://eprint.iacr.org/2024/1275.pdf
+    * Podpora pro čtení přes backdoor přidána do Proxmarku
+      * Praktická ukázka, že hack MIFARE Classic bez backdooru trvá 9 vteřin, s ním prakticky 0
+  * Altium se naučilo dělat jednovrstvé plošňáky
+  * První 14b osciloskopy
+    * https://www.htest.cz/novinky/osciloskopy-keysight-infiniivision-hd3
+  * Tabletové Fnirsi 1013D oscilo
+    * Překvapivě funguje dobře, rychle
+    * Na malých napětích se škáluje jen digitálně (klesá SNR)
+  * Otázka na 12bit rigol s generátorem jestli je použitelné na bode plot
+    * V porovnání s Bode 100 nebo siglent (má možnost spojít osciloskop )
+  * Otázka jaký osciloskop pro začátečníka
+    * analog vs digital
+      * single shot trigger
+    * Tazatel (bude nastupovat na FEL do prváku) má  https://vi.aliexpress.com/item/1005007406324748.html?spm=a2g0o.productlist.main.3.6d4cUNBNUNBN54&algo_pvid=bca421ef-fb5d-42a2-b108-e714bc79d30c&algo_exp_id=bca421ef-fb5d-42a2-b108-e714bc79d30c-1&pdp_npi=4%40dis%21EUR%2156.60%2156.60%21%21%21434.72%21434.72%21%40210388c917255675913514302e78a5%2112000040616496917%21sea%21CZ%210%21ABX&curPageLogUid=5WCS0DFSxG08&utparam-url=scene%3Asearch%7Cquery_from%3A stačí to?
+    * Picoscope - dobrý SW
+    * Analog Discovery - nejen jen oscilo, ale i gener a zdroj, soft super
+    * SDI na STM32 demoboardech
+      * https://embedded.fel.cvut.cz/SDI
+      * https://embedded.fel.cvut.cz/SDI/RP_PICO/webscope
+        * https://dspace.cvut.cz/handle/10467/109464 
+  * Dotaz na nabíjení 2S lithiovky přímo přes Quickcharge
+    * https://www.hackster.io/PSoC_Rocks/hacking-qualcomm-quick-charge-qc-2-0-3-0-with-attiny85-b7627d
+    * http://www.injoinic.com/wwwroot/uploads/files/20230913/30fd55746638a658342ffc06aaf6d196.pdf
+    * Terminologický mišmaš: USB-PD, QC, USB Mux, …
+    * https://www.chargerlab.com/ zroj informací o USB a nabijení 
+  * Starliner, SpaceX, Starlink, vojenské systémy
+  * V Americe chce nějaká firma upravit 900 MHz pásmo
+    * https://meshtastic.org/blog/meshtastic-opposition-to-nextnav-proposed-changes/
+  * Tipy na přenosné malé sady nářadí
+    * https://tinytoolk.it/
+    * https://www.youtube.com/watch?v=2sTDBSoWou0
+  * Konektory pro cat 5e, 6, 6A… jak se liší tloušťka vodičů a konektorů
+    * Stínění kabelů - stínt na obou koncích
+  * TMP61 - termistor s polarizací, nesmí se prohodit vývody

@@ -1,0 +1,130 @@
+====== ⚡ Virtuální Bastlírna XXVIII. (17.7.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:40 |
+^ Celkem se vystřídalo | 37 účastníků |
+^ Ve špičce    | 31 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Jenda Hrach - JLCPCB
+    * Kalkulačka na impedanci
+    * Výsledky nesedí
+    * https://hackaday.com/2023/06/02/sma-connector-footprint-design-for-open-source-rf-projects/
+    * Problém v připojení konektorů (širší pad než cesta s řízenou impedancí)
+    * http://robruark.com/projects/RF/SMA_transition/decent_SMA_transition.html
+    * https://twitter.com/MeteopressEN/status/1666819383405187072
+    * Doporučení nepoužívat FR-4 nad 6 GHz a čínská SMA nad 3
+  * Ukázka TinySA Ultra
+    * Sonda magnetického pole - King type
+    * SN6501 - bacha, že úzkopásmově září, doporučuje s enahradit za 6505/6507
+    * https://www.uniteng.com/neildocs/references/Probing_the_Magnetic_Field_Probe.htm
+  * Ukázka deploye meteopressího radaru
+    * Přijede náklaďák, celý stroj se sám bez obsluhy rozloží, do 10 minut nahrává
+    * Není potřeba povolení, protože není stacionární
+    * Ve formátu kontejneru
+    * Vysvětlení funkce - SDR, korelace vysílaného unikátního signálu, zpracování dat, vysílání na H i V polarizaci, detekce živého/neživého cíle
+    * Diskuze o mechanické konstrukci - detekce vibrací, náklonu, možnost hydraulikou nechat dosednout na zem
+    * Kalibrace vůči Slunci - zná svoji polohu a detekuje polohu Slunce, čímž si zkalibruje vlastní orientaci, měří se pasivně šum ze Slunce
+      * Kalibruje zejména citlivost a šum přijímače
+      * V rámci cca dne je Slunce celkem stabilní šumový zdroj (v delším čase se projevují skvrny a další jevy)
+      * Z prostorového zkreslení Slunce jde zjistit, jestli není křivá parabola - na datech z mraků nejde, protože nemají definovaný tvar
+      * Umožňuje detekovat náklon základny z trajektorie Slunce
+      * Kalibrační data se dají získat od vědeckých stanic (mají přijímače s nízkým šumem), dá se i sehnat šumový generátor pro kalibraci
+      * Grafická knihovna Dash (Plotly), toolkit pySun ? pro zpracování dat
+  * https://www.youtube.com/watch?v=586Zn1ct-QA&pp=ygUPZWV2YmxvZyB2b3lhZ2Vy
+    * Voyager 2 - videa o tom, jak se dodnes přijímá
+  * Dolaďování paraboly z popelnice kladivem
+    * https://hackaday.com/2022/03/22/tune-your-dish-antenna-like-a-pro/
+    * Měření defektů ve tvaru, vyklepávání do správného
+  * https://hackaday.com/2021/12/03/moon-bouncing-and-radar-imaging-with-lora/
+    * Dopplerovské jevy na odrazu z Měsíce
+  * Arecibo - nebylo parabolické, ale kulové se sekundárním zrcadlem, kterým se dolaďovalo ohnisko
+  * Deep Space Network - 3 velké antény
+  * Qalculate - linuxová kalkulačka, která umí z textu rozměrovou analýzu, převody jednotek, alternativa Insect (v JavaScriptu), umí i Wolfram Alpha
+    * https://qalculate.github.io/index.html 	
+  * Nanograv - měření gravitačních vln, měření na úrovni nanoHertz
+    * https://sci.esa.int/web/lisa
+    * diskuze o měření gravitačních vln
+  * https://www.esa.int/ESA_Multimedia/Images/2023/06/W-band_on_the_run
+    * Nad zemí obíhá CubeSat W-Cube - civilní satelit na 75 GHz, ESA se zúčastnila pokusu o komunikaci
+    * Kalibrace vůči Slunci pomocí dírkové kamery přilepené kaptonkou a suchým zipem :-D
+  * https://github.com/esa/lxrmount
+    * Polohovač antén
+    * Diskuze o měření polohy satelitů, zaměřování antén atd.
+      * Dá se používat i data z GPS satelitů
+  * Ukázka TinyPFA (NanoVNA-H4 + speciální FW)
+    * Měření frekvence, slaďování oscilátorů, měření fázového šumu / driftu
+    * Připojení k TimeLab
+    * Ukázky měření Allenových deviací
+  * Bodnarovo GPSDO
+    * Opravený FW (odběr USB v deskriptoru)
+    * Uvnitř Si5328+uBlox
+  * https://blog.atx.name/gfc/
+    * GPS čítač postavený na FPGA s RISC-V
+  * Red Pitaya - FPGA platforma
+    * ukázka SW (Vivado), smíšený návrh Verilog + grafická bloková podoba
+    * úvod do základů AXIS sběrnic pro streamování dat
+    * http://pavel-demin.github.io/red-pitaya-notes/
+    * https://www.monstr.eu/
+  * Zpracování PDM / sigma-delta signálů
+    * https://tomverbeure.github.io/2020/10/04/PDM-Microphones-and-Sigma-Delta-Conversion.html
+    * https://tomverbeure.github.io/2020/12/15/Half-Band-Filters-A-Workhorse-of-Decimation-Filters.html
+    * https://tomverbeure.github.io/2020/09/30/Moving-Average-and-CIC-Filters.html
+  * Analog Discovery Kit 3
+    * osciloskop, DAQ, generátor průběhů, programovatelný zdroj
+    * tematicky jsme ujeli zase k uprdkávačově diplomce - nejprve diskuze o 16b SDR postavených na Red Pitaya (Jenda Hrach), pak se odskočilo k měření substrátu (hledejte paper “stability analysis of TRL calibration”) a zpět k popisu AD3
+    * https://embedded.fel.cvut.cz/SDI
+      * https://dspace.cvut.cz/bitstream/handle/10467/109464/F3-DP-2023-Fiala-Jan-DP_fiala_webscope.pdf?sequence=-1&isAllowed=y
+      * https://hackaday.com/2022/11/06/a-pi-pico-oscilloscope/
+  * PCEngines končí, protože Intel končí s výrobou některých procesorů, Intel NUC končí
+    * https://linuxgizmos.com/catalog-of-136-open-spec-community-backed-linux-sbcs-under-200/
+    * Hádka nad tím, jak je Rpi hrozně vedená, jak nevyvíjejí pořádně mainline komponenty pro Linux, 32b Linux, PAE, x86 vnitřnosti atd.
+    * https://hackaday.com/2023/07/03/theres-always-room-for-another-cycle-accurate-pc-emulator/
+    * Beaglebony Black jsou pořád všude skladem v desetitisícových množstvích
+    * https://linuxgizmos.com/catalog-of-136-open-spec-community-backed-linux-sbcs-under-200/ 
+  * Zásah bleskem na strahově
+    * chcíply čtečky karet, port na Beaglebonu, port na switchi, nějaké zdroje od Cisco Netmodulů, USB převodník u meteostanice atd. - zasaženy B9, B10 a B4 (meteostanice)
+  * https://riscv.org/risc-v-developer-boards/details/
+    * https://www.crowdsupply.com/milkv/milk-v-pioneer
+    * 64jádrová RISC-V platforma
+  * https://theamphour.com/637-ch32v003-fun-with-cnlohr/
+    * SW implementace USB + bootloader (dá se používat bez programátoru)
+    * diskuze o různých USB knihovnách pro mikokontroléry
+    * https://github.com/cnlohr/ch32v003fun
+    * https://theamphour.com/637-ch32v003-fun-with-cnlohr/
+  * Historie GITu a bitkeeperu při vývoji linuxu
+  * Diskuze o tom, jestli má člověk použít něco existujícího hrozného closed source nebo si nejdřív vyvinout vlastní nástroj
+    * https://www.youtube.com/watch?v=wAIWevcveFI&ab_channel=TheSignalPath
+  * Končí EAGLE, pokračuje jako součást Fusion 360, online licence
+    * dohadování o alternativách
+    * vyšel nový KiCAD
+  * https://hackaday.com/2023/05/27/hacking-a-smart-electric-toothbrush-to-reset-its-usage-counter/
+    * https://github.com/josevcm/nfc-laboratory
+    * Hack chytrého kartáčku s NFC hlavami, odposlech přes SDR implementaci NFC
+    * Nejnižší model neměl chráněné vyčtení procesoru - vyčtena ROM, v Ghidře reverzována diverzifikace NFC hesla - jde jen o CRC a přeházení bitů, algoritmus má podporu v Proxmarku
+    * https://www.youtube.com/watch?v=EPytrn8i8sc&ab_channel=AaronChristophel
+  * BliKVM
+    * Založené na PiKVM v podobě PCIe karty
+    * alternativa OpenBMC
+      * https://github.com/openbmc/openbmc
+  * Malá levná (a snad kvalitní) USB nabiječka https://www.ikea.com/cz/cs/p/smahagel-usb-nabijecka-s-1-portem-bila-10544077/ 
+  * Odbočka k Hrotu (hra)
+  * Nové ESP32-P4
+  * Rpi foundation vydalo online prostředí pro MicroPython, transpiluje ho do JavaScriptu pomocí Skulpt
+  * BG7TBL dělá levný čítač
+  * Mini GPSDO od Bodnara (podruhé)
+    * https://www.eevblog.com/forum/metrology/leo-bodnar-mini-precision-gps-reference-clock-teardown/
+  * GPIB-USB se dá levně koupit z AliExpressu, jde o kopie Prologixu
+    * dělá se i pomocí Rpi - používá GPIO
+  * OpenRPNCalc
+    * Umí propagaci nejistot
+    * dá se dělat v Pythonu pomocí “uncertainties”
+    * Alterantiva: https://www.numworks.com/  
+    * Numworks - pěkná kalkulačka s Pythonem, certifikovaná i ke zkouškám
+    * Sovětské kalkulačky (kopie Casio), kalkulačky na solární panely, Psion 2 a další stroje, diskuze o měnové reformě v roce 68 způsobené sověty
+  * BASIC na RP2040
+    * https://geoffg.net/picomite.html
+    * https://www.tomshardware.com/news/raspberry-pi-pico-basic-interpreter-piccolobasic
+  * 1.8. další VB

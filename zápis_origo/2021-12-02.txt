@@ -1,0 +1,121 @@
+====== ⚡ Virtuální Bastlírna IX. (2.12.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:30 |
+^ Celkem se vystřídalo | 34 účastníků |
+^ Ve špičce    | 30 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Pozdrav - sešli se fosilové Adam a Pítrsek
+  * Pítrsek a dotaz na stárnutí odporů, napěťových referencí atd.
+  * STM32 - nejsou, budou 2026 - 2027, odezva - F100 prý jsou, okolo 60 Kč
+    * Kopie STčkových procesorů - GD32, CS32 a další
+    * Shrinkování procesorů, problémy se signálovou integritou
+    * Nakupování dopředu vs. prototyping v době součástkové krize, dodací lhůty, malosériovky
+  * Domácí automatizace
+    * bkralikův rant nad cenou proudových traf
+    * automatizační software - použít homeassistant/openhub nebo něco vlastního, NodeRED +  dashboard a další vlastní řešení
+    * Rant na Javu, YAML a další rozežranosti
+    * FHEM (v Perlu :-D ) + Home Assistant
+    * Ukázka FHEM od karla
+    * Ukázka dashboardu v NodeREDu (Martin Hubáček)
+      * MQTT2InfluxDB - automatický nonstop import dat z topiců do databází
+        * https://github.com/hardwario/bch-mqtt2influxdb
+      * Popis poměrně složité automatizace postavené v NodeREDu
+      * postavený vlastní balík se vším již nainstalovaným k dispozici
+        * https://github.com/hardwario/bch-playground 
+    * Abstrakce nad zařízeními v NodeRED - typy, vlastnosti (Adam Hořčica)
+      * Snazší správa většího počtu zařízení
+      * MQTTExplorer
+        * Umí zobrazit topics jako strom
+        * http://mqtt-explorer.com/
+      * Princip subflows, META elements, Adamův vlastní plugin
+    * Zigbee2MQTT
+      * Správa zařízení přes grafické rozhraní, aktualizace firmware
+      * http://adam.horcica.cz/slides/IF2020-zigbee2mqtt.pdf
+      * https://www.youtube.com/watch?v=Yq5W9DTUnws 
+      * CC2652
+        * https://elektro.bazos.cz/inzerat/143511353/novinka-zigbee-koordinator-cc2652p-nahrada-za-stary-cc2531.php
+  * Jenda Hrach a jeho větrosvětloradar s elektrárnou
+    * Potvrdily se předpovědi - solár negeneruje teď přes zimu skoro nic, vítr taky skoro nic, baterie se vybíjejí
+    * HKFree solární projekt
+      * Logy ukazují za poslední týden skoro nulové množství vygenerované elektřiny mimo jednoho dne
+    * Jenda používá jako počítač Intel NUC a SPC-7100
+    * Diskuse nad variantama - např. Nvidia (https://www.conrad.cz/p/945-13450-0000-100-vyvojova-deska-1-ks-2365119)
+    * diskuze o umírání pájených součástek - praskající kondíky, umírající odpory
+      * jak pájet kondenzátor aby nedocházelo k praskání: nejlepší jsou pinzety nebo hotair, protože hřejí rovnoměrně, klasická páječka a pájení z jedné+druhé strany způsobuje namáhání
+    * Jak se řeší kondenzace
+      * topení radarem, PUR lak
+  * Altium a databázové knihovny (Jan Petřík)
+    * obtíže s použitelností, jak na multiuser, jak udělat z jedné součástky celou produktovou řadu
+    * diskuze o vhodnosti různých SQL serverů
+  * Návrh u návrhu kde MCU resetuje stykač
+    * Řešení bylo snížit takt MCU, ale jak to vyřešit korektně
+    * Diskuse o 2 vrstvá vs 4 vrstvá DPS, blokování napájení, …
+    * Pítrsek doporučuje, jak tomu zabránit
+    * Martin Kilkhorn doporučuje sledovat https://www.youtube.com/c/RobertFeranec
+    * Pítrskovo přednášky o napájecím subsystému
+      * https://www.youtube.com/watch?v=gGv5l_srs7k
+      * https://www.youtube.com/watch?v=f4UR_-rIHH4
+    * Kenneth Wyatt - dobry autor ohledne EMC
+  * jenda a problém s nárazovým proudem shazujícím jističe
+    * žárovka, NTC, stavebnice soft-startu z Metronixu
+      * http://www.metronix.cz/soft_start.html
+    * katastrofy s kabely - zmačklé kabely, šoupající se kabely, UTP skříplé ve dveřích
+  * UPS a problémy
+    * pád UPS na Strahově a katastrofa poté
+    * Kazma na Strahově a příběh s dildem
+  * IPv4 adresy
+    * spousta volných, ale nevyužitých správně
+    * američtí radioamatéři mají volné bloky, ale nechtějí se podělit
+  * diskuze nad tím, proč je tentokrát +50% návštěvníků
+    * co dělá labyrint v myčce?
+      * tak nějak se neví
+    * kanál Technology Connections na YouTube
+  * Plán na zatopení Maďarska
+    * ucpávka v Arvízu zaplní Maďarsko
+    * https://www.abclinuxu.cz/blog/jenda/2021/4/pouziti-topografickych-dat-srtm-ceska-prehrada
+    * kuličky na nádrži v Americe, kvůli zabránění rozkladu dezinfekce ve vodě
+    * https://www.youtube.com/watch?v=uxPdPpi5W4o&ab_channel=Veritasium
+    * https://alojz.cz/praha
+  * Jak funguje model pro předpověď počasi
+    * Globální a lokální model
+    * Windy
+    * https://www.mmm.ucar.edu/weather-research-and-forecasting-model
+    * Jak se model aktualizuje podle aktuálních meření
+    * Metody “nudgingu” dat pro vynucení konsenzu s realitou
+      * Jak to vylepšit přes AI
+      * Meterodar CHMU (relativně naivní posun) vs Meteopres (konvoluční neuronová siť, co kouká na obrázky z radaru)
+  * Všechny cesty vedou do CERNu
+    * příhody z natáčení
+  * Srnky v poli, detekce termokamerou, nehody při senoseči
+    * není vidět v trávě
+    * problém s čínskou kamerou, která měla CVBS a LVDS
+  * USB-GPIB
+    * https://www.eevblog.com/forum/testgear/gpib-printer-capture/
+    * http://www.ke5fx.com/gpib/7470.htm
+    * https://www.hp9845.net/9845/projects/hpprint/index.html
+  * WIN 1.0 aplikace na nových Windowsech
+    * Win95 hmotnostní analyzátor pod novými Win
+    * https://gekk.info/articles/dosapps.html
+    * https://www.howtogeek.com/230359/how-to-install-windows-3.1-in-dosbox-set-up-drivers-and-play-16-bit-games/
+    * https://dosbox-x.com/wiki/Guide%3AInstalling-Windows-95
+    * https://github.com/vinibiavatti1/TuiCss
+    * http://boginjr.com/it/sw/dev/vinyl-boot/
+    * https://retronation.cz/kategorie/podcasty/wolfcast/
+    * VDMSound, dgVoodoo, NOLFBLIM.com
+    * http://rayer.g6.cz/
+  * Flash a Silverlight v dnešní době
+    * Existuje Silverlight emulátor v JS
+  * Ultrazvukové průtokoměry
+    * Tepelné průtokoměry
+  * Příhody o svařování
+    * https://www.youtube.com/c/HVACRVIDEOS
+    * Navařování nosníků v atmosféře / s krytkou
+    * Svařování TiGem a odolnost
+    * Volkswagen T3 a T4 s vestavbou
+      * Závody na výdrž
+      * https://www.24hracing.at/en/
+      * Podobné závody v ČR
+      * Historky z natáčení (bkralik, fosfor)

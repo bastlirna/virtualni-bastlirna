@@ -1,0 +1,127 @@
+====== ⚡ Virtuální Bastlírna XXXVII. (22.4.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:00 (pokračovalo se neoficiálně dál bez Bastlírny) |
+^ Celkem se vystřídalo | 59 účastníků |
+^ Ve špičce | ??? 43 ??? účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Excitovatelná média - jezdící oheň
+    * https://youtu.be/SqhXQUzVMlQ?si=NY-6H-QAfR7dyQOC
+    * Nepovedený pokus v podobě lehkého místního požáru od Uprdkávače
+      * https://twitter.com/polasek_petr/status/1782112850443407629
+  * Installfest
+    * https://www.youtube.com/playlist?list=PLub6xBWO8gV8AG4kBn5W-QkMnTcdAPqvn
+    * Přednáška o neuronových sítích od Jendy Hracha
+      * https://www.youtube.com/watch?v=o9TwtMywEuI
+    * Mitch Altman - vynálezce TV-B-Gone, právní ochrana vynálezů, patenty, ochranné známky, open-source
+    * Povídání o osmnáctileté historii Bastlírny
+    * Roboauto - Arduino Pro Opta PLC (nevyrábí Arduino) na řízení autonomního dovážkového auta, zajímavá cena 
+      * Jde programovat z Arduino IDE nebo vlastního PLC IDE
+        * Další open projekty - OpenPLC, SCADA
+        * https://pvbrowser.de/pvbrowser/index.php
+  * Arduino Day
+    * Přednáška Štěpána Bechyňského o Node-RED
+  * Odbočka k Arduino Opta (Arduino PLC)
+    * https://www.arduino.cc/pro/hardware-arduino-opta/
+    * https://pvbrowser.de/pvbrowser/index.php?lang=en&menu=3
+    * https://openplcproject.gitlab.io/
+    * Nové Siemens Logo podporuje MQTT
+    * Teko PLC
+  * Odbočka stranou
+    * Teardrops v kicadu
+    * Import z Altia a Interactive BOM
+      * https://github.com/openscopeproject/InteractiveHtmlBom 
+    * Interactive BOM existuje už i pro Altium (neoficiálně)
+      * https://boastools.com/
+    * Altium 365
+  * Hackaday Europe
+    * Vectorscope - badge s analogovými vstupy / výstupy
+    * WireViz - nástroj na kreslení kabeláže
+      * https://github.com/wireviz/WireViz/tree/master
+      * Existuje i ve formě pluginu pro VS Code s živým generováním
+      * DIN47100 - norma na označování kabeláže včetně barev (už asi neplatná)
+      * Alternativy - modul v ePlanu, nástroj na kabeláž v Altiu
+    * CircuitPainter
+      * Umělecký nástroj pro jednoduchý popis generovatelných plošňáků - možnosti translace, rotace, základní tvary
+      * Vše generuje do jedné groupy, je možné dělat i manuální úpravy bez rozbití a dále dělat deskriptivní úpravy
+      * https://github.com/Blinkinlabs/circuitpainter
+  * Materiály o výuce digitální logiky
+    * O linuxu: https://bootlin.com/docs/ 
+    * https://susta.cz/FelUcebnice.aspx
+    * Možná knížky od Martina Malého
+      * https://knihy.nic.cz/media/filer_public/c6/7a/c67ac7c3-7935-4fc1-89e9-ddc6dc4c331d/hradla_volty_jednocipy.pdf
+    * Možná něco v Art of Electronics?
+    * Odbočka mimo - přesná elektronika
+      * https://www.eevblog.com/files/High-Accuracy-Electronics-Christopher-I-Daykin.pdf
+    * https://assets.nexperia.com/documents/brochure/Nexperia_LOGIC_Handbook_201029.pdf
+      * Nalezeno v https://twitter.com/kiklhorn/status/1772843910320283681?t=GrIHQxUSuAoyrIkeregafA
+    * https://ndk.cz/ - archivované starší knihy
+  * IRC v UEFI
+    * https://axleos.com/an-irc-client-in-your-motherboard/
+      * UEFI v BIOSu - https://github.com/CloverHackyColor/CloverBootloader
+  * Izolace mezi Dallas teploměrem a ESP
+  * 17.5. bude sraz Espressif komunity
+    * https://twitter.com/RadimKarnis/status/1775458628671078815
+    * Espressif si koupil majoritní podíl v M5Stack
+  * ESP věci pro začátečníky na výuku
+    * https://www.laskakit.cz/makeblock-mbot-podvozek-klon/
+    * https://docs.google.com/spreadsheets/d/e/2PACX-1vSGPUzw5Xw7wcvd46Yq1gkY0tPx4vsyj-GOJ2MUmizaFwqydn2EDsLjr4IZbUCxooDe-co-lsC45HpL/pubhtml?gid=0&single=true
+    * https://www.laskakit.cz/dvoumotorovy-radic-tb6612fng/
+  * Průša XL bude mít krabici, která bude komunikovat s tiskárnou
+    * https://www.reddit.com/r/prusa3d/comments/1c61gdt/xl_enclosure_support/
+  * Zámky Saflok mají zranitelnost Unsaflok
+    * Vyrábí se asi 36 let, na světě asi 3 miliony, stačí vylepšená karta z daného hotelu (Mifare Classic)
+    * Jedna karta změní ID dveří a druhá je odemkne (protože má správné ID)
+    * https://unsaflok.com/
+  * Kanada chce zakázat Flipper Zero
+    * Flipper vydal článek, ukazuje reálná zařízení na kradení aut, která dokáží oblafnout imobilizér (potřebují velký výkon pro vysílání skrz zeď domu).
+    * https://blog.flipper.net/response-to-canadian-government/
+  * Chameleon Ultra - nikdo z přítomných moc nepoužívá, funkčnost CLI je otázkou, aplikace pro mobil prý funguje dobře
+  * Odposlouchávání meteostanic rádiem
+  * Meshtastic
+    * https://meshtastic.org/
+    * Poměrně jednoduchá implementace mesh sítě a přeposílání zpráv
+    * https://meshmap.net/
+    * Existuje česká Telegramová skupina
+    * Ukázky použití
+    * MQTT Explorer jde použít k prohlížení aktivity
+    * JS8Call
+  * Voyager 1 - už se ví, proč nefunguje
+    * https://twitter.com/NASAJPL/status/1782454277895749857
+  * 2 roboti pro pohyb na Měsíci v rámci japonské sondy
+    * https://developer.sony.com/posts/apache-nuttx-powers-worlds-smallest-lunar-robot-in-japans-historic-autonomous-lunar-exploration-mission
+    * Procesory od Sony, běží tam NuttX
+  * Uprdkávač si koupil pájecí pinzetu
+    * Atten ST-1509 + N9150 + náhradní hroty
+    * https://twitter.com/polasek_petr/status/1780291393988055288
+  * Levné pájecí vybavení
+    * Levná kopie Pinecil na Pájeníčku
+    * Parkside dělá hroznou, ale levnou bateriovou páječku
+    * Hrozný levný šit z Aliexpressu
+      * https://de.aliexpress.com/item/1005006257017997.html
+    * Indukční čínská páječka
+      * https://www.hotair.cz/detail/pajeni/stolni/mikropajka-bakon-bk2000-120w.html
+    * Dremel Versatip
+      * https://www.dremelcz.cz/dremel-versatip
+      * Plynová páječka, vydrží dlouho v provozu, katalyzátor (jde z ní nereaktivní horký vzduch)
+  * Bkralik si koupil čistou titanovou folii, zkusil ji zahřát zapalovačem jako test, jestli to není hliník (ten by se roztavil). Způsobil si dočasnou slepotu a málem i popáleniny.
+    * Donesl i wolframovou tyčku. Je těžká a nijak nepáchne.
+  * Tavidla, pájení, oplachování, černání ENIGu a další pikantnosti z pájení
+  * Strach z RGB LEDek
+    * https://www.cnews.cz/clanky/pozor-na-rgb-led-v-pocitaci-uv-zarenim-muzou-poskodit-hardware-jestli-i-zdravi-tezko-rict/
+  * Bug v eDokladech umožňoval posouvat platnost dokladů o den
+    * https://www.lupa.cz/aktuality/dalsi-chyba-v-edokladech-zmena-casoveho-pasma-telefonu-o-den-posune-datum-narozeni/
+  * ST zavádí nové technologie FD-SOI a phase change memory
+    * https://www.st.com/content/st_com/en/about/innovation---technology/FD-SOI.html?ecmp=tt13246_gl_link_nov2019
+    * https://www.st.com/content/st_com/en/about/innovation---technology/PCM.html
+  * Další kolo TinyTapeout
+    * Už to umí i analog, má rychlé GPIO (50 MHz)
+    * Převody mezi VHDL a Verilog - GHDL umí automaticky
+    * https://github.com/ICE-V-Wireless/ICE-V-Wireless
+    * https://github.com/ICE-V-Wireless/ICE-V-Wireless/tree/main/Gateware/psram_demo
+    * https://gitlab.fel.cvut.cz/otrees/risc-v-esp32/ice-v-pmsm
+  * Náhodný pokec o všem možném
+    * Životnost žárovek a první kartel
+    * Elektronka vs žárovka

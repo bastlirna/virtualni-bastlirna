@@ -1,0 +1,98 @@
+====== ⚡ Virtuální Bastlírna VIII. (2.11.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:30 |
+^ Celkem se vystřídalo | 15 účastníků |
+^ Ve špičce    | 14 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Součástky - nejsou procáky od STM32 a očekává se doba trvání v jednotkách roků
+  * Měření spotřeby elektrického topení (bkralik) - čínský Shelly 3em, elektroměry s pulzní detekcí, elektroměry s ModBusem, elektroměry s nepřímým měřením přes proudová trafa, SDM72CTM (elektroměr s možností připojit externí měřicí členy a ModBusem), SDM630
+    * Elektroměry postavené svépomocí, implementace v procesoru, specializované šváby
+    * PZEM-016 - napětí + proudové trafo, používá 8051 s vylepšeními
+    * https://www.analog.com/en/parametricsearch/10577#/
+      * Speciální šváby, cena v jednotkách eur
+  * Solární elektrárny - nejasnosti okolo výdělečnosti přes zimu
+    * strahovská meteostanice, historie plošného výkonu dopadajícího světla cca 10:1 poměr výkonu v zimě
+    * weather.sh.cvut.cz, historická data dole, zobrazitelná
+    * jeden účastník potvrzuje prakticky nulový výkon v zimě, asi 1/60 výkonu
+    * praktické věci ohledně solárních systémů a legislativy
+    * https://www.hzscr.cz/soubor/firefve-brozura-a5-final-web-pdf.aspx
+  * tepelná čerpadla, měření průtoku, měření COP, přesnost měření
+    * kalorimetry, teplo- a chlado- měry
+    * https://www.bola.cz/meric-tepla-enbra-mt-sontex-supercal-739-dn-20?gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB5EVIGINRiPrFosQow0h_JS4BiFt5BiGiDq4d8sDuU_0YkRG50C7lAaAtPBEALw_wcB
+  * opět elektroměry - Jenda Hrach
+    * VisionQ LoRaWAN modul, certifikovaný pro použití v česku, žere optický výstup, vysílá jednou za hodinu, rozlišení 1 kWh
+    * Python knihovna pro vyčítání SDM elektroměrů
+      * https://github.com/xtompok/SDM630
+    * Samodomo neinvazivní blikmetr k pulzům z optického výstupu, u ČEZu nepovolené...
+  * Kabel vedoucí v lese, ochrana proti zapálení lesa, PTC topné kabely atd., udržování trubek při teplotě nad bodem mrazu pomocí topných kabelů
+  * Grafana - rychlost, použitelnost, spolehlivost
+  * patche kvůli min. 10ms kroku, srovnání databázových backendů, nadstavby a pluginy Grafany, InfluxDB 1.x vs 2.0, timescaleDB
+    * https://grafana.com/grafana/plugins/grafana-image-renderer/?tab=installation
+  * Elektroměry potřetí - Adam Hořčica
+    * video o odběrných elektroměrech s dálkovým odečtem v USA, reverse engineering, vysílají i uptime
+    * https://www.youtube.com/watch?v=RsOCPWRNVZs&ab_channel=RECESSIM
+  * Monitorování zařízení po SNMP
+    * periodická údržba a restarty
+    * příběhy o zařízeních, kterým během restartu / poweroffu umřely disky nebo HW RAID kontroléry
+  * Petr a kachnička
+    * Pokovování resinu - nástřik grafitem, galvanické poměďování, postříbřování…
+    * Perkolační práh u kompozitních materiálů kapalina/pevná látka + vodivé částice a chování okolo perkolačního prahu
+    * 3D tisk z vylepšeného resinu vodivými částicemi
+    * nástřik kovu ze spreje, šopování hliníku stříkáním tekutého hliníku z pistole v inertní atmosféře
+    * Elchemco sprej 33 - grafitový sprej
+    * Výroba prokovů v plošňácích - klasický postup s uhlíkovým prachem versus aktivace
+    * Rozhovor s chemičkou ohledně prokovů https://www.youtube.com/watch?v=ukfsupePkOM
+    * JLCPCB - dobré čtyřvrstvy, dobré stackupy pro RF
+  * Jenda a RF
+    * HMC902, zesilovače, RF magie
+    * Kmitající zesilovače, absorptivní pěna, stabilita zesilovačů
+    * https://www.microwaves101.com/encyclopedias/stability-factor
+    * Reflow, footprinty pro správné zatékání pasty do vias
+  * AdderLink XD642 - KVM k suprpočítači na půdě
+    * pozor na USB - občas nemají transparentní USB!
+    * dal by se použít thunderbolt extender?
+    * https://www.corning.com/optical-cables-by-corning/worldwide/en/products/thunderbolt-optical-cables.html
+  * NAbíječky k telefonům - strašný zmatek okolo PD, QC, SuperVOOC atd.
+    * Rant na USB-C a proprietární úpravy dokovacích stanic
+    * Nekompatibilita a časté rozbíjení
+    * https://www.aliexpress.com/item/4000249013759.html?spm=a2g0s.9042311.0.0.27424c4d131CTW
+    * https://www.aliexpress.com/item/1005001672608243.html?spm=a2g0s.9042311.0.0.27424c4diYvorv
+    * https://www.softcom.cz/eshop/premiumcord-usb3-1-gigabit-rj45-adapter-hub-4x-usb2-0-female-1x-pd_d187710.html
+    * ja sem kupoval toto https://www.aliexpress.com/item/33049520116.html?spm=a2g0o.productlist.0.0.45d12887xXpfXQ&algo_pvid=8f025985-8392-4001-ba05-d4b7a7fd51ff&algo_exp_id=8f025985-8392-4001-ba05-d4b7a7fd51ff-27
+    * https://www.mironet.cz/verbatim-adapter-usbc-31-gen-1-na-hdmi-4kf-10cm+dp442906/
+  * Páječky
+    * ERSA a bugy včetně autodestrukce
+    * TS100, TS80, TS80p vs Pinecil
+    * https://www.mikrom.cz/nova-pajka-ts100/
+    * https://www.hotair.cz/detail/pajeni/horkovzdusne-stanice/kombinovana-pajeci-stanice-803a.html
+    * ZD912
+    * https://www.kurtzersa.com/electronics-production-equipment/soldering-tools-accessories/soldering-desoldering-stations/produkt-details/i-con-2v.html
+  * Nabíjení telefonů
+  * Jak snížit citlivost sluchátek
+    * Připojit jen rezistor do série zmrší frekvenční charakteristiku 
+  * Jak vyřešit až bude v zimě blackout plynu (teorie o apokalypse s dodávkami plynu)
+    * Turistické vařiče a propan butanové bomby na větší objemy
+    * Diskuse o kondenzačních kotlech
+    * https://www.youtube.com/c/TechnologyConnections/videos
+  * Diskuze o myčkách nádobí
+    * Jak funguje prewash
+    * Co je labyrint v myčce
+      * https://www.google.com/search?q=my%C4%8Dka+labyrint&sxsrf=AOaemvJmqa0BsmEBBIEIf7mu5QxkAwhTtw:1635892426634&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjFh-uX3vrzAhWVhv0HHQdIC0IQ_AUoAXoECAEQAw&biw=1920&bih=1057&dpr=1
+  * Jenda : vyprodali jim BMS co popisoval minule, diskuse o BMS
+  * Energie a co dělá elektroměr když se pokusíte dodávat do sítě
+    * Výkupní cena energie a vyplatí se to?
+  * Jethro - 
+    * i2c a problémy s rychlostí (napsaní knihovny s přerušením pro rychlejší obsluhu, nestačí to synchronně)
+    * Existuje i2c driver, který místo pull-upu má proudový zrdoj (zrychlí přechodový jev při log 1). 
+    * Corutiny v C - https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html
+  * Jenda: včera dostali starlink
+    * UX instalace a prvního spuštění
+    * Geofencing
+  * Diskuse kde kdo pracuje - hlavně Jenda mluví o Meteopresu
+    * https://www.abclinuxu.cz/blog/jenda/meteopress
+    * Jak funguje trh s meteo-radary
+    * “malé” vs “velké” radary
+    * Jenda plánuje přednášku na Smršť (začátek prosince ???) - https://ksp.mff.cuni.cz/akce/smrst/2019/ (budou tam záznamy)

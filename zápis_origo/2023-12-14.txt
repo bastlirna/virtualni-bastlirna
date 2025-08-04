@@ -1,0 +1,88 @@
+====== ⚡ Virtuální Bastlírna XXXIII. (14.12.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:55 |
+^ Celkem se vystřídalo | 43 účastníků |
+^ Ve špičce | 41 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Napěťové reference
+    * Nová ADR1001 - asi nejpřesnější nová reference
+      * https://www.richis-lab.de/REF29.htm
+    * https://wiki.analog.com/resources/eval/adr1001e-ebz
+      * Nová ADR1399 - levná, dokonce SMD
+  * https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-adr1399.html
+  * Měření fázového šumu / driftu
+    * https://twitter.com/polasek_petr/status/1734676643329745171
+    * https://twitter.com/polasek_petr/status/1733398286558474338
+  * Ladění hodin - vzhledem k čemu
+    * https://www.leobodnar.com/shop/index.php?main_page=product_info&products_id=301
+    * Bězné krystalové oscilátory nejsou teplotně kompenzované
+  * Nový levný 32b ADC s 24+b ENOB (třeba na embedded přesné měřáky)
+    * https://www.ti.com/product/ADS1262
+  * Přestupné sekundy
+    * jsou již zrušené
+    * https://www.root.cz/zpravicky/prestupne-sekundy-mohou-byt-nahrazeny-prestupnou-minutou-zato-mene-casto/
+  * Rubidiové hodiny - jak snadno otestovat teorii relativity
+    * http://leapsecond.com/great2005/tour/
+  * Diskuze o tom, jestli je nebo není složité si udělat 10 Gb/s síť
+    * síťovky stojí pár tisíc
+    * doporučení na fs.com
+    * Diskuze o metalika vs. optika vs. direct cable
+    * Diskuze, proč se prakticky nepoužívají 4x10 Gb/s linky a preferují se 4x25
+    * Rozdíly mezi DAC, AOC kabely a klasickými odpojitelnými optickými/ethernetem
+    * Možnosti dnešního WDM
+      * Praha-Brno jen se 3 mezistanicemi
+    * MEtody odhadu, kudy a na jakou vzdálenost jde udělat mikrovlnný spoj
+    * Sledování vyzařování ze Slunce
+      * https://www.sws.bom.gov.au/World_Data_Centre/1/10
+    * PC-Engines APU2
+      * 3x mPCI-E karty
+      * Bohužel se přestal vyrábět procesor od AMD, který se na APU2 používal
+    * https://www.hardkernel.com/shop/odroid-h3-plus/
+      * 2x 2.5 Gbps, s přídavnou kartou 6x
+    * https://www.solid-run.com/
+    * https://www.toradex.com/
+    * Seznam otevřených platforem, na kterých běhá mainline Linux
+      * https://linuxgizmos.com/catalog-of-136-open-spec-community-backed-linux-sbcs-under-200/
+  * Jak vyřešit automatické zapínání vysavače při zapnutí nářadí
+    * Bezdrátový modul do zařízení (originální/vlastní)
+    * Spínání hlukem?
+    * “Automatic-Style Wireless system” od Makity
+      * https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71IVVdbOFXL._AC_SL1500_.jpg
+      * Makita 198900-7
+        * Má to 4 piny, ale nikdo to zatím nereverznul
+        * Modul sám je relativně levný (~1k Kč), ale “protikus” k vysavači je za 5k
+    * BLEScanner a další aplikace
+      * https://play.google.com/store/apps/details?id=com.macdom.ble.blescanner
+      * https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en
+      * https://github.com/jenskueper/festool-ctl-sys-bluetooth
+    * Reverse engineering podobného systému
+      * https://www.eevblog.com/forum/projects/makita-(jdm)-vacuum-remote-start/25/
+  * Ovládání zařízení
+    * Riden má Modbus
+    * Weishaupt kotle mají CANbus a Modbus
+  * Automatizace domácnosti, analýza chování lidí
+    * https://youtu.be/Dv2FnyeD-VM?t=1136
+  * Diskuze o bezpečnosti věcí v síti, které něco řídí (fabrika, elektronická kapačka, inzulinová pumpa atd.)
+    * Nová směrnice NIS2, spadnou pod ni i vodoměry
+      * https://osveta.nukib.cz/course/view.php?id=145
+    * Reálné řešení z medical provozu - každé zařízení má svoje vlastní heslo, servisáci mají hesla jen pro kusy, které si koupili
+  * Rant nad Androidími televizemi a umírajícími Flash pamětmi
+    * Obvyklé řešení tupý průmyslový monitor + něco externího
+    * Libovolná čínská krabice + nějaký Linuxový systém - Enigma2, OpenPLI, OpenRSI a další
+    * https://tvheadend.org/
+    * https://wiki.openpli.org/Webif
+    * Diskuze o ergonomii versus open-source, etice reklam, chování sociálních bublin ve vztahu k používání televize a streamovacích platforem
+  * Youtube a kontroverze okolo něj - reklamy, blokování blokovačů reklam atd.
+    * alternativy jako Cesnetí sharing a mnoho dalších (delší diskuze)
+  * Polské lokomotivy a “vylepšená” řídící jednotka
+    * https://badcyber.com/dieselgate-but-for-trains-some-heavyweight-hardware-hacking/
+    * https://social.hackerspace.pl/@q3k/111528162462505087
+    * Kurvítka v zařízeních - timer v batterypacku vysavače, bug ve firmwaru pevného disku
+      * http://rayer.g6.cz/hardware/hddtech.htm
+  * Metody výroby pevných disků, SMR/CMR, plnění héliem
+  * SAPI86
+      * https://www.youtube.com/watch?v=BSom6GEWrJQ&pp=ygUGc2FwaTg2
+      * diskuze o procesorech, architekturách, výkonu, historii

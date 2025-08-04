@@ -1,0 +1,119 @@
+====== ⚡ Virtuální Bastlírna L. (7.5.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:26 |
+^ Celkem se vystřídalo | 48 účastníků |
+^ Ve špičce | 33 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Vychází KiCAD 9.0.2
+    * Uprdkávač ukazuje, jak se používají net classes a jak se definují parametry cestiček + pravidla.
+  * Zkušenosti s NanoVNA-app na počítači a spolupráce s LiteVNA, ukázka použití
+    * varování před falešnými VNA, v Evropě doporučení na https://eleshop.eu/
+    * fejky Applovských nabíječek
+  * Dotaz na levný osciloskop - jethro zmiňuje Hanteka, ale je pomalý
+    * Umřel web sigroku+Pulseview, Pulseview nikdo nevyvíjí
+    * https://web.archive.org/web/20250331230210/https://sigrok.org/wiki/Supported_hardware#Oscilloscopes
+    * CH569 - rychlý procesor s USB, serdes - jen přilepit ADC
+      * https://www.wch-ic.com/products/CH569.html
+      * https://github.com/hydrausb3
+      * https://github.com/hydrausb3/hydrausb3_hw
+    * https://www.crowdsupply.com/eevengers/thunderscope
+      * Vývoj a diskuze běží na jejich Discordu
+    * dotaz na problémy se zasekávajícím se Hantek osciloskopem
+  * openmagnetics.com
+    * web pro návrh traf, indukčností atd.
+  * FastHenry2
+    * tool pro výpočet magnetických systémů
+    * existuje nově plugin pro Blender pro tvorbu vstupních dat
+    * https://www.fastfieldsolvers.com/software.htm
+    * https://x.com/samerps/status/1909740870745964867?t=eAcQ4fW_W1EW9Kd4tH39iw
+  * QOI
+    * open-source jednoduchá alternativa k PNG
+    * https://qoiformat.org/
+    * aktuálně je v GIMPu, používá ho i Průša na náhledy tisků v tiskárnách
+    * autor dělá i audio formát
+    * Jenda používá NetPBM, je jednodušší než BMP
+    * Ztrátová komprese textu
+      * https://lcamtuf.substack.com/p/afternoon-project-jpeg-dct-text-lossifizer
+  * Niimbot tiskárny
+    * Lze tisknout i bez originální aplikace, existuje Webová a Pythoní aplikace
+    * https://github.com/MultiMote/niimblue
+    * https://github.com/labbots/NiimPrintX?tab=readme-ov-file
+    * Doporučení na tiskárny Brother, ale ovládání je hrozné
+    * Dymo má drahé pásky
+      * https://www.dymo-stitkovace.cz/stitkovac-dymo-prumyslovy-rhino-4200-s0955990?ItemIdx=1
+      * novější typy už mají QWERTY klávesnici, ne ABCD
+    * hádka o tom, kdo používá jakou štítkovačku a o typech bužírek / vlaječek / návleků / štítků na kabely, které jsou nejlepší
+      * https://www.ilh.cz/produkty/spotrebni-material/navlecky
+    * https://github.com/andreisperid/E-TKT
+  * Dotaz na solné testování vlhkosti
+    * https://www.engineeringtoolbox.com/salt-humidity-d_1887.html
+    * jak vlastně měří elektronické senzory vlhkost - kapacitně
+    * https://sensirion.com/products/catalog?categories=humidity
+  * Měření elektrických parametrů sýra a použití na 28 Gb/s
+    * https://www.linkedin.com/pulse/28gbps-microstrip-pepper-jack-cheese-substrate-ryan-lott/
+  * Meshtastic
+    * prý nechodí MQTT server
+      * https://github.com/orgs/meshtastic/discussions/301
+    * během výpadku elektřiny ve Španělsku použivali lidi dost aktivně Meshtastic
+    * šťourání do Meshcore
+  * Ukázka věcí v KiCADu, nové funkce, ukázkový jobset file
+    * https://github.com/MR-DOS/LowCapacitanceProbe/blob/main/Outputs.kicad_jobset
+    * https://github.com/MR-DOS/LowCapacitanceProbe/tree/main?tab=readme-ov-file
+    * Varianty osazení - zatím neprozkoumáno
+      * https://github.com/markh-de/KiVar
+    * Měření odrazu na SMA konektoru
+      * https://x.com/polasek_petr/status/1920021361759580519
+  * Zkoumání podivné diody ve skle s plošným připojením a hledání, co to je
+  * PCB tištěné na SLS tiskárně
+    * https://www.youtube.com/watch?v=UIqhpxul_og
+  * Shánění modrého komunistického
+  * Zmínka o Stream cinema, smutnění nad umíráním úložišť, zejména legálního obsahu, jako jsou manuály a stará dokumentace
+  * IKEA má nový levný RFID zámek, má NFC
+    * Původně byl Rothult za 700, nahrazen Solstol za 250
+    * uvnitř je asi čínský klon čipu od NXP VRC522, procesor CMS32L032, motor s převody vysouvajícím kus železa, koncáky chybí, jsou nahrazeny měřením proudu
+    * karty NTAG213, nesprávně čtou informace, takže se vyčtou jen 2 bajty UID, dá se rychle hacknout
+    * Umí si pamatovat až 10 karet, učení se ovládá tlačítkem - učení není zabezpečené
+    * Když se vybije, tak se odemkne
+    * https://www.cnblogs.com/armfly/p/18856476
+  * LTspice 17.0 se už nedá aktualizovat (nestáhne si knihovny), 17.1 není veřejně na webu, nový LTSPice (24) funguje normálně
+    * https://ez.analog.com/design-tools-and-calculators/ltspice/f/q-a/579849/download-link-of-last-ltspice-17-version
+    * https://ltspice.analog.com/download/17.1.15/LTspice64.msi
+  * Novinky ve fúzi
+    * Přednáška o snahách soukromých firem
+    * https://youtu.be/r6iqKoT_DuI?si=fxL-ilTqxLMMaT9m
+  * GPMI - čínská náhrada HDMI
+    * https://www.tomshardware.com/tech-industry/china-launches-hdmi-and-displayport-alternative-gpmi-boasts-up-to-192-gbps-bandwidth-480w-power-delivery
+  * JLC nabízí automatickou kontrolu design dat
+    * https://jlcdfm.com/
+  * Paste in hole - metoda pájení THT pastou v otvorech, použito na Raspberry
+    * https://mpe.researchmfg.com/dip-paste-in-hole/
+  * USB PPS jde použít pro udělání laboratorního zdroje
+    * https://lectronz.com/products/pocketpd
+  * nVidia uvolnila zdrojáky PhysX (potom, co ho na RTX5000 rozbila)
+    * https://github.com/NVIDIA-Omniverse/PhysX/discussions/384
+  * přetaktování Rapberry Pi 5 s tekutým dusíkem, problémy s napájením
+    * https://skatterbencher.com/2024/11/11/3600-mhz-raspberry-pi-5-with-liquid-nitrogen/
+  * Jak poznat, kdo vyrobil vaše BF998 (dovezené z číny)
+    * http://sp7pki.iq24.pl/default.asp?grupa=3536&temat=449565
+  * Požáry elektrokoběžek
+  * Solární panely na železnici - rozebírání důvodů, proč je to blbost
+  * Pravidelný meteorologický děj Dunkelflaute, kdy se na nějakou dobu zatáhne obloha a přestane foukat, takže nefungují ani solární elektrárny ani větrné
+  * Solarfold a podobné projekty - kontejner, ze kterého se vysunou rozkládací solární panely
+  * Smlouva s Korejci na dostavbu Temelína napadena francouzskou konkurencí, soudem zastaven podpis smlouvy
+  * Náhledy stepů v průzkumníku ve Windowsech
+    * https://f3d.app//
+  * LASAR vyslal do vesmíru Cubesat
+  * Gastronádoby a použitelnost jako pokusné nádoby, vaření párků, vaření masa nadzvukovou rychlostí, jak funguje sklokeramika a jak upravit její parametry
+    * https://www.youtube.com/watch?v=9UX7NJLYyb4
+    * https://www.youtube.com/watch?v=qi8jmEbWsxU&pp=ygUOaHV5Z2VucyBvcHRpY3M%3D
+    * https://www.youtube.com/watch?v=rAdT4NmESZg&pp=ygUOaHV5Z2VucyBvcHRpY3M%3D
+  * Elektrárna typu RBMK v Litvě
+    * https://www.youtube.com/watch?v=h1PlKQI_XyU
+    * https://www.youtube.com/watch?v=M5j2oZEN61s
+  * Kotel se Stirlingem
+    * https://oze.tzb-info.cz/23699-zima-v-ceskem-sobestacnem-dome-jak-obstala-mistni-fotovoltaika-baterie-a-stirling
+    * https://www.oekofen.com/en-gb/pellematic-condens_e/
+    * https://oenergetice.cz/akumulace-energie/jake-technologie-zajistuji-elektrinu-teplo-ceskem-sobestacnem-dome-2-2

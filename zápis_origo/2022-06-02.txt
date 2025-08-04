@@ -1,0 +1,79 @@
+====== ⚡ Virtuální Bastlírna XV. (2.6.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:15 |
+^ Celkem se vystřídalo | 31 účastníků |
+^ Ve špičce    | 26 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * součástky pro vesmír
+    * https://indico.esa.int/event/388/
+      * https://indico.esa.int/event/388/timetable/
+  * Airtagy a jejich hacking
+    * Jak fungují, princip zabezpečení, status byte
+    * Snímání dvířek na poštovní schránce fejkovým AirTagem
+    * https://hackaday.com/2022/05/30/check-your-mailbox-using-the-airtag-infrastructure/
+    * https://github.com/dakhnod/FakeTag
+    * https://github.com/seemoo-lab/openhaystack
+  * Apple a trollení s opravami
+    * https://www.theverge.com/2022/5/21/23079058/apple-self-service-iphone-repair-kit-hands-on
+  * Voyager a neplatná data
+    * ZombieSat (Galaxy 15)
+  * Alternativy k AirTagům, možnosti zneužití
+  * Nové procesory EFM32PG23
+  * Procesory ESP32–s3, C5, C6 a další
+    * https://chiptron.cz/news.php?readmore=1365
+  * Stavebnice levného EMC generátoru
+    * https://store.newae.com/chipshouter-picoemp
+  * Dekódování dat z digitálního vysílače s neznámým formátem pomocí RTL-SDR
+    * https://github.com/jopohl/urh
+    * Intro videa od autora: https://www.youtube.com/channel/UCqIWuCQfX00XHFiwTENI79A
+    * http://triq.org/
+    * Jenda Hrach - DSP kuchařka: počítáme spektrogram
+  * Bastlení na RF, zesilovače, retroreflektory, špionáž
+    * https://en.wikipedia.org/wiki/The_Thing_(listening_device)
+    * https://hackaday.com/2015/12/08/theremins-bug/
+    * https://www.cryptomuseum.com/covert/bugs/thing/index.htm
+    * https://en.wikipedia.org/wiki/NSA_ANT_catalog
+    * https://unnamedre.com/episode/57
+  * RF konektory
+    * typy, různé ohejbáky - reverzní SMA, reverzní šrouby
+  * RF magie - útlumáky, zesilovače, směrové odbočnice, odbočnice, odrazy
+  * Výpadek internetu v Praze, popis katastrofických událostí
+  * Jenda ukazuje výsledky RF magie - demodulovaná data z FSK záznamu od bkralika
+    * pysdr.org
+    * diskuze o vlastnostech FFT - oknování, vlastnosti, princip neurčitosti, doplňování nulami a další metody
+  * SX1282 - pasivní ranging
+  * Plovoucí kódy, zabezpečení vysílání
+  * TTN, IoT zařízení ve vlastní režii, vlastní gatewaye
+    * https://www.thethingsindustries.com/docs/gateways/thethingsindoorgateway/
+  * DCF77 na Arduinu
+    * https://www.george-smart.co.uk/scrapbook/dcf77/
+    * https://www.metroweb.cz/metro/TECH/energetika/energetika.htm
+    * https://old-archiv.avc-cvut.cz/akce/ondrej-caletka-oskar-special-technika-prazskych-tramvaji-1
+    * https://old-archiv.avc-cvut.cz/archiv/informatika/sut/2008
+  * Aktuální výpadek internetu a el. sítě
+    * Jak funguje metro při výpadku, jak se dostat z vozu bez elektriky
+    * Drobné konspirační teorie
+  * Amatérský satelit vypuštěný z ČR - OK0PLA
+    * AX.25 modem na ~433 MHz + 133 MHz
+    * SatNogs
+  * Satelit Planetum-1
+  * Heliosynchronní orbita - nad daným místem každý den ve stejný čas, používalo se pro špionáž
+    * jak stabilizovat satelit - setrvačníky, magnety, další obskurní metody
+    * magnet stabilizuje obvykle jen 2 osy, pokud není pole magnetu i země dostatečně křivé
+    * setrvačníky dlouhodobě musí dosáhnout vysoké rychlosti, pokud není další metoda stabilizace
+    * VZLUSAT-2 - dashboard
+      * https://dashboard.satnogs.org/d/L8ywE9oMz/vzlusat-2?orgId=1
+  * Padá ISS, co s tím?
+  * Pád Aruby - prvky + support web :D
+  * Diskuze o útoku na větrníky v Německu přes satelitní OTA
+  * Počítače, max. RAMky, podpora ECC, buffered/unbuffered, Supermicro ATX desky
+    * PiKVM, TinyPilot
+    * https://pikvm.org/
+    * https://tinypilotkvm.com/
+  * Akutní nedostatek Raspberry Pi
+  * Počítač do auta, jaký zdroj
+    * https://www.mini-box.com/s.nl/sc.8/category.13/.f

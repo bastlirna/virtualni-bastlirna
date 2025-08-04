@@ -1,0 +1,75 @@
+====== ⚡ Virtuální Bastlírna XXXIX. (4.6.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:00 |
+^ Celkem se vystřídalo | 40 účastníků |
+^ Ve špičce | 30 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Anténky ke spektráku
+    * https://www.aliexpress.com/item/1005006518926749.html
+  * Nová Tasmota 14.1.0 - opravuje rozbitý Bluetooth beacon příjem
+  * Nový MicroPython
+  * LNA ke spektráku
+    * https://www.aliexpress.com/item/1005006054158733.html
+  * Termotiskárna
+    * https://www.aliexpress.com/item/1005006436996817.html
+    * Dají se koupit i samolepicí, barevné a samolepicí průsvitné
+    * https://www.lcsc.com/datasheet/lcsc_datasheet_2401191746_JieLi-Tech-AC6956C4_C5339900.pdf
+  * Diskuze o magneťácích, opravách
+    * https://www.oldradio.cz/sp210t.htm
+  * Jak se skládají radioamatérské zkoušky
+    * https://www.ok1zhv.eu/
+    * diskuze o digitálních vs. analogových módech
+    * Lamentace nad metodami učení Morseovky
+      * https://lcwo.net/
+  * LISA, LIGO
+  * Veletrh vědy
+    * Tokamaky - co se v posední době vyřazovalo a co se chystá
+  * Optická vlákna a WDM
+    * Fázová modulace?
+  * JLC PCB už umí barevné plošňáky i v anglické verzi objednávky, dělají docela levně a rychle flexy s oboustrannou lepicí páskou (s vyřezaným motivem)
+  * ESP32 + LAN8720 - dotazy, jak rozchodit (layout)
+    * https://github.com/ldijkman/WT32-ETH01-LAN-8720-RJ45-/blob/main/WT32_ETH01_V2.schematic.pdf
+  * Meshtastic, stav v ČR
+    * https://czmesh.cz/
+    * Skupina na Telegramu, bastlíři na Twitteru
+    * Adam ukazuje svoje logovaná data z české sítě
+    * https://www.semtech.com/design-support/lora-calculator
+  * SW implementace LoRa vysílače
+    * https://theamphour.com/667-long-distance-with-cnlohr-a/
+    * https://github.com/cnlohr/lolra
+    * Dá se dobře udělat i pomocí PIO v RP2040
+  * Chystají se CH32V006 a 007, měly by v sobě mít 60 MHz operáky (003 je měla velmi pomalé)
+  * Cykloradar od Garminu - pohled dovnitř
+    * https://siliconradar.com/products/single-product/24-ghz-transceiver-trx_024_006-007/
+    * čínské radary od Hilink (HLK2410, HLK-LD2450 atd.)
+  * Elektroauta, resolvery, jak oměřit motor
+    * https://www.youtube.com/watch?v=irY3SKJqMpg&t=4895s
+  * Euro 7
+    * Logování, odesílání dat “autoritám”, obrana před reflashováním jednotek, sledování vnitřních sběrnic, nemožnost vyměnit baterii v elektromobilu
+    * Po x startech nebo x * 1000 km po motorové chybě přestane auto jet a bude vyžadovat servis
+    * European data act, cyber resilience act
+    * Jednotky v autech budou muset mezi sebou mít kryptografii
+    * Elektromobily budou muset na emisní testy - testy kapacity baterie
+    * Testy jako otěr pneumatik, hluk pneumatik, uhlovodíky uvolňující se z plastů, 
+    * Brzdové kotouče budou z tvrdokovu
+  * CAN XL
+    * Příběh, jak se Socket CAN dostal da mainline Linuxu
+    * Nekompatibilní s FlexRay
+    * Fotky a povídání z přednášek o CAN XL, PlugFestu (testy sběrnice, spousta firem - bude veřejný sborník)
+  * Moderní motory - PMSM a další, popisy rozdílů
+  * Open-source stroj na elektroerozivní obrábění
+    * https://rackrobo.io/
+    * https://www.youtube.com/watch?v=vEFb7B1Xozg
+  * Business card contest od Hackaday
+    * https://hackaday.io/contest/195949-2024-business-card-contest
+  * Wellerovská stanice postavená v dílně
+  * Soláry do interiéru, energy harvesting, pieza
+  * Parazitní napájení smyčkou kolem vysokonapěťového vedení (jádro trafa se uzavře kolem drátu, může napájet dron)
+    * https://findresearcher.sdu.dk/ws/portalfiles/portal/256010085/ICRA2024_Autonomous_Overhead_Powerline_Recharging_for_Uninterrupted_Drone_Operations.pdf
+  * Starlink
+    * optická pojítka
+    * https://arxiv.org/pdf/2103.00056
+    * stará řada se bude stahovat kvůli neurčenému bugu

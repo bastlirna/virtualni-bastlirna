@@ -1,0 +1,85 @@
+====== ⚡ Virtuální Bastlírna XIV. (2.5.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 30 účastníků |
+^ Ve špičce    | 26 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Diskuze o mikrofonech a AV technice
+  * Testování moderních ramek
+    * https://www.memorytesters.com/products.htm
+    * https://www.memtest.org/
+    * https://www.edn.com/tester-checks-high-speed-ddr4-dimms/
+    * Jak funguje DDR4 - signalizace, hodiny
+    * Diskuze nad prodejem, reklamacemi atd.
+  * Jak detekovat napětí za Tasmota spínačem - nápady jako optočlen, relé, zkoušečka + fotorezistor
+    * Popisy možných zapojení
+    * Normy, zákonné požadavky
+    * Praktická ukázka ze života, jak shořel rozvaděč - zkrat na vedení, manuální vypnutí odpojovače, zapálení oblouku na 700 V, zapálení rozvaděče a menší požár
+    * Postup návrhu - třída zařízení, prostředky ochrany, bariéry, unikající proudy
+  * Nebezpečný návod na opravu LED žárovek
+    * https://www.aazdravi.cz/vysvicenou-led-zarovku-nikdy-nevyhazujte-behem-chvilky-bude-jako-nova/
+    * Návod na stavbu vypalovače obrazců do dřeva 
+      * https://www.youtube.com/watch?v=FBeSKL9zVro
+    * Původní nebezpečné video z Primy vs. parodie od Ampéráka
+  * Svařování MOTem
+    * Problémy s přesycováním, omezením kvůli ztrátám, popisy možných úprav
+    * Svařování lithiovými akumulátory, svařovací desky z číny s vysokoproudými mosfety
+    * Problémy sehnat niklový plech - dá se u nožířů
+  * Zrušení stavby gigafactory na baterky od Volkswagenu v Česku
+    * Diskuze o požárech akumulátorů plynových autobusů
+    * Svařování a nebezpečí svařování COčkem
+      * Likvidace zahořené lahve acetylenu, metoda prostřelením, známé nehody
+  * USCCB - bezpečnostní úřad pro chemii v USA
+    * Videa o zajímavých nebezpečných situacích a nehodách, nehody s plynem
+    * https://www.youtube.com/user/USCSB/videos?view=0&sort=dd&shelf_id=0
+  * Explodující tantaly, pálení LEDek, peroxoaceton
+    * Pokusy s výbušninami
+    * Proč nedávat na kilo výbušniny kanystr benzínu a oleje, příklad ze života
+    * Jododusík, mazání pod prkénko
+    * Project-X vs. Detonator (pxd.zde.cz) - o výbušninách
+    * canov.jergym.cz
+    * Technické knihovny a návody na vše v nich včetně jinak hlídaných věcí
+  * Gama zářiče
+    * Vacuum hackers - o radiaci, scintilátorech
+    * Radioactive scout boy
+    * https://en.wikipedia.org/wiki/David_Hahn
+    * Radium girls
+    * Měření radiace, klasické měřiče “žehličky”, přepočet letů letadlem na snědené banány
+    * Sekundární záření, Geigerovy čítače, kalibrace
+    * Spektrometr na gamma záření
+      * https://scan-electronics.com/en/dosimeters/radiacode-101
+    * https://www.abc.net.au/news/redirects/backstory/television/2018-09-25/how-abc-filmed-inside-super-kamiokande-observatory/10282850
+    * Dávkové dozimetry pro pracovníky, principy funkce
+  * Patice na BGA
+    * https://www.cnx-software.com/2022/04/21/bga-socket-allows-ram-upgrades-on-sbcs/
+    * dohady o životnosti a metodách použití
+  * Osobní dosimetry
+    * Filmové vs elektronické
+  * Televize, opravy televizí, diskuze o reklamách a obsahu
+  * Robot na opravy trakčního vedení v Japonsku
+    * https://interestingengineering.com/japanese-railway-company-giant-robot
+  * Jaké má uprdkávač zkušenosti s novým VNA a spektrákem (viz minulá VB)
+    * https://www.rudiswiki.de/wiki9/SpectrumAnalyzer_LTDZ
+    * https://www.aliexpress.com/item/1005003551867442.html?spm=a2g0o.order_list.0.0.21ef1802KzqCPK 
+  * Maker faire v Plzni - 14.5.
+  * Radioburza Jarov - už nuda - 21.5.
+  * Burza u Elektry
+  * MSI001 - SDR s 12b příjmem, zpracování
+  * HackRF One
+  * Příští termín VB 2.6.2022
+  * Řízené ničení pamětí
+  * Ničení výbojem - https://usbkill.com/ a NFCKill
+  * PicoEMP, ChipWhisperer
+    * https://github.com/newaetech/chipshouter-picoemp
+    * hackování hardware
+      * https://nostarch.com/hardwarehacking
+  *Dobrá literatura o technice 
+    * Art of Electronics
+      * The X-Chapters
+    * Art of Computer Programming (kvůli tomu vznikl TeX)
+    * Hacker’s Delight
+  * Vysílač SAQ a Rugby

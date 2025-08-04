@@ -1,0 +1,44 @@
+====== ⚡ Virtuální Bastlírna I. (25.3.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:30 |
+^ Celkem se vystřídalo | 51 účastníků |
+^ Ve špičce    | 30 účastníků online |
+
+===== Témata (a odkazy co jste nestihli opsat) =====
+
+{{ :projekty:virtualnibastlirna:2021-03-25-bkralik.jpg?400 |}}
+
+  * Zkušenosti s ručním osciloskopem Hantek 2D72 ([[https://twitter.com/bkralik|bkralik]])
+    * http://hantek.com/products/detail/13174
+    * https://twitter.com/bastlirna/status/1375161754708287493/photo/1
+  * USB osciloskopy a jiná vzorkovací zařízení
+    * https://www.redpitaya.com/
+    * https://embedded.fel.cvut.cz/platformy/leo
+  * Osciloskop s ekvivalentním vzorkování
+    * https://hackaday.io/project/169386-standalone-digital-tdr-tdr-g2
+    * https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_582.pdf
+    * https://datasheets.maximintegrated.com/en/ds/MAX3798.pdf
+  * Hádaknka na měděnou pěnu ([[https://twitter.com/bkralik|bkralik]])
+    * TODO odkaz, foto
+    * K čemu je dobrá měděná pěna - výroba tokamaku v AVČR a jaké to má úskalí
+  * Měření času a jak synchronizovat čas bez přístupu na internet 
+    * DCF, GPS, 50Hz ze sítě a jeho stabilita, signál z BTS, DVBT, DAB, …
+    * https://radioaficion.com/news/bg7tbl-gpsdo/
+    * https://www.entsoe.eu/news/2018/03/06/press-release-continuing-frequency-deviation-in-the-continental-european-power-system-originating-in-serbia-kosovo-political-solution-urgently-needed-in-addition-to-technical/
+    * http://rayer.g6.cz/elektro/mainscnt.htm
+    * https://www.theverge.com/2018/3/8/17095440/europe-clocks-running-slow-electricity-frequency-kosovo-serbia
+    * Synchronizace času RTL na signálu z BTS (https://www.youtube.com/watch?v=QD0uz-fPz8Y)
+  * Krystal vs oscilátor pro MCU
+      * Teplotní kompenzace krystalů
+      * MSMS oscilátory a jak odolávají heliu (https://www.youtube.com/watch?v=vvzWaVvB908)
+  * Optický gyroskop
+    * Výlet do tajů relativistické fyziky a jak se světlo šíří v optickém vlákně a jak pomocí interferencí změřit natočení
+    * Ukázka optického gyroskopu z letadla    
+    * Diskuse nad gyrem, umělým horizontem v letadle (jaké přístroje jsou v letadlech)
+    * Zaměření na základě signálu vysílačky
+    * Frekvenční pásma v letectví a jejich rušení
+  * Termostat pro podlahové topení, ale aby měl nějakou komunikaci na změnu nastavení teploty
+    * Odbočka k komunikaci uLan, CAN, CAN-FD, CAN-LX (nový standart který právě vzniká) a CAN vs FlexRay a ethernet v automotive (BroadR-Reach)		
+  * Voyager2 a jak dlouho funguje, zpomaluje (kvůli vyzařování tepla, oslí můstek od teplotně kompenzovaných krystalů)

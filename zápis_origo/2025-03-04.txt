@@ -1,0 +1,117 @@
+====== ⚡ Virtuální Bastlírna XLVIII. (4.3.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 52 účastníků |
+^ Ve špičce | 46 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Kmitoměr z popelnice a buzení přes audiozesilovač a trafo
+  * Vyšel KiCAD 9.0
+    * https://www.kicad.org/blog/2025/02/Version-9.0.0-Released/
+    * https://forum.kicad.info/t/post-v8-new-features-and-development-news/48614
+    * Knihovny se dají stahovat třeba přes Samacsys (na Mouseru)
+    * Bude konference
+      * https://www.kicad.org/blog/2025/02/KiCad-Conference-North-America-2025-Announcement/
+  * Doporučení na spolehlivé senzory teploty / vllhkosti / zaplavení
+    * https://obchod.hw.cz/eshop/produkty/category/monitorovaci-jednotky-ustredny-hwgroup-gsm-modemy-lan-modemy
+    * https://www.jabloshop.cz/ld-12-zaplavovy-detektor
+    * https://www.hw-group.com/cs/zarizeni/poseidon2-3268
+    * https://www.onlinetechnology.cz/
+  * Meshtastic 2.6
+    * Nové dotykové GUI, má i mapy
+    * https://meshtastic.org/blog/meshtastic-2-6-preview/
+    * https://abbiegonzalez.com/meshtastic-mui-for-tdeck-documentation-2-6
+    * https://github.com/meshtastic/device-ui/tree/master/maps
+    * https://gist.github.com/droberin/b333a216d860361e329e74f59f4af4ba#file-readme-md
+  * Minipočítače na připojování na SSH
+    * Hledání náhrady za Cosmo Communicator / Gemini Communicator
+    * GPD Pocket 3, popř. 4? (4 je hodně drahá, ale zase výkonná)
+  * Kindle
+    * Už je zase jde hacknout
+      * https://www.zive.cz/clanky/kindle-jailbreak-2025/sc-3-a-232458/default.aspx
+    * Nově asi nepůjde stahovat knížky přes USB
+      * https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+  * Návrh RF prvků pomocí AI
+    * https://www.nature.com/articles/s41467-024-54178-1
+  * Dotaz na něco lepšího / jednoduššího než JLCPCB
+    * Tip na MakerPCB (ale nevyzkoušený)
+    * Mají levně / zdarma via in pad, jde i vyplnit mědí pro tepelnou vodivost
+  * Uprdkávačova sonda (AC, 10:1 do asi 2 GHz)
+    * https://github.com/MR-DOS/LowCapacitanceProbe
+    * KiCanvas pro otevírání KiCADích projektů v prohlížeči už taky pěkně funguje
+      * https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FMR-DOS%2FLowCapacitanceProbe%2Ftree%2Fmain
+    * https://jmw.name/projects/active-probe/
+  * Přistála sonda Blue Ghost na měsíci
+    * https://www.youtube.com/watch?v=NpHhEybJdxg&t=1s
+    * https://www.youtube.com/live/3SSjzdj-ONw
+    * https://fireflyspace.com/missions/blue-ghost-mission-1/
+  * Diskuze o sovětských raketách
+    * Jedna z jejich supermasivních raket způsobila jeden z největších nejaderných výbuchů historie
+      * https://en.wikipedia.org/wiki/Largest_artificial_non-nuclear_explosions
+    * Jeden z Buranů ještě existuje
+      * https://speyer.technik-museum.de/en/spaceshuttle-buran
+    * https://retronation.cz/wolfcast-114-pocitace-a-vesmir-3/ 
+  * Srážka a požár nákladního vlaku na Moravě
+    * Vezli benzen / benzol, informace se rozcházejí
+    * Bylo vidět i na radarech
+  * Satelitní internet
+    * Retro Nation ve Wolfcastu měli pásmo o satelitní komunikaci
+      * https://retronation.cz/wolfcast-114-pocitace-a-vesmir-3/
+  * Bude Embedded World, Installfest (15.-16.3.), Arduino Day (22.3.), Hackaday Berlin (15.-16.3.), Ampér (18.-20.3.)
+    * https://installfest.cz/if25/
+    * https://pretalx.installfest.cz/installfest-2025/p/voting/signup/
+    * https://days.arduino.cc/events
+    * https://robodoupe.cz/2025/arduino-day-2025/
+  * Linux v PDF
+    * https://www.youtube.com/watch?v=9hMh98FHRp4
+  * Doom na převodníku z Lightningu na HDMI
+    * https://www.root.cz/zpravicky/vyvojar-spustil-dooma-na-adapteru-z-lightning-na-hdmi/
+  * Šílený jednostranný plošňák plný 0R odporů
+    * https://www.youtube.com/watch?v=LAbWsqS51Tk
+  * Průšův cloudový slicer, běží v prohlížeči / mobilní aplikaci
+    * https://vtm.zive.cz/clanky/ceske-3d-tiskarny-od-prusi-uz-kompletne-ovladnete-z-mobilu-a-webu-firma-spousti-cloudovy-slicer-easyprint/sc-870-a-233241/default.aspx
+    * Diskuze o slicerech, zejména Průša Sliceru a Orca Studiu
+    * 3D tisk objektů s předprogramovanou paměťovou vrstvou
+      * https://www.youtube.com/watch?v=5rnD4DyFmNs&ab_channel=CNCKitchen
+      * https://static1.squarespace.com/static/5fc1dbf8116eb00e3c52b568/t/5fc3107c5147b14804980ca7/1606619361538/paper260.pdf
+  * Analog Devices dělá řadu USB izolátorů s plnou rychlostí (480 Mb/s)
+    * https://www.analog.com/en/products/adum3165.html
+  * USB 3.0 optický kabel
+    * https://www.mouser.sk/new/kaga-electronics/everpro-technologies-usb-cable/
+    * https://www.advancedphotonics.co.jp/en/usb3-isolator.html
+  * Proudová sonda do 5 A a 10 MHz
+    * https://github.com/westonb/little-bee-B1
+    * Problémy s měničem, šumem
+  * Jak řešit odpojovač od sítě u radaru
+    * Odpojovače / bleskojistky
+  * Jde dělat plošňáky, na kterých jsou vrstvy FR-4 a vrstvy RF materiálů - nižší křehkost i cena
+  * Humanoidní hydrauličtí roboti Protoclone
+    * https://www.osel.cz/13921-protoclone-je-velmi-zneklidnujici-humanoidni-robot-se-svaly-a-kostmi.html?
+  * Nekroboti z pavouků
+    * https://www.e15.cz/byznys/technologie-a-media/video-mrtvi-pavouci-ozivaji-pomoci-vedy-nekroboti-pomohou-s-mikroelektronikou-1391943
+  * Řešení degradujícího relé rozepínaného pod zátěží
+    * Hermetické / vakuované?
+  * Reverzování FW v elektroměru v Ghidře (navazuje na rádiové ovládání elektroměrů s odpojovačem)
+    * V nezamčených starých verzích 16b Mitsubishi, není o něm moc informací
+    * Rady + dekompilace od ChatGPT
+    * V Ghidře jde psát pluginy v Pythonu
+      * https://www.youtube.com/watch?v=jiXPzmb0o6M
+      * https://wiki.recessim.com/view/Advanced_Metering_Infrastructure
+  * Jak odposlouchávat sériové porty na Windows
+    * SysInternals
+    * Serial Splitter (placený)
+    * Windows ve virtuálu, napíchnout pomocí linuxového systému
+    * https://github.com/ataradov/usb-sniffer
+    * https://github.com/openvizslatng/ov_ftdi
+  * Jak se připojit na domovní telefon pro udělání víc smart řešení
+  * Tip - Zoom jde pustit i v prohlížeči, nemusí se nic stahovat. Jen je potřeba odmítnout otevření linku a poslední odkaz na stránce vede na webového klienta.
+  * Oddělení audia jde třeba přes optočleny
+    * https://belza.cz/audio/optozz.htm
+    * Strana 10, vpravo nahoře
+      * https://gitlab.com/pikron/projects/sumintadc/deliverables/-/blob/master/FP/SumIntADC-PIKRON-FP.pdf
+  * Nokia 3310 s USB-C
+    * https://hackaday.com/2025/02/13/the-nokia-3310-finally-gets-a-usb-c-upgrade/
+  * Dotazy na Google summer of code
+  * RISC-V summit Europe (12.-15.5.)

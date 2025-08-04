@@ -1,0 +1,97 @@
+====== ⚡ Virtuální Bastlírna XXX. (6.9.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:12 |
+^ Celkem se vystřídalo | 57 účastníků |
+^ Ve špičce    | 45 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Foťák/kamera se SPAD senzorem
+    * https://global.canon/en/news/2023/20230403.html
+  * Poslední poznatky o LK-99
+    * Vypadá to pouze na dobré diamagnetikum
+    * Diskuze, jestli je možné velice tenkým drátečkem dotáhnout elektriku z elektrárny
+    * Jak se prvotně magnetuje magnetická rezonance - buď externí cívkou, která magnetuje hlavní chlazenou nebo lokálním ohříváčkem
+  * Zkušenosti s knížkou o měření slabých signálů
+    * Bohužel obsahuje nepřesná zjednodušení, která nejsou stejně moc pochopitelná, chybí praktické příklady
+  * Budeme na LinuxDays!
+    * Bude tam swap elektroniky, my taky doneseme, ale my jen vydáváme (nic nám nenoste, přetékáme ve švech)
+  * Nové škopky od Rigolu
+    * řady DHO800 a 900 - 12b osciloskopy, až 250 MHz, ve vyšší řadě i logický analyzátor a generátor, cena 11000 / 20000 Kč
+    * napájení z USB-C (35W), VESA mount, malé rozměry, lehký
+  * Dotaz na open-source osciloskopy
+    * Nějaký 8b 100 MSa/s zmíněn v minulých VB, na RP2040
+    * https://hackaday.io/project/180090-thunderscope
+      * https://github.com/EEVengers/ThunderScope
+      * Uvnitř je https://www.analog.com/media/en/technical-documentation/data-sheets/hmcad1511.pdf
+    * Red Pitaya - není DC! až od 300 kHz
+    * https://github.com/pavel-demin/red-pitaya-notes
+  * https://hackaday.com/2023/06/02/sma-connector-footprint-design-for-open-source-rf-projects/
+  * Průšament se samozhášivostí UL94 V0
+    * https://blog.prusa3d.com/cs/novy-prusament-ma-ul-certifikaci-vydavame-nove-samozhasive-petg_80711/
+  * “Útok” na polské vlaky
+    * otevřený standard, stačí zavysílat 3 tóny na 150 MHz a zastaví se všechny vlaky v okolí
+    * https://www.wired.com/story/poland-train-radio-stop-attack/
+    * aktuálně se v USA snaží označit Flipper zero za supernebezpečný nástroj kyberhackerů (a jiní lidé argumentují tím, že si můžete dojít do obchodu koupit Glock a nikoho to nezajímá)
+    * https://youtu.be/1OXGrRe5Sak?t=367
+    * radiolog.bkralik.cz
+      * mapa signálu na železnici
+  * Adam o frameworku React
+    * Jednoduchý vývoj, dá se lepit z hotových prvků, dá se velice rychle postavit funkční stránka
+    * Mantine UI, Tabler
+    * Dá se i přes React-Bootstrap v JS (starší řešení)
+    * (alternativy Angular, View, Svelte atd.)
+  * GUI v Pythonu (dotaz)
+    * PyQt
+    * Glade
+      * https://itstorage.net/index.php/lprogramm/lpgopg3g3guip/519-06pygtkp6
+      * https://buildmedia.readthedocs.org/media/pdf/python-gtk-3-tutorial/latest/python-gtk-3-tutorial.pdf
+    * Qt běží pod WebAssembly (omezení modálních formulářů)
+    * https://github.com/xtompok/uvod-do-prg_22
+    * https://github.com/xtompok/PySide6_QML_tutorial
+    * Bottle (zabugovaný), Flask+Jinja2 (komplikovanější)
+    * Avalonia (.NET)
+    * FastAPI
+  * Bezdrátové kontaktní pole!
+    * https://blog.arduino.cc/2023/08/03/jumperless-breadboard-makes-prototyping-a-breeze/
+    * https://github.com/Architeuthis-Flux/Jumperless
+  * ENIG
+    * https://www.pcbtrain.co.uk/assets/images/Achieving-A-Successful-ENIG-Finished-PCB-Under-Revision-A-Of-IPC-4552-SMTAI-2017-Paper.pdf
+    * https://www.uyemura.com/pdfs/flexENIG.pdf
+    * https://docplayer.net/52244057-Specification-for-electroless-nickel-immersion-gold-enig-plating-for-printed-circuit-boards.html
+    * https://pcb.iconnect007.com/index.php/article/129297/the-plating-forum-the-ipc-surface-finish-specifications/129300/?skin=pcb
+    * https://www.nmfrc.org/pdf/other/0300.pdf.pdf
+    * Nově definovány kromě minimálních tlouštěk i maximální, modifikované metody měření - minimum nesmí v 3sigma se dostat mimo daný rozsah
+    * Diskuze o galvanizaci, problém s analýzou v elektronových mikroskopech, problematická galvanizace inconelu
+  * Postup návrhu nadzvukového katapultu
+    * https://www.youtube.com/watch?v=gdXOS-B0Bus
+    * Odstředivý vrhač sond (aktuální model vrhá malé věci a ne na oběžnou sondu), na kanálu Real engineering rozebrán princip
+    * Sovětské sondy měly problém s upadávajícími hliníkovými nožičkami (protože zrovna neměli zlato)
+    * Hororové příběhy o zlacení (letadla, medicínská zařízení, 486 ramky)
+  * DIY SIMM RAMky do starého PC
+    * http://rayer.g6.cz/hardware/simm72p.htm
+    * Diskuze o rychlosti starých počítačů a růstu nároků
+    * Macintosh LC má možnost připojit druhý monitor a dají se přetahovat okýnka
+    * https://twitter.com/jmmv/status/1671670996921896960
+    * https://en.wikipedia.org/wiki/Xinerama
+  * Nová ROM pro Ondru s Basicem
+    * https://www.youtube.com/watch?v=DKXY0DGUy0w
+    * Diskuze o elektronice v ČSSR (a odpadu)
+    * http://bruxy.regnet.cz/web/8bit/CZ/rozhovor-s-ing.-eduardem-smutnym/
+    * https://russwill.com/library/computers/computer_graphics/logosys/logo_sys_animation.htm
+  * https://en.wikipedia.org/wiki/German_tank_problem
+  * Rozpouštění kalafuny
+    * perchloretylen - rozpouštědlo, nenaleptává plasty, čištění oblečení
+      * vapor degreasing - rozpouštění v parách, systém podobný kondenzační komoře, mastnota se kumuluje v odpadní lázni
+  * Doporučení konektoru na motory - XT60/XT90/XT150 od Amass
+  * CNC kitchen začal prodávat nástroj na instalaci závitových vložek do termoplastů (Weller, Hakko, TS100/Pinecil)
+    * https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free
+  * Praktická demonstrace Finaglova zákona na pokusu o samodomo tepelné čerpadlo
+  * P. Píša a vektorové řízení motorů
+    * resolver s přesností až na 10^-9 radiánu
+    * https://gitlab.fel.cvut.cz/otrees/org/-/wikis/knowbase
+    * https://www.youtube.com/watch?v=sNtlEysC0yA
+  * Příští VB 25.10.
+  * Další VB předpokládáme 15.11.

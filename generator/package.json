@@ -1,0 +1,16 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "main": "generate.js",
+  "type": "module",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "marked": "^9.0.0"
+  }
+}
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "marked": "^16.1.1"
+  }
+}

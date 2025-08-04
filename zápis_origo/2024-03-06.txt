@@ -1,0 +1,98 @@
+====== ⚡ Virtuální Bastlírna XXXVI. (6.3.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 1:16 (pokračovalo se neoficiálně dál bez Bastlírny, která se odpojila v 0:20) |
+^ Celkem se vystřídalo | 62 účastníků |
+^ Ve špičce | 49 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Bude Installfest (16.-17.3), Arduino Day (21.-23.3.)
+  * Hackaday Europe
+    * Bude nová badge Vectorscope
+    * https://hackaday.com/2023/11/15/a-look-at-all-the-badge-hacks-of-supercon-2023/
+  * Embedded World - 9.-11.4., běžní návštěvníci drahé vstupné
+  * LinuxTage Chemnitz - převážně v němčině
+  * HDMI 2.1 vs. Linux - aktuálně nejde kvůli licenci na technologii
+    * K Flipper Zero vznikl Video Game Module, má na sobě HDMI, licenčním poplatkům se vyhýbají názvem “standard video output”, obsahuje RP2040
+    * Video Out port: DVI-D signal in 640х480 px, 60 Hz. The port supports a well-known video standard that we can't name due to copyright limitations 🤫 The first letter is H, and the last one is I.
+    * https://www.theregister.com/2024/02/13/flipper_zero_vgm/
+    * Poznámka, že mohli použít “Handy-Dandy Movie Input”
+  * SolveSpace vs. FreeCAD
+    * FreeCAD má i lepší GUI pod názvem ondsel
+    * https://ondsel.com/
+    * https://youtu.be/J--QVhGheP4?si=YjiJmTIOZ2Rx-6ax
+    * Dohady o parametrickém modelování
+  * Nový KiCAD 8
+    * Nově je separátně grid pro dráty / texty / součástky. 
+    * Součástky se rotují podle středu, ne podle jejich originu.
+    * Dotaz na databázové knihovny
+  * Jenda/jethro - ukázka ozónové meteosondy
+    * Legrační konstrukce, spousta polystyrenu, 2x 9V
+    * Peristaltická pumpa s motorkem, vyhřívání
+    * Autor Vaisala - Finové
+    * https://docs.vaisala.com/v/u/B211388EN-D/en-US
+  * Rant na FreeCAD
+  * Výlet k Průšovi
+    * Poznatky k osazovně, fiduším
+    * Testuje se všechno přes konektory - i na těch bývají vady
+    * Protipožární hasicí koule od Traivy
+    * Mosaic Palette 3 Pro - něco jako Multimaterial, vypadá pěkně, ale je to drahé
+      * Navařuje filamenty za sebe (průša i bambu klasicky vrací filamenty, ale Bambu umí materiál odříznout)
+  * Filosofické zamyšlení nad IoT, AI, robotikou
+  * 6 GHz osciloskop, až 8 kanálů
+    * https://www.sjl-instruments.com/
+    * Snaha autora dostat levnější profi techniku k hobbysitům
+    * Se slevou pro hobbyisty cena pod $1500
+  * Altera je už zase víceméně samostatná firma (byla pod Intelem)
+  * Nové řady Spartanů - nové, levné, schopnější, rychlejší
+  * Efektní blikátko s 8x8 samoblikacích LED.
+    * https://twitter.com/bobricius/status/175966237436409858
+  * Altium bylo koupeno Renesasem
+    * https://theamphour.com/659-altium-acquired/
+  * Ukázka nastavení diferenciálních párů v KiCADu pomocí net classes a zabudované kalkulačky
+    * Simulace vedení v TNT /MMTL
+    * https://mmtl.sourceforge.net/
+  * Otázka na USB-C PD a opalování kontaktů, když přes to teče 100W a v budoucnu víc W
+    * Odpojování při vytahování (signálové kontakty jsou mechanicky kratší než napájecí) 
+    * https://www.chargerlab.com/
+  * Přestaly se vyrábět router boardy, hledání náhražky vhodné do venkovního prostředí
+    * HAP AC2
+    * Mikrotik Knot?
+    * Málo RAM/Flash - Mikrotik RB5009 má obojího dost (ale nemá WiFi a je spíš do racku)
+    * https://www.i4wifi.cz/cs/263783-mikrotik-tg-bt5-in
+  * Tagy od Mikrotiku
+    * IoT GW https://mikrotik.com/product/knot co má mmj. BLE
+    * https://help.mikrotik.com/docs/display/UM/MikroTik+Tag+advertisement+formats
+    * Nejde libovolným BLE rádiem, musí se komunikovat pomocí Knotu
+  * Nabíjení baterek v telefonu
+    * Standardy nabíjení, výkony, stárnutí akumulátorů
+  * Tip na aktuální číslo Světu motorů, kde se ozdrojovaně řeší pravdy a mýty kolem elektroaut (spolupracoval na něm i bkralik)
+    * Rozhovory a analýzy i od vědců z oboru klimatologie
+  * Tesla má volně dostupné servisní manuály (oproti klasickým výrobcům aut) s velmi názornými popisy oprav
+  * Protokol V2X umožňující nucené zastavení vozů policejní hlídkou
+    * https://www.idnes.cz/auto/zpravodajstvi/cvut-vut-univerzita-policie-v2x-devcentralizovana-komunikace-zastaveni-ujizdejici-auto-manevr.A240214_213729_automoto_fdv 
+    * Údajně to uměly i nějaké velmi staré obskurní WiFi karty
+    * https://dspace.cvut.cz/bitstream/handle/10467/107229/F8-DP-2023-Hevessy-Karel-thesis.pdf?sequence=-1&isAllowed=y
+  * Povídání o praktickém provozu a fungování tokamaku, vysvětlování odolnosti materiálů vůči záření, radiační ochrana
+    * Slavomír Entler - přednáška o fúzi, je z Akademie věd (aktuální stav ke konci roku 2023)
+    * https://www.youtube.com/watch?v=hcSD32_GMVY
+  * Tritium - jak fungují GTLS
+    * používají se v hodinkách i hledích zbraní (trubičky se dají dělat velmi malé)
+    * Ve starých nátěrech bývalo radium
+    * https://en.wikipedia.org/wiki/Radium_Girls
+  * Solid state vysoušeče
+    * https://www.youtube.com/watch?v=n7EWexck8NE
+  * Diskuze o silikagelu, chloridu vápenatém a sušení
+    * Adsorpce - fyzikální vysvětlení
+  * Význam tavidla v pájení
+  * GME a nostalgie
+    * Pesimat v Čerčanech
+    * https://www.pesimat.cz/pages/uvodni-strana/
+  * Schumannovy rezonance
+    * http://www.vlf.it/
+    * http://www.vlf.it/zevs/zevs.htm
+  * Voyager 1 asi umřel - vysílá blbosti
+  * Komerční přistání na Měsíci, přeprogramovávání za cesty
+    * https://www.youtube.com/watch?v=ZWEwR8fscFY&t=984s
+    * https://edition.cnn.com/us/live-news/nasa-odysseus-moon-landing-intuitive-machines-scn/h_1ebb3d8858586f4d581248683ebed7c8

@@ -1,0 +1,142 @@
+====== ⚡ Virtuální Bastlírna III. (24.5.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:30 |
+^ Celkem se vystřídalo | 29 účastníků |
+^ Ve špičce    | xx účastníků online |
+
+===== Témata (a odkazy co jste nestihli opsat) =====
+
+  * PIC10F322 a problém s automatickým sleepem, který se nejdřív musí zapnout (ale v kapitole o sleepu to nepíšou - facepalm )
+  * FTDI a jelimanovina s prohozenou indikací RX/TX - je z pohledu USB - FT231X, náhodnost chování řídicích pinů
+  * Přivítání a oficiální začátek
+  * bkralik a meteostanice - umírající Raspberry u meteostanice, hledání alternativy - APU2 (potomek ALIX) - x86 PC compatible s mSATA
+  * https://pcengines.ch/apu2.htm
+  * https://wiki.hkfree.org/APU2C2Debian
+    * Jenda: 
+    * já jsem vzal Debian, do /etc/default/grub jsem napsal tohle a od té doby to JustWorks:
+    * GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0,115200 net.ifnames=0 biosdevname=0"
+    * GRUB_TERMINAL="console serial"
+    * GRUB_SERIAL_COMMAND="serial --speed=115200 --unit=0 --word=8 --parity=no --stop=1"
+    * 
+    * Pavel Pisa:
+    * a tahle wifi karta v tom funguje, akorát je potřeba držáček https://www.aliexpress.com/item/4000516606815.html
+    * https://www.thingiverse.com/thing:736462
+    * Mozna jeste k x86, dostal jsem na GSoC metors summit od autoru MinnowBoard, jeste jsem ho nepouzil, ale treba to muze byt pro nekoho zajimavy HW https://www.elinux.org/Minnowboard:MinnowMax
+    * 
+    * JInak k instalaci mohu popovidat jak pripravit image nebo NFS root pres /usr/sbin/debootstrap \
+    * --no-merged-usr \
+    * --keyring=/usr/share/keyrings/debian-archive-keyring.gpg \
+    * --arch=armhf \
+    * --include=debian-keyring,mc,libc6-dev,libstdc++6,busybox,aptitude,etckeeper \
+    * buster /srv/nfs/debian-armhf http://ftp.cz.debian.org/debian/
+    * 
+    * https://rpishop.cz/pasivni/1901-chladici-sada-krabicka-pro-raspberry-pi-4b-cerna.html
+    * Hezky hlazene jsou solid/run moduly https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx6-family/hummingboard/
+    * https://sound-au.com/
+
+  * Audio zesíky 
+    * Fantomové napájení mikrofonu
+    * Nice Boy Voice handle mikrofon
+    * Zdroj info pro audio: https://sound-au.com/
+  * Jak se dělá PCB s GND padem pod QFN aby neprotekl cín na druhou stranu
+    * Přeplátování
+    * Návrh s vodnou tloušťkou prokovů 
+  * Jak udělat v domácích podmínkách stabilní teplotu pro kalibrace teplotních čidel
+    * Aceton - chemická nízká škodlivost člověku, výroba chloroformu z acetonu
+    * https://www.youtube.com/watch?v=j-PrAczOGb0
+    * rozpouštění polykarbonátu
+  * Ethylacetát - rozpouštění PLA
+  * STM32 fake
+    * https://mecrisp-stellaris-folkdoc.sourceforge.io/bluepill-diagnostics-v1.6.html#diags-1-6
+    * https://www.blaatschaap.be/32f103-comparison-part-1/
+    * Co používat místo STM32
+    * EFM32
+      * https://www.silabs.com/mcu/32-bit
+      * https://www.silabs.com/mcu/32-bit/efm32pg22-series-2
+      * https://www.silabs.com/documents/public/data-sheets/efm32pg22-datasheet.pdf
+      * https://www.silabs.com/documents/public/reference-manuals/efm32pg22-rm.pdf
+      * https://forum.digikey.com/t/getting-started-with-simplicity-studio/13443
+      * diskuze, jak naprogramovat, co je uvnit5, vlastnosti, jak sehnat
+  * Gigabitový PHY
+    * diskuze nad dostupností na Mouseru
+  * Buffer pro přenášení dat mezi FPGA a PC
+  * Opět EFM32
+    * diskuze nad M33 versus M4
+    * https://community.arm.com/developer/ip-products/processors/trustzone-for-armv8-m/f/trustzone-armv8-m-forum/8338/what-is-the-top-level-difference-in-features-between-cortex-m33-and-cortex-m4
+  * Z-Wave
+    * Něco jako Zigbee
+    * Na jiných frekvencích
+    * Profily pro jednotlivé typy zařízení
+    * OpenZWave, staré verze standardu, MQTT mosty
+  * Zmínka o ioT skupince na Clubhouse
+    * Nerdovsk8 skupina okolo IoT https://www.iotcz.cz/
+    * Každý den po 22 hodině na Clubhouse...
+  * Zigbee
+    * ZigBee SoC od TI - starý C2531 už není jediná možnost (a už by jí snad ani neměl nikdo používat) - https://twitter.com/horcicaa/status/1386445854366703617
+    * Pisa: Zigbee lze napriklad s 3.2 CC2520 pripojit temer k cemukoliv, pro nizkou spotrebu treba s MSP430F2618 viz DP https://wiki.control.fel.cvut.cz/mediawiki/images/5/58/Dp_2011_rychnovsky_vaclav.pdf
+    * https://github.com/open-zigbee
+  * Rant nad tím, jak mají někteří bastlíři potřebu dělat věci a priori blbě :D
+  * Testovascí jednotky nad Raspberry Pi + Matlab + CAN head
+  * NXP a roční dodací lhůty
+  * RTOS NuttX
+    * https://dspace.cvut.cz/bitstream/handle/10467/68605/F3-DP-2017-Prudek-Martin-Dp_2017_prudek_martin.pdf?sequence=1&isAllowed=y
+  * Náhrada Simulinku
+    * https://summerofcode.withgoogle.com/projects/#4867567685992448
+    * https://www.youtube.com/user/bububucher/videos
+  * Bezpečné procesory Cortex-R
+    * Locsktep procesory on ?NXP? ?NPC?
+    * Jedno jádro + druhé zpožděné, porovnávání výstupů
+    * Restart procesoru na přístupu k registrům s nedefinovaným obsahem a další hustověci
+    * https://gitlab.fel.cvut.cz/otrees/org/-/wikis/home
+  * Organizace - další termín 24.6.
+  * http://mt.ces-csvts.cz/index.php/novinky/10-nov202101
+  * Představení bastlířů z Telegramu - každá středa (Ondřej Pavelka alias Trapnej Fotr alias OnPa)
+  * Lampové rádio Frankonia a nesmrtelnost elektronek
+  * NFC - hádanka + povídání o technologiích
+    * RF532 modul a jeho blbá anténa
+    * NT4H2421Gx
+    * NTAG213
+    * https://cz.mouser.com/ProductDetail/Adafruit/364?qs=GURawfaeGuC3k85muTceBQ%3D%3D
+  * Geocaching: https://cs.wikipedia.org/wiki/Munzee
+  * Open BTS
+  * OsmocomBB - otevřená GSM věc, kterou šlo používat jako BTS nebo na sniffování
+  * https://yatebts.com/
+  * https://www.abclinuxu.cz/clanky/na-gsm-s-osmocombb
+  * Mikrovlnky, elektronky
+    * Technologie, magnetrony, spektrální čistota, útlum stínění, historie mikrovlnek
+    * Pokusy z 50. let s oživováním skoro zmrzlých křečků mikrovlnkou
+    * Černá kronika s chlapíkem, který nechtěl topit a chtěl topit přímo lidi pomocí magnetronů v domě
+    * https://www.youtube.com/watch?v=MWJAG50s7zM
+    * https://www.electronicsweekly.com/news/design/the-future-of-microwave-cooking-is-solid-state-2016-01/
+    * https://www.youtube.com/watch?v=2tdiKTSdE9Y
+    * Při zmínce o RF se objevil Drsník a zmizel OnPa
+    * https://www.youtube.com/watch?v=kyN9BZiKqJQ
+  * Povídání o našem logickém naalyzátoru, který se umí napíchnout na 8080 nebo Z80
+    * Toto jsme pred par lety dali jednomu zajemci do muzea http://pikron.com/files/philips-pm3551a/
+    * http://pikron.com/files/philips-pm3551a/pics001.html
+    * Počítač ?PMDS 85? s Unixem od Philipse (Philips Microprocessor development system), programátor 8080+8085+8051+6800+...
+  * RISC-V
+    * https://beagleboard.org/beaglev
+    * podcast o RISC-V https://soundcloud.com/hwdevpodcast/19-zdenek-prikryl-procesory-risc-v a druhý díl https://soundcloud.com/hwdevpodcast/20-zdenek-prikryl-risc-v-podruhe-navrh-procesoru-a-jeho-casti
+  * FPGA versus procesory
+  * Chyby v ST procesorech
+    * ST x GigaDevice
+    * Jestli než řešit chyby v periferiích a alternate mody u procesoru nemít MCU+FPGA pro periferie versus crossbar switch jako je u procesorů jako ESP32
+    * iCEbreak FPGA
+    * MicroSemi FPGA+ARM
+  * Virtuální měny a těžení
+    * Zynqy z číny
+    * Zákaz těžení v číně a přesun do jiných zemí
+    * https://www.helium.com/  (https://www.youtube.com/watch?v=nerQCrOam5U) 
+    * NFT a blbosti na trhu
+    * NFT versus trenky sportovce
+  * Měření výšky mraků
+  * LiDAR
+    * radary
+    * laser modulovaný versus fázový rozdíl
+    * https://www.laser-measure.co.uk/leica-disto-articles/article_02.html
+    * https://shop.leica-geosystems.com/blog/measuring-techniques-faq
+    * https://www.youtube.com/watch?v=MUdro-6u2Zg
+    * https://www.maximintegrated.com/en/products/comms/optical-communications/MAX3798.html

@@ -1,0 +1,86 @@
+====== ⚡ Virtuální Bastlírna XLVII. (5.2.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 56 účastníků |
+^ Ve špičce | 44 účastníků online (asi) |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Ohlas na FOSDEM
+  * Hodinky Pebble měly být open source OS, chystá se nová generace
+    * Používaly reflektivní memory LCD od Sharpu
+    * https://sharpdevices.com/memory-lcd/
+    * https://en.wikipedia.org/wiki/Pebble_(watch)
+    * https://github.com/google/pebble
+      * Nejde zkompilovat - chybí bloby s ovladači
+    * Jiné hackovatelné hodinky
+      * https://banglejs.com/
+  * Bastlfest
+  * Arduino Day
+    * https://days.arduino.cc/about
+  * Nová verze TinySA Ultra do 7.5 GHz
+    * https://www.tinysa.org/wiki/
+  * Dotaz, kde sehnat tenké sklíčko pro komoru s superkritickým CO2
+    * Sklíčko na smart hodinky?
+    * Metody stříhání skla pod vodou
+  * Seagategate
+    * Na trhu se objevily pevné disky Seagate označené jako nové, které byly několik let používané
+    * https://www.heise.de/news/Festplatten-Betrug-Hinweise-auf-Ursprung-in-China-verdichten-sich-10268897.html
+    * Vypadá to, že disky pochází z Číny a nějak se dostaly k prodejcům, včetně české Alzy
+    * https://www.heise.de/en/news/Hard-disk-fraud-Increasing-evidence-of-origin-in-China-10269059.html
+  * Debata nad marží na grafických kartách, zhoršování výkonu nižších karet z řady
+    * https://www.reddit.com/r/pcmasterrace/comments/1gxvddk/compare_rtx_50_series_leaked_spec_vs_previous/#lightbox
+  * Exploze Starship - údajně se natlakoval prosto okolo motorů a technická sekce explodovala
+    * https://www.reddit.com/r/SpaceXMasterrace/comments/1ej7ulv/official_comparison_image_of_raptor_versions/
+    * Booster přistál bez problémů
+    * https://kosmonautix.cz/
+    * https://www.elonx.cz/
+  * Macgyver měl kdysi podprojekt Rakety
+  * V Keně spadl půltunový kus nějakého vesmírného objektu
+    * https://www.express.co.uk/news/world/1996808/kenya-space-debris-crash-africa
+  * Mikrovlnka Husqvarna z 60. let
+    * https://x.com/pesvklobouku/status/1886733766204235979
+  * Obskurní telefon s vysílačkou, novější mají i termokameru (Ulefone)
+    * https://www.youtube.com/watch?v=t2PoPh2B9qo
+  * diskuze o termokamerách
+    * dá se schovat za deštníkem a zmizet z termokamery
+    * https://www.youtube.com/shorts/gSDpovJmE-o
+    * Nápad maskovat se termofolií - má minimální emisivitu, ale velkou reflektivitu, takže kopíruje okolí
+    * https://www.youtube.com/shorts/pYah9nI4GxA
+  * Systém ETCS zastavoval vlaky kvůli námraze na radaru
+    * Padá i v případě pomalých odpovědí serveru
+    * Diskuze o ETCS a vlacích obecně
+  * Sítě v zemi budou muset být do nějakého termínu zdokumentované
+    * Neplatí pro vojenské/tajné sítě
+    * Některé vojenské oblasti jsou vyjmenované v zákoně
+    * https://www.zakonyprolidi.cz/cs/2024-359
+  * V Polsku se ztratily vojenské převozy výbušnin a našly se v IKEE
+    * https://eurozpravy.cz/zahranicni/skandal-v-polsku-zmizele-protitankove-miny-nasli-ve-skladu-ikea.wx1atyif
+  * Pasivní radiolokace pomocí signálů ze Starlinku
+    * https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/rsn2.12446
+    * https://www.army-technology.com/news/germany-demonstrates-passive-radar-system-using-starlink-satellite-radiation/
+    * Moderní letadla z kompozitů moc neodráží
+    * Beamformer - dá se použít k určování polohy
+      * https://www.youtube.com/watch?v=2QXKuEYR4Bw
+    * https://dspace.cvut.cz/handle/10467/61897
+  * Analog Devices dělá SDR s FPGA, existuje i Pluto+, což není od AD
+    * https://github.com/plutoplus/plutoplus
+  * Ukázka měření spektra mikrovlnky spektrálním analyzátorem
+  * Barevné einky - nově s barevnou maskou
+    * https://www.youtube.com/watch?v=JNF5R11mX-8
+  * Diskuze o odvodu statické elektřiny z křídel letadel
+  * Nové Voodoo karty
+    * https://sdz-mods.com/
+  * PLA HT110 od Aurapolu - měkne až při 80 °C a ztrácí tvar až při 110 °C
+    * Dobře se tiskne a je houževnatý
+  * Měření vlhkosti dřeva (pokračování z minula)
+    * https://mediatum.ub.tum.de/doc/1355410/502361.pdf
+  * Tiskárny od Pragostroje
+    * https://www.pragostroj.cz/3d_tiskarny/
+  * Input shaping u tiskáren
+    * https://www.klipper3d.org/Measuring_Resonances.html
+    * https://www.klipper3d.org/Resonance_Compensation.html
+    * Měření napnutí řemenů pomocí změřené rezonanční frekvence
+      * https://belt.connect.prusa3d.com/
+  * Hackaday konference v Berlíně

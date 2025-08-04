@@ -1,0 +1,85 @@
+====== ⚡ Virtuální Bastlírna XXXVIII. (15.5.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:00 |
+^ Celkem se vystřídalo | 32 účastníků |
+^ Ve špičce | 29 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Senzory IKEA Badring a Parasoll, mají Zigbee
+    * Senzory otevření oken/dveří a úniku vody
+    * Mají i senzor pohybu
+  * Mýtus o zatížitelnosti zásuvek jen na 10/12 A místo 16 A
+  * Sekačka PMRDA z Lidlu - klasická s drátovým perimetrem
+    * Návod
+    * https://media.sit-connect.com/public/articlemanual/5259e5da-a134-447c-8734-a6ec9ef7511b.pdf
+  * Vyšly zdrojáky Multitasking MS-DOS 4.00
+    * https://www.youtube.com/watch?v=BR6F0EdyulA
+    * https://github.com/microsoft/MS-DOS
+  * Pec do mikrovlnky na tavení kovu / skla
+    * https://hackaday.com/2024/04/16/more-microwave-metal-casting/
+  * Srážka lodi s mostem v Baltimoru
+    * https://www.ntsb.gov/investigations/Documents/DCA24MM031_PreliminaryReport%203.pdf
+  * Chytání snímků ze satelitu
+    * https://hackaday.com/2024/04/24/downloading-satellite-imagery-with-wi-fi-antenna/
+  * Maker Faire
+    * kamery od PTZ
+    * čínské kopie Black MagicAtem
+    * LASAR a analýza, jak by to mělo (spíš nemělo) fungovat
+      * https://makerfaire.cz/makeri/entry/1525/
+      * https://lasar.info/
+      * https://lasar.spacecarrots.cz/?page_id=63
+      * https://www.conradchallenge.org/2024-innovation-summit-finalists
+    * Informace v kokpitech letadel
+      * https://www.youtube.com/watch?v=gm6u6it2qYM
+    * Igus - plasty na výrobu kluzných ložisek, prodávají i jako filament Iglidur
+  * Tramvaje bez trolejí na kondenzátory
+  * ESP32 a nové procesory, ESP32-P4 v Q3 za cca $2
+    * Setkání Espressif uživatelů 17.5. v Brně
+      * https://docs.google.com/forms/d/1IdVc__bC_eC7JDpONgdNLvcw-qP0GFmvEY1GYIgBUa0/viewform?edit_requested=true
+  * SiLabs má nové řady procesorů
+    * https://news.silabs.com/2024-04-09-Silicon-Labs-xG26-Sets-New-Standard-in-Multiprotocol-Wireless-Device-Performance
+    * Nové Arduino Nano MAtter
+      * https://twitter.com/siliconlabs/status/1787843026817110176?t=7IYuTzgbqkZeSGGrFBU5sA&s=19
+      * https://docs.arduino.cc/hardware/nano-matter/
+  * Nová low-power řada procesorů od ST
+    * https://twitter.com/ST_World/status/1786395386770342039?t=DfrtiukgTtWX7Q5lkJFWeQ&s=19
+  * Z80 končí, ale bude v Tiny Tapeout 7
+    * https://hackaday.com/2024/04/28/the-z80-is-dead-long-live-the-free-z80/
+    * https://www.tomshardware.com/pc-components/gpus/engineer-builds-a-gpu-from-scratch-in-two-weeks-process-much-harder-than-he-expected
+  * Obloukové ochrany
+    * https://www.youtube.com/watch?v=-JdYYTsIi7Q
+  * Army M85 od Renesasu - asi nikdo jiný nevyrábí
+    * https://my.avnet.com/ebv/resources/training-and-events/event/ra8-hands-on-workshop/
+    * https://documentation-service.arm.com/static/6267de1c7e121f01fd22d677?token=
+  * Elvac - průmyslové počítače
+    * https://www.elvac.eu/prumyslove-pocitace/
+  * Arduino Opta - jde na DIN liště stackovat, expanzní interface otevřeně popsaný
+  * Levné Cisco IE-2000 switche na DIN lištu
+    * IMCO Power dělá relativně pěkné zdroje na DIN lištu - 230V, DC napětí, baterie a ethernet
+      * Bohužel jsou dost poruchové a špatné ovládání
+      * Tinycontrol DC/DC - taky často hoří
+      * https://mall.industry.siemens.com/mall/cs/cz/Catalog/Product/6EP4134-3AB00-2AY0
+  * Adam o Meshtasticu
+    * Telegramový kanál meshtastic.cz
+      * https://t.me/c/1231846908
+    * Jak funguje https://meshmap.net/ a https://meshtastic.liamcottle.net/ 
+    * Ukázka dekódování a logování Meshtasticu v Node-RED, Influxu a Grafaně
+      * https://abacus.sh.cvut.cz/grafana
+    * Odbočka ke grafaně
+      * Vyšla verze 11
+    * Odbočka k Markdown a diagramům
+      * https://mermaid.js.org/
+      * PlantUML
+      * https://graphviz.org/  
+    * Odbočka o timeseries DB
+      * InfluxDB 1, 2, 3…
+      * https://github.com/timescale/timescaledb
+    * Elastic a Kibana, Loki a Grafana
+  * Redis a zmatky kolem něj v poslední době
+    * Změna licence kvůli provozovatelům cloudu, kteří si za něj nechávají platit jako za službu
+    * LXD vs. Incus
+  * Raspberry M.2 hat pro připojení SSD k RPi 5
+  * Diskuze o nepájivých polích, spolehlivosti
+  * Optické měření teploty vláknem s GaAs kostičkou

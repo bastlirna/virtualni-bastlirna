@@ -1,0 +1,145 @@
+====== ⚡ Virtuální Bastlírna XLIX. (7.4.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:42 |
+^ Celkem se vystřídalo | 59 účastníků |
+^ Ve špičce | 47 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Co je spinlock
+    * Jak na ESP-32S3 dekódovat telemetrický protokol (PWM enkódování)
+  * Lunární GPS na Blue Ghost funguje, GNSS jde přijímat i na Měsíci a v jeho okolí
+    * https://kosmonautix.cz/2025/03/06/blue-ghost-potvrzuje-lunarni-gpska-funguje/
+  * Athena přistála na Měsíci, ale zlomila si jednu nohu a leží na boku, takže část pokusů nepůjde provést
+    * https://www.reuters.com/technology/space/intuitive-machines-athena-lander-closing-lunar-touchdown-site-2025-03-06/
+  * NXBoot na Installfestu - bootloader pro NuttX
+  * Tropic01
+    * Bastlírna má vzorek
+    * Zatím není plně otevřený, nejde do něj nacpat vlastní program
+    * Diskuze o tom, jak funguje PUF
+    * https://www.tropicsquare.com/tropic01-samples
+    * Ohlas z publika: už byl dekapsulován a delaminován (ale zatím hnusně)
+  * KiCAD 9.0.1 a novinky v něm, zkušenosti z používání
+  * Přednáška o ESP32 na Installfestu
+    * https://www.youtube.com/watch?v=q_XnnC8W4As&list=PLub6xBWO8gV8n0JVrHbL3iSYTI6ArO3zr&index=12
+  * Proběhla KSP (krutá smršť přednášek), byla na ní pěkná přednáška o podivnostech okolo fungování e-mailů a dalších SW věcí, přednášku měl i Jenda
+    * https://www.youtube.com/@ksp_mff/videos
+  * Normy a kde je sehnat
+    * Spoustu článků a nějaké normy jde získat v rámci členství NTK
+  * FFTW - komerční nejrychlejší FFT, firma neodpovídá na nabídky ke koupi
+    * Je i pod GNU GPL
+    * https://www.fftw.org/
+  * Jenda ukazuje bandpass na 10 GHz - dutina s keramickými prstýnky, dolaďováno šroubky
+    * A ještě fotky vnitřku čipu 50W 5 GHz zesilovače
+  * Mikroskop AD407 - funguje dobře, ale nemá moc velké rozlišení
+    * https://www.safitech.cz/andonstar-ad407-270x-uhd-2160p/
+    * https://vi.aliexpress.com/item/4000958863886.html
+    * Tip na Mantise
+      * https://www.mikroshop.cz/cz/mantis-compact-bezokularova-stereolupa
+      * https://www.pepleroptics.com/vision-mantis-elite-microscope
+    * Mikroskop z HDMI kamery
+      * https://vi.aliexpress.com/item/1005006334351470.html
+    * Scienscope Vizor-A - levnější “kopie Mantise”, ale asi se už nevyrábí
+  * LibreCAL - 6 GHz open source kalibrátor s dobrou dokumentací pro VNA, určený zejména pro LibreVNA
+    * https://eleshop.eu/librecal-vna-electronic-calibration-module.html
+    * https://www.zeenko.tech/librecal
+    * https://github.com/jankae/LibreCAL
+    * LibreVNA
+      * Taky open source, často aktualizovaný
+      * https://eleshop.eu/librevna-2-ports-full-vna-100khz-6ghz.html
+      * https://github.com/jankae/LibreVNA
+  * Zranitelnost některých procesorů SAM (video od Recessim)
+    * Procesor si po bootu sám spustí reset a chvilku po něm na jádru dojde k zákmitu na napětí, přesně označuje kontrolu bitu zabezpečení, pomocí něj se dá přesně načasovat glitch
+    * https://www.youtube.com/watch?v=IOD5voFTAz8&ab_channel=RECESSIM
+  * HAckování vodoměrů od Embry
+  * Zajímavý katalog elektroniky a měřáků z roku 1968
+    * https://www.worldradiohistory.com/Archive-Electronics/60s/68/Electronics-1968-08-05.pdf
+    * Zajímavost - jsou tam první červené LED od Monsanto (dělají i Roundup a Agent Orange)
+    * Offtopic: cyklon B se vyrábí jako Uragán D-2 v Adezinu na Moravě
+  * Keysight zrušil svoje fórum
+    * Možná proto spadl EEVblog o víkendu?
+    * Brymen měřák od Brymenu vyvinutý ve spolupráci s EEVBlogem
+    * https://www.eevblog.com/forum/testgear/new-brymen-bluetooth-bm787bt-multimeter/25/
+    * https://www.youtube.com/watch?v=TkmMitYnHUA
+  * Drone s radarem se syntetickou aperturou
+    * https://hforsten.com/homemade-polarimetric-synthetic-aperture-radar-drone.html
+  * Chytrá serva, není potřeba neustále posílat kontrolní signál, komunikují digitálně, vrací informace o aktuálním stavu
+    * https://www.waveshare.com/wiki/SC09_Servo
+    * https://www.laskakit.cz/waveshare-sc09-serial-bus-servo-2-3kg/
+    * Open-Drain UART
+    * Dělá více výrobců
+      * https://www.peckamodel.sk/kav20-1013mg-go-1013mg-0-13s-60-3-8kg-cm
+      * https://www.peckamodel.sk/kav20-0001-usb-programator-go-serv-rady-10xx
+      * https://github.com/RoboticsBrno/RB3204-RBCX/blob/master/fw/rbcx-coprocessor/src/SmartServoController.cpp
+  * Konec podpory 32b CUDA na RTX5000 - 10 let staré karty jsou najednou výkonnější než nejnovější
+    * https://www.youtube.com/watch?v=h4w_aObRzCc
+  * Dekódování dat ze senzoru tlaku a teploty oleje s divnou sběrnicí s 3x PWM (pokračování) - mělo by jít dekódovat periferií v ESP32
+  * Ethernet T1S - nový levný 10 Mb ethernet pro automotive
+    * https://www.can-cia.org/can-knowledge/can-fd-light
+    * https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+  * I2C over twisted wire
+    * https://www.nxp.com/docs/en/application-note/AN11075.pdf
+    * Na straně 13 je úžasně úchylný nomogram na “simulaci” odrazů na vedení
+  * “backdoor” v ESP32 (jen 32, v žádných novějších verzích)
+    * Nedokumentované funkce HCI interfacu (management rádiové vrstvy)
+    * https://nvd.nist.gov/vuln/detail/CVE-2025-27840
+    * https://darkmentor.com/blog/esp32_non-backdoor/
+    * https://www.eevblog.com/forum/security/bluetooth-backdoor/msg5842465/
+    * Jde zneužít jen při fyzickém přístupu a případně nakaženém nadřazeném počítači
+    * Mnoho poplašných nadpisů článků
+      * https://cdr.cz/clanek/obri-bezpecnostni-hrozba-bluetooth-cipy-esp32-mohou-ohrozit-miliardu-zarizeni
+  * První brněnský satelit
+    * https://kosmonautix.cz/2025/03/05/druzice-brnosat-zna-sve-prvni-naklady/
+  * Vojenský satelit SATurnin-1 a družice TROLL na orbitě
+    * https://www.vzlu.cz/greetings-from-the-orbit-saturnin-1-sent-a-picture-of-prague/?lang=en
+    * https://www.youtube.com/watch?v=QDHEB1ND2ok
+  * SatNOGS - systém sledování satelitů a jejich komunikace
+    * https://dashboard.satnogs.org/d/L8ywE9oMz/vzlusat-2
+  * Diskuze o mazání oblastí z map (vojenské, majetek miliardářů atd.)
+  * Freemap.sk - laserem oměřený terén z letadla
+    * https://www.freemap.sk/#map=14/48.363264/18.044100&layers=6
+    * V Řecku jsou rozostřená letiště
+    * Ve Francii atomové elektrárny, základny
+      * https://mapy.cz/letecka?q=atomov%C3%A1%20elektr%C3%A1rna&cat=1&x=4.7607063&y=45.4034285&z=16
+      * https://www.google.com/maps/place/49%C2%B002'00.0%22N+2%C2%B013'00.0%22E/@49.0339505,2.22249,2116m/data=!3m1!1e3!4m4!3m3!8m2!3d49.0333333!4d2.2166667?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D
+    * Digitální model reliéfu ČR
+      * https://geoportal.cuzk.cz/(S(amlkmuctjucut2zawd4uersh))/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302
+  * Diskuze o vypnutí radarů amerických letadel na Ukrajině ze strany USA
+    * https://mastodon.online/@mastodonmigration/114134522943238905
+    * https://www.forbes.com/sites/davidaxe/2025/03/07/france-to-the-rescue-french-made-mirage-2000-jets-could-become-ukraines-most-important-aerial-radar-jammers/
+  * USB PD trigger s PPS (libovolné napětí), řízení přes I2C
+    * https://www.diodes.com/part/view/AP33772S
+    * https://www.tindie.com/products/centylab/rotopd-usb-pd-breakout-support-150w-avs/
+    * pseudoUSB-C prasárny - USB-C splittery, vrtačka z Lidlu s pevným 12V zdrojem s USB-C
+    * https://www.youtube.com/watch?v=kcmpGbR6xZc
+    * Diskuze o hackování kabelů, aby ničily připojená zařízení zvednutím napětí
+      * https://www.laskakit.cz/user/related_files/ch224ds1.pdf
+      * https://hackaday.com/2015/10/10/the-usb-killer-version-2-0/
+      * https://shop.hak5.org/products/omg-cable
+      * https://luemmelsec.github.io/Building-An-Evil-USB-Cable/
+    * Diskuze o rušení lezoucím z USB zdrojů, použitelnost pro rádia
+  * Nová tiskárna od Bambu - má laser a další vymoženosti jako plotter / plotrovací nůž
+    * https://bambulab.com/en/h2d
+    * s použitím laseru se rychle zaprasí
+    * https://wiki.bambulab.com/en/h2/maintenance/period-maintenance
+    * https://x.com/CanuckCreator/status/1904544024876228942
+  * Zázračné baterie
+    * HE3DA krachuje, hledá, kdo by je koupil
+      * https://www.e15.cz/byznys/prumysl-a-energetika/pravda-o-baterkarne-he3da-firma-ma-dluhy-je-na-prodej-ale-kupce-se-ji-najit-nedari-1419261
+    * Sodíkové baterie - jde používat pod bodem mrazu
+      * https://www.laskakit.cz/geb-paragonage-sodik-iontova-baterie-32140-10000mah-3-0v/
+  * Čínská auta
+    * Dongfeng U-tour - infotainment se seká, buď topí naplno nebo vůbec a spousta dalších nedodělávek
+      * https://www.autickar.cz/clanek/dongfeng-u-tour-neni-vsechno-zlato-co-se-trpyti/
+    * Zombie auta, kterým zkrachoval výrobce, končí cloudové služby, nebudou náhradní díly
+      * https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-mensi-cinske-automobilky-krachuji-zakaznikum-zustavaji-zombie-auta-270479
+  * Certifikáty v S/MIME, používání vlastních autorit, Google zavádí vlastní řešení
+    * https://www.chip.cz/posileni-e-mailove-bezpecnosti-google-zavadi-jednoduche-koncove-sifrovani
+  * Hledání nepromokavé krabičky a konektorů
+    * https://www.te.com/en/product-CAT-D485-EN17.html
+  * SFP, optické kabely, síťové prvky s SFP klecemi, hledání něčeho malého atd.
+    * https://mikrotik.com/product/rb4011igs_5hacq2hnd_in
+    * https://openwrt.org/toh/openwrt/one
+    * https://www.youtube.com/watch?v=7-vype2ZI7E
+    * https://mikrotik.com/product/rb5009ug_s_in

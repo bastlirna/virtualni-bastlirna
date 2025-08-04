@@ -1,0 +1,76 @@
+====== ⚡ Virtuální Bastlírna VII. (9.10.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 17:00 - 23:30 |
+^ Celkem se vystřídalo | 19 účastníků |
+^ Ve špičce    | 12 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Pomalý začátek
+  * OT - volby a současné dění
+  * Diskuze o procesorech - algoritmy, assembler učit či ne?, technické problémy dnešních procesorů, interní funkce prediktorů skoků atd.
+  * Hanění Electronu, neefektivního programování, neznalosti hardwaru, na kterém SW běží, bloatwaru atd.
+  * Diskuze o využívání vysokých jazyků á la PHP, JS atd. dohromady s JIT compilery a optimalizátory, aby to vůbec fungovalo
+  * Black boxy pro univerzální použití versus specializované optimalizované věci psané přímo na míru hardware + aplikace, neuronové sítě
+  * Diskuze o ČVUT, organizaci, průchodnosti, jak probíhá komunikace mezi studenty a školou, kolize mezi ideálními řešeními a chováním školy, problémy výuky na FEL ČVUT
+    * Ukázky pěkných materiálů - Hospodka elektronika, Elektrodynamika a další
+    * https://www.youtube.com/channel/UCTvfQ8xzm8NSzA1R6296Q_w/videos
+    * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwii8d_O773zAhXaQ_EDHThEA9EQtwJ6BAgDEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dtgr70QjM-ts&usg=AOvVaw0tbwarSkm8DWFQjnRvcf9H
+  * EFM32 a zajímavé periferie, shrnutí kvality dokumentace a softwarové podpory
+  * Datasheety a jejich zrádnosti
+  * Silová spínací elektronika a neobvyklé potíže IGBT při tepelném cyklování, problémy modelování tepelných systémů, predikce teplot čipu
+  * Izolace driveru k motoru - spínací prvky, izolace řídicích signálů, napájení s izolací
+  * Diskuze o autech, zapalovacích cívkách, ECU, reverznímu inženýrství, modování, analýzy HW, překvapivě starý HW v některých jednotkách
+    * ZC439620VFT25, Flash M29F400BB, EEPROM 95080
+    * 036906034GN MARELLI $MV 5160
+    * http://pikron.com/pages/products/cpu_boards/mo_cpu1.html
+  * Obskurní starý HW, procesory x86, C166, obskurity na procesorech 
+  * Triky s DMA a LDMA, generování VGA na F103
+    * https://dspace.cvut.cz/bitstream/handle/10467/70108/F3-DP-2017-Hofman-Martin-Implementace_casem_rizeneho_planovace_v_distribuovanem_bezpecnostne_kritickem_ridicim_systemu.pdf
+  * Sběrnice v ARMech, hodiny, deterministický kód, metody cachování, implementace STM32 vs EFM32
+  * Race condition na Cortex M0, která při ochraně vyčítání paměti umožňuje data vyčíst i přes ochranu
+    * https://www.aisec.fraunhofer.de/content/dam/aisec/ResearchExcellence/woot17-paper-obermaier.pdf
+  * Chyby v procesorech, erraty
+  * x86, 8087, MMX, SSE, race condition, podpora starých extenzí procesorů
+  * Podivnosti při předávání parametrů přes vararg na některých architekturách procesorů při vícenásobném čtení vstupních dat / kopírování při vnoření
+  * divnosti na x86 - chráněný režim, SMM atd.
+  * Optické přenosy, PCI-E 4.0, chyby Samsung NVMe, rychlosti přenosů
+  * 60 GHz transceiver od ST
+    * https://www.st.com/en/wireless-connectivity/60-ghz-contactless-products.html
+  * Diskuze o gramofonech, kazeťácích a další historické audiotechnice
+  * Bytefest bude na konci měsíce!
+    * http://www.bytefest.cz/novinky/2021/07/31/bytefest-2021-28-az-31-rijna-2021
+  * Píša povídá o svém nejstarším zdrojáku pro PMD-85, který kdysi psal - editor zabírající 2 kB + 1 kB na českou abecedu
+    * https://cmp.felk.cvut.cz/~pisa/pmd85/
+    * https://cmp.felk.cvut.cz/~pisa/pmd85/flare-words.dam.asm
+  * Diskuze o retro elektronice, vesmírné sondy, vývoj elektroniky, současné mobily atd.
+  * Slunce a jeho záhady fyzikálního fungování
+  * Rychlost šíření elektronů ve vodičích, magnetická optika
+    * https://en.wikipedia.org/wiki/Speed_of_electricity
+    * https://www.aldebaran.cz/bulletin/2019_13_ele.php
+    * https://www.aldebaran.cz/bulletin/2019_14_ele.php
+  * Jenda Hrach a jeho RF projekty
+    * Power splitter na 1800-12800 MHz
+    * Měření přenosu zesilovače SDRkem, problémy s kalibrací, zvlnění v měřeném rozsahu, metody měření, Tektronix 492 na Elexbrno, možnost měření s tracking generátorem nebo s šumovým generátorem
+    * Instalace foto elektrárny, monitoring, spotřeba radaru a další elektroniky
+    * Megalevné LiFePO4 3.2V / 100 Ah
+      * https://shop.gwl.eu/en/By-Brand-Manufacturer/ELERIX/ELERIX-LIFEPO4-battery-cell-Prismatic-3-2V100AH.html?cur=2&listtype=search&searchparam=ex-#tab3
+      * https://www.solar-eshop.cz/p/baterie-pylontech-us3000-plus-3-6kwh/
+    * Soběstačný dům
+      * https://www.youtube.com/watch?v=mUUUfF5dTz8
+  * Volby, OT diskuze nad výsledky
+  * Tokamak - rozebírání, plány na nový
+  * [Uprdkávač] Je možné ohřát hmotu na takovou teplotu, aby se její peak vyzařování dostal do gama oblasti, aniž by se okamžitě odpařil, vyzářil veškerou hmotu ve formě energie nebo potřeboval nerealizovatelné množství energie? Připouští se i objekt držený pohromadě gravitací.
+    * bkralik se zaseknul
+    * https://en.wikipedia.org/wiki/X-ray_binary
+  * Opět volební výsledky - mandáty, jak je možné přijmout více obálek než bylo odevzdáno?
+    * https://www.volby.cz/pls/ps2021/ps311?xjazyk=CZ&xkraj=6&xobec=999997&xsvetadil=EV&xzeme=756&xokrsek=37
+    * Memy
+      * https://twitter.com/TMBKOFFICIAL/status/1446422963847319555
+      * https://twitter.com/TMBKOFFICIAL/status/1446528693405458468
+  * OpenAlt - 6.-7.10., snad prezenčně
+  * Další termín Bastlírny 
+  * The Catch a další soutěže
+    * https://www.thecatch.cz/
+    * https://ksp.mff.cuni.cz/h/ulohy/34/zadani1.html

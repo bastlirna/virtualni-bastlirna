@@ -1,0 +1,131 @@
+====== ⚡ Virtuální Bastlírna XXVII. (6.6.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:13 |
+^ Celkem se vystřídalo | xx účastníků |
+^ Ve špičce    | 35 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Uvítání
+  * Představení shopu Leo Bodnara (https://www.leobodnar.com/shop/)
+    * GPSDO má dvě verze - malá má jeden kanál a velká má dvě kanály
+    * pozor, mají odlišný ovládací SW, ten na malou verzi je lepší
+    * generátor pulzů - bude nová verze (tohle se jinde než trady nedozvíte!), hodí se na měření signálových cest
+  * Diskuze o TDR na plošňáky
+    * 11801C + SD-20 (TDR 20 GHz hlava) 
+      * https://w140.com/tekwiki/wiki/SD-24
+    * LiteVNA 64 (VNA)
+      * https://www.zeenko.tech/litevna
+    * Existuje SW, který obrátí S-parametry i do oblasti záporných frekvencí a zpřesní průběh
+  * Bude Maker Faire!
+  * NanoVNA / LiteVNA
+    * Je to komunitní projekt, kterého je spousta verzí
+    * Web sdružující projekty je na https://www.zeenko.tech/
+    * Skupina o LiteVNA je na https://groups.io/g/liteVNA
+    * Soukromá skupina o ****VNA, kde se vydává nový FW a testuje se https://groups.io/g/nanovna-beta-test/topics
+    * Postup upgrade je trochu obskurní - je potřeba aplikace NanoVNA APP v209 (možná chodí i jiné verze)
+      * zmačknout čudl + zapnout, připojit se přes COM port
+      * https://drive.google.com/drive/folders/10lU5xnwmHDnPX98z21ky09N8nb_cEOk4
+  * Kavárník James Hoffman a recenze 
+      * https://youtu.be/hM1cP555xt4
+      * Okolo 3:20
+  * Polohovače na připojení sond na BGA
+    * čínské mikrometrické stage - okolo $150
+    * Thorlabs - extrémně drahé
+    * “Standa” - litevský obchod, mají i motorizované verze, rozumná cena, mají i rotační stage, obecně mají spoustu komponent pro precizní polohování, optiku atd.
+    * Doporučení na ramínko s utahováním uprostřed (utahuje všechny 3 klouby najednou) - Noga, Mitutoyo
+    * Vyhnout se držákům na hodinky s pevnými tyčemi a posuvnými osami, hrozně špatně se používá
+    * PMK dělá držák na osciloskopickou sondu na konec ramínka pro “hodinky (893-050-000)
+    * Zmínka Discordu “Vacuum hackers” - tam se řeší věci ohledně vakuové techniky
+      * https://discord.gg/tK39Ay3J - bacha, komunita se snaží udržovat bezpečné chování, neprovokovat
+    * https://www.farnell.com/datasheets/3360925.pdf
+    * https://eshop.microtes.cz/granitova-primerna-deska-s-upinacimi-pouzdry-m8--din-876-tr-0/
+  * Testování napáhení na děsivých FPGA - 50R sondy T-probe od With-Wave do 40 GHz
+    * https://www.with-wave.com/t-probes
+    * https://ingun.com/en-GB/products/test-probes/rf-and-dipole-test-probes/
+  * Měření ultrazvukového pole,
+    * Posuv udělaný z CD mechaniky (mechanika pro čočku)
+    * Jako sonda zbroušená jehla do stříkačky + ultrazvuková kapsle
+  * Denní dávka bizáru
+    * 386 a 8086 počítače
+      * https://www.high-voltage.cz/sortky/koupite-na-aliexpressu-notebook-s-8088-a-kapesni-pc-s-386sx/
+      * https://hackaday.com/2023/06/06/that-handheld-386sx-gets-a-teardown/
+      * BIOS je ukradený open-source s umazanou identifikací a licencí
+    * Spousta audiofilního bizáru
+  * Zmínka o novinkách v LTSpice (víceméně zmíněno už v lednu + zmínka o problémech se simulací tyristorů v nových verzích)
+  * Prezentace o přizpůsobení vstupu osciloskopu na 50 Ohm
+    * https://docs.google.com/presentation/d/1A5k3RDWk8rTqB3tzskxLJ8RFRL3-99IqbN_0N36WKvc/edit?usp=sharing
+    * Problém se špatnou dostupností 90° BNC samců do PCB
+      * https://www.crystek.com/home/enclosure/enclosuredetail.aspx?pn=BNC-KIT-2.6MF
+      * https://www.crystek.com/home/enclosure/enclosuredetail.aspx?pn=SMA-KIT-1.5MF
+      * https://www.crystek.com/home/enclosure/enclosuredetail.aspx?pn=SMA-KIT-1.3MF
+  * Juraj Repcik - ukázka projektu s Maker Badge (komunikační aplikace)
+    * používá protokol ESP-NOW - údajně umí i ESP8266 a ESP8285
+    * uděláno v rámci výzvy Maker Faire
+    * http://soutez.makerfaire.cz/
+  * Adam Hořčica - další projekt v rámci Maker Faire
+    * kombinace se švábem od NXP emulujícím NFC tag, přes běžnou NFC aplikaci z mobilu jde nahrát libovolný obsah na displej
+    * Bigclown má desku s cívkou od Coilcraftu jako anténou
+    * ty šváby dělá i ST
+    * https://github.com/ah01/maker_badge_nfc
+  * Diskuze o RFID emulátorech
+    * ATtiny napájená přes GPIO piny
+    * diskrétní!
+    * https://hackaday.com/2012/10/12/configurable-rfid-tag-from-7400-logic-chips/
+  * Článek, jak měřit napětí na čipu přes GPIO piny
+    * http://blog.teledynelecroy.com/2022/08/only-measuring-board-level-power-rail.html#more
+  * Zdroj, odkud se dají čerpat plné texty norem zdarma (ano, víme, kde leží problém s touto službou...)
+    * https://clara.su/docs/standards/
+    * Legální přístup přes ČSN online (asi 500 Kč/rok)
+    * https://www.agentura-cas.cz/produkty-a-sluzby/csn-online/
+    * Zmínka o zabavení domén Z Library (domény .re fungují, TOR taky, a nějaký mirror s příponou -asia a snad i -global taky)
+    * Normy se dají zobrazit i v NTK (jen na místě a na vybraných počítačích)
+    * Sci-Hub, shrnutí významu a smyslu + lamentace nad komunistickou propagandou na téhle službě
+    * Library Genesis
+  * Kradení aut přes CAN injektor - stačí urazit přední světlo
+    * https://kentindell.github.io/2023/04/03/can-injection/
+    * Povídání o CAN, LIN a dalších variantách v Amp Hour
+    * https://theamphour.com/634-the-can-bus-can-with-dr-ken-tindell/
+    * Z CANu lze získávat postranním kanálem data o identitě CAN zařízení - využívá se odrazů na vedení, z odrazů lze detekovat polohu zařízení, existuje dekodér pro Sigrok
+    * https://kentindell.github.io/can2
+    * Tool na sniffování CANu - CANape
+  * ESP USB bridge
+    * nahrazuje starší ESP-Prog (bitbangovaný JTAG přes FTDI), měl by se jmenovat ESP-Progv2
+    * ESP32-S2 na desce, funguje jako programátor / debugger, má USB interface
+    * https://github.com/espressif/esp-usb-bridge
+  * JLCPCB má repozitář na 3D modely s možností přímé objednávky
+    * Ukázka výtisků od Martyho
+    * https://twitter.com/KutilDomaci/status/1659623802676957186?s=20
+    * Zmínka o stavbě tiskárny Voron ze stavebnice z Číny (nejdražší na shánění materiálu z víc e-shopů je poštovné)
+    * Diskuze o stavbě krabic na 3D tiskárny
+      * kartonová krabice s průhlednou stěnou
+      * IKEA stolky na Průša tiskárny
+      * fotobox (stan)
+      * http://eshop.az-plastik.cz/Plexi-na-3D-tiskarnu-d191.htm
+  * Závitové lepidlo se nemá rádo s ABS (zkřehne) a s teplovodivou silikonovou pastou (rozloží se na fáze)
+  * Embedded skills tree
+    * https://embedded.fm/blog/2023/5/19/embedded-skills-tree?s=09
+    * Vychází z Maker skills tree (pro 3D tisk)
+  * Vznikla implementace TypeScriptu pro embedded od Microsoftu
+    * https://microsoft.github.io/devicescript/
+  * SiLabs má procesory s Cortex M3 + M0+ + RISC-V (modem)
+    * Diskuze o ARMu a RISC-V s CEO Microchipu
+    * https://theamphour.com/632-steve-sanghi-microchip-ceo-for-31-years/
+  * Pájeníčko (e-shop) má pájecí stavebnici herní konzolky s Rpi pico
+    * Pimoroni má podobný hezčí PicoSystem)
+  * **Příští VB 13.7.**
+  * QR kódy jako umění pomocí ControlNet AI
+  * PaperBak - tisk souborů na papír
+    * https://ollydbg.de/Paperbak/
+    * Od autora OllyDbg (Windows debugger)
+  * http://ronja.twibright.com/optar/
+    * Taky tiskne soubory na papír, zajímavý popis (bohužel jenom source distribuce), od autora Ronji
+  * x64dbg - 32/64b debugger pro Windows
+    * https://x64dbg.com/
+  * Cygwin, WSL2, Windows Terminal a další udělátka
+    * Do Terminalu jde přidat i záložky pro WSL a další
+  * Nové LoRa věci od LilyGo
+    * https://www.lilygo.cc/products/t-watch-s3
+    * https://www.lilygo.cc/products/t-deck?variant=42877714333877

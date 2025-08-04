@@ -1,0 +1,77 @@
+====== ⚡ Virtuální Bastlírna XLV. (3.12.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 71 účastníků |
+^ Ve špičce | 45 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Diskuze o zesilovačích a čištění potenciometrů
+  * čtyřosá 3D tiskárna
+    * https://www.youtube.com/watch?v=VEgwnhLHy3g
+  * Vnímání lidského oka, jak funguje světlo
+  * Odvlhčovače od Rosahlu
+    * https://www.chip45.com/Rosahl-Electric-Dehumidifer-Membranes:::4.html
+    * https://www.printables.com/model/939589-outside-mounting-cover-for-rosahl-m-3m1r-electric/comments?lang=cs
+  * Multiplexer pro multimetry Keithley
+    * https://github.com/MR-DOS/SCAN2000-20
+  * Multiplexer pro obecné analogové použití
+    * https://goughlui.com/2022/09/24/project-usb-lan-40-input-1w-2w-4w-solid-state-relay-multiplexer-w-rp2040/
+    * HP 54300A
+  * SMU
+    * https://www.djerickson.com/diy_smu/
+    * https://github.com/jaromir-sukuba/J-SMU
+  * Nový nanovoltmetr, syntetizér odporu s násobícím DAC
+    * https://github.com/jaromir-sukuba/rsyn
+  * Měření vlhkosti dřeva při sušení - potřeba měřit nad gigaohmy
+    * https://www.ebay.com/itm/365182797170?_trksid=p4375194.c101771.m47999
+    * https://www.testequipmenthq.com/datasheets/ADVANTEST-R8340A-Datasheet.pdf
+    * http://chrisgrossman.com/manuals/keithley/Keithley%20614%20Electrometer%20Manual.pdf
+    * Tipy na OPA129, LMP7721
+    * http://www.vk2zay.net/article/251
+  * Podvodní drony - jak stavět
+    * “underwater DIY ROV”
+    * https://bitdrivencircuits.com/ROV/ROVhome.html
+    * https://github.com/MoffKalast/RaspberryUnderwaterROV
+    * https://blog.arduino.cc/2024/08/07/explore-underwater-with-this-arduino-controlled-diy-rov/
+    * https://www.homebuiltrovs.com/
+    * Komunikace s ponorkami, metody přenosu
+  * Prusa Core One
+    * CoreXY, vyhřívaná uzavřená krabice
+    * Hledání, zda umí kompenzovat rezonance
+    * Diskuze o použití Klipperu
+    * Srovnání s jinými výrobci
+  * CHT trysky, patenty, trolling Stratasysu
+    * https://www.cnckitchen.com/blog/bondtech-cht-high-flow-nozzle-reviewed
+    * https://www.cnckitchen.com/blog/testing-a-2-high-flow-nozzle-from-aliexpress
+    * https://www.cnckitchen.com/blog/diy-high-flow-3d-printing-nozzle
+  * FreeCAD 1.0.0
+    * https://wiki.freecad.org/Release_notes_1.0
+    * Ruší se Ondsel
+    * Diskuze o různých CADech
+  * Altium ruší permanentní licence
+    * V KiCADu už celkem slušně funguje import z Altia
+  * Začátky internetu na Strahově (Alcoma)
+    * http://web.archive.org/web/19971014012556/http://vorvan.sh.cvut.cz/htmls/info/topology.html
+  * Frama-C
+    * https://frama-c.com/
+    * Nástroj pro statickou analýzu a opravy kódu
+    * Coccinelle
+      * Upstream
+        * https://coccinelle.gitlabpages.inria.fr/website/
+      * Klon
+        * https://github.com/coccinelle/coccinelle
+    * https://www.kernel.org/doc/html/v4.12/dev-tools/sparse.html
+    * https://valgrind.org/
+  * NTK má novou dílnu pro studenty
+    * https://www.facebook.com/share/1EQttx5fwf/?mibextid=WC7FNe
+    * https://www.techlib.cz/cs/84997-polytechnicka-dilna
+    * Od pondělí do pátku 10-17, nutnost rezervace a proškolení
+    * https://www.techlib.cz/cs/84472-firemni-sluzby#tab_tab6
+  * 7.12. bude Robodoupě
+    * https://robodoupe.cz/
+  * Rigol má nové osciloskopy DHO5000 - 12b, 8 kanálů, 1 GHz
+    * https://eu.rigol.com/eu/products/detail/DHO5000
+  * Procesory - RISC, x86, ARM
+  * Motory, resolvery, magnetické enkodéry

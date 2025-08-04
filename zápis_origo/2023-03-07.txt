@@ -1,0 +1,75 @@
+====== ⚡ Virtuální Bastlírna XXIV. (7.3.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:15 |
+^ Celkem se vystřídalo | 51 účastníků |
+^ Ve špičce    | 45 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Nový KiCAD - ukázka pár funkcí
+  * Inventree a jak probíhá spolupráce s KiCADem
+  * IPv6 v IoT a trollení IPv6
+  * Mutter atd.
+  * PY32 - velice levné procesory
+    * https://www.cnx-software.com/2023/02/09/8-cents-for-an-arm-cortex-m0-microcontroller-meet-puya-py32-series-mcus/
+  * Wi-R - člověk jako anténa
+    * https://www.cnx-software.com/2023/02/07/the-wi-r-protocol-relies-on-body-for-data-communication-consumes-up-to-100x-less-than-bluetooth/
+  * Tip na binokulární mikroskop
+    * https://www.dalekohledy-puskohledy.cz/mikroskop-biorit-icd-cs-p1937
+  * Jak dosáhnout, aby se u spínáku nerozkmital vstupní filtr
+    * https://www.ridleyengineering.com/videos-e/333-input-filter-magic.html
+  * Ukázka RFID čipů na dnech kelímků z Německa - zřejmě UHF
+  * Satoshi Labs - potřebovali STM32, ale aktuálně nešly koupit, tak si koupili wafer a nechali si ho nařezat a zapouzdřit - zkrátili leadtime na polovinu
+    * může souviset s požárem ve Wuxi
+    * https://www.lupa.cz/aktuality/cechum-se-podaril-vyresit-nedostatek-cipu-tvurci-trezoru-se-je-rozhodli-pouzdrit-sami/
+  * Záchranářská folie neni zlatá, ale hliníková a z jedné strany je PET a z druhé jiný plast
+  * Fejkové detektory CO2
+    * https://www.youtube.com/watch?v=D2Wq4Yg52No
+    * VOC detektory bývají citlivé i na citrusy
+    * Porovnání VOC detektorů
+      * https://www.youtube.com/watch?v=FL0L-nic9Vw
+  * Nový Ikea senzor už má podporu pro Zigbee2MQTT
+    * https://www.zigbee2mqtt.io/devices/E2112.html
+  * PCBWay dělá i obráběné díly
+    * https://www.pcbway.com/rapid-prototyping/manufacture/?type=1&reffercode=TOP
+    * https://www.facebook.com/groups/strojari.cz
+  * PrůšaLab už není makerspace - musí se zaregistrovat projekt, nedá se tam dostat jen tak
+  * Nestandardní USB-C periferie
+  * USB-VGA adaptér jako TX-SDR
+    * https://www.rtl-sdr.com/osmo-fl2k-a-tx-only-sdr-hacked-from-commodity-5-usb-to-vga-adapters-demos-available-for-transmitting-wbfm-gsm-umts-gps/
+    * NMT jde taky nasimulovat
+    * Předělávka NMT station na vysílačku - předělává Zdenda Houška
+     * https://www.youtube.com/watch?v=FlVRsoXJJpU
+  * Rpi Debug Probe
+    * https://www.raspberrypi.com/news/raspberry-pi-debug-probe-a-plug-and-play-debug-kit-for-12/
+  * Sovětské plastové EPROM s okýnkem
+    * https://modelist-konstruktor.com/sam-sebe-elektrik/ozu-vmesto-pzu
+  * Okénko o Václavu Šedém, vzpomínky
+    * https://jenda.hrach.eu/f2/BG.DEVELOP.html
+    * https://jenda.hrach.eu/f/ogilvy-vzpominky.pdf
+    * Rozeberte si PC - je na ulož.to
+  * Rpi Pico osciloskop
+    * https://hackaday.io/project/188051-rpscope
+    * https://store.fhdm.xyz/fscope-500k
+    * https://www.vokolo.cz/fhdm-fscope-500k/
+    * https://jyetech.com/wave2-2-channel-portable-oscilloscope/
+  * Rpi Pico emulátor Gravis Ultrasound
+    * https://github.com/polpo/picogus
+  * ICE40+ESP32 deska
+    * https://groupgets.com/campaigns/1036-ice-v-wireless
+    * Kompletně open-source toolchain, součástí je i malý Risc-V, CAN atd.
+    * Google summer of code
+      * https://groupgets.com/campaigns/1036-ice-v-wireless
+      * https://summerofcode.withgoogle.com/
+      * https://gabotronics.com/products/oscilloscope-menu/57/xmega-xprotolab-details.html
+      * https://summerofcode.withgoogle.com/programs/2023/organizations
+  * Jak se napíchnout na domovní rozvody interkomu
+  * Předehřev
+    * https://www.p2jtechnology.cz/predehrevy/5368-horkovzdusn-predehrev-quick-853-esd.html
+  * Rust na MCU
+    * https://lupyuen.github.io/articles/rust2
+    * https://lupyuen.github.io/
+  * Diskuze o překládání technických termínů
+  * Další VB ve středu 5.4.2023

@@ -1,0 +1,88 @@
+====== ⚡ Virtuální Bastlírna XVI. (4.7.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:15 |
+^ Celkem se vystřídalo | 27 účastníků |
+^ Ve špičce    | 22 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Vypalování do dřeva
+    * amperak.cz
+    * https://www.youtube.com/watch?v=wzosDKcXQ0I
+    * https://www.woodturner.org/Woodturner/Resources/Safety-Materials/Safety-Fractal-Burning-Lichtenburg-Burning.aspx
+    * Danyk a pokusy s MOTy, bezpečnost práce
+  * Propagace installfestu - https://installfest.cz/if22/stream.html
+    * Jendova přednáška, dotazy na radar, Jendův vs. blitzortung
+    * Blitzortung - historický HW, historický SW, nejde se připojit, uzavřené řešení, trapné…
+    * AS3935 - detektor blesků
+       * https://cdn.sparkfun.com/assets/learn_tutorials/9/2/1/AS3935_Datasheet_EN_v2.pdf
+       * https://www.laskakit.cz/senzor-detekce-blesku-as3935--i2c-spi/
+    * https://okf.ufa.cas.cz/blesky/
+  * Adam a RaspberryPi Pico H / W / WH
+    * H - modul s RP2040 a napájeným pinheadrem za $5
+    * W - $6 modul s RP2040 a WiFi švábem
+      * Pythoní API je super, Cčkové není user-friendly
+      * Wifi dělá CYW43439
+      * Ten wifišváb umí i BT, ale zatím není implementované
+      * https://twitter.com/arturo182/status/1543581274727645185
+      * Změny v HW, jak se s tím pracuje
+      * Podivná detekce varianty desky z SW (čtením z ADC)
+    * WH - kombinace W a H ;-)
+    * dokumentace k tomu wifišvábu bude nejspíš jen pod NDA
+    * Na RP2040 běží Dooooom!
+  * Proč používat STM32?
+    * Je to sluníčkovější a lepší!
+    * Arduino na STM32 funguje, jen to není úplně dokonalé a nevyužije to celý potenciál procesoru
+  * MicroPython
+    * dva forky - micropython.org (konzervativnější), circuitpython.org (podporovaný adafruitem)
+    * Jak se dneska programují procesory? Připojíš USB, ukáže se mass-storage, drag&dropneš binárku a tadá!
+      * https://github.com/microsoft/uf2
+  * Otázka na jak je to s použitím hobby HW na produkční nasazení v průmyslu
+  * Zajímavý RTOS od MS - https://en.wikipedia.org/wiki/ThreadX
+https://azure.microsoft.com/en-us/services/rtos/#overview
+  * Solární vytěžovač do bojleru
+    * Normální PWMka ruší, takže 50 Hz modulované pomocí 30 kHz!
+    * Vysvětlení Millerovy kapacity
+    * dělá problém u polomůstku
+    * zajímavý highside inteligentní driver 1ED3491MU12M
+    * Jakej je rozdíl mezi FETem a IGBT?
+      * Budezní velkých IGBT a jak se řeší chlazení 
+      * Existují “laboratorní” varianty IGBT, které mají přímo v sobě teplotní sensory
+   * Detekce hřejících-se součástek na plošňáku
+     * Termokamery, pozor na dostatečné rozlišení a schopnosti ostřit
+     * Termokamera do USB-C pro Androidí telefony - https://www.alza.cz/seek-thermal-cw-aaa-seek-compact-android-usb-c-d5670831.htm
+     * Na sjednocení emisivity stříkací barva - 
+       * https://paints.labir.cz/documents/LabIR%20Paint%20HERP-LT-produktovy%20letak.pdf
+  * Kondenzátory na vysoké frekvence
+    * Křemíkové kondenzátory!
+    * https://cz.mouser.com/datasheet/2/40/531z-2508048.pdf
+    * https://cz.mouser.com/datasheet/2/281/Commercial_leafletXBSCUBSCBBSCULSCV13Murata-1660560.pdf
+  * Výkonové RF tranzistory!
+    * deska zesilovače 900 MHz
+  * Radary
+    * https://www.instagram.com/reel/CewHctAFfd3/
+    * SDR a kde se používá (a proč se nepoužívají víc)
+      * https://media.ccc.de/v/Camp2019-10248-the_limits_of_general_purpose_sdr_devices
+  * YouTube
+    * Amperak
+    * Jiří Bekr
+    * Danyk
+    * ElectroBOOM - https://www.youtube.com/c/Electroboom
+    * Thesignalpath - https://www.youtube.com/c/Thesignalpath/videos
+    * Robert Feranec - https://www.youtube.com/c/RobertFeranec
+    * MarcoReps - https://www.youtube.com/channel/UC1O0jDlG51N3jGf6_9t-9mw
+  * AD převodníky
+    * https://tomverbeure.github.io/2020/10/04/PDM-Microphones-and-Sigma-Delta-Conversion.html
+  * Koloběh života…
+     * https://imgflip.com/i/42164z
+     * https://i.imgur.com/MSSTgaT.jpg
+  * Projekt mili ohmetru
+    * https://www.eevblog.com/forum/testgear/finding-short-on-motherboards-with-a-shorty-(with-display)/
+    * http://kripton2035.free.fr/Projects/shorty-display.html
+  * DNS Toys
+    * úchylný DNS server psaný v GO odpovídající užitečným věcem
+    * https://www.dns.toys/
+    * Bude to fungovat ve WiFi síti s captive protálem?
+    * A co tunelování SSH over DNS? 

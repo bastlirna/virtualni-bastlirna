@@ -1,0 +1,118 @@
+====== ⚡ Virtuální Bastlírna XVII. (3.8.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 44 účastníků |
+^ Ve špičce    | 25 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Minohledačka - nálezy a modely hledaček
+    * Dohledávačky - napovídají směr, kterým věc leží
+  * Teplovodivé pasty, jak nanášet?
+    * Přes sítotiskovou šablonu!
+    * A nebo použít grafenovou podložku
+  * Jaký použít BNC-samici do panelu?
+    * Není!
+    * https://www.tekbox.com/product/tbrfh1-rf-housings/ - bastlící RF housingy
+    * https://www.tekbox.com/product/tbrfh4-rf-housing/
+    * https://www.we-online.com/catalog/en/SHIELDIY_SAMPLE_FOLDER - bastlící RF krabičky
+    * LeaderTech dělá levné dvoudílné SMD krabičky
+    * Diskuze o věcech okolo radarů, odbočnice, cirkulátory, izolátory, filtry z M4 šroubků atd.
+  * SMA/QMA konektory
+  * Jak utahovat - momenty, význam
+  * Šrouby
+    * Jak správně dotahovat, jak řešit prostředí s vibracemi, jak udělat, aby se nerezové šrouby nezasekávaly do matek, jak správně pracovat s pérovkami
+    * Proč většinou pérovky nefungují, jak si lidi představují - když je otevřená, aby se mohla zakousnout, už je moc otevřená a nemá sílu, lepší je použít NordLock, případně dvoudílná matka HardLock
+    * Závitová lepidla - klasická vs. mikrokapsule
+      * https://www.henkel-adhesives.com/cz/cs/produkty/prumyslova-lepidla/threadlockers.html
+      * https://www.bossard.com/cz-cs/produktova-reseni/-povlaky/funkcni-povlaky/tuflok-a-nytemp-po-celem-obvodu/
+    * Jak utahovat - moment nemá moc význam, ale osová síla, měření prodloužení šroubu ultrazvukem přes hlavičku šroubu
+      * SuperBolt od NordLocku - kompozitní šroub se šrouby - dotahováním šroubků se dotáhne velký šroub
+      * https://www.google.com/search?q=superbolt
+      * https://www.google.com/search?q=hydraulic+pretensioner+bolt
+    * závěr diskuze 
+      * https://jenda.hrach.eu/f2/Zvl%C3%A1%C5%A1tn%C3%AD%20%C5%A1rouby%20pro%20stroj%C3%ADrenstv/
+    * Závitové vložky do ITEM profilů - montáž bez spojovacích kostiček, zlevnění montáže
+    * Závitové vložky do 3D tisku, proč nepoužívat levné pro vstřikované díly
+    * https://www.cnckitchen.com/shop
+    * https://www.youtube.com/watch?v=G-UF4tv3Hvc
+    * https://www.cnckitchen.com/shop
+    * https://www.prusa3d.com/cs/produkt/zavitove-vlozky-m4-kratke-50-kusu/
+    * https://www.tme.eu/cz/details/b2.5x8_bn13577/vruty/bossard/2000164/
+    * Typy křížáků - Pozidriv má hvězdičku, Philips ne, JIS má tečku a je divnej
+    * https://tatageek.blog/2019/11/04/bezpecnostni-bity/
+    * https://www.nako.cz/1592-kennedy-ken-573-7100k-uderovy-sroubovak-12-15-dilu.html - Na povolování - úderový šroubovák!
+    
+  * Příjem GFSK, SDR, Flipper Zero atd.
+      * https://www.silabs.com/documents/public/data-sheets/Si4430-31-32.pdf
+      * https://greatscottgadgets.com/yardstickone/
+      * https://github.com/atlas0fd00m/rfcat
+      * https://flipperzero.one/
+      * Ukázky Flipperu, průběh vývoje, směřování vývoje
+      * Si4432, CC1101
+  * NFC, metody, jak zamezit klonování karet
+  * Diskuze o Flipperu Zero
+    * https://flipperzero.one/
+    * https://github.com/djsime1/awesome-flipperzero 
+  * Tamagoči, emulátory, hackování starých her
+    * https://unnamedre.com/page5/
+    * https://www.youtube.com/watch?v=3_-e_cJ1-Gs
+  * PingFS - filesystém založený na posílání ICMP paketů
+    * https://github.com/yarrick/pingfs
+  * IPFS (https://ipfs.io/)
+  * 5.9. - další VB
+  * Vyšla nová verze Pinecil páječky
+  * Nový FW pro Průša Mini
+    * Objeveny bugy v USB stacku od ST, Wi-Fi přes ESP, driver pro TAP interface do Linux
+    * https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v4.4.0-beta2
+    * https://github.com/prusa3d/Prusa-ESP-Nic-FW
+  * SW pro záznam z IP kamer
+    * Je nějaký OSS použitelný?
+    * https://www.ispyconnect.com/ 
+    * Inteligentní kamery, rozpoznávání vzorů, přenos informací z neuronové sítě postranním kanálem
+    * https://www.cnx-software.com/2021/07/09/kendryte-k510-tri-core-risc-v-ai-processor-3-tops/
+    * https://www.axis.com/newsroom/press-release/artpec-soc-analytics-edge
+  * Úprava kamer pro IR snímání
+    * Rpi kamera jde koupit bez filtru
+    * Barevný IR film
+    * https://hackaday.com/2022/08/01/re-creating-the-unique-look-of-unobtainable-aerochrome-film/
+  * Výroba analogového filmu pro foťáky
+    * https://www.youtube.com/watch?v=cAAJUHwh9F4
+    * Objektivy, Smena, Lubitel, Pentacon atd.
+  * Vyvolávání filmů, CRT a spousty vzpomínek
+  * NFC tagy ve vozech metra
+    * https://www.nxp.com/docs/en/data-sheet/058031.pdf
+    * https://metroweb.cz/diskuze/viewtopic.php?t=511&start=20
+* Aktivita Slunce, magnetosféra, funny článek od křesťanů
+    * http://apps.usd.edu/esci/creation/age/content/creationist_clocks/magnetic_field.html
+  * Komunikace v metru
+
+<WRAP center round box 90%>
+Metro Prague freqencies
+
+Area    Downlink    Uplink    DL CTCSS    UL CTCSS    Callsigns
+
+Line A    156.525MHz    152.025MHz    162.2Hz    82.5Hz    METRO1xx
+
+Line B    155.600MHz    151.100MHz    186.2Hz    94.8Hz    METRO2xx
+
+Line C    156.675MHz    152.175MHz    71.9Hz    71.9Hz    METRO3xx
+
+Kacerov yard    155.600MHz    ?    218.1Hz    ?    METRO3x
+
+Hostivar yard    156.700MHz    ?    ?    ?    METRO1x
+
+*FIXME* There are other frequencies most likely allocated to DPP, please help us identify those:
+151100
+151175
+152050
+152200
+152225
+152250
+152300
+163900
+168400
+
+</WRAP>

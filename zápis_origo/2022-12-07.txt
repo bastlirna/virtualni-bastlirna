@@ -1,0 +1,162 @@
+====== ⚡ Virtuální Bastlírna XXI. (7.12.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:30 |
+^ Celkem se vystřídalo | 45 účastníků |
+^ Ve špičce    | 38 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Termokamera Infiray T2S+
+  * 256x192, 25 Hz
+    * https://www.infiray.com/products/t2s-t2l-thermal-camera-for-smartphone.html
+    * https://www.youtube.com/watch?v=YMQeXq1ujn0
+    * https://www.alza.cz/seek-thermal-cq-aaax-seek-compactpro-android-usb-c-d5670829.htm
+  * TinySA Ultra
+    * 0-6 GHz, 3500 Kč, demodulace AM
+    * https://tinysa.org/wiki/pmwiki.php?n=TinySA4.Specification
+    * https://youtu.be/0ELGDz3ibNg
+    * Existuje i fork SW pro starý TinySA, který umí demodulaci FM
+  * Ubuntu pro mobily
+    * Osekané, jde instalovat aplikace jenom ze Storu
+    * https://ubuntu-touch.io/
+    * https://wiki.postmarketos.org/wiki/Devices
+    * https://puri.sm/products/librem-5/
+    * https://gitlab.fel.cvut.cz/otrees/org/-/wikis/knowbase
+    * Spousta zajímavostí od p. Píši - např. RISC-V simulátory pro Android, kompilování software pro ARM v mobilech, problémy s binárními bloby
+    * https://docs.ubports.com/en/latest/systemdev/testing-locally.html
+    * “kompilovat a normalne pracovat s cimkoli pokud to nepotrebuje specialni libky a hw dependence jde i na androidu v konzoli”
+  * Nové procesory
+    * Vision Five 2
+    * https://www.starfivetech.com/en/site/boards
+    * https://linux-sunxi.org/
+    * https://www.kickstarter.com/projects/starfive/visionfive-2
+    * Vytvořilo Imagination Technology - dříve stálo za hroznými SGX grafikami
+    * Klon Air32F103
+      * https://www.cnx-software.com/2022/11/21/air32f103-is-a-clone-of-stm32f103-clocked-at-up-to-216-mhz/
+    * Hádka o procesorech, SPI Flash a cache
+    * MPU řada STM32
+      * https://www.st.com/en/microcontrollers-microprocessors/stm32-arm-cortex-mpus.html
+      * https://www.st.com/en/microcontrollers-microprocessors/stm32mp1-series.html
+    * Levné procesory z číny
+      * https://www.cnx-software.com/2022/10/22/10-cents-ch32v003-risc-v-mcu-offers-2kb-sram-16kb-flash-in-sop8-to-qfn20-packages/
+      * ESP32-C3 - debugování přes integrované USB emulující JTAG
+    * Diskuze o dostupnosti procesorů
+  * Proběhlé bastlířské pivo
+    * https://pyvo.cz/
+  * 75 let od vynálezu tranzistoru
+    * https://spectrum.ieee.org/point-contact-transistor#toggle-gdpr
+    * 50 let od posledního letu mimo oběžnou dráhu Země
+      * https://en.wikipedia.org/wiki/Apollo_17
+    * 80 let od prvního jaderného reaktoru
+      * https://en.wikipedia.org/wiki/Chicago_Pile-1
+      * https://www.youtube.com/watch?v=olEy-_OHvfI
+    * Nehody jaderných reaktorů
+      * https://en.wikipedia.org/wiki/Windscale_fire
+  * Simulace EM pole v FEMu
+    * špatné a ještě horší zážitky s Octave + OpenEMS (umí HyperLynx)
+      * https://github.com/LubomirJagos/FreeCAD-OpenEMS-Export
+    * CST - funguje, ale potřebujete někoho, kdo to umí
+    * Microwave Office
+    * FeniCSX - open source
+      * https://fenicsproject.org/
+    * COMSOL (bkralik ukazuje naklikané řešení solenoidu)
+      * https://www.humusoft.cz/comsol/pricing/ - budete muset prodat auto :) 
+    * FEMM (umí různé obory výpočtů)
+      * https://www.femm.info/wiki/HomePage
+    * MMTL (věci na plošňáku)
+      * https://mmtl.sourceforge.net/
+    * Altium má nově field solver na impedanci plošňáků
+      * https://www.simberian.com/Partners.php
+    * http://qucsstudio.de/Examples/ (jiné klony QUCSu se prakticky nevyvíjí)
+      * https://github.com/thomaslepoix/Qucs-RFlayout/blob/master/doc/tutorials/openems.md 
+    * Altair Feko (viděno nna FEL, nepoužito)
+    * TNT simulator (2D solver)
+  * Osazování BGA
+    * http://www.osazuji.cz/
+    * Šablona asi za 1200 Kč, každá deska asi za 1200 Kč včetně rentgenu a protokolu
+    * Pozor - JLCPCB sice umožňuje osazení z vlastních součástek, ale ty projdou čínským DPH při příjmu a evropským při cestě zpět…
+    * LCSC teď levně dělá jiné barvy masky, Alu plošňáky, na 6L+ zdarma via-in-pad
+    * Dobré zkušenosti s SMD osazováním (THT nezkoušeno, trvá déle, komplikovanější) [Jenda Hrach]
+    * Jethro - i THT je super (ale něco to už trochu stojí, platí se za díru)
+    * Eurocircuits osazují v evropě (ale stojí hodně peněz)
+      * https://www.eurocircuits.com/ 
+  * Linux na malých procesorech
+    * "linux" i na STM32F429
+      * https://github.com/fdu/STM32F429I-disco_Buildroot
+  * Radary
+    * Výhody a nevýhody vyšších/nižších frekvencí - vyšší/přílišná citlivost při silném dešti na vysokých frekvencích
+  * Simulátor breadbordu
+    * https://hackaday.com/2022/11/29/prototyping-the-prototype/
+    * https://www.withdiode.com/projects/bd1778cb-c245-423f-b03e-ed4ba808cf11
+    * Falstad - obvody v prohlížeči
+      * https://www.falstad.com/circuit/circuitjs.html
+    * Simulátor logiky a procesorů
+      * https://wokwi.com/
+    * Na ČVUT se emuluje Arduino na x86 - přilinkují se knihovny simulující výstupy
+  * Tiny Tapeout
+    * Multi-wafer - za 25€ zadání designu, za €100 čip s plošňákem
+    * https://tinytapeout.com/
+    * Max okolo 600 hradel, 500 projektů na jednom čipu
+    * eFabless - možnost většího prostoru, $10k
+    * OpenRoad součástí pipeline - převodník RTL - layout pro výrobu, celý proces je OpenLane
+      * https://github.com/The-OpenROAD-Project/
+  * Doma pečené čipy
+    * http://sam.zeloof.xyz/second-ic/
+  * Vláknová laserová gravírka na plošňáky a různé ujeté metody výroby plošňáků
+    * https://www.kickstarter.com/projects/commarker/commarker-b4-fiber-laser-engraver/description
+    * https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/
+    * https://www.youtube.com/watch?v=xbzX3eUD4_I&t=1396s
+    * http://www.tech-place.com/en/11-photosensitive-materials
+    * https://www.youtube.com/watch?time_continue=84&v=-dQzufH8FEQ&feature=emb_logo
+    * https://youtu.be/BzXxSgVrBUc
+    * https://www.indiegogo.com/projects/commarker-b4-laser-engraver-10x-faster-deeper#/
+    * https://www.youtube.com/watch?v=mhbntwPr3wk&t=825s
+    * Výroba domácích prokovených prokovů chemicky
+    * Pick and place projekty
+    * https://theamphour.com/610-picking-a-pick-and-place-pickiness/
+  * Spektroskopy
+    * http://rayer.g6.cz/elektro/wled25w.htm#SPEKTROSKOP
+    * https://www.youtube.com/watch?v=p3MzQ1OF3lk
+    * https://cdn.sparkfun.com/assets/c/2/9/0/a/AS7265x_Datasheet.pdf 
+    * https://www.sparkfun.com/products/15050 
+    * Jetej profi spektrák za pár kaček
+      * https://www.labx.com/item/ocean-optics-usb-2000-uv-vis-spectrometer/4285616 (repas profi řešení)
+    * https://github.com/leswright1977/PySpectrometer 
+    * 2 kolmé mřížky, 2D CCD
+      * https://github.com/FilipDominec/unechelle
+    * Pro zajímavost: Spectrometr pro chromatografii (190 - 700 nm)
+      * http://pikron.com/pages/products/hplc/lcd_5000.html
+      * https://wiki.control.fel.cvut.cz/mediawiki/images/a/a3/Diz_2010_pisa_pavel.pdf 
+    * Interferometrické měření zrcadlových objektivů (bylo už minule)
+      * https://www.youtube.com/watch?v=x2BiM7BGQMU
+  * KiCAD
+    * Nově pluginy pro “roomy” a kopírování vícekanálového designu (přímo v interním správci pluginů)
+    * Pozitivní ohlasy na KiCAD 6
+  * MicroPython nově součástí Arduino ekosystému
+    * zavádějící informace - není to integrované do Arduino IDE, ale je to samostatný projekt Arduino Lab
+    * Rozdíly mezi CircuitPythonem a Micropythonem
+    * CP je fork MP udržovaný Adafruid
+    * MP je jako linuxový kernel, CP je jako Ubuntu (má to fůru věcí navíc, ale není to tak odladěné a má to jiný cíl než MP - primární je rychlost výuky programování HW pro začátečníky)
+    * CP neumí přerušení a další věci, který by byly problematické pro začátečníky, ale je snažší a pohodlnější pro začátek
+    * IKEA Frekvens - hraní si s MicroPythonem
+      * https://github.com/ah01/box-of-life
+    * Zajímavý zdroj informací je měsíční micropython meetup (často na něm je i autor MP) a jsou YouTube kanále
+      * https://www.youtube.com/@mattytrentini/videos 
+  * Organické supporty u Průši - reimplementace tree supportů z Cury
+    * https://twitter.com/josefprusa/status/1600190051857489922?t=S-ZwDpmzeocg1BaCZDk6DQ&s=19
+  * Kónické slicování, omezení
+    * https://twitter.com/CNC_Kitchen/status/1589194061742997504?t=9-x1OA81-WNZXwCfbxhxQQ&s=19
+  * Finder a Arduino PLC
+    * https://www.automation-fair.com/2022/11/09/finder-opta-arduino-micro-plc-with-industrial-iot-capabilities/
+  * RISC-V simulátor
+    * https://github.com/cvut/qtrvsim/actions/runs/3569582781/jobs/5999682828
+    * Spousta zajímavých informací o RISC-V
+  * Existují momentové kleště na stahovací pásky (např. Panduit GS2B)
+  * Nově se v Rustu píše už i ransomware…
+    * https://securityaffairs.co/wordpress/138933/malware/ransomexx-ransomware-rust-language.html
+  * Dlouhá diskuze o vzdělávání, akcích pro studenty
+    * https://www.hamik.cz/hobbies/
+  * https://fosdem.org/2023/
+  * Příští VB 9.1.2023!

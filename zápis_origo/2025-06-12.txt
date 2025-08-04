@@ -1,0 +1,100 @@
+====== ⚡ Virtuální Bastlírna LI. (12.6.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:50 (bez nás do cca 00:20) |
+^ Celkem se vystřídalo | 41 účastníků |
+^ Ve špičce | 33 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Meshtastic, aktuální bugy, testování ShortFast, nový převaděč na Javořině
+  * Čína zastavila vývoz materiálů na magnety, magnety začínají na trhu docházet
+    * proběhlo už někdy v dubnu
+  * Proběhl Maker Faire
+    * Pájeníčko představilo meteostanici, je open-source
+    * https://x.com/pajenicko/status/1924138906515132723
+    * https://github.com/Pajenicko/expLORA-Sensors/tree/main
+    * ChipTron o ní píše (a má nový web)
+      * https://chiptron.cz/explora-novinka-z-prazskeho-makerfaire-co-to-je-a-jak-se-to-pouziva/
+      * diskuze, odkud se vzala použitá metoda šifrování (ze staršího projektu)
+      * MSP430G2553IPW28R je v ní kvůli širokému napájecímu napětí
+  * Miroslav Němeček na CH32V006 rozchodil barevné VGA a FAT s čtvrtinou paměti oproti FatFS
+    * https://x.com/NemecekPanda38/status/1932699586457711011
+    * https://x.com/NemecekPanda38/status/1933065037196730773
+    * https://x.com/NemecekPanda38/status/1932897630822314455
+  * Diskuze o cívkách, stínění a jejich vhodnosti na různé účely
+    * https://hackaday.com/2017/05/24/what-lies-within-smt-inductor-teardown/
+  * Ukázka, co je uvnitř Thunderbolt docku
+  * ČVUT vyvinulo vlastní náhradu Mindstormů
+    * https://www.lupa.cz/aktuality/cvut-vytvorila-nahradu-lega-jde-o-stavebnici-pro-vyuku-programovani-a-robotiky/
+    * jde koupit přes skriptárnu
+    * Běží na ESP32-S3, STM jako koprocesor, p. Píša popisuje, jak to funguje
+    * https://robosoutez.fel.cvut.cz/kostka-brian
+    * https://www.abclinuxu.cz/zpravicky/fel-cvut-vyvinula-robotickou-stavebnici-pro-mlade-programatory
+    * https://eshop.cvut.cz/simplifyworks/cs/eoc/public/product/439523928-stavebnice-brian
+    * https://open-cube.fel.cvut.cz/
+    * Lego má soutěž pro děti
+      * https://firstlegoleague.cz/
+  * RISC-V, optimalizace a implementace na FPGA
+    * https://dspace.cvut.cz/handle/10467/123187
+    * https://dspace.cvut.cz/handle/10467/123186
+    * https://github.com/medexs/ibex-demo-system/tree/add-basys3-support 
+    * https://github.com/medexs/nuttx/tree/ibex-demo-system-on-basys3-and-nexys-video 
+    * https://github.com/HoneyGol-Microsystems/vesp-beta
+    * Bude nová kniha o RISC-V (přímo od lidí z risc-v foundation), intro je k ní na youtube
+      * https://www.amazon.com/dp/0323994989
+      * https://github.com/openhwgroup/cvw
+      * https://www.youtube.com/watch?v=Qyq5nHUDt4g
+    * Starší kniha pro začátečníky
+      * https://shop.elsevier.com/books/digital-design-and-computer-architecture-risc-v-edition/harris/978-0-12-820064-3
+  * Mýdlový filament
+    * https://www.timeplast.com/timemass12
+    * https://vtm.zive.cz/clanky/vyrobili-jsme-mydlo-na-3d-tiskarne-ano-fakt-existuje-i-takovy-filament-voni-po-olivach-a-civka-prijde-na-45-dolaru/sc-870-a-235056/default.aspx
+  * Filament na tisk svíček
+    * https://www.timeplast.com/timemass/p/timemass-fire
+  * NFCTron - jak funguje, ukázka obsahu
+    * MIFARE Ultralight EV1 (https://www.nxp.com/docs/en/data-sheet/MF0ULX1.pdf) 
+    * Spekulace jak to asi funguje, a jestli to jde kopírovat a jiné vektory útoku
+    * Otázka je asi hlavně ceny Ultralight EV1 proti šálování útoku a ceny schopnějších karet
+  * Dotaz na pokus na stellarátoru Wendelstein s injektováním vodíkových kapslí - bkralik není přítomen, zeptat se příště
+  * Meteopress zjistil, jak použít radary na simulaci falešných leteckých cílů
+    * https://www.seznamzpravy.cz/clanek/ekonomika-firmy-ceske-radary-na-pocasi-vyrazi-do-boje-jsou-levnejsi-a-umi-i-falsovat-data-278415
+    * příště se zeptat Jendy / jethra
+    * https://www.idnes.cz/ekonomika/domaci/nafukovaci-tanky-decinske-firmy-inflatech.A161221_170050_ekonomika_rts
+  * Indická AI firma skončila, protože se zjistilo, že nemá AI, ale 700 indických pracovníků
+    * https://mashable.com/article/microsoft-backed-ai-startup-chatbot-human-employees
+  * Ventilátor o 8x8x3 mm
+    * https://www.youtube.com/watch?v=v7H4gORK4xk&t=109s
+  * Polarizované indukčnosti
+    * https://www.e-magnetica.pl/doku.php/polarity_of_inductors
+    * https://www.analog.com/en/resources/analog-dialogue/articles/does-the-assembly-orientation-of-an-smps-inductor-affect-emissions.html
+  * Další havarovaná Starship
+    * https://ct24.ceskatelevize.cz/clanek/veda/kosmicka-lod-starship-predcasne-explodovala-musk-let-oznacuje-za-uspech-361427
+  * V Praze byl Kip Thorne a zároveň bylo setkání nadšenců do kosmonautiky
+    * https://en.wikipedia.org/wiki/Kip_Thorne
+    * https://social.kernel.org/notice/Ausay3F9PB6IYnijI0
+  * Jak pokračuje měření gravitačních vln
+    * https://www.youtube.com/watch?v=w71npRnEufY
+  * Ukázka prohlídky tunelu metra D, popisy hydroizolace a metod stavby
+    * https://www.dpp.cz/spolecnost/aktuality/detail/66_2997-obrazem-den-otevrenych-dveri-na-stavbe-prvniho-useku-metra-d
+  * Zmínka o testování Bambu H2D, dobře se tisknou tisky s podporami
+  * Kravinka - multimetr na ruku
+    * https://x.com/eevblog/status/1931988527337857518?t=S2rppBVCqOxk-ibtx6PL2g&s=19
+  * OpenXC7 - open-source toolchain pro FPGA řady 7000 od Xilinxu
+    * https://github.com/openXC7/
+    * byl o něm příspěvek na FOSDEMu
+    * https://fosdem.org/2025/schedule/event/fosdem-2025-4850-all-open-source-toolchain-for-zynq-7000-socs/
+  * Příští VB v úterý 1.7. a pondělí 4.8.
+  * Jak fungují DMA v procesorech, jak efektivně obsluhovat displej (2d DMA)
+    * Jaké jsou jiné varianty, android, 64 ARM s plnohodnotným Linuxem, nová ST (Cortex-A, ale jsou slabé proti jiným, je to STčko, má to fůru periferií atd., ale pokud chce člověk jen grafiku/web, tak jde najít lepší a levnější)
+    * http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/index.html
+    * https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/embedded_systems/start
+    * https://amitomation.cz/produkt/operatorske-panely-hmi/anp-50-webovy-operatorsky-panel/
+    * https://linuxgizmos.com/catalog-of-136-open-spec-community-backed-linux-sbcs-under-200/
+    * https://www.st.com/en/microcontrollers-microprocessors/stm32-arm-cortex-mpus/products.html
+    * https://www.soselectronic.com/cz-cz/articles/electronic-assembly/inteligentni-dotykove-displeje-v-mini-formatu-2464
+    * https://www.variscite.com/lp/i-mx93/
+    * https://www.solid-run.com/embedded-industrial-iot/nxp-i-mx8-family/imx8m-mini-som/
+  * Diskuze o Quanshengu UV-K5 (a alternativních softech) a TK11, jak používat, varování před velkým výkonem přes povolený limit
+    * https://www.hardwired.dev/2025/01/26/quansheng-odhaluje-novou-radiostanici-tk11-taiko-kong/
+    * https://www.alafone.com/what-is-the-real-experience-of-using-quansheng-tk11/

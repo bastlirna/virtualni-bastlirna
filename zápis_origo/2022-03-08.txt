@@ -1,0 +1,66 @@
+====== ⚡ Virtuální Bastlírna XII. (8.3.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:25 |
+^ Celkem se vystřídalo | 33 účastníků |
+^ Ve špičce    | 29 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Power harvesting - měniče fungující od desítek mV, triky s baterkami v bezdrátových myších
+    * [[https://www.youtube.com/watch?v=lrELRVFEx\_s]]
+    * [[https://www.youtube.com/watch?v=6kwamCh1QkE]]
+  * Meshtastic - nezávislá komunikační síť
+    * https://meshtastic.org/
+    * problémy se spolehlivostí - někdy nedoručí zprávy, i když odesílateli tvrdí, že ano
+  * Kodeky, jazykově specifické metody komprese řeči
+  * Bezdrátová sluchátka, jevy na velkých vzdálenostech / se slabým signálem
+  * RF moduly, wi-fi casting - broadcasting paketů, jednosměrný přenos
+  * Wi-Fi deauther, limit 128 SSID na wpasupplicant, techniky na wifině pro retransmise
+  * Vysírátka 
+     * ESP8266 deauther, 
+     * TV-B-Gone a jejich vylepšení, 
+     * blbnutí RFID čteček Bluetoothovým ovládáním - deaktivace RFID v průběhu rozsvícení indikační LEDky - Bluettoth vysíratko: [[https://youtu.be/NARJrwX\_KFY?t=1714]]
+  * Jak fungují některé systémy na pozadí DPP a tramvají
+  * Jak fungují indukční smyčky na křižovatkách, oblbování vysílačem
+  * Nápady na fyzikální triky - např. speciálně tvarovaná deska na generování čtvercových vln na vodě
+    * Problémy s disperzí na vodní hladině
+    * (DrsNyx) BEND IT LIKE (SONAR) BEACON WITH A PHASED ARRAY  [[https://hackaday.com/2022/02/23/bend-it-like-sonar-beacon-with-a-phased-array/]]
+  * Meteostanice
+    * WS1080
+    * Na Strahově Vantage Pro 2
+    * Zajímavý SW s podporou hodně stanic: [[https://weewx.com/]]
+  * Dotaz na STM32F103, GD klony a další klony
+    * Klony Atmeg, nedostupnost většiny věcí od Microchipu / Atmelu
+    * ESP32-C3 a S2 za okolo 40 Kč na Mouseru, tisíce skladem
+      * C3 má debug přes USB, původně nebylo v dokumentaci, údajně je to HW debug
+    * RISC-V, Renesas a jejich nový procesor, K210 a další, Starlight, Beagle-V
+    * Povídání o EFM32
+    * Dostupnost RISC-V procesorů
+  * Spotřeba nových ESP32 variant - cca 20 mA bez modemu
+    * Měření: https://gist.github.com/fabianoriccardi/83fd33797cfb301d6c7f5c4db4b5616d
+    * Dotazy na výměny certifikátů, šifrování
+  * Ukradená data od nVidie, leaknuté certifikáty
+  * Neonová krize, spojení s krizí na Ukrajině
+  * Pájení malých součástek
+  * Krystaly, dolaďování mechanickými úpravami
+  * Oprava telefonu Librem 5 - oprava citlivosti GNSS výměnou pár 0201 součástek
+    * FSF versus binární image firmware, metody obcházení
+  * Wifiny, internetová sdružení, buzerace od ČTÚ a finančáku, udání a další zábavnosti
+  * Arduino week - připojit se jako VB? 
+    * Hlavní téma na +/- arduna se rovnou probralo a není materiál na samostatnou VB (pokud nechceme dělat čistě jen pro začátečníky - což nechceme)
+  * Další VB 7.4.2022
+  * Kompilace stejného kódu včetně LD v různých verzích gcc vyprodukuje jinak rychlý kód
+    * Jak se vyvíjí optimalizace v GCC (komunita tlačí hlavně na rychlé/nové MCU a tím pádem nové GCC může zhoršit optimalizace třeba pro staré Cortex-M)
+    * Popis situací kdy optimalizace GCC dokonce vyprodukovala nekonečnou smyčku
+    * Newlib a vývoj GCC toolkitu pro embedded
+      * Newlib není primárně pro embedded
+      * Picolibc je alternativa, která je navržená primárně pro embedded (komunita kolem RiscV ho má ráda)
+      * Píša - rant na Rust a obtížné hledání chyb
+      * Automatické nástroje pro hledání chyb, opravy chyb
+      * Diskuze o bezpečnosti různých programovacích jazyků
+      * Analýza rizik, ošetření chyb SW hardwarem, jak to funguje v průmyslu
+      * Neuronové sítě a jejich spolehlivost/vysvětlitelnost
+  * Digitální vs. analogové osciloskopy, vzorkovací analogové osciloskopy, vzorkovací hlavy, metody vzorkování používané před 50 lety
+  * Pelmel technických témat před spaním

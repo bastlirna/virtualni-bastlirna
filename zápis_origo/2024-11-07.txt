@@ -1,0 +1,122 @@
+====== ⚡ Virtuální Bastlírna XLVI. (7.11.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:15 |
+^ Celkem se vystřídalo | 45 účastníků |
+^ Ve špičce | 41 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * CO2 senzor PASCO2V15 - měření pomocí generování IR pulzů a akustickým měřením
+    * Mají i jiné příbuzné typy
+    * https://www.root.cz/zpravicky/infineon-pasco2v15-co-ir-senzor-s-presnosti-50-ppm/
+    * Automatické otevírání okna
+      * https://www.aliexpress.com/item/1005002372754987.html
+      * https://x.com/pesvklobouku/status/1849041672912462092
+        * Český projekt
+    * Zmínka o rekuperaci vzduchu
+    * Zamyšlení nad čidly měřícími množství kyslíku a lambda sondou
+      * Případ z Ameriky z firmy, kde se mrazilo dusíkem a při servisu se pracovníci udusili dusíkem (CO2 senzor by je nevaroval)
+      * https://www.youtube.com/@USCSB/videos
+    * Topné Trombeho stěny na pasivní ohřev vzduchu
+      * https://cz.mouser.com/c/sensors/environmental-sensors/air-quality-sensors/?sensor%20type=Oxygen%20%28O%29
+  * Video o poruchách v Jaslovských Bohunicích
+    * https://youtu.be/5RPi01YDySM?si=yMPlVG_B4VZHSp7d
+    * Vznikl o nich i dokument “Najvačšie tragédie Slovenska - Slovenský Černobyl”
+    * Maďarská jaderná elektrárna Pakš má vybavení pro školení na historickém reaktoru - je možné vlézt i do reaktoru
+    * Česko má víc tréninkových reaktorů - v Řeži + FJFI má Vrabce v Troji
+    * V Bohunicích údajně došlo ke kontaminaci CO2 v chladicím systému olejem, CO2 se čistilo tak, že se prohánělo skrz půjčenou parní lokomotivu
+  * DEFCON
+    * Pokračování příběhu o zranitelnosti zámků Unsaflok
+    * V hotelích se údajně vrátí jen 35 % karet, zbytek zmizí
+    * Unikl konfigurační software (dotnet, zreverzováno), používány Mifare Classic karty - “jednoduché k zneužití”
+    * https://www.youtube.com/watch?v=4cx0RUV7i0s
+    * Ve slidech z DEFCONu bývá často odkaz na papery související s přednáškou
+    * https://www.youtube.com/watch?v=EvbNQnZlPJg
+    * https://infocon.org/cons/DEF%20CON/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Babak%20Javadi%20Aaron%20Levy%20Nick%20Draffen%20-%20High%20Intensity%20Deconstruction%20Chronicles%20of%20a%20Cryptographic%20Heist.pdf
+  * Diskuze o Windows 11, Defenderu, metodách detekce spouštění programů z oblasti dat, debugování, driverech
+  * ČVUT zveřejňuje přednášky o šifrování a příbuzných tématech
+    * NSA v 70. letech upravila navržené hodnoty v DES, až o 20 let později se zjistilo, že změny vedly k tomu, že na DES nejde aplikovat diferenciální kryptroanalýza, která ale byla vymyšlena až v 90. letech, tj. NSA potají znala diferenciální kryptoanalýzu minimálně 20 let předtím, než byla oficiálně vymyšlena, po přelomu století to dokonce přiznali
+    * https://youtu.be/8oyZQ7Frnc8?si=cqK27kyfUqwBGUUC
+    * https://www.youtube.com/playlist?list=PLQL6z4JeTTQlLgtPghdlPEtzzeHFVm_OL
+  * Přednáška - úvod do LoRy / LoRaWAN
+    * https://www.youtube.com/live/Tw4clKhZ4xM?si=xRBoQgh89I_Z-01X
+  * Meshtastic
+    * Možnosti dekódování SDRkem
+    * https://www.rtl-sdr.com/decoding-meshtastic-in-realtime-with-an-rtl-sdr-and-gnu-radio/
+    * Logo Meshtasticu znázorňuje chirp modulující frekvenci Lory
+    * Nedávno proběhl pokus s Meshtasticem na stratosférickém balonu
+      * https://meshtastic.discourse.group/t/meshtastic-stratospheric-balloon-from-poland/15261
+    * Mapa stavu atmosféry
+      * https://hf.dxview.org/
+  * LoRa rádia jde přeflashovat na ground station pro Cubesaty
+    * https://tinygs.com/
+  * Vyhřívané vložky do bot
+  * Láskakit má sodíkové akumulátory
+    * https://www.laskakit.cz/geb-paragonage-sodik-iontova-baterie-32140-10000mah-3-0v/
+    * Měly by fungovat v mrazu do -20 °C (tekutý typ), je snad možné je vybít na nulové napětí a znovu nabít
+  * OpenAlt
+    * Pocket 386 s FreeDOSem a českým prostředím
+    * https://talks.openalt.cz/openalt-2024/talk/3APNN7/
+  * FindMyPhone
+    * Baterie Parkside s BLE upraveny, aby se chovaly jako Airtag
+    * Dřív se používaly rotující klíče a byla potřeba registrace přes Mac OS X, dnes už stačí mít Apple účet a pomocí API se dá získat klíč
+    * https://github.com/seemoo-lab/openhaystack
+    * https://github.com/dchristl/macless-haystack
+  * Na OpenAltu byl i dětský koutek s programovatelným robotem, programuje se skládáním dřevěných kostiček, které pomocí magnetů enkódují svoji identitu - žádné kontakty
+    * https://www.primotoys.com/
+    * Podobný projekt Matatalab
+      * https://shop.matatastudio.com/
+    * Ozobot
+      * spíše pro starší, složitější, menší, jde dělat už “opravdovější programy”
+    * Blockly (klon Scratche) jde převést do MicroPythonu
+      * https://mpyblockly.com/
+  * RFID na rozpoznání míst ve Výtopně (doručování jídla/pití vláčky)
+  * ETCS
+    * Používá komunikaci přes GSM-R
+    * https://automa.cz/cz/casopis-clanky/vystavba-drazni-komunikacni-site-gsm-r-2007_06_34086_587/
+    * Zastavování provozu v Polsku
+      * https://www.wired.com/story/poland-train-radio-stop-attack/
+  * Vyšehradský most, lodě, železniční stavby
+  * Voyager 1
+    * Vypadlo vysílání na X-bandu, Voyager měl asi výpadek napájení, přepnul se na S-band, který nebyl použit od roku 1981
+    * Všechny 3 systémy obsahují RCA 1802 “Cosmac” na 6.4 MHz, údajně jsou v každé jednotce 2
+      * http://www.retrotechnology.com/galileo/galileo_1802.html
+      * https://www.cpushack.com/rca-cosmac-1802-and-180x-test-boards-for-sale/
+      * https://www.root.cz/clanky/rca-1802-posledni-mohykan-osmibitove-ery-mikroprocesoru/
+      * https://www.cpu-galaxy.at/article/cpu_in_space.htm
+      * https://fosstodon.org/@AkaSci/111570791196465062
+  * Satelit Boeingu se rozhodl explodovat a zaneřádil oběžnou dráhu
+  * Majordomus - smart home systém s předním panelem z plošňáku s dotykovými tlačítky, ale hodně drahé
+    * https://majordomus.tech/
+    * Používají ASCII Modbus
+    * Open-source, ale SW zřejmě vyžaduje nějaké placené prostředí
+  * Nové procesory M4 od Applu
+    * Starší M1/M2 jde provozovat pod Asahi Linuxem
+    * https://lwn.net/Articles/995383/
+    * https://youtu.be/TtLP5sAXYKo
+    * https://pretalx.linuxdays.cz/linuxdays-2024/talk/HURBMF/
+  * Malá x86 PC s pasivním chlazením
+    * https://vi.aliexpress.com/item/1005006036859811.html
+    * https://www.mironet.cz/asus-prime-n100id-d4csm-intel-n100-1x-sodimm-ddr4-pciex1-1x-glan-miniitx+dp649472/
+    * https://allegro.cz/nabidka/terminal-hp-t640-8gb-wifi-widows-10-ltsc-zadne-ssd-rs232-15924657130?cjevent=58c39bdf989211ef83d5619c0a18b8fa
+  * MagSafe konektory, USB-C konektory a další konektoroviny
+    * https://www.applemix.cz/datova-a-nabijeci-prepojka-adapter-usb-c-pro-apple-iphone-macbook-magneticka-prima-seda-p100016/
+  * CT různé elektroniky
+    * https://www.youtube.com/watch?v=Db99cXMD780
+    * Nordson Quadra
+  * Meshtastic tracker
+    * https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html
+  * Bodování baterií, bodovačky
+    * https://www.aliexpress.com/i/1005003051170814.html
+    * Pájení - tipy, varování
+    * Měděné pásky prakticky nejdou bodovat, jsou potřeba niklové
+    * Avacom dělá na objednávku
+    * http://baterkar.cz/
+  * Rádia, DAB, šíření vln, pásma, poslech rádia v dnešní době, online rádia
+    * Diskuze o moderních on-demand médiích versus “stará” lineární média
+    * https://digital.rozhlas.cz/cesky-rozhlas-nabizi-na-webu-u-vybranych-stanic-vysilani-s-vysokou-zvukovou-8515796
+  * Outernet/Othernet Lantern
+    * https://www.indiegogo.com/projects/lantern-a-global-satellite-data-radio#/
+    * https://www.rtl-sdr.com/othernet-formerly-outernet-updates-lantern-backers/
+    * https://forums.othernet.is/

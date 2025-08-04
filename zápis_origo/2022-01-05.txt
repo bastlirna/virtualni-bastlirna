@@ -1,0 +1,95 @@
+====== ⚡ Virtuální Bastlírna X. (5.1.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:00 |
+^ Celkem se vystřídalo | 46 účastníků |
+^ Ve špičce    | 37 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Začátek, volné téma
+  * Vakuovačka, rant na neexistenci opravdových PID regulátorů s jiným než bang bang
+  * Triakovka, regulátor, vaření sous-vide s regulátorem v rychlovarce, vaření párků a mlíka v rychlovarce, inteligentní trouby, vaření v myčce na nádobí
+  * ESP32 v pračce
+  * Levná VNA, spektráky z číny
+    * LiteVNA64
+      * https://www.aliexpress.com/item/1005003551867442.html?spm=a2g0o.9042311.0.0.49d14c4deAJJRF
+    * TinySA
+      * https://www.aliexpress.com/item/4001274404758.html?spm=a2g0o.9042311.0.0.49d14c4deAJJRF
+    * Spektrák do 4.4 GHz
+      * https://www.aliexpress.com/item/1005003666545294.html?spm=a2g0o.9042311.0.0.49d14c4deAJJRF
+  * FPGA
+    * Jak si rozchodit RISC-V na FPGA a ovládat tím LED pásek od @hubmartin
+      * YOSYS - syntéza Verilogu do netlistu https://github.com/YosysHQ/oss-cad-suite-build/releases
+      * icestorm ICE40, Xilinx trellis, …
+      * nMigen (Amaranth)
+      * Litex (nMigen, SoC, BIOS, IPs)
+      * RISC-V gcc https://github.com/sifive/freedom-tools/releases
+      * Blogpost: https://www.martinhubacek.cz/blog/riscv-with-tinyfpga-bx-and-litex/
+    * https://github.com/YosysHQ/yosys
+    * https://github.com/enjoy-digital/litex
+    * Stojí za tím http://www.enjoy-digital.fr/ 
+    * https://twitter.com/pdp7/ je hodně aktivní v Litex komunitě a má přednášky na toto téma
+    * Emulátor Risc-V
+      * https://github.com/cvut/qtrvsim
+      * https://dev.jakubdupak.com/qtrvsim/ 
+    * FPGA GOWIN Littlebee
+      * Zobrazování Full HD přes LVDS, serializace atd.
+    * RISC-V gcc https://github.com/sifive/freedom-tools/releases
+    * CANBus pro FPGA: https://canbus.pages.fel.cvut.cz/
+      * https://gitlab.fel.cvut.cz/canbus/zynq/sja1000-fdtol
+      * https://gitlab.fel.cvut.cz/canbus/ctucanfd_ip_core
+    * Do migen sa daju priamo includnut verilog zdrojaky takze netreba vsetko prepisovat do pythonu. Napr: https://github.com/scanlime/flipsyfat/blob/master/flipsyfat/cores/sd_emulator/linklayer.py#L16
+    * NuttX pro Litex
+      * https://github.com/apache/incubator-nuttx/tree/master/arch/risc-v/src/litex
+      * https://github.com/apache/incubator-nuttx/tree/master/boards/risc-v/litex/arty_a7
+  * HomeAssistant
+    * Metody instalace
+    * Spousta už hotových modulů pro integraci zařízení na trhu
+    * Problémy s náročností Influxu
+    * Měření spotřeby a účtování elektřiny
+      * Pluginy pro rozpisy HDO od PRE/ČEZ do HA
+      * https://github.com/zigul/HomeAssistant-CEZdistribuce 
+  * Elektrické rozvaděče a radosti s rozvody
+    * Shelly 3M a jeho “bam” funkce při zapojení PE na výstup relátka spínajícího fázi :) 
+    * Gosund SP111 - nahrazena novou verzí, která nejde snadno rozebrat
+    * Tuya Convert - prý snad nějak přestal fungovat
+    * Blitzwolf SHP6 (WiFi), BlitzWolf SHP13 (ZigBee)
+  * Přesnost elektroměrů: https://www.researchgate.net/figure/Ten-static-meters-placed-in-series_fig1_337229022
+  * Jak funguje HDO
+    * https://www.egc-cb.cz/en/complete-realization-of-power-equipment/ripple-control-transmitters.html
+    * https://www.cezdistribuce.cz/cs/pro-zakazniky/spinani-hdo
+    * Jak se správně zapojuje HDO a co se stane, když se to udělá blbě
+    * čtyřkvadrantový elektroměr + HDO fejkovací krabička (dodaná od poskytovatele elektřiny)
+    * Plugin PRE https://github.com/slesinger/HomeAssistant-PREdistribuce/tree/master/custom_components/predistribuce
+      * Příklad api endpointu: https://www.cezdistribuce.cz/distHdo/adam/containers/morava?code=406
+  * Dá se tahat DC proud z AC sítě a oblbnout tím elektroměr?
+    * Nemělo by jít - energie se musí bezztrátově s konstantním proudem přelévat do spotřebiče a zpět, nelze tím odebírat energii
+  * Obětovaná anoda, růst elektrolytických hmot na spojích různých kovů v potrubí
+  * Husté DSP na měření spotřeby
+    * https://www.analog.com/en/products/adau1701.html
+  * USB Powerbanka s USB-PD aspoň 60W (tzn. má stap-up na 20V, aby zvládla nabíjet NB s 3 článkovou baterii)
+    * Alza něco má
+  * Stolní pily, doporučení, způsoby vedení pravítka - doporučení na HIKOKI
+    * https://www.hitachixxl.cz/stolni-okruzni-pila-hitachi-hikoki-c10rjwaz/?gclid=Cj0KCQiAoNWOBhCwARIsAAiHnEjDYgME-p6th8mTslxqgHUEc8jsoUs8CPe5U37ju0Zlzz6UTrEBUGwaAm_MEALw_wcB
+  * Novinky v kicad 6
+    * https://www.kicad.org/blog/2021/12/Development-Highlight-Third-Party-Content-Improvements/
+    * https://www.kicad.org/blog/2021/12/KiCad-6.0.0-Release/
+  * Příští termín 7.2.2022
+  * Radiascan - levný spektrometr pro gama záření
+    * https://radiascan.com/products/detector-of-ionising-radiation-gamma-spectrometer-radiacode-101-works-with-android-google-maps/
+    * https://en.wikipedia.org/wiki/Single-photon_avalanche_diode
+    * https://www.youtube.com/watch?v=x1UZdLVlBXg
+    * Nai(Ti) detektory a hygroskopie
+    * RADFET (pro integrační měření dávky)
+    * Extrakce radonu z vody do olivového oleje https://meetingorganizer.copernicus.org/EGU2019/EGU2019-6321.pdf
+    * Obkládání tokamaku stříbrem / zlatem
+    * Přechod stříbra na nestabilní izotopy, radioaktivní zlato z implantátů do nádorů
+    * https://www.iaea.org/publications/3718/the-radiological-accident-in-san-salvador
+  * Nehody, co se v praxi stávají, když se dostatečně neotestuje SW
+    * Therac-25
+    * Pád sondy do MArsu
+    * Autodestrukce s raketou, kde přetekl int s výkonnějšími motory
+    * Nutné restarty letadel a bezpečnostních raket
+  * Ponorky
+    * Videa na Smarter every day

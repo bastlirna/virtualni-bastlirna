@@ -1,0 +1,99 @@
+====== ⚡ Virtuální Bastlírna XL. (1.7.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:00 |
+^ Celkem se vystřídalo | 48 účastníků |
+^ Ve špičce | 38 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * ESP s ethernetem od Lilygo (T-Internet-PoE) - podporuje Tasmotu, funguje Bluetooth bez omezení
+    * objeven bug v Tasmotě
+  * Glukometr s BLE - odposlechem udělaný nezávislý displej pro sledování stavu
+    * Pro glukometry existuje open-source FW
+    * https://github.com/openaps/oref0
+  * Athom v2 - “chytrá zásuvka” s měřením spotřeby a rovnou i Tasmotou
+  * Faradayův jev s ukázkou
+    * Kerrův Jev, Pockelsův jev
+    * Ing. Šafránek - mechanická televize, kerrův článek jako jednopixelové LCD
+    * Minulost rádia, televize, tranzistory vs. elektronky, tužkové elektronky
+  * 5G IoT + další konkurenční technologie
+    * RedCap
+    * Long-range Bluetooth
+    * LoRa přes satelit
+    * Meshtastic - v Česku se rozmáhá, nedávno umístěn na Ještědu a Cukráku
+      * Mají filtry, aby je nespálil vysílač
+      * Láskakit prodává moduly na Meshtastic, často jsou vyprodané
+    * Výdrž na baterii, typy používaných baterií / akumulátorů
+    * Na 13.56 MHz je ISM pásmo, proběhly pokusy provozovat na něm LoRu (nenašli jsme zdroj)
+    * Protokol Whisper
+    * https://www.printables.com/model/922784-3d-solarnode-meschtastic/files
+  * Exploze akumulátorů v rodinném domě v česku - vyvalená zeď, střecha
+    * Legislativní potíže s umístěním úložiště mimo dům
+    * Soláry - investice, samostatnost, dobíjení aut atd., vlastní zdroj elektřiny pro nouzové situace
+    * https://www.kabinetkuriozit.eu/petrolejova-lampa-k-pohonu-radia/
+    * V Německu je možné si koupit v Lidlu balkonové solární panely a pouštět elektriku do sítě - je to jen na ohlášení, snižuje spotřebu, v Česku zakázáno
+    * Problém s provozem indukčních sporáků z měničů - velké špičkové proudy
+  * Altium ruší perpetuální licence
+    * KiCAD zlepšuje podporu importu z Altia
+    * Diskuze o licencích
+    * https://www.bartels.de/bae/bae_en.htm
+    * Ukázka pluginu Interactive BOM z KiCADu v Altiu (BoasTools)
+  * Librem 5 vydalo schémata (jsou v KiCADu, zkonvertováno z PADS)
+    * https://social.librem.one/@dos/112390815088343471
+  * Lumen PnP - levná open source osazovačka
+  * SUGON dělá levnou 120W páječku T21
+    * Atten má novou řadu levných pájecích stanic ST-xxx, ST-1509 má 150W, umí pájecí pinzetu a 150W hroty
+    * Klony JBC dělá i Aixun
+  * Zrcadlení PCB v KiCADu
+    * Mikrovlnná zapojení, hybridy
+    * https://hackaday.com/2023/06/02/sma-connector-footprint-design-for-open-source-rf-projects/
+  * 2 GHz osciloskopická sonda
+    * https://jmw.name/projects/active-probe/
+    * https://github.com/jmwilson/oshw-active-probe
+    * https://github.com/transmitterdan/s2spice
+  * Ztrátové koaxy v osciloskopických sondách kvůli odrazům na konci
+    * https://cleverscope.com/downloads/articles/THE_SECRET_WORLD_OF_PROBES_OCt09.pdf
+    * http://www.davmar.org/TE/TekConcepts/TekProbeCircuits.pdf
+    * https://www.ebay.com/itm/156241170329
+  * Měření na 420 GHz v plazmatu pomocí VNA s upkonvertory
+  * Optické sítě - přednáška pro síťaře
+    * https://www.youtube.com/watch?v=_KFpXuHqHQg
+    * Mikrotik dělá levné switche až do 100 Gb
+    * Svařování optických vláken
+    * DAC kabely, optické DAC kabely
+      * https://mikrotik.com/product/s_ao0005#fndtn-specifications
+    * Proč hoří nuláky v serverovnách kvůli harmonickým kmitočtům
+      * https://www.youtube.com/watch?v=YZMAHz5SB6w
+  * Chyba v OpenSSH
+    * https://thehackernews.com/2024/07/new-openssh-vulnerability-could-lead-to.html
+    * https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt
+  * FPGA + 10 Gb ethernet - jak přesouvat data
+    * https://netmon.fit.cvut.cz/
+    * https://opencores.org/projects/udp_ipv4_for_10g_ethernet
+    * https://www.dspfpga.cz/cz
+    * https://www.root.cz/clanky/vyvoj-400gbe-fpga-sondy-pro-monitoring-velmi-rychlych-siti/
+    * Běžné SDR čipy mají 12b ADC a bohužel taky 12b zpracování uvnitř, tj. naráží se na dynamický rozsah
+    * https://canbus.pages.fel.cvut.cz/
+    * https://gitlab.fel.cvut.cz/canbus/pcie-ctucanfd
+    * https://cds.cern.ch/record/1757498/files/ATL-DAQ-SLIDE-2014-667.pdf
+    * https://cw.fel.cvut.cz/b172/_media/courses/b35apo/en/lectures/06/a0b36apo_prednaska06-io-2-en.pdf
+  * Optický Thunderbolt
+    * https://www.amazon.com/Corning-Meter-Thunderbolt-USB-C-Optical/dp/B08CK7LPXZ
+  * .NET na NESu
+    * https://www.youtube.com/watch?v=ASTqqvQo0dM
+  * Český vesmírný program
+    * https://x.com/CT24zive/status/1803709572739117131
+  * 3D tisk kovu galvanickou depozicí
+    * https://fabric8labs.com/
+    * https://electroforming.cz/
+    * https://www.lompraha.cz/
+    * https://www.zpjlompraha.com/
+  * AR488 fork pro ethernet
+    * https://github.com/Kofen/AR488
+  * Byla RISC-V konference, OpenHWgroup má nové procesorové jádro
+    * https://github.com/openhwgroup/cvw/
+    * https://gitlab.fel.cvut.cz/otrees/org/-/wikis/theses-defend
+    * https://dspace.cvut.cz/bitstream/handle/10467/114963/F3-DP-2024-Gruncl-Damir-samproj_v2-3.pdf
+    * https://wiki.control.fel.cvut.cz/mediawiki/images/4/44/Bp_2024_pressl_stepan.pdf
+    * https://comparch.edu.cvut.cz/

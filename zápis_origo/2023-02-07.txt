@@ -1,0 +1,87 @@
+====== ⚡ Virtuální Bastlírna XXIII. (7.2.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:52 |
+^ Celkem se vystřídalo | 57 účastníků |
+^ Ve špičce    | 37 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * Měření účinnosti tepelného čerpadla
+    * Měření teploty vody před a za čerpadlem, průtoku a spotřeby
+    * Aktuálně v mrazech COP>2.8, ve vyšších teplotách okolo 4, při práci do 50°C bojleru, tak jen okolo 1.5, dlouhodobý průměr za leden asi 3.5
+    * Testováno na čerpadle Sinclair JSH100 (přibližný název, 100 kW), má ModBus
+    * Zkušenosti s odvlhčováním pomocí klimatizace nebo tepelného výměníku na vzduch - klimatizace kondenzuje málo vody
+    * Ukázka Proxmarku a 1.54” pasivního ePaper displeje napájeného přes NFC - čip od Guangzhou Sysor Microelectronics
+    * Demonstrce, jak se pomocí Proxmarku zapíše obrázek
+  * Plně barevný eink!
+    * https://www.techradar.com/news/no-power-needed-ground-breaking-color-epaper-display-looks-like-pure-magic-but-isnt
+  * Jak nahradit tablety u zasedaček k rezervaci místností
+    * Rpi s displejem, Sonoff NSPanel Pro, český výrobek na zeď s Linuxem na STMku (nevíme název) atd.
+  * LTSpice 17.1 - vyšla beta a nakonec i stabilní verze 17.1.6
+    * Nová feature na výpočet frekvenční charakteristiky z tranzientní analýzy - nově to umí GUI samo a je to výrazně rychlejší a dává to dobré výsledky
+    * Vylepšení v GUI
+    * Lepší rozložení na jádra procesoru
+    * Lepší stabilita a konvergence, jde změnit klávesové zkratky a uložit nastavení
+    * https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html
+    * Dřív byl lepší SIMPLIS, ale LTSPice ho zase dotahuje
+  * Proběhla Smršť 2022
+    * https://ksp.mff.cuni.cz/encyklopedie/zaznamy/smrst2022/
+    * Přednášky o KiCADu, stavění
+  * Nový KiCAD 7 RC1 - novinky jako CLI interface pro generování výstupů, pluginy a mnoho dalšího
+    * webový viewer od Altia pro Altiácké projekty, může být i self-hosted
+    * Nová verze Inventree, začíná se pracovat na propojení s KiCADem (databázové knihovny)
+  * Speciální stíněné trafo pro měřicí techniku
+    * https://xdevs.com/article/vref_psu_p1/
+  * Samo-se-clockující stavová mašina z EEPROM s matrix klávesnicí a sériovým výstupem
+    * https://hackaday.io/project/189444-fsm-serial-keyboard
+  * STčko má novou řadu procáků STM32C0. Evidentně to spadá někam do prostoru mezi F0 a G0. JE i nová řada U5
+    * C0 nemá napájení pro RTC!
+  * Prasověci
+    * Snaha napájet zařízení z RS485 včetně LEDek a repráku
+    * Elektroměr, který se resetuje kvůli nedostatečnému napájení při dlouhém čtení po RS485
+    * MS9280 - Flash ADC, 50 MSa/s za $1
+      * https://www.lcsc.com/product-detail/Analog-To-Digital-Converters-ADCs_Hangzhou-Ruimeng-Tech-MS9280_C1509021.html
+      * Kopie AD9280 a AD876 za 1/10, resp. 1/30 ceny
+  * Diferenciální sondy
+    * Slintání nad IsoVu od Tektronixu
+    * Micsig taky nedávno uvedl podobné, levnější
+    * https://eleshop.eu/micsig-cp503-current-probe.html
+    * https://www.eevblog.com/forum/testgear/micsig-has-optic-fiber-and-hf-current-probes!/
+    * https://www.micsig.com/OIP/
+  * Osciloskopy
+    * Dumání nad tím, jestli místo Rigol MSO5000 nekoupit spíš DSO1000, který je 12b
+  * Dotaz na programování Siemens Simatic
+    * Ukázka, jak vypadají programy, jde kombinovat ladder logic s textovým programováním
+    * OpenOPC UA pro Linux
+      * https://www.osadl.org/OPC-UA-PubSub-over-TSN.opcua-tsn.0.html
+      * https://www.open62541.org/
+    * Pro ještě složitější věci EPICS (https://epics-controls.org)
+    * český nový koncept PLC https://www.rexygen.com/
+  * ForgeFPGA
+    * https://community.renesas.com/gpak-gfet/f/greenpak-greenfet/28390/forgefpga-datasheets
+    * Původně od Silego, než ho Renesas koupil a transformoval na Dialog Semiconductors
+    * https://www.renesas.com/tw/en/products/programmable-mixed-signal-asic-ip-products/greenpak-programmable-mixed-signal-products
+  * ESP32+iCE40
+    * https://riscv.org/risc-v-developer-boards/details/
+    * https://groupgets.com/blog/posts/interview-with-the-creators-ice-v-wireless
+  * BGA, horkovzduch, předehřev, reballing
+    * https://kaisertech.co.uk/pre-heater-underboard-esd-safe
+    * https://kaisertech.co.uk/quick-infrared-pre-heater
+  * Hořelo ve Wuxi, budou nedostupné součástky od Vishay
+    * https://www.siliconexpert.com/blog/wuxi-fire-2023/
+  * Přesnost ADC u STM32 a divný chyba kdy se po restartu ujiždí hodnota
+    * diskuse o ADC a oversampling
+    * https://www.st.com/resource/en/application_note/an2668-improving-stm32f1-series-stm32f3-series-and-stm32lx-series-adc-resolution-by-oversampling-stmicroelectronics.pdf
+    * Diskuze o ADC v STM32, měření, kalibraci, offsetu, referencích, měření teploty pomocí KTY, tolerance součástek, drift, praskání SMD součástek, kapacitně přetíženém I2C atd.
+  * Měření teploty podél zakopané trubky v zámrzné hloubce
+    * DS18B20 ale s oficiálním budičem a ne jen z IO pinu MCU
+    * OWFS
+    * Jak detekovat únik vody
+    * Jak měřit hladinu vody v nádrži
+    * Reflektometrie - uprdkávačovo diplomka (už zase)
+  * Jak řešit kinetozu při hraní VR
+    * Vibrační motorek za ucho (vojáci používají něco podobného, pokud potřebují přepravit jednotky na moři, které nejsou trénované na moře, aby netrpěly mořskou nemocí)
+  * 18.2. bude robodoupě, 25.3. bude Arduino Day a v Berlíně bude Hackaday konference
+  * Příští VB v úterý 7.3.2023

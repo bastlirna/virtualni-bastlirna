@@ -1,0 +1,132 @@
+====== ⚡ Virtuální Bastlírna XLI. (7.8.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:30 |
+^ Celkem se vystřídalo | 36 účastníků |
+^ Ve špičce | 31 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Zámky na kola - tip na Abus Bordo nebo hodit Airtag do kola (je-li karbonové)
+  * Co nového ve fúzi
+  * Doutnavková logika, dekatrony, digitrony, předionizace radioaktivní příměsí, britský počítač WITCH
+    * https://www.tiffe.de/roehren/neon.pdf
+    * https://www.eevblog.com/forum/projects/lowest-voltage-neon-tube/
+    * https://www.industrialalchemy.org/tubepage.php?item=15
+  * PoweredUSB
+    * USB s přídavným konektorem vedle, který poskytuje 5/12/24 V pro větší odběry
+  * Exkurz do ztrátových koaxiálních kabelů pro oscloskopické sondy (pokračování z minula)
+    * Zakoupeny 2 různé odporové koaxy z Aliexpressu, mají tenoučký nichromový vodič uvnitř, nelze určit typ, nemá napěněné dielektrikum
+    * Příště bude nejspíš referát o problematice niklování nichromu
+    * Kabel RG21(A) (nevyrábí se od 2. poloviny 50. let) a RG222 - nesehnatelný
+      * https://www.repeater-builder.com/antenna/cable-specs/rg21a-u-and-rg-222-u-mil-spec-c-17-14a-dated-7-sep-1955.pdf
+      * https://www.nationalwire.com/pdf/POLY-DIELECTRIC-1-2.pdf
+      * http://www.isoconnector.com/catalog/suitable_cable.pdf
+      * https://www.ttcc.com.tw/product/66?lang=en
+      * https://www.nationalwire.com/pdf/COAXIAL-ATTENUATION.pdf
+    * Kabely RG178 / RG196 - sehnatelné, první je levnější, oba mají ještě větší ztráty než RG222, ale mají normální pájitelný vntřní vodič
+      * https://www.koax24.de/en/product-info/coaxial-cable/coaxial-cable-50-ohm/15-21-mm-size1/rg196-au.html
+    * Velký seznam zdrojů na toto téma
+      * https://entertaininghacks.wordpress.com/library-2/scope-probe-reference-material/
+      * https://lss.fnal.gov/archive/other/lbl-cc-2-1b.pdf
+      * https://www.classe.cornell.edu/~hoff/LECTURES/09S_510/C11/Specs%20of%20Coaxial%20Cable%20Types.pdf
+  * Doom na masturbátoru
+    * https://www.youtube.com/watch?v=rAE175Tiuy0
+  * Glitchování procesorů pomocí Chipshouter, PicoEM, Chipwhisperer
+    * https://hackaday.com/2024/08/03/get-your-glitch-on-with-a-picoemp-and-a-3d-printer/ 
+    * hackování Trezoru
+    * https://www.youtube.com/watch?v=dT9y-KQbqi4
+    * Zdroj hesel kdysi založený jen na čase jako zdroji entropie
+      * https://www.youtube.com/watch?v=o5IySpAkThg
+  * Příběh vytunelované burzy MTBox, probíhá postupné vyrovnání s původními majiteli účtů (trvalo asi 10 let)
+  * Linuxový managovaný switch
+    * https://blog.brixit.nl/making-a-linux-managed-network-switch/
+  * Nové draslíkové akumulátory
+    * https://www.techspot.com/news/104110-new-potassium-ion-battery-technology-could-soon-replace.html
+  * Emulátor NESu na Picopadu
+    * https://x.com/nemecekpanda38/status/1812869234772377650?t=TCV3Qs0e1lyIx1rz-JV7pg
+    * Původní autor Večeřa, doděláno Miroslavem Němečkem
+    * Koluje balík s imagem se spoustou her - každá hra se musí zkompilovat zvlášť
+    * Nějaká aktuální info
+      * https://x.com/NemecekPanda38 
+      * https://www.breatharian.eu/hw/picolibsdk/index.html
+      * https://www.oldcomp.cz/viewtopic.php?f=125&t=12016&p=162032&hilit=picopad#p162032
+    * Existuje nový Picopad Pro
+      * https://pajenicko.cz/picopad/picopad-pro 
+  * Velmi pěkné čtení o řízení einků a metodách zobrazování
+    * https://github.com/Modos-Labs/Glider
+    * Řada výrobců ebooků je už používá, Amazon o tom snad také uvažuje
+      * https://soyacincau.com/2024/06/26/kobo-libra-colour-ereader-malaysia-review/
+  * Povinný systém pro vydávání zvuku u pomalu jedoucích elektroaut
+    * Přehnaná hlasitost, budí lidi po ránu na sídlištích
+    * Mobis VESS 
+      * Uvnitř je složitá deska s CAN, procesorem, D-class zesilovač
+      * Má sériovku, dá se komunikovat a dumpnout obsah (je na Githubu)
+        * https://github.com/hughsie/mobis-vess
+      * Zvuky uvnitř jako PCM - lze nahradit (někdo tam dal zvuky lokomotivy, zvonku a parní sirény)
+      * https://www.youtube.com/watch?v=1_PID063fB8
+    * Zvuky nejsou jen šum, různé automobilky k tomu přistupují různě 
+      * https://www.20k.org/episodes/autotone
+    * Siemens vyladil budící frekvence měničů u lokomotiv
+      * https://youtu.be/-SDYdHzT7Qw?t=12
+      * (Wiki: Zvuková frekvence se mění po tónových a půltónových krocích, v rozsahu jedné oktávy a sexty. Je to vzestupná lydická stupnice vycházející od tónu F. Kdyby se vzal za výchozí konečný (vrchní) tón, jednalo by se o dórskou stupnici se základním tónem D.)
+      * https://www.youtube.com/watch?v=G081hD0nwWE
+  * Vzlet Ariane 6
+    * Díly z ČR
+    * Úspěšná mise, vypuštění sond, problémy při návratu
+  * Boeing Starliner
+    * Poškození trysek při manévrování, pobyt na orbitě 2 měsíce místo 1 týdne, problémy se SW, nejistý osud posádky, pomalu dochází baterie
+    * Pokud se nepovede opravit Starliner, odletí posádka asi až v únoru (tj. po 8 měsících)
+    * https://denikn.cz/minuta/1492543/
+    * https://www.planes.cz/cs/article/208929/problemy-starlineru-jsou-vaznejsi-nez-se-tvrdilo
+  * Logování sítě Meshtastic a analýza přenášených dat
+    * Dekódování v NodeRED nefunguje, přestože by podle dokumentace mělo (nedopsané zdrojáky)
+    * Ukázka Adamova dekodéru
+    * Redpanda - nástroj na zpracování dat, kompatibilní s Kafkou, zdarma
+    * Flow se dají verzovat a diffovat
+    * Adam možná udělá přednášku na NodeRED na LinuxDays
+    * Pro parsování JSONů se dá použít JSONata
+  * V říjnu budou LinuxDays, do konce srpna běží Call for Presentations
+    * https://pretalx.linuxdays.cz/linuxdays-2024/cfp
+  * Hackování zámků s nesprávným nastavením Flipperem
+    * https://x.com/mikrom_cz/status/1820895826622963828
+  * Další VB ve čtvrtek 5.9.
+  * Parazitní jevy v SiC MOSFETech
+    * https://hal.science/hal-01984359/document
+    * https://www.slideshare.net/MichaelHarrison96/coss-hysteresis-in-advanced-superjunction-mosfets-apec-2016-presentation-compressed
+    * Body dioda je modulovaná napětím na gate, projevuje se hlavně na vysokých proudech, kdy se změní strmosti proudu diodou v závislosti na napětí Vsd a protnou se
+    * Spousta tranzistorů se dělá tak, že se předpokládá, že budou horké pro minimalizaci ztrát, udržují se na konstantní teplotě autostabilizací, jsou na to navržené. Přidání chladiče může paradoxně zvýšit jejich ztráty.
+  * Milk-V Pioneer v casu SophGO - vývojový počítač s 64 jádry, rozchozená Fedora
+    * https://milkv.io/pioneer
+    * 16 clusterů o 4 jádrech s propojovací maticí
+    * https://www.youtube.com/watch?v=vaMxTSm53UU
+    * Grafická karta od AMD, funguje akcelerované OpenGL
+  * https://milkv.io/jupiter
+    * https://www.youtube.com/watch?v=YxtFctEsHy0
+  * https://radxa.com/products/x/x4/#buy
+    * x86 o velikosti Raspberry Pi
+    * Alternativně třeba Odroid H3 a H4
+  * Report z instalace meteopressího radaru v pacifiku
+    * Pochybná instalace TN-C sítě se špatnou zemí
+  * Microchip má 64core RISC-V, ale není zatím dostupný
+    * https://www.cnx-software.com/2024/07/10/microchip-pic64gx-quad-core-64-bit-risc-v-microprocessor-real-time-processing/
+  * Kombinace RP2040 s W5500 v jednom pouzdře
+    * https://docs.wiznet.io/Product/ioNIC/W55RP20/overview
+    * Diskuze o smysluplnosti různých procesorů a jejich kombinací s bůhvíčím
+  * Problematické sériové porty ve Windows na BT sluchátkách a obecně BT stack
+    * Důvod, proč BT slůchátka dělají seriové porty:
+      * https://github.com/arkq/bluez-alsa/issues/410 
+      * https://www.bluetooth.com/wp-content/uploads/attachments/BluetoothDesignGuidelines.pdf (kapitola 13)
+      * A možnost AT příkazů a seriového portu vede až do https://www.bluetooth.com/specifications/specs/hands-free-profile-1-8/ 
+  * Problém s maximálním počtem endpointů připojených na USB
+    * Limit je i max. 5 hubů směrem k zařízení
+  * Levný DCV kalibrátor / přesný zdroj
+    * https://www.wrytech.eu/products/pdvs2
+    * Diskuze o starých Agilentech, přesných odporových sítích
+  * Přesný multimetr od CERNu
+    * Nemůžeme úplně dohledat
+    * https://hackaday.com/2021/02/26/homebrew-metrology-the-cern-way/
+    * https://ohwr.org/project/opt-adc-10k-32b-1cha/-/wikis/home
+  * Původ AT příkazů u Hayes company v roce 1981
+  * Pregap data na audio CD
+    * https://x.com/lauriewired/status/1811071109091221899

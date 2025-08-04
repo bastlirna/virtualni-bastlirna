@@ -1,0 +1,113 @@
+====== ⚡ Virtuální Bastlírna XXXV. (12.2.2024) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 0:14 (pokračovalo se neoficiálně dál bez Bastlírny) |
+^ Celkem se vystřídalo | 50 účastníků |
+^ Ve špičce | 59 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Smart čudlík od Lilygo
+    * https://twitter.com/GreatScottLab/status/1755239294753525919?t=fveMj5LByybKHEGTpIe0JA&s=19
+  * Nové ESP32-C6 a demoboardy
+  * Levní roboti k ESP pro výuku na dálku
+    * https://www.dfrobot.com/category-46.html
+  * Gyroskopická kostka
+    * https://willempennings.nl/balancing-cube/
+  * Hacker News
+    * https://news.ycombinator.com/
+  * ICE-V - open source FPGA
+    * https://github.com/ICE-V-Wireless/ICE-V-Wireless
+  * Hantek 6022 - osciloskop, ale spíše funguje jako vzorkovací karta od DC do 20 MHz, blije data na 40 MSa/s (teoreticky, údajně spíš 16 u Jendy Hracha)
+    * dvoukanálově jen 8 MHz
+    * nahrávání RGB dat ze starého HP VNA 8719C (snaha vyhnout se GPIB) - bizarní rozlišení 622*450, 3 barevné složky, synchronizace
+    * vhs-decode - věc na digitalizaci VHS přímo za hlavou
+    * CX card - CX23880 čip na digitalizaci, režim pro surová data, dá se ohackovat clock
+    * řešení problémů s GPIB
+    * Projekt Domesday86
+    * Emulátor GPIB tiskárny
+      * http://www.ke5fx.com/gpib/7470.htm
+    * Emulátor GPIB plotteru+tiskárny
+      * https://www.aphena.com/pltgeist/pltgeist.htm
+  * HP 3780A - oprava a popis funkce bit error rate testeru
+  * ADT1000 - československá kopie západního HP-1000
+    * video od Zdeňka Houšky
+    * https://youtu.be/jqeE9ZbtmX0?feature=shared
+  * Bond in Motion - výstava Bondovské techniky, spousta zajímavých strojů + bastlířiny
+    * https://bondinmotion.cz/en/home-english/
+  * Bude Installfest (16.-17.3., Praha, zdarma)
+    * Call for papers do 19.2.
+    * https://installfest.cz/if24/
+  * Bude Hackaday Europe (12.-14.4., Berlín, $70 nebo $140)
+    * https://hackaday.com/tag/europe/
+  * Bude Embedded World (9.-11.4., Norimberk, €25)
+    * https://www.osadl.org/
+  * Jak tisknout PEEK
+  * JLCPCB zavádí výrobu plně barevných plošňáků
+    * https://twitter.com/arturo182/status/1736818775587172419/photo/1
+    * https://twitter.com/arturo182/status/1736818775587172419
+    * Nejde ani o nepájivou masku ani o silkscreen, ale o další vrstvu, která není příliš odolná a není úplně dobrá jako krycí vrstva (co navlhavost?)
+    * Prohlídka velké fabriky na plošňáky
+      * https://www.youtube.com/watch?v=jTBOSob5MLg
+      * Tisk silkscreenu v GAtemě eko systémem s inkjetovou hlavou
+      * Zmínky o dalších výrobnách jako AllPCB, PCBWay (dřív bývalo lepší než JLC)
+    * JLC umí dobře osazení, má vlastní vývojový systém
+    * Prý je dobrý Aisler, ale různí se info o ceně
+  * Povídání o měřicí ústředně M3T300 od Metry Blansko
+    * Zřejmě vyrobena někdy na přelomu 60. a 70. let ??
+    * Asi samá TTL logika
+    * Měla i označení IT 10, obsahovala double float basic, automatizaci měření
+  * Termokamery
+    * Samostatné versus PC versus v mobilu
+    * Ulefone Armor 9 má termokameru a umí posun obrazu vůči termoobrazu, má senzor od FLIRu
+    * (kamery jsme řešili i minule nebo předminule)
+  * Povídání o opravě motoru elektroauta, co je složitější než u klasického auta a co jednodušší
+    * Hyundai neopravuje motory, jen dodává celý nový za 100k+
+    * Oprava ložisek, rozebírání chladicího okruhu, opětovné spojování, zatěsňování, materiály pro těsnění od Locktite
+  * Jak funguje nabíjení elektroaut
+    * AC v podstatě jen 3f zásuvka + PWM ohledně povoleného odběru, nemá zpětnou signalizaci nabití, v nejhorším s elektroměrem a platebním terminálem
+    * IEC 15118, asi 13 protokolů v jednom (včetně IPv6 + TCP + power line ethernet)
+    * umožňuje obousměrnou komunikaci
+    * Mělo by umožňovat charge to pay, v česku ještě není iplementováno (kromě Tesly a jen pro Tesly)
+    * Mělo by fungovat i na AC (když někdo implementuje)
+  * Elektroauta stále mají OBD/EOBD
+  * Kindle Paperwhite 4 a jeho jailbreak
+  * Lora od Mikrotiku, jak zobrazovat packety na síti
+    * Rozdíl mezi LoRa/LoraWan ohledně šifrování
+    * Semtech UDP Packet forwarder by měl vracet všechny packety, co jdou po Loře
+    * Nově podporuje protokol LNS - sice je proprietární, ale dá se dogooglit
+    * https://m0taz.co.uk/2019/09/rtl-sdr-fun/
+  * Flippera se snaží zakázat v Kanadě
+    * Připomíná nám kauzu s nabíjecími dvířky Tesly a zranitelností vůči Flipperu
+  * Na Strahově nám během přenosu spadla síť
+  * Domácí soláry, měniče, úložiště energie
+    * Elektronický jistič s WiFi, kterým se dá snadno zabít
+      * Dá se na dálku zapnout/vypnout (dá se i nechtěně zablokovat v zapnutém stavu), dá se vypnout funkce chrániče a přenastavit proud jištění…
+      * https://youtu.be/dd16_Y9xfpw?si=WkDrffc4dzC07zZW
+    * Diskuze o různých značkách spínaných zásuvek a měřicích zařízeních
+    * Shelly EM funguje dobře, Pro verze už má i ethernet, umí do 50A
+    * Wallbox nepoužívá ModBus RTU, ale ASCII, takže se nedá prakticky protáhnout jednoduše po ethernetu jako MB TCP
+      * Možná by šlo přes Lantronix Xport - údajně umí
+  * KiCAD 8 má už 2 RC verze
+  * Nový Bus Pirate 5
+  * Bambu Lab A1 hoří kabely k bedu
+    * https://forum.bambulab.com/t/power-lead-caught-on-fire/52110
+  * Návštěva u Průši
+    * https://github.com/MartinDejmal/PrusaCupHeater
+  * Plyn v Brně
+    * https://twitter.com/UdalostiBrno/status/1753048020050927711
+  * Dacia Spring má VN pojistku zespod auta a dá se rychle vytáhnout, takže lze někomu znefunkčnit auto
+  * Přenos dat bahnem
+    * https://twitter.com/hubmartin/status/1756390994507948465
+    * 5 Bd/s!
+    * V Turecku provrtali metro včetně kolejí
+  * ADR1001 se konečně dostává na trh, ale zatím nejde ani koupit ani nasámplovat
+    * https://www.analog.com/en/products/adr1001.html
+  * Jak řídit věci stabilně
+    * https://homes.hkfree.org/~bkralik/c/flexible_robot_dynamics_and_controls.pdf
+  * Knihovnička s manuály a binárkami ROMek různé techniky, hlavně měřáků
+    * http://www.ko4bb.com/getsimple/index.php?id=manuals
+  * Vtipný výbuch lithiového akumulátoru
+    * https://forum.mypower.cz/viewtopic.php?t=12459
+  * Příští VB ve středu 6.3.2024
+  * Přespříští VB ve středu 17./24.4.2024 (abychom byli až po HackaDay a mohli poreferovat, ještě se řeší)

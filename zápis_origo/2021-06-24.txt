@@ -1,0 +1,82 @@
+====== ⚡ Virtuální Bastlírna IV. (24.6.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:17 |
+^ Celkem se vystřídalo | 34 účastníků |
+^ Ve špičce    | xx účastníků online |
+
+===== Témata (a odkazy co jste nestihli opsat) =====
+
+  * USB-RNDIS
+  * https://twitter.com/horcicaa/status/1397459280480112642
+    * Gadget driver??? pod Linux
+  * Hackovátko na WPA2 wifiny - Pawnagotchi
+    * https://github.com/evilsocket/pwnagotchi
+  * NuttX
+    * https://www.youtube.com/watch?v=8noH8v7xNgs
+    * https://github.com/apache/incubator-nuttx/blob/master/drivers/usbdev/Kconfig
+  * CDC-ECM Ethernet-over-USB
+    * RNDIS
+  * Prohlídka dílny
+  * Jak udělat rychle GUI pro ovládání věcí přes sériovku?
+    * Plugin do Matlabu
+    * Jde i v Octave
+    * Běžně v Qt
+    * LabView
+    * EPICS
+    * ArgonLabs
+      * https://epics.anl.gov/
+      * https://epics-controls.org/about-epics/
+    * Webová klikátka, CLI,...
+    * WebUSB, WebSerial - Chrome + Edge
+    * React
+    * Loris
+    * https://tasssadar.github.io/Lorris/cz/index.html
+  * Hackování komplet kompu pře WebUSB
+  * Ovládání FTDI přes ZAdig + Python
+  * SPI a další věci - Fosfor
+  * Delphi, Pascal a další hnusnosti
+  * https://www.aicodix.de/example8/
+  * https://cs.wordpress.org/plugins/cookie-law-info
+  * https://sourceforge.net/projects/chromulan/
+  * Vraždění a důkazy
+    * Fitness hodinky
+    * Arduino a spotřeba vody při likvidaci těla
+  * Hejt na LAbView
+  * Zynq
+  * https://control.fel.cvut.cz/prednaska-atomove-hodiny-v-kazdodennim-zivote
+  * Ukázka našeho CNC
+    * https://www.pikron.com/pages/products/motion_control/lx_rocon.html
+    * https://cw.fel.cvut.cz/wiki/help/common/robot_bosch
+    * https://github.com/cvut/pyrocon
+    * http://www.pikron.com/media/bosch-roses-demo.mp4
+    * Bruš les!, motory
+  * Diskuse o rad-hard FPGA 
+    * jak se jemnuje ta EU firma?
+    * Tool chain pro FPGA a pak přechod na kompilátory a otevřenost/uzavřenost procesorů a kompilátoru vs arch. x86, Apple M1, …
+  * Praktická ukázka BOSH robota ovládaného výše zmíněným boxem/frameworkem
+    * https://www.youtube.com/watch?v=5sWbJI2-w2I
+    * https://www.youtube.com/watch?v=SgUWg7788Hw
+  * I3C
+  * Space API
+    * API pro Hackerspace
+    * https://hackaday.com/2021/06/18/do-you-spaceapi/
+  * ESP wifi moduly v real-time aplikacích
+    * NuttX
+    * v automotive to zatím není a asi jen tak nebude
+    * Zephyr OS vs. RTEMS a další RTOS
+    * https://cs.wikipedia.org/wiki/Hanlonova_b%C5%99itva
+  * akcelerometr obsahující machine learning
+    * https://www.st.com/en/mems-and-sensors/lsm6dsox.htm
+  * Neodstatek čipů
+    * https://mirror.vpsfree.cz/videohrach/video/brm/2012-12-20-tesla-vyroba-a-analyza-cipu.mkv
+    * https://mirror.vpsfree.cz/videohrach/video/brm/2012-12-20-tesla-doprovodne-materialy.zip
+    * ST vyrábí velký kulový a nic se nedá sehnat
+    * NXP se taky nedá sehnat
+    * Co dělá ONSemi v česku?
+    * Škodovka v Česku se zastavila, Volkswagen na Slovensku už před časem
+  * Expanze UARTů přes SPI
+    * SC16IS752
+  * Problémy s rozvodem hodin k jednotlivým expanderům (na jedné desce jich je 7 a kvůli úspoře)
+  * Další vydání 27.7.2021

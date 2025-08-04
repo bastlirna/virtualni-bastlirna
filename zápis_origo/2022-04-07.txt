@@ -1,0 +1,105 @@
+====== ⚡ Virtuální Bastlírna XIII. (7.4.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:10 |
+^ Celkem se vystřídalo | 39 účastníků |
+^ Ve špičce    | 30 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * začátek a blbnutí o kalkulačkách, aby se rozhořela diskuze
+  * baterky a jejich výhodnost
+    * https://www.nejlepsi-baterie.cz/
+    * testy jsou bohužel poměrně staré
+  * nabíječky baterek a jejich vlastnosti
+    * recenze na značku ISDT - pěkné designově, pěkné grafické rozhraní, balancér
+      * www.isdt.co
+      * nabíječky na tužkovky
+    * LiHV baterie - vyšší napětí, vyšší E hustota
+  * detekce zkratů na PCB
+    * https://www.youtube.com/watch?v=GbC6pdp3PKQ
+    * detekce mrazicím sprejem (nevýhodou vodivá kondenzace)
+    * Detekce isopropylem
+    * Detekce termo kamerou a jaké to má problémy
+      * https://paints.labir.cz/homepage/vysokoteplotni-barva
+    * Termochromická barva / folie
+      * https://patents.google.com/patent/US20150173178A1/en
+      * https://hackaday.com/2020/05/24/matrix-of-resistors-forms-the-hot-hands-behind-this-thermochromic-analog-clock/
+  * Bláznivé hodiny 
+    * https://hackaday.com/2011/10/12/building-a-better-clock-to-drive-you-insane/
+  * Připomenutí Installfestu
+  * Tiskárny štítků Dymo
+    * aktuální model tiskne jen na oficiální štítky Dymo
+    * Dave Jones z EEVBlogu udělal o tom video
+    * Podvádění na Amazonu - nahradili starý model novým a nechali hodnocení, aby se prodával, přestože nový model dostal hroznou bídu
+    * Louis Rossmann - iniciátor “right to repair” - snaha porušovat DRM může být v USA nezákonná
+    * offtopic - 3D tiskárny a DRM na špulkách, UHF štítky u nového Průšamentu (ale má sloužit pouze v rámci skladu k inventarizaci)
+      * některé levné tonerové tiskárny nepočítaly spotřebu, ale odhadovaly podle průměrné a po X stranách vyply tisk
+      * výrobci nemají čipy, takže někteří sami zveřejňovali návody, jak ohackovat jejich vlastní tiskárny, aby fungovaly s oficiálními tonery bez čipu
+    * v Dymo páscích je RFID čip zajišťující dRM, Dymo se odvolává na zjednodušení použití - ví, co je uvnitř za papír, garantují ekologický provoz a kvalitu - marketing pro omezení
+    * V některých státech nedostatek, dostupné jen některé barevné / materiálové kombinace
+    * offtopic - Brother má zoubky definující typ kazety, čistě mechanicky, dá se snadno oblbnout
+      * problém se žloutnutím neorigo samolepek - Jenda používá žluté
+      * Doporučení z publika - Údajně čínské bužírky ničí tiskové hlavy, lepší jsou u CDRmarketu
+    * Uvnitř STM32 a sekundární deska s NXP čtečkou RFID karet CLRC663, tagy se iCode SLIX2
+      * Popis funkce SLIX2 karet
+      * Dymo používá nejlevnější verzi čipu, která nemá šifrovanou bezdrátovou komunikaci - dá se odposlouchávat
+      * Ukázka odposlechnutých dat, dekódování obsahu
+    * Metody pro obejití DRM
+      * HW hack - man-in-the-middle s F103 - emulace čtecího čipu, vřadí se mezi tiskárnu a čtečku, emuluje, že špulka ještě není prázdná nebo emuluje úplně jinou náplň
+      * zatím bohužel není SW hack, kouzelné čínské karty pro SLIX 2 zatím nejsou
+      * tear-off útok - vypnutí napájení během přepisu counteru ve Flash
+  * Historky o telefonních automatech, telefonních kartách, hackingu, phreakingu atd.
+  * Programování aplikací pro telefony s NFC, důvody pro náhodná UID, pro randomizaci MAC atd.
+  * I2C EEPROM s NFC rozhraním - funguje jako pasivní tag, ale mikrokontrolér může měnit obsah, používá se do visacích zámků
+    * Se zámkem se komunikovalo cca 30s, než se nabil dostatečně, aby se motorkem odemknul
+    * užitečné pro konfiguraci embedded věcí
+  * Diskuze o DRM v tiskárnách vs. u žiletek na holení (klasické s výměnnou žiletkou)
+    * https://en.wikipedia.org/wiki/Razor_and_blades_model
+  * Elektronky - aneb jak se dělá lampový olej
+    * Přechod k vážné diskusi o elektronkách
+  * https://www.youtube.com/watch?v=MWJAG50s7zM
+    * vysílače, přijímače
+  * televize po 5G, funkčnost 5G ve městech, dostupnost sítí na venkově
+    * diskuze o rychlosti internetu
+    * 10Gb karty
+      * https://www.czc.cz/asus-xg-c100f/250704/produkt
+      * https://www.czc.cz/asus-xg-c100c/217017/produkt
+      * https://www.czc.cz/ubiquiti-unifi-direct-attach-copper-cable-10gbps-3m/238741/produkt
+  * Tramvaje a zemní proudy
+    * https://old-archiv.avc-cvut.cz/akce/ondrej-caletka-oskar-special-technika-prazskych-tramvaji-1
+    * https://old-archiv.avc-cvut.cz/archiv/informatika/sut/2007
+    * https://old-archiv.avc-cvut.cz/archiv/informatika/sut/2008
+  * Proud nulovým vodičem na třífázu v serverovnách
+    * https://www.youtube.com/watch?v=YZMAHz5SB6w
+    * Diskuze o jističích
+  * Jak na kabely které jsou flexibilní (dveře, otáčení, …)
+    * Flexibilní kabel vs smyčka
+    * Pod-volantový kroužek
+    * energořetěz
+      * ale kabely do tohodle nejsou běžně stíneně nebo kroucená dvojlinka
+      * https://www.tme.eu/cz/en/details/cf2021s/rj45-cables/logilink/ 
+      * https://www.tme.eu/cz/katalog/kabely-pro-retezove-lavky-stinene_113605/?s_field=1000012&id_category=113605&mapped_params=529%3A1451950%3B673%3A1451028%3B 
+  * autokalibrace meteoradaru za deště - otočí se nahoru a každou čtvrtotáčku s emusí prohodit polarizace, pokud nesedí hodnoty, poladí se zesílení jednotlivých kanálů pro polarizace
+  * Ligo (https://en.wikipedia.org/wiki/LIGO) a jak brutálně složité to je 
+  * James Webb Telescope
+    * zavěšení zrcadel s pozicováním na nanometry
+      * Mechanický deformační díl působící jako přepákovaný převod bez vůlí
+    * Různé typy motorů
+      * https://en.wikipedia.org/wiki/Ultrasonic_motor
+      * https://en.wikipedia.org/wiki/Inchworm_motor
+  * Český kryptočip
+    * https://www.lupa.cz/clanky/cesi-se-chystaji-vyrabet-miliony-vlastnich-bezpecnych-cipu-pomahaji-jim-tvurci-trezoru/
+    * Nebude nejspíš celý otevřený - cizí IP cores nejde zveřejnit
+    * Bude využívat PUF - generování náhodné, ale vždy stejné, statické funkce - využije se pro kryptografické klíče, založeno na výrobních tolerancích
+  * Různí jazyky pro RP2040
+    * http://mcu.cz/news.php?extend.4874
+  * Linux na RP2040, ESP32 a ATTINY - emulace systému s MMU
+    * https://dmitry.gr/index.php?r=05.Projects&proj=07.%20Linux%20on%208bit
+  * Paměti - PSRAM, sběrnice, ROMky na mnoho přepisů
+  * Video záležitosti, historie
+    * https://en.wikipedia.org/wiki/CMX_600
+    * https://www.youtube.com/watch?v=0wxc3mKqKTk
+  * restaurace záznamů z NASA
+    * https://en.wikipedia.org/wiki/Lunar_Orbiter_Image_Recovery_Project

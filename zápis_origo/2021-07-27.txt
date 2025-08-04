@@ -1,0 +1,104 @@
+====== ⚡ Virtuální Bastlírna V. (27.7.2021) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:45 |
+^ Celkem se vystřídalo | 28 účastníků |
+^ Ve špičce    | 20 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Nečíslovaný seznamBLE a aplikace
+  * Aplikace webové, ale “nativní” pro aplikaci BLE
+    * Electron, Proton
+    * Xamarin https://dotnet.microsoft.com/apps/xamarin
+    * Apache Cordova
+    * https://github.com/don/cordova-plugin-ble-central
+    * https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API#browser_compatibility
+    * https://caniuse.com/?search=bluetooth
+  * Kompilace pro Apple pod Microsoft tooly
+  * WebBLE versus iOS
+    * 3rd party prohlížeč (třeba placený WebBLE)
+    * Diskuse o bezpočenosti WebXXX API vs bezpečnost nativních aplikací
+    * Co nekalého mohou dělat webové aplikace a u webu nečekáme (česká spořitelna a scanování portů na e-bankingu)
+    * Youtube přehrávač Flash x HTML5 (nefunkční 3D a další fetury)
+  * 3D tiskárna Ender a Direct drive extrudér
+    * rant na TPE filamenty
+  * Plný pytel problémů Halenky a Bkralika
+    * 3D SLA tiskárny - smrad, bezpečnost atd.
+  * Uprdkávačova tiskárna (model?) s kalibrací pomocí tenzometru
+  * Bkralik a problém s termočlánky
+    * Jak zapojit termočlánek do aplikace (IC od MAX ???)
+    * ADS1220, LTC2983
+    * Filtrovat vše, co je mimo spektrum měřeného signálu
+    * Common mode tlumivky na souhlasné rušení
+    * https://www.analog.com/media/en/technical-documentation/data-sheets/2983fc.pdf
+    * Dávat pozor na tepelný šum
+  * Povídání o problémech s měřením teploty u tokamaku
+    * Zábava s ohříváním lithia, posouvání peaku vyzařování ???
+    * Měření teploty speciálními optickými vlákny
+    * Měření pomocí vláken v Singapuru a lokalizace vláken průvodem (link na podrobnosti? )
+  * Drsník a otázka na tenzometry
+    * Typy tenzometrů, lepení, správné použití
+    * https://en.wikipedia.org/wiki/Load_cell
+    * Mel jsem na mysli tenhle (vzhledově) https://www.auselectronicsdirect.com.au/assets/full/TA0352.jpg?20210309030812
+    * https://www.omegaeng.cz/pptst/Strain_Gage_Adhesives.html
+    * https://www.ebay.co.uk/itm/144097946375
+  * Seismografie
+  * Schumannovy rezonance, měření blesků
+    * IC AS3935
+    * Ale komerečně se to sampluje ADCčkem a posílá na server, kde se dělá korelace s vzorky z jiných stanic
+  * Senzory na měření pevných částic, měření velikosti pomocí autokorelace
+    * https://en.wikipedia.org/wiki/Dynamic_light_scattering
+  * Senzory na měření CO2
+    * https://www.aliexpress.com/item/4000212024923.html
+  * Kyslík versus vzduch na vesmírných lodích
+  * Účinky CO2 a kyslíku na člověka
+  * https://jenda.hrach.eu/f/moudra.txt
+  * Problém s výpadkem času u Galilea
+  * Plicní ventilátor
+  * Přednáška o času
+    * https://youtu.be/aiChIIYgCdU
+    * https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca
+    * Problémy při implementaci počítání času
+      * Naivní přístup vs použití (spolehlivé) knihovny, která všechny problémy řeší
+      * https://www.youtube.com/watch?v=-5wpm-gesOY
+      * Zde mate na POSIX systemech informrmaci z tzdata o prestupnych sekundach /usr/share/zoneinfo/leap-seconds.list
+  * GPS a počítání času po týdnech - proč po týdnech?
+    * Přesnost GPS, komerční přesná GPS, vojenská sekce
+    * Použití v geodezii, D-GPS
+    * Použití pro traktory
+  * Právo na opravy, legislativa USA vs EU
+    * Opravy aut, problematická výměna baterek
+    * Opravy traktorů
+    * Telefony od Apple
+      * Nefunkční náhradní díly od neoficiálních výrobců, soudní tahanice s opravnami
+      * Nefunkční oficiální komponenty přendané z legálně koupeného telefonu
+  * Další termín 23.8.2021
+  * Pružná podložka na detekci odebrání věcí z regálu po potřeby vyhodnocování prodeje (efektivita umístění v obchodě)
+    * Cílená reklama, etika cílení
+    * http://jacek.zlydach.pl/blog/2019-07-31-ads-as-cancer.html
+    * Věci ohledně analýzy dat uživatelů, banky, obchodní analýzy (vynecháno ze zápisu kvůli NDA), identifikace osob, 
+    * Zajímavost: PSČ samo o sobě je osobní údaj (v ČR existuje “samota” s vlastním PSČ kde má trvalé bydliště právě jeden člověk, tzn. pokud znám nějaké PSČ člověka a zrovna to bude tohle jediné, tak jsem ho přesně identifikoval)
+    * Nepovedená cílená reklama a čínské weby
+  * KVP1281 a staré Volkswageny, jak je opravovat?
+    * https://skoda-virt.cz/cz/clanky/elektrika/9071-palubni-pocitac-pp-kwp1281-favorit-felicia-bmm/?gotopost=3763266
+    * https://www.blafusel.de/obd/obd2_wbhdiag.html
+  * Angličtina v Rakousku
+    * V HornoRakousech nikdo nemluví Anglicky…
+  * Jendův 10 GHz (70?) radar
+    * Srovnání s ČHMÚ, vysvětlení principů ohledně detekce deště
+    * Stavba na Šumavě a v Bratislavě
+    * Rušení od WiFi
+    * Detekce Klínovce
+  * https://websdr.org/technotes/tn17c.html
+    * Záznam CHMU radaru: https://www.youtube.com/watch?v=uLz0ZYw4Hdw
+    * Antény pro mikrovlny
+      * český výrobce Jirous (max 1.8 metru)
+  * https://www.wime-project.net/features/
+  * ISP pojítka 60 a 80 GHz, ohlašovací povinost atd.
+    * http://60g.bkralik.cz/ (60g.cz)
+    * Jak dělat open street map a jak na nich zobrazovat mnoho bodů
+      * Knihovna ??? nepamatuju si jméno
+  * Příjem wifi na SDR - jaké SDR použít
+    * https://airspy.com/airspy-hf-plus/
+    * https://www.nuand.com/bladeRF-wiphy

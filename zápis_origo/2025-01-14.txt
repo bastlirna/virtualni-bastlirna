@@ -1,0 +1,113 @@
+====== ⚡ Virtuální Bastlírna XLVI. (14.1.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:00 |
+^ Celkem se vystřídalo | 59 účastníků |
+^ Ve špičce | 46 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Největší CRT na světě od Sony, existuje jen jeden známý kus
+    * Dohledáno přes fotografii na internetu v japonské restauraci
+    * Odvezeno do USA, popis stěhování
+    * https://www.youtube.com/watch?v=JfZxOuc9Qwk
+    * Krátká diskuze o televizi, lineární vs. on demand televizí, projektorech
+  * Diskuze o výhodách CRT oproti LCD, lamentace nad plazmami (těžké a rušily radioamatéry)
+  * Simulátor breadboardu
+    * https://80.lv/articles/build-run-your-own-cpu-with-crumb-1-3/
+  * Zigbee, automatizace domácnosti, zkušenosti
+    * Jednoduchá cesta s gatewayí od výrobce a cloudem zpravidla bez problémů, ale neumí všechny zařízení
+    * Složitější řešení (třeba Zigbee2mqtt + HomeAssistant) zahrnují spoustu podivných potíží, ale umí víc zařízení i možností použití
+    * Popis obskurních problémů - některé zařízení nutné párovat ve správném pořadí, zařízení s 2 různými bezdráty můžou blbnout při použití obou najednou, komplexnost Zigbee, Threadu a Matteru, potřeba mít IPv6 u Matteru
+    * Hádka o spolehlivosti bezdrátových a bateriových zařízení
+  * Chaos Conference
+    * Polské vlaky s DRM - žaloba od firmy, co vlaky vyvinula, zmatek v žalobách
+      * U soudu výrobce mlžil a obviňoval neautorizované servisy, ukazoval fotky z konkurenční servisní firmy, obhajoval složitou čtvrthodinovou opravu za 23000€, obviňoval hackery ze sdílení jejich kódu, ale tvrdil, že backdoory do zveřejněného kódu přidali sami
+      * Jeden vlak se porouchal i zastavením poblíž jiného servisu, vyřešeno odpojením GPS
+      * Výrobce zažaloval i poslankyni Polska za spuštění vyšetřování
+      * https://www.youtube.com/watch?v=b4xBNpWk89g
+      * https://media.ccc.de/v/38c3-we-ve-not-been-trained-for-this-life-after-the-newag-drm-disclosure
+    * Zajímavé přednášky z biologie - evoluce, interfacy s mozkem aj.
+    * Hackování power gridu
+      * https://hackaday.com/2025/01/01/38c3-taking-down-the-power-grid-over-radio/
+      * Ve střední Evropě systém podobný DCF ovládající lampy a zdrojová/odběrová místa
+      * Je možné na dálku odpojovat/připojovat zařízení a přetížit nebo příliš odlehčit síť
+      * Zranitelnost systému je známá, existuje šifrovaná varianta, ale nikdo o ni nemá zájem
+      * Existuje novější systém na NB-IoT a dalšími sítěmi, ale zatím v plánu nejdříve pro malé elektrárny a postupně k větším - tlak na opačný postup
+    * Tetra, nové metody pro hacknutí dalších algoritmů
+      * https://fahrplan.events.ccc.de/congress/2024/fahrplan/talk/9G97SZ/
+    * Hacknuta bezpečnost RP2350
+      * Glitchnutí výběru aktivních jader při bootu (RISC-V jádra nejsou bezpečná a debugger má přístup všude)
+        * https://www.elektormagazine.com/news/rp2350-microcontroller-security-hacked
+        * https://media.ccc.de/v/38c3-hacking-the-rp2350
+      * Vyhlášeny výsledky soutěže od Raspberry Foundation, 4 úspěšní výherci - 3 další metody, jak procesor nabourat
+        * https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/
+      * Ukázka od konkurenční skupiny, jak vypadá naskenovaná OTP ROM pomocí iontového paprsku - nepovedlo se přečíst obsah, úspěšná skupina asi použila backscatter
+        * Ukázky vnitřku ESP32, ukázka OTP fuse banky
+        * https://www.youtube.com/watch?v=z33TSv9EXBQ
+        * Ukázka tomografie (postprocessing z postupného broušení, zobrazováno FIBem)
+        * FIB k pronájmu se dá najít v BIOCEVu
+          * https://www.biocev.eu/files/editor/22/equipment/EM/FEI-Helios-NanoLab-660-G3-UC.pdf
+        * Broušení mikročipů kaneme na nože
+  * Nové Průšamenty - magnetické PETG s magnetitem a polypropylen odolný proti žíravinám a ředidlům
+  * Vodivý / magnetický vodivý plast se dá použít jako absorpční hmota do mikrovlnných systémů (zvýšení stability, snížení přeslechů atd.), pokud je vhodně ztrátový
+      * https://www.abstechnics.com/
+    * Stíněná trafa z měřáků mívaly vodivé plastové díly
+      * https://xdevs.com/article/vref_psu_p1/
+    * ESD pěna z krabiček většinou není použitelná - Jenda Hrach měřil na mikrovlnách
+    * Ztrátové pěny se časem rozpadají na prach
+  * Nové Rpi 5 s 16 GB RAM, nové Rpi 500 (počítač v klávesnici)
+    * Do Rpi 500 se dá dodělat SSD slot, je potřeba osadit slot a zdroje
+    * Levněji se dá pořídit HP T640 (x86 s Ryzenem, max 32 GB RAM, SSD, 3x DisplayPort)
+  * Meshtastic
+    * Nově umí české znaky
+    * BBS na Meshtasticu
+      * https://www.hackster.io/news/nick-farrow-uses-a-raspberry-pi-to-launch-a-text-based-meshtastic-bulletin-board-system-b026e370390e
+    * Diskuze o dosahu / pokrytí v Praze
+  * Reticulum
+    * “něco jako Meshtastic s routováním”
+    * https://reticulum.network/manual/hardware.html
+  * Omezení na vývoz grafických karet
+    * Jsme v Tier 2 - na ČR se také aplikují omezení na množství a výkon
+    * GaN tranzistory také podléhají omezení
+    * https://archive.is/QMiMN
+    * https://arstechnica.com/ai/2025/01/biden-administration-puts-quotas-on-global-ai-chip-sales/
+    * https://nyx.cz/files/000/028/2887164_31b0e390de7b5949c338/original.jpg
+  * SignalSDR
+    * obsahuje AD9361, které je 12b a potřebuje velkou přenosovou rychlost pro plné použití
+    * SignalSDR má “jen” 1 Gb ethernet, který nestačí. Pomocí FPGA nějak předzpracovává data, což nemusí být vždy super, ale zase jde přeprogramovat vlastním “programem”.
+    * BladeRF 2.0 už má USB 3.0, takže zvládá plnou rychlost
+  * Dekódování RFID
+    * Stačí anténka se 2 závity levného drátku
+    * NFC Laboratory umí používat SDR, chytá 3. harmonickou z RFID, dekóduje komunikaci, pakety, označuje jejich význam atd.
+    * Velmi levné řešení oproti třeba Proxmarku, umí i novější standardy (Proxmarku nemusí stačit buffer na nové šifrované karty)
+    * https://github.com/josevcm/nfc-laboratory
+  * Satelitní síť OneWeb měla 48h výpadek kvůli přestupnému roku
+    * https://x.com/KamilZm/status/1877009252608266289
+    * Diskuze nad 31b, 32b a 64b epoch
+  * Čínská USB síťovka, která obsahuje mass storage s exáčem s drivery, který údajně obsahuje “vir” - což není pravda
+    * https://x.com/evapro30/status/1878416900016705783/photo/1
+    * Nesprávná analýza odhalena uživateli VXunderground a MalwareHunterTeam - jde o zcela normální, i když velmi ledabyle zabalený instalátor normálního driveru
+  * Diskuze o špionských/šmírovacích zařízeních / softwaru
+  * Interní převody mezi UTF-16, UTF-8 a ANSI znaky ve Windows
+    * “Bestfit” - fitování podle vizuální podobnosti
+    * Lze použít pro obejití ochran proti nacpání nevhodných parametrů programům
+    * https://worst.fit/assets/EU-24-Tsai-WorstFit-Unveiling-Hidden-Transformers-in-Windows-ANSI.pdf
+  * Falešné DS18B20 a jak je poznat
+    * https://github.com/cpetrich/counterfeit_DS18B20
+    * Oslí můstek na dokument od ČHMU o měření
+      * https://www.projekt-aramis.cz/results/Senzory_2024.pdf 
+  * Doom v PDF
+    * https://doompdf.pages.dev/doom.pdf
+  * Nové Lithium-sírové akumulátory
+    * https://www.svethardware.cz/stellantis-a-zeta-vyviji-lithium-sirove-baterie-li-s-maji-vyssi-hustotu-i-o-50-nizsi-cenu/61396
+  * HIP-script
+    * řetězec přepsání a rekompilací z CUDA kódu do WebGL
+    * https://www.root.cz/zpravicky/hipscript-zprovozni-nvidia-cuda-i-amd-hip-primo-ve-webovem-prohlizeci/
+    * https://www.phoronix.com/news/HipScript-CUDA-HIP-Web-Browsers
+  * Řízení kotle Arduinem (článek, který přerůstá postupně v nechuť autora nad Arduinem a špatně napsaným softwarem)
+    * https://blog.root.cz/novacisko/rizeni-kotle-arduinem/
+  * Domácí stavba tepelného čerpadla
+    * https://www.mylms.cz/stavba-tepelneho-cerpadla/
+  * PDVS2 s ADR1399, nově jde dálkově i řídit přes sériovku
+    * https://www.wrytech.eu/products/pdvs-2-mini-v1-6-adr1399-version

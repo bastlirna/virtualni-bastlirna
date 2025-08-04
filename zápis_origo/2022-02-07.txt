@@ -1,0 +1,75 @@
+====== ⚡ Virtuální Bastlírna XI. (7.2.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 01:00 |
+^ Celkem se vystřídalo | 61 účastníků |
+^ Ve špičce    | 54 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * 19:43 - ještě jsme ani nezačali a už máme 6 připojených lidí
+  * 20:00 - už 12 lidí + bastlíři
+  * IKEA VIndriktning (dále jen IV)
+    * **[[projekty:virtualnibastlirna:2022-02-07:vindriktning-notes|Adamovo Poznámky]]** - osnova a linky z "přednášky"
+    * Srovnání měření různých monitorů vzduchu - přednáška na posledním OpenAltu
+      * https://www.openalt.cz/2021/slides/klemen-bucar-calibration-of-a-diy-low-cost-aerosol-detector.pdf
+      * https://www.youtube.com/watch?v=SE7NtyJrlz4
+    * Vliv vlhkosti vzduchu na měření - řešení při měření venku např. nasávat vzduch skrz vytápěné trubky
+    * Srovnání zkušeností se zvlhčovači a odvlhčovači vzduchu
+    * Vnitřek prý vypadá (píše Jenda Hrach) jako https://www.sparkfun.com/products/9689, možná čínská kopie Sharpu
+    * (Petr Jezek) připojení přímo k wemos https://github.com/Hypfer/esp8266-vindriktning-particle-sensor
+    * (VonSchlesien) Na githubu jsem našel, že někdo z toho tahá i PM1 a PM10 https://github.com/callimero/vindriktning2adafruitio Dává to smysl?
+      * vypadá to, že ne
+    * ukázky ostatních bastlířů, kteří IV upravovali - přístup obastlení původní elektroniky vs. vlastní elektronika
+    * LáskaKit bohužel nemá detekci okolnáho osvětlení, mírně nekompatibilní USB-C konektor s krabičkou IV
+    * (Petr Jezek) Pokud se jako ja snazite nahrat ten firmware pres tasmotizer tak verte, ze ESP32 tam neni podporovane :) Takze doporucu ESP flasher https://github.com/Jason2866/ESP_Flasher/releases
+  * LiteVNA 64
+    * rychlé představení VNA
+    * vysvětlení fungování Smithova diagramu
+      * https://elmag.fel.cvut.cz/sites/default/files/users/pankrac/files/smithuv_diagram.pdf
+      * https://zeenko.tech/litevna
+    * Pítrsek o návrhu napájecích systémů, vlastnostech keramických kondíků
+      * Doporučení na kondíky s pevným elektrolytem, neb netečou a mají dlouhou životnost
+      * Režimy smrti keramických kondíků
+      * Jak umírají SMD odpory
+      * Požáry techniky
+      * Nové grafenové baterie, hořlavost
+    * Co je smith diagram
+    * https://elmag.fel.cvut.cz/sites/default/files/users/pankrac/files/smithuv_diagram.pdf
+    * Alternativa: https://github.com/jankae/LibreVNA 
+    * https://www.golac.fr/network-analyzer-150MHz/
+    * https://www.makarov.ca/vna.htm
+    * https://www.sdr-kits.net/VNWA-3SE-Models
+  * Nový typ baterii
+    * https://ct24.ceskatelevize.cz/veda/3431166-cesti-vedci-si-nechali-patentovat-novou-baterii-je-nehorlava-a-ma-radu-skvelych
+  * Zálohování bateriemi, ICčka pro zálohu
+    * AXP192
+  * Starlink, fázovací systém na anténě
+    * https://www.youtube.com/watch?v=MDvwwpX1y9g
+    * https://www.youtube.com/watch?v=h6MfM8EFkGg
+    * https://careers.viasat.com/careers/SearchJobs/?5924=%5B442%5D&5924_format=4692&listFilterMode=1
+    * Diskuze o přenosových pásmech pro satelitní použití
+  * Feritová paměť na telefonní čísla
+    * https://www.youtube.com/watch?v=tPT6nIRFI_I
+    * Torzní zpožďovací linka
+    * Mechanická registrační kasa
+  * Press-fit konektory a související technologie
+  * Novinky z jaderné fůze a tokamaků
+    * Špatně přeložená tisková zpráva - celý internet šílel z toho, že číňani dosáhli zároveň vysoké hustoty plazmatu, dlouhé doby udržení a vysoké teploty, přitom v origo anglické tiskové zprávě stálo, že to byly různé experimenty. Takže nic tak objevného...
+    * Na celém světě zatím pouze dva tokamaky pracovaly s tritiem - v devadesátých letech anglický JET a americké TFTR. A na JETu právě probíhá kampaň, kde po dlouhé době (po dvaceti letech) zase tritium používají. Stojí za to sledovat výsledky (narozdíl od té čínské blbosti o řádek výš)
+  * Sigfoxu dochází peníze
+    * Dotazy na zkušenosti s Lorou a Sigfoxem
+    * Ukázky naměřených dat v terénu od bkralika
+    * různé modemy pro stará i 2.4 pásma
+    * RN2483A
+    * https://www.murata.com/products/connectivitymodule/lpwa/overview/lineup/type-abz-078
+    * STčko má zajímavé modemy, tzv. Generic node
+    * https://www.genericnode.com/
+  * Diskuze o domácí automatizaci, značkách, centrálních prvcích a vendor lock-inu
+    * Co na domácí auto. Co pro začátek, a kam se pak posunout.
+    * Je potřeba centrální prvek nebo ne
+    * Zigbee vs 433 
+    * Tasmota a podproa pro Sonoff RF 433 GW
+    * 433 vs zigbee výdrž na baterii
+  * Fáze vlevo nebo vpravo
+    * Prodlužovačky dvou nebo tří vodičových vedení

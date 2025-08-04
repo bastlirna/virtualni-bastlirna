@@ -1,0 +1,132 @@
+====== ⚡ Virtuální Bastlírna XIX. (6.10.2022) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 -  |
+^ Celkem se vystřídalo | nevíme, spadl Zoom, 31+ |
+^ Ve špičce    | 31 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+
+  * RC obvody s napěťovým ziskem
+    * AnalogSEEKrets
+    * http://lesliegreen.byethost3.com/seekrets/index.html?i=1
+    * https://www.oldfriend.url.tw/article/IEEE_paper/Synthesis%20of%20Passive%20RC%20Networks%20with%20Gains.pdf
+    * https://www.infineon.com/dgdl/Infineon-Filter_Wizard_36_AC_Voltage_gain_using_just_resistors_and_capacitors-Article-v01_00-EN.pdf?fileId=8ac78c8c7ddc01d7017ddd088bb25bf4
+  * Maker Faire
+    * Co jsme tam viděli
+    * Sklář dělající neonové nápisy
+    * Roboti od FELu, robotická dovážka pošty a věcí
+      * https://www.starship.xyz
+      * Spinoff Artinu - https://roboauto.tech/
+      * Roboti ve sněhu - https://www.youtube.com/watch?v=fkXOcGfz2dI
+  * Projekt zkratoměru s rozlišením mOhm
+    * https://www.youtube.com/watch?v=PTSSFycWCzc&ab_channel=JiriDobry
+    * https://photos.app.goo.gl/9pkDtEAfapqZDasC6
+  * Gerber Viewery
+    * ZofzPCB
+    * GerbV a fork v KiCADu
+    * https://www.pcbgogo.com/
+    * https://www.pcbgogo.com/GerberViewer.html
+  * Tematické uhnutí na EDA
+    * EasyEDA - jednoduchá výroba přes JLCPCB + osazení součástkami z LCSC
+      * https://youtu.be/PTSSFycWCzc
+      * https://photos.app.goo.gl/9pkDtEAfapqZDasC6
+    * LibrePCB
+    * HorixonEDA
+    * Český projekt - https://sourceforge.net/projects/peda/
+      * Diskuze o šílencích, co si napíšou raději vlastní EDA, než si kupovat licenci :-D
+      * http://pikron.com/pages/products/cpu_boards/lx_cpu.html
+    * Bartel - zajímavý EDA - https://www.bartels.de/bae/bae_en.htm
+      * Autor napsal několik EDA, vytvořil i autorouter, který pak odkoupil OrCAD
+      * Má neuronový autorouter
+    * Externí autorouter Elektra
+  * Jak se usídlují neuronové sítě a AI i v našeptávačích při programování
+  * Diskuze o programovacích jazycích
+    * Rozchodili jsme transpiler Brainfucku
+    * Rust
+  * Diskuze o webových prohlížečích
+    * Nové jádro od Mozilly napsané v Rustu - všichni propuštění, asi opuštěno
+    * Diskuze o historii
+  * OSHW okénko
+    * https://gitlab.com/pikron/projects/imxrt-devel/-/wikis/teensy_bb
+    * Nakresleno v PEDA
+  * Znovu Rust
+    * https://pbs.twimg.com/media/FYr00CYWIAA_55e.jpg
+    * Dá se nějak provozovat i na ESP32 a snad i STM32
+    * https://www.openalt.cz/2022/program_detail.php#event_23
+    * https://lupyuen.github.io/articles/rust2
+    * https://github.com/esp-rs
+    * Diskuze o tom, jak na přerušení, aby to fungovalo
+    * https://github.com/esp-rs/esp-hal/blob/main/esp-hal-common/src/interrupt/riscv.rs
+    * https://github.com/esp-rs/esp-hal/blob/main/esp-hal-common/src/serial.rs
+  * Náhrady PIR senzorů
+    * Radarové
+    * https://www.gme.cz/detektor-pohybu-mikrovlnny-doppler-radar-rcwl-0516
+  * Espressif
+    * Konference
+    * https://devcon.espressif.com/
+  * Nová páječka TS101
+    * https://www.miniware.com.cn/product/ts101-smart-soldering-iron/
+    * https://www.aliexpress.com/item/1005004795605009.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=20664106072&aff_fcid=6e597251ea53418b8564ec8773767b59-1665084332786-01699-_msfFqVa&tt=MG&aff_fsk=_msfFqVa&aff_platform=default&sk=_msfFqVa&aff_trace_key=6e597251ea53418b8564ec8773767b59-1665084332786-01699-_msfFqVa&shareId=20664106072&businessType=ProductDetail&platform=AE&terminal_id=ee13b7aa83e0489db5173e76f50694f0&afSmartRedirect=y
+    * https://min.news/en/digital/0aad69cfdf705b2e724a16fc6997492d.html
+    * https://www.morningtools.com/article/153/786.html
+  * RLC metry s pinzetkou
+    * Agilent U1733C má čtyřdrátové měření, ale nemá v základní sadě pinzetku
+    * Escort dělal totéž, než je agilent koupil
+    * REE-DE-500
+      * https://eleshop.eu/de-ree-de-5000-lcr-meter.html
+    * https://uk.rs-online.com/web/c/test-measurement/test-connectors/kelvin-clips/
+    * https://www.miniware.com.cn/product/dt71-mini-digital-tweezers/
+  * Mikrovlnný seminář
+    * http://mt.ces-csvts.cz/index.php/novinky/2-uncategorised/56-poz202202
+  * Našeptávač pro šachy v buttplugu
+    * https://github.com/RonSijm/ButtFish
+    * https://buttplug.io/
+    * https://github.com/MaidKun/buttplug-editor
+    * https://github.com/buttplugio/awesome-buttplug#games
+    * https://besti.love/
+  * OpenEMS ve FreeCADu (bylo na Maker FAire)
+    * https://github.com/LubomirJagos/FreeCAD-OpenEMS-Export
+  * Fotogrammetrie (z EMF)
+    * skenovací sprej AESUB
+    * https://en.openscan.eu/
+    * https://openscan-org.github.io/OpenScan-Doc/
+    * ToF kamera, 240x180, 120 Hz
+      * https://www.kickstarter.com/projects/arducam/time-of-flight-tof-camera-for-raspberry-pi
+    * https://www.arducam.com/time-of-flight-camera-raspberry-pi/ 
+    * FARO FOCUS3D X - přesné, ale drahé
+    * Leica dělá přesné, ale velmi drahé měřáky vzdálenosti
+    * Diskuze o spoustě šílených nápadů na měření - Kinect, lasery, sledování šumu ze Slunce, laserové dálkoměry aj.
+    * Dálkoměry od UNI-T mají sériovku
+      * http://blog.qartis.com/arduino-laser-distance-meter/
+    * https://www.solidvision.cz/3d-scan-a-print/3d-skenery
+      * Přesnost 0.03 mm
+    * https://www.keyence.eu/cscz/
+  * Další Bastlírna v pondělí 7.11.
+  * Dotazy
+    * Procházení zápisu
+    * Slack a jak funguje
+    * Náhrady Slacku - Zulip, Rocket Chat, Mattermost
+  * Vyšly videa z OpenAltu
+    * https://www.youtube.com/playlist?list=PLOEQDQruWfhyuWMLgeqHykt9NWkgicmic
+  * Installfest má venku videa
+    * https://www.youtube.com/playlist?list=PLub6xBWO8gV8l4Bf5rJRDkredUGiaehLL
+  * Superpočítač od Tesly
+    * https://www.nextplatform.com/2022/08/23/inside-teslas-innovative-and-homegrown-dojo-ai-supercomputer/
+    * https://www.youtube.com/watch?v=YIbQ3nudCA0
+  * SIMD instrukce
+    * https://www.root.cz/clanky/uzitecne-rozsireni-gcc-podpora-simd-vektorovych-instrukci/
+    * Autovektorizace v GCC
+  * Hluboká diskuze o pozičně nezávislém kódu
+    * Poznámka uprdkávače: Nenene. Z tohodle pořádnej zápis dělat nebudu, protože jak se to dostalo nad úroveň věcí psaných pro 386, tak jsem vůbec neměl tucha, o čem je řeč a nestíhal jsem. Tak jsme šli mrazit různé věci tekutým dusíkem. Zmrazená slivovice není špatná. Při tání se mění na ledovou tříšť / alkomajonézu (kvůli malejm krystalům). Flex filament se nedá rozbít ani zmrzlej. Dřívko ve zmrzlé vodce má asi -41°C. Teplosračkomet zmrzne a začne praskat.
+    * https://gcc.gnu.org/wiki/Visibility
+    * https://docs.mcuboot.com/
+    * https://gcc.gnu.org/onlinedocs/gcc-12.2.0/gcc/Code-Gen-Options.html
+    * -fvisibility=[default|internal|hidden|protected]
+    * -fno-plt
+    * -fno-jump-tables
+    * https://nuttx.apache.org/docs/latest/components/nxflat.html
+  * Diskuze o klíčích v HW počítačů, kterou jsme úplně nechytli
+  * Balení a konec
+

@@ -1,0 +1,121 @@
+====== ⚡ Virtuální Bastlírna XXXII. (15.11.2023) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:35 (pokračovalo se asi až do 3 do rána) |
+^ Celkem se vystřídalo | 53 účastníků |
+^ Ve špičce | 44 účastníků online |
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Proběhl OpenAlt
+    * Zajímavá přednáška o Thread+Matter, spousta odkazů a dem
+    * Jak řešit provoz Thread na IPv4 síti (Thread je IPv6)
+    * Přednáška o podivných licencích SW
+      * https://github.com/ErikMcClure/bad-licenses
+    * Pokusy CH32V003
+      * Zelená destička funguje, černá je divná (LEDka s původním programem bliká na programovacím pinu, musí se napájet z programátoru)
+      * Když si to člověk zcihlí, je lepší nejdřív smazat a pak naprogramovat znova
+      * Programátor v průhledné krabičce je potřeba přepnout do RISC-V režimu, musí se při zasouvání zmáčknout tlačítko, které je ale pod krytem
+    * Měli jsme celkem 4 přednášky
+    * Přednáška od Uprdkávače o měření
+      * https://www.youtube.com/live/63BEkCqDDss?si=Rw3v12rX6voTOFXT&t=16967
+      * https://talks.openalt.cz/openalt-2023/talk/TAHDUR/
+      * https://github.com/MR-DOS/openalt2023-automatisation
+    * Bizár o GPIB konkurenci od HP - PCIB
+      * https://www.hpl.hp.com/hpjournal/pdfs/IssuePDFs/1986-05.pdf
+      * http://www.hpmuseum.net/exhibit.php?hwimg=972 
+  * Chytání meteosond, diskuze o padáku - Němci používají, češi ne
+    * Staré vs nové
+    * Jak se liší CZ a DE sondy
+      * DE má extra modul s druhým STM32 a senzorem tlaku
+  * Hackování iOS 17 Flipperem
+    * https://arstechnica.com/security/2023/11/flipper-zero-gadget-that-doses-iphones-takes-once-esoteric-attacks-mainstream/
+  * Hackování erotických hraček Flipperem
+    * https://twitter.com/CyberAntani/status/1724075299179049353
+    * https://www.whid.ninja/blog/denial-of-pleasure-attacking-unusual-ble-targets-with-a-flipper-zero
+    * Přednáška na podobné téma na Defconu, objevena chyba v procesorech od Nordicu, umožňuje zaspamovat kontakty z připojeného zařízení
+      * https://youtu.be/RnxcPeemHSc?si=TENx8KRoz2ZfsWIc
+  * Seznam přednášek o RFID
+    * https://github.com/doegox/awesome-rfid-talks
+  * Živý obraz (pokusy s einky)
+    * https://zivyobraz.eu/
+  * Diskuze o logování dat z OBD2 a dekódování
+    * https://en.wikipedia.org/wiki/OBD-II_PIDs
+    * https://github.com/commaai/opendbc (zmiňováno v minulosti spolu s OpenPilot/SunnyPilot)
+  * Hloupé displeje s USB, dekódovaný protokol, náhradní aplikace v Pythonu
+    * https://www.youtube.com/watch?v=Z-n2e1tFTbg
+    * https://www.aliexpress.com/item/1005005641370235.html
+    * https://play.google.com/store/apps/details?id=org.prowl.torquefree
+    * https://github.com/mathoudebine/turing-smart-screen-python 
+  * Rentgen na zkoušení bot
+  * THz scanner na letišti
+    * Jak to funguje?
+  * Rentgenování po bastlířsku
+    * https://danyk.cz/rtg.html
+    * radioaktivní objektivy a žloutnutí skla
+  * UF.L konektor a ty další 
+    * je několik variant (MHF1 aka UF.L, MHF4 aka W.FL)
+    * SWF - testpoint, přerušuje cestu při připojení
+      * https://danyk.cz/rtg.html
+    * existují UF.L, které zkratovávají signálový vodič proti zemi, když není nic připojené
+    * Při průchodu desky vlnou se může stát zejména u neosazeného W.FL testpointu, že se zkratuje
+  * Helium
+    * Loni obrovský propad, nedávno se vyhazovalo velké množství gatewayí
+    * Pochybný obchodní model, předražené GW (dříve stačila libovolná LoRa+RasPi)
+  * Diskuze o komerčním použití LoRy, TTN a Helia
+    * https://coveragemap.net/
+    * LoRa vs NBIoT, LTE CatM, BLE LongRange
+  * Xiaomi teploměry, hackování
+    * https://github.com/atc1441/ATC_MiThermometer
+    * https://github.com/pvvx/ATC_MiThermometer
+    * Druhé repo má více funkcí
+    * Diskuze o bezpečnosti věcí jako WebSerial v prohlížeči
+  * Chytrý kurník
+    * https://www.facebook.com/ChytryKurnik
+    * v česku spousta podobných projektů (i v předchozízch zápisech)
+    * https://dspace.tul.cz/server/api/core/bitstreams/487105a3-7232-415e-84bc-14b044ca7249/content
+    * UHF pro slepice
+    * https://www.aliexpress.com/item/1005002318781936.html
+  * Jak funguje detekce kolizí na UHF RFID
+    * https://www.mdpi.com/2076-3417/8/8/1282
+  * Staré měřáky levně v aukcích - Tesla, Metra, EMG, některé mají i ovládání přes IMS-2/GPIB
+  * Nabídka od P. Píši starých desek s ATSAMD
+    * https://www.microchip.com/en-us/product/at91sam7x256
+  * SAPO, Antonín Svoboda
+    * https://vums.datacom.cz/
+    * https://www.zive.cz/clanky/pocitace-na-vodu-cela-desetileti-prekonavaly-elektroniku-pracovaly-i-v-ceskoslovensku/sc-3-a-220991/default.aspx
+  * Příští VB ve čtvrtek 14.12. a přespříští v úterý 9.1.
+  * Statická analýza kódu pro C
+    * Jak se to dělá na linux kernelu
+      * Sparse od Torvaldse, nevhodné pro obecné použití
+    * ConarQube ($$), Corelity ($$$)
+      * Součást Clang je něco co jde použít na ARMy
+    * https://clang-analyzer.llvm.org/scan-build.html
+    * CppChecker
+    * FbLinter (jde použít, ale má problem s makefile)
+    * https://is.muni.cz/th/pngje/bp.pdf
+    * https://wiki.control.fel.cvut.cz/mediawiki/index.php/Dp_448_cz
+    * https://fbinfer.com/
+    * Fortify, Black Duck
+  * Rust
+    * Rust na ESP
+    * Rust na CH32
+    * https://rust-gcc.github.io/
+    * https://ferrous-systems.com/ferrocene/
+      * https://www.root.cz/clanky/rust-programovaci-jazyk-do-aut-vlaku-a-letadel/
+  * V čem psát kritický kód 
+    * C, ADA
+    * Generovaný kód (AUTOSAR, Matlab, Simulink)
+    * MISRA
+  * Pasivní radar na drony
+    * https://www.skycope.com/products/skyeye
+    * https://www.radartutorial.eu/06.antennas/Phased%20Array%20Antenna.en.html
+    * Rušení / ničení dronů na dálku je spíše nesmysl…
+    * https://www.hackster.io/rob-lauer/busted-create-an-ml-powered-speed-trap-b1e5d1
+    * https://www.skycope.com/products/skyguard
+  * JLCPCB bude mít plnobarevný tisk na masku (ne plnobarevnou masku)
+    * https://twitter.com/arturo182/status/1722076579235340442
+  * Kde objednávat PCB
+    * JLPCB a osazování
+    * SMD vs THD, jednotranné s oboustrané…
+  * Měniče, ostrovní systémy, distribuční systémy
