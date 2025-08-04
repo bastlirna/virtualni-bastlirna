@@ -112,7 +112,19 @@ h1 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   margin-bottom: 1.5em;
   padding: 0.2em 1em;
+  position: relative;
 }
+
+.md-file .edit-link {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-size: 0.9em;
+  color: #0077cc;
+  text-decoration: none;
+  z-index: 2;
+}
+
 .section {
   background: #fff;
   border: 1px solid #f0f0f0;

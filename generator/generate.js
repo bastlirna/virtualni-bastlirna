@@ -69,9 +69,9 @@ function pastelColorFromDate(date) {
   return `hsl(${hue}, 60%, 85%)`;
 }
 
-function convertMarkdownFiles(markdownArray) {
-  // Každý MD soubor -> { date, color, sections }
-  const files = markdownArray.map(md => {
+function convertMarkdownFiles(markdownArray, filePaths) {
+  // Každý MD soubor -> { date, color, sections, fileName }
+  const files = markdownArray.map((md, index) => {
     const h1Match = md.match(/^#\s+(.+)$/m);
     const date = h1Match ? h1Match[1].trim() : '';
     let rest = md;
@@ -84,7 +84,8 @@ function convertMarkdownFiles(markdownArray) {
       body: marked.parse(sec.body)
     }));
     const color = date ? pastelColorFromDate(date) : 'hsl(0,0%,60%)';
-    return { date, color, sections };
+    const fileName = path.basename(filePaths[index], '.md');
+    return { date, color, sections, fileName };
   });
 
   // Spočítej výskyty tagů
@@ -122,8 +123,8 @@ function writeOutput(html, outputPath) {
 function main() {
   const mdFilePaths = getMarkdownFilePaths(srcDir);
   const mdContents = readMarkdownFiles(mdFilePaths);
-  const { files, tagList } = convertMarkdownFiles(mdContents);
-  //console.log(tagList);
+  const { files, tagList } = convertMarkdownFiles(mdContents, mdFilePaths);
+  console.log(files);
   const templateSource = loadTemplate(templatePath);
   const html = renderHtml({ files, tagList }, templateSource);
   writeOutput(html, outputFile);

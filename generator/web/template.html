@@ -26,13 +26,16 @@
           {{date}}
         </a>
       </h1>
+      <span class="edit-link">
+        <a href="https://github.com/bastlirna/virtualni-bastlirna/edit/main/z%C3%A1pis/{{fileName}}.md">Upravit</a>
+      </span>
       {{#each sections}}
         <div class="section">
           <div class="section-heading">
             {{{heading}}}
             <div class="tags">
             {{#each tags}}
-              <span class="tag">{{this}}</span>
+              <a href="#search:{{this}}" class="tag">{{this}}</a>
             {{/each}}
             </div>
           </div>
