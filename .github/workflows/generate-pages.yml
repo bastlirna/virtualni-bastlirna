@@ -1,0 +1,40 @@
+name: Generate Pages
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'zápis/**'
+      - 'generator/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'zápis/**'
+      - 'generator/**'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: 'generator/package.json'
+        
+    - name: Install dependencies
+      run: |
+        cd generator
+        npm install
+        
+    - name: Generate pages
+      run: |
+        cd generator
+        node generate.js
+        
