@@ -1,5 +1,9 @@
 function copyStaticFiles(srcDir, destDir) {
   const exts = ['.css', '.js'];
+  // Vytvoř cílovou složku pokud neexistuje
+  if (!fs.existsSync(destDir)) {
+    fs.mkdirSync(destDir, { recursive: true });
+  }
   fs.readdirSync(srcDir)
     .filter(file => exts.some(ext => file.endsWith(ext)))
     .forEach(file => {
@@ -116,6 +120,11 @@ function renderHtml(files, templateSource) {
 }
 
 function writeOutput(html, outputPath) {
+  // Vytvoř složku pokud neexistuje
+  const dir = path.dirname(outputPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
   fs.writeFileSync(outputPath, html, 'utf8');
 }
 
@@ -124,7 +133,7 @@ function main() {
   const mdFilePaths = getMarkdownFilePaths(srcDir);
   const mdContents = readMarkdownFiles(mdFilePaths);
   const { files, tagList } = convertMarkdownFiles(mdContents, mdFilePaths);
-  console.log(files);
+  //console.log(files);
   const templateSource = loadTemplate(templatePath);
   const html = renderHtml({ files, tagList }, templateSource);
   writeOutput(html, outputFile);
