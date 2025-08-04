@@ -1,5 +1,7 @@
 # Virtuální Bastlírna - Zápisy
 
+[![Generate and deploy](https://github.com/bastlirna/virtualni-bastlirna/actions/workflows/generate-pages.yml/badge.svg)](https://github.com/bastlirna/virtualni-bastlirna/actions/workflows/generate-pages.yml)
+
 Tento projekt generuje webovou stránku s přehledem zápisů Virtuální Bastlírny z markdown souborů.
 
 <strong>https://virtualni.bastlirna.online/log/</strong>
