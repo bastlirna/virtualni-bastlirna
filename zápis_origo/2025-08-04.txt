@@ -1,0 +1,145 @@
+====== ⚡ Virtuální Bastlírna LIII. (4.8.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:50 |
+^ Celkem se vystřídalo | 48 účastníků |
+^ Ve špičce | 41 účastníků online |
+
+===== Úvodník =====
+Konečně se ochladilo, možná i díky tomu přestaly na chvíli padat rakety jako přezrálé hrušky, díky čemuž se na Virtuální Bastlírně dostaneme k jiným, přízemnějším tématům. Pokud si chcete jako každý měsíc popovídat s dalšími bastlíři, techniky, vědci a profesory u virtuálního pokecu u piva, je tu souhrn témat, na která nejspíš dojde řeč.
+
+Ještě před ochlazením se drát na vedení V411 roztáhl o 17 metrů (přesné číslo neznáme, ale drát nepřežil) a způsobil tak největší výpadek elektřiny poslední doby. V Evropě má vzniknout nová fabrika na polovodiče, Tiny Tapeout pokračuje a nyní se věnuje RISC-V periferiím a Wolfspeed je v potížích. Vyšla i předběžná zpráva o pádu letadla v Indii.
+
+Za hardware se nabízí nový citlivější gama spektrometr nebo nová verze ZX Spectra, nástup MeshCore v síti a odezva uživatelů nebo třeba nové meteoauto Meteopressu.
+
+Pokud jde o software, pak vězte, že vyšel KiCAD s podporou importu projektů z Altia, vznikla decentralizovaná síť přes Bluetooth, vznikl 160jádrový cluster z levných RISC-V mikrokontrolérů a IKEA přechází se svými výrobky na Thread a Matter.
+
+Jako vždy dojde i na sekci bizarních témat, například jak je možné, že v USA můžete rádiem zabrzdit vlak a úřady to ví už více než dekádu a vznikl neoficiální popis neveřejných vlastností karet DESFire. Inženýři znovuvynalézají plachetnice, i když ne zcela nejjednodušší cestou. A samozřejmě musíme zmínit metodu, jak zálohovat obrázky do zpěvných ptáků.
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Diskuze o Eltodo/Iterait, jak funguje detekce aut, které parkují, kde nemají
+  * KiCAD 9.0.3 - umí importovat celé projekty z Altia, ale blbne to
+  * Meshcore vs. Meshtastic
+    * https://github.com/ripplebiz/MeshCore
+    * https://meshcore.cz/doku.php?id=start 
+    * https://map.meshcore.dev/?zoom=8&lat=49.8610&lon=15.7654 
+    * https://amaterskeradio.cz/cs/meshcore-vs-meschtastic 
+    * Meshcore zatím funguje jen na mikrokontrolérech, ne na Linuxu
+    * Na T-Decku je UI skoro nepoužitelné, blbne, nejde připojit mobilní aplikaci
+    * Značná část funkcí za paywallem
+      * Vypadá to, že tahle část není na Githubu
+  * Nový úřad, který má mobilní STK a může kontrolovat auta v provozu, jak funguje komunikace tachografu, když ho vyčítá policie na dálku (běží na 5.8 GHz)
+    * Prováděcí předpis EU: https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=CELEX%3A32016R0799 
+    * Digital Tachograph Smart Tachograph 
+  * PyXL - procesor, na kterém přímo běží Python
+    * https://www.runpyxl.com/
+    * Python se zkompiluje do CPythonu, pak do speciálního assembly a jako binárka dá do procesoru
+    * Diskuze o Javě, bytekódu, interpreterech, Java kartách, prstenu s iButton a Javou
+  * Meteopress má nové meteoauto s radarem
+    * https://x.com/MeteopressEN/status/1947375721493459108/photo/1
+    * https://media.ccc.de/v/osmocon2018-96-open-source-java-applets-for-not-only-sysmousim-sjs1?utm_source=chatgpt.com
+  * V Německu má být nová fabrika na FRAMky
+    * https://www.handelsblatt.com/technik/forschung-innovation/halbleiter-start-up-fmc-plant-bau-von-chipfabrik-bei-magdeburg/100142671.html
+    * Používá se do kosmu, má velkou životnost
+  * Wolfspeed (výrobce SiC) se dostal do velkého dluhu, prochází restrukturalizací, třetina firmy spadne pod Renesas
+    * Diskuze o SiC vs. GaN
+    * https://www.ti.com/product/LMG2100R044
+  * Diskuze o červencovém výpadku elektřiny v ČR
+    * https://tn.nova.cz/zpravodajstvi/clanek/620713-obri-vypadek-proudu-v-cesku-kolabuje-doprava-nemocnice-startuji-generatory
+    * https://www.novinky.cz/clanek/domaci-on-line-blackout-v-cesku-40528846
+    * https://www.idnes.cz/ekonomika/domaci/ceps-vodic-vedeni-v411-blackout.A250710_132427_ekonomika_ven
+    * https://www.idnes.cz/technet/technika/ceps-blackout-cr.A250717_142458_tec_technika_nyv
+  * Dotaz na komplet stanici Meshtastic/Meshcore se soláry a baterkami
+    * https://lectronz.com/products/fully-assembled-meshtastic-solar-node-station
+  * Detektor ozónu, elektrochemický
+    * https://www.tme.eu/Document/9ac6fd30949d62df5b178ca74ef39824/ME2-O3.pdf
+  * Proběhl Fab Festival - několikadenní konference, drahé lístky, poslední den byl zdarma pro veřejnost
+    * https://vtm.zive.cz/clanky/v-patek-zajdete-na-prazsky-fab-festival-pro-kutily-vseho-druhu-cekaji-vas-pojizdne-dilny-bohaty-program-a-vstup-je-zdarma/sc-870-a-235813/default.aspx
+    * Tiskárny s více tooly
+    * Záznam přednášek: https://www.youtube.com/live/KepPurWn_5U
+  * MIPS byl odkoupen, vlastní ho GlobalFoundries #mips, #riscv
+    * https://www.root.cz/zpravicky/globalfoundries-koupila-firmu-mips/
+    * povídání o historii MIPS, RISC-V, …
+    * https://zeptobars.com/en/read/baikal-t1-mips-Imagination-Technologies-P5600-Warrior
+    * Loongson má nové procesory, které mají být podobně výkonné jako x86
+    * https://www.hwcooling.net/en/chinese-cpus-loongson-launches-64-core-processor-for-servers/
+  * BitChat
+    * 3 MB jednoduchá aplikace, komunikace přes Bluetooth, např. pro komunikaci na demonstracích
+    * POZOR!! - fejková stránka s 440 MB APKčkem: https://bitchats.app/ 
+    * Oficiální stránka: https://bitchat.free/
+    * Pro iPhone: https://github.com/permissionlesstech/bitchat 
+    * Pro Andoird: https://github.com/permissionlesstech/bitchat-android 
+    * https://www.root.cz/zpravicky/jack-dorsey-predstavil-bitchat-decentralizovanou-vymenu-zprav-bezici-pres-bluetooth-mesh-network/
+    * https://dev.to/grenishrai/offline-messaging-reinvented-with-bitchat-5011?utm_source=chatgpt.com 
+    * https://github.com/permissionlesstech/bitchat/blob/main/WHITEPAPER.md
+  * Dotaz na 400+ W laboratorní zdroj na 48+V
+    * 210W: Rigol DP932A - funguje dobře včetně programování
+    * 220W: Siglent SPD3303X-E - lepší rozhraní, funguje dobře
+    * 378W: Owon ODP6062 - čínská kvalita, příliš rychlé příkazy po SCPI zaseknou měření, je potřeba restart
+    * 500W: Owon SPE6205 - strašné zvlnění/bordel na výstupu
+    * https://ok2haz.ok2kld.cz/ok2haz/category/elektronika/laboratorni-zdroj/
+    * https://www.envox.eu/bench-power-supply/technology-overview/
+    * https://instruments.uni-trend.com/products/dc-power-supplies/
+  * Uprdkávač má autotrafo - čínský krám od Vevoru z Aukra, uvnitř dost hrozné provedení
+    * https://x.com/polasek_petr/status/1950252290058965399
+    * https://www.youtube.com/watch?v=0RMAleAYUbs&t=80s&ab_channel=Killeroz
+    * Adam: Je to vevor -> fuj čína (Uprdkávač: ale stálo to 2700)
+      * Co vše jde z vevoru vytřískat: https://www.youtube.com/@matthiaswandel/videos (hledejte videa o CNC a soustruhu)
+      * Komentář od Martina Kiklhorna: “kalibrovat bláto nejde” :) 
+  * Linuxdays - 4.-5.10., až do 30.8. jsou Call for papers
+  * Další VB - 4.9., 14.10.
+  * InstallFest - 22.-23.3.
+  * Jak doma postavit Faradayovu klec na měření femtoampér
+    * Cu tkanina: https://www.meftex.cz/cs/ 
+    * bizár téma o uzemňovacích prostěradlech
+      * https://www.eas-elektro.cz/Blogy/Uzemnovaci-prosteradlo.html
+  * Přednášky od prof. J. Podolského, Kip Thorne v Praze
+    * https://www.youtube.com/watch?v=To-vVkHHyXk
+    * https://www.youtube.com/watch?v=w71npRnEufY 
+  * Web SDR
+    * http://sdr.hkfree.org:8901/ 
+  * Předběžná zpráva z pádu letadla v Indii
+    * Mohlo jít o chybu přepínače pro přívod paliva do motorů, vše se stalo během 10 vteřin
+    * https://i2.res.24o.it/pdf2010/Editrice/ILSOLE24ORE/ILSOLE24ORE/Online/_Oggetti_Embedded/Documenti/2025/07/12/Preliminary%20Report%20VT.pdf
+    * Komentář technika, co opravuje letadla
+    * https://www.youtube.com/watch?v=-ur234kwnhk&t=897s
+  * Zmínka o zásahu bleskem Apolla 12 při startu, museli nahazovat jističe, padaly, musel se přepnout vypínač SCE To AUX, v záznamu padají i nehezká slova - málem došlo ke katastrofě
+    * https://www.youtube.com/watch?v=31qt9jgtMMI
+  * Nový hezký pohled na naše zápisy
+    * https://virtualni.bastlirna.online/log/
+    * https://github.com/bastlirna/virtualni-bastlirna
+    * Píša doporučuje https://pandoc.org/ (deterministický přístup)
+  * RP2350 v A4 steppingu opravuje parazitní proud na vstupech
+    * https://www.raspberrypi.com/news/rp2350-a4-rp2354-and-a-new-hacking-challenge/
+  * Probíhá RISC-V kolo TinyTapeout, jde o návrh periferií pro RISC-V, běží do 5.9.
+    * https://tinytapeout.com/competitions/risc-v-peripheral/
+  * Je venku ESP32-C5
+    * Má 2,4 a 5 GHz WiFi
+    * https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/index.html
+  * Ukládání obrázků do špačků
+    * https://www.youtube.com/watch?si=HMtVdHB7-RJqjB1D&t=1019&v=hCQCP-5g5bo
+    * Ptáci vidí 4 barvy, takže černí špačci vypadají pro ptáky zářivě
+    * https://www.reddit.com/r/BeAmazed/comments/vtgdlj/color_perception_human_vs_bird/
+  * Přijímač s ESP a Si4732 (ATS Mini, Amnvolt V3S a další)
+    * https://www.youtube.com/watch?v=yCB4Oam5dwI
+    * Amnvolt V3S je asi nejnovější, opravuje spoustu chyb
+    * https://x.com/dX2512/status/1947573465663336631 
+    * https://www.blogordie.com/2025/05/arrived-on-time-amnvolt-ats-mini/
+    * https://atsmini.github.io/
+    * https://github.com/vegos/amnvolt_v3_firmware
+    * Lepší alternativní FW: http://www.hjberndt.de/dvb/pocketSI4735DualCoreDecoder.html#classic 
+    * Schéma:
+    * https://esp32-si4732.github.io/ats-mini/_images/schematics.png
+    * Info o Si4732
+    * https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/application-notes/AN332.pdf
+    * https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/data-sheets/Si4730-31-34-35-D60.pdf
+  * ESP 32 a projekty na prolomení WiFi
+    * https://www.youtube.com/watch?v=t4IfF0aUa-g&ab_channel=AaronChristophel
+    * https://www.youtube.com/watch?v=HRfbQJ6FdF0
+    * https://github.com/esp32-open-mac/esp32-open-mac
+    * https://zeus.ugent.be/blog/23-24/open-source-esp32-wifi-mac/
+    * https://esp32-open-mac.be/
+    * https://hackaday.com/2025/02/15/octet-of-esp32s-lets-you-see-wifi-like-never-before/ 
+    * https://arxiv.org/html/2507.12869v1 - používá channel state information (nejde níž)
+    * https://github.com/jedarden/whofi
