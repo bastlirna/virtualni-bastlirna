@@ -8,7 +8,7 @@
 <body>
   <h1>⚡ Virtuální Bastlírna - Zápisy</h1>
   <div class="search-container">
-    <input id="search-box" type="text" placeholder="Zadejte hledaný výraz, můžete použít # pro hledání tagů...">
+    <input id="search-box" type="text" placeholder="Zadejte hledaný výraz, můžete použít # pro hledání tagů, @ pro datum...">
     <button type="button" class="search-clear" id="search-clear" title="Vymazat hledání">&#10006;</button>
   </div>
   {{#if tagList}}
@@ -20,9 +20,9 @@
   {{/if}}
 
   {{#each files}}
-    <div class="md-file" style="border-left-color: {{color}};">
+    <div class="md-file" data-filename="{{fileName}}" style="border-left-color: {{color}};">
       <h1>
-        <a id="datum-{{date}}" href="#datum-{{date}}" style="color:inherit;text-decoration:none;">
+        <a id="datum-{{date}}" href="#search:@{{fileName}}" style="color:inherit;text-decoration:none;">
           {{date}}
         </a>
       </h1>

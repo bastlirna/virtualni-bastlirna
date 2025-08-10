@@ -117,7 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Rozdělíme na podmínky
     const parts = query.split(/\s+/);
     const tags = parts.filter(p => p.startsWith('#')).map(t => t.toLowerCase());
-    const words = parts.filter(p => !p.startsWith('#')).map(w => w.toLowerCase());
+    const dates = parts.filter(p => p.startsWith('@')).map(d => d.substring(1).toLowerCase());
+    const words = parts.filter(p => !p.startsWith('#') && !p.startsWith('@')).map(w => w.toLowerCase());
     sectionNodes.forEach(sec => {
       // Získáme text sekce
       const text = sec.textContent.toLowerCase();
@@ -126,6 +127,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const tagNodes = sec.querySelectorAll('.tag');
       const sectionTags = Array.from(tagNodes).map(t => t.textContent.toLowerCase());
       const normSectionTags = sectionTags.map(stripDiacritics);
+      
+      // Získáme soubor, ke kterému sekce patří
+      const parentFile = sec.closest('.md-file');
+      const fileName = parentFile ? parentFile.getAttribute('data-filename') : '';
+      
       // Zvýraznění tagů podle shody
       tagNodes.forEach((tagNode, i) => {
         // Zvýraznění pro #tag hledání
@@ -143,27 +149,80 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       });
+      
       // Podmínky
       let matches = true;
-      // Musí splnit všechny tagy (částečná shoda)
-      tags.forEach(tag => {
-        const normTag = stripDiacritics(tag);
-        if (!normSectionTags.some(t => t.includes(normTag))) matches = false;
-      });
-      // Musí splnit všechna slova (v textu nebo v tagu)
-      words.forEach(word => {
-        const normWord = stripDiacritics(word);
-        const inText = normText.includes(normWord);
-        const inTags = normSectionTags.some(t => t.includes(normWord));
-        if (!inText && !inTags) matches = false;
-      });
+      
+      // Pokud jsou specifikována data, zobraz všechny sekce v odpovídajících souborech
+      if (dates.length > 0) {
+        const fileMatches = dates.some(date => {
+          if (!fileName) return false;
+          const normFileName = stripDiacritics(fileName.toLowerCase());
+          const normDate = stripDiacritics(date);
+          return normFileName.includes(normDate);
+        });
+        
+        if (fileMatches) {
+          // Pokud soubor odpovídá datu, stále kontroluj ostatní podmínky (tagy a slova)
+          // Musí splnit všechny tagy (částečná shoda)
+          tags.forEach(tag => {
+            const normTag = stripDiacritics(tag);
+            if (!normSectionTags.some(t => t.includes(normTag))) matches = false;
+          });
+          // Musí splnit všechna slova (v textu nebo v tagu)
+          words.forEach(word => {
+            const normWord = stripDiacritics(word);
+            const inText = normText.includes(normWord);
+            const inTags = normSectionTags.some(t => t.includes(normWord));
+            if (!inText && !inTags) matches = false;
+          });
+        } else {
+          matches = false;
+        }
+      } else {
+        // Standardní logika když nejsou specifikována data
+        // Musí splnit všechny tagy (částečná shoda)
+        tags.forEach(tag => {
+          const normTag = stripDiacritics(tag);
+          if (!normSectionTags.some(t => t.includes(normTag))) matches = false;
+        });
+        // Musí splnit všechna slova (v textu nebo v tagu)
+        words.forEach(word => {
+          const normWord = stripDiacritics(word);
+          const inText = normText.includes(normWord);
+          const inTags = normSectionTags.some(t => t.includes(normWord));
+          if (!inText && !inTags) matches = false;
+        });
+      }
+      
       sec.style.display = matches ? '' : 'none';
       highlightText(sec, matches ? words : []);
     });
-    // Skrytí souborů bez viditelných sekcí
+    // Skrytí souborů bez viditelných sekcí nebo podle data
     document.querySelectorAll('.md-file').forEach(file => {
-      const visibleSections = Array.from(file.querySelectorAll('.section')).some(sec => sec.style.display !== 'none');
-      file.style.display = visibleSections ? '' : 'none';
+      let showFile = true;
+      
+      // Pokud jsou specifikována data, zobraz pouze odpovídající soubory
+      if (dates.length > 0) {
+        const fileName = file.getAttribute('data-filename');
+        const fileMatches = dates.some(date => {
+          if (!fileName) return false;
+          const normFileName = stripDiacritics(fileName.toLowerCase());
+          const normDate = stripDiacritics(date);
+          return normFileName.includes(normDate);
+        });
+        if (!fileMatches) {
+          showFile = false;
+        }
+      }
+      
+      // Pokud nejsou specifikována data, používej standardní logiku (viditelné sekce)
+      if (dates.length === 0) {
+        const visibleSections = Array.from(file.querySelectorAll('.section')).some(sec => sec.style.display !== 'none');
+        showFile = visibleSections;
+      }
+      
+      file.style.display = showFile ? '' : 'none';
     });
   }
 
