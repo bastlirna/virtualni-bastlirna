@@ -1,0 +1,183 @@
+====== ⚡ Virtuální Bastlírna LIV. (5.9.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:16 |
+^ Celkem se vystřídalo | 47 účastníků |
+^ Ve špičce | 40 účastníků online |
+
+===== Úvodník =====
+Léto skončilo, děti se vrátily do škol a bastlíři se vrací z dovolených a je tedy ideální čas probrat novinky z léta. Za srpen jsme nasbírali přes 50 témat, která bychom chtěli zmínit!
+Doražte tedy již ve čtvrtek 4.9. od 20:00 přes Zoom na Virtuální Bastlírnu, tedy platformu pro volný pokec mezi bastlíři, inženýry, vědci či učiteli technických oborů, kterou si můžete představit jako virtuální posezení u piva a rozumování.
+
+Z novinek určitě padne řeč na nadcházející tiskárnu od Bambu Lab s automaticky výměnnými tryskami a odpovědí Průši, který vyvíjí něco podobného. Dokonce se už víceméně povedl let Starship. Vyšel nový KiCAD, IKEA chystá nové senzory komunikující přes Matter a Home Assitant vydal Z-Wave dongle.
+
+Za hardware je tolik témat, že zmíníme jen několik - Bus Pirate na ESP32, reverse engineering desek Raspberry Pi, Němečkův pseudo-ZX-80 na RISC-V, PicoCalc, jak snadno vyrobit pěnové organizéry na nářadí nebo jak se používaly sovětské miniaturní tyratrony.
+
+Ze světa softwaru můžeme vypíchnout test neoficiální aplikace pro tiskárny NiimBot, zranitelnost Meshtasticu, obnovené vydávání QucsStudia nebo Java VM pro mikrokontroléry.
+
+A jako vždy máme i pár témat buď neobvyklých nebo vyloženě bizarních. Dojde řeč na rybu, která způsobila požár, doma postavitelný kvantový magnetometr, spínané zdroje v pouzdře TO-3 nebo ventilátor do Edisonova závitu.
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Bizár - notebook s ethernetem zapojeným do HDMI (a video v Thunderboltu)
+    * HDMI HEC, potřebuje speciální kabel
+  * Dotaz na měření hladiny vody v bazénu
+    * https://www.cnx-software.com/2025/08/20/80-ghz-mmwave-liquid-level-detection-sensor-supports-modbus-offers-40m-range/
+    * https://www.laskakit.cz/kapaliny/
+    * hledání analogového čidla - jsou i na Láskakitu / v číně
+    * https://cerpadla-ovsp.cz/plovakove-spinace/1729-plovakovy-spinac-05m.html
+    * Problém s kontinuálním a dlouhodobým měřením pH - sondy tak dlouho nevydrží
+  * Home Assistant vydal Z-Wave rádio
+    * https://www.root.cz/clanky/home-assistant-connect-zwa-2-oficialni-hardware-pro-z-wave/https://www.root.cz/clanky/home-assistant-connect-zwa-2-oficialni-hardware-pro-z-wave/
+    * https://www.home-assistant.io/blog/2025/08/13/home-assistant-connect-zwa-2/
+  * IKEA plánuje zavést novou řadu nových senzorů pro Thread
+    * https://www.zive.cz/clanky/ikea-pro-chytrou-domacnost-chysta-hromadu-novych-senzoru-ted-uz-postavenych-na-matteru/sc-3-a-236816/default.aspx
+    * Bude se prodávat i Matter/Thread gateway
+  * Akce
+    * Radioburza na Strašnicích - 20.9.
+      * https://3px.cz/ok1kfx/
+    * 19.-21.9. BalCCon2k25 (v Srbsku)
+      * https://2k25.balccon.org/
+    * Retro Nation minisraz - 25.9. (na FB Retro Nation)
+    * ByteFest - 2.-5.10.
+      * https://www.bytefest.cz/
+      * https://www.youtube.com/@bytefest 
+      * https://www.bytefest.cz/novinky/2025/08/27/registrace-bytefest-2025
+    * Linuxdays - 4.-5.10
+      * https://www.linuxdays.cz/2025/hlasovani/
+      * pátek a sobota volby (vyřiďte si průkaz, jděte na LD)
+    * 5.10. bude Festival otevřených dílen
+    * 1.-2.11. bude OpenAlt
+      * https://www.openalt.cz/2025/
+    * 4.11. Den otevřených spínačů v Bastlírně
+    * 12.11. mikrovlnný seminář
+      * https://mt.ces-csvts.cz/index.php/novinky/2-uncategorised/75-poz202502
+  * Novinky v KiCadu
+    * 9.0.4 je prakticky čistě bugfix verze
+  * Novinky v 3D tisku
+    * Bambulab
+      * Nová tiskárna H2D - velká tisková plocha, ale jinak nic revolučního
+        * Dvojitý extrudér
+        * AMS 2 Pro (2 kanály / 4 filamenty), AMS HT (vyhřívaný až na 85 °C, jeden filament)
+          * kompatibilní i s řadou P1 a X1
+        * volitelně laser
+      * H2S - vylevněná H2D s jednou tryskou
+        * https://www.youtube.com/watch?v=_Rz2bLijW8o&pp=ygULY25jIGtpdGNoZW7YBuYF
+      * Nový způsob multimateriálu - bude v H2C
+        * Jeden extrudér, měnit se budou trysky - není potřeba čistit materiál, méně odpadu, rychlejší výměny
+        * Indukční ohřev, měření přes NFC, žádné kontakty
+        * https://blog.bambulab.com/h2c-is-on-the-way-heres-how-it-all-started/
+    * Průša
+      * Snad 8 nástrojů, má být pro CoreOne
+      * Představen obrázek, nešlo o render
+      * Zmínka o IR teploměrech Melexis (I2C, definované zorné pole)
+      * Zmínka o principu indukčních páječek, Curieho teplota
+      * rant Průši na čínské výrobce ohledně hromadění patentů
+    * Konference FormNext
+      * Ve Frankfurtu, 18.-21.11., objevují se tam novinky (letos tam asi budou ty multimateriály)
+    * Snapmaker uvádí multitool
+      * https://www.kickstarter.com/projects/snapmaker/snapmaker-u1-color-3d-printer-5x-more-speed-5x-less-waste
+    * 3D Tisk a opensource
+      * https://www.josefprusa.com/articles/open-hardware-in-3d-printing-is-dead/
+      * https://x.com/ptorrone/status/1960765819677274487
+      * Bambu vs ostatní, proč Bambu, když je to čína - cena a plug&play
+        * “V čem to dělá Bambu možná lépe, je, že cílí na nové uživatele, podobně jako tehdy DJI na lidi, které ani nenapadlo, že by mohli létat s kvadrokoptérami.”
+      * Diskuse o patentech
+  * AI tool na vygenerování pěnových pořadačů na nářadí v šupleti
+    * https://www.tooltrace.ai/
+    * https://youtu.be/e3EhJJlWwws?si=EFTdZeiCUVd6tf4l
+    * Gridfinity | The modular, open-source grid storage system. 
+  * Tisk světlovodů
+    * Jde SLSkem a SLAčkem
+    * https://jlc3dp.com/help/article/photosensitive-8001-resin
+    * Bezbarvé PLA (natural), Nebula Glass (možná PVA?), PVA, PVB
+    * https://www.3dfun.cz/nebula-glass-1-kg-pruhledna--natural/
+    * Nový PrusaSlicer řeší lepe chlazení a tisk aby zachovával kvalitu povrchu - https://blog.prusa3d.com/new-in-prusaslicer-consistent-surface-finish-and-nerfing-vfas_120400/
+  * Sovětské minityratrony
+    * Použití jako tyristory / dotykové spínače, kanálové voliče, jednoduchá logika
+    * https://radiomurlo.narod.ru/PICs_8/MTX_90_1/MTX_90_1.html
+    * https://hackaday.io/project/203889-construct-a-soviet-era-style-clock-devoid-of-moder
+    * https://www.youtube.com/watch?app=desktop&v=lSMk9P-IhVw
+    * https://www.ebay.com/itm/254421331091?stype=1&var=&widget_ver=artemis&media=COPY
+    * https://www.radiomuseum.org/tubes/tube_mth-90.html
+  * Nebezpečné kombinace ventilátoru a světla do Edisonova závitu, může poničit kabeláž, způsobit požár
+    * https://www.bbc.com/news/articles/cewy7n484w4o
+    * Ještě víc bizár - topení: https://www.sparkmuseum.org/wp-content/uploads/GeneralElectricD-12toaster_SPARKMuseum-300x290.jpg
+  * IKEA a matter / Zigbee - jejich gateway by snad měla umět obojí
+    * https://github.com/zigpy/zigpy/discussions/1083 
+  * SLZB-06M - gateway z Zigbee / Thread na Ethernet + PoE / USB-C / Wi-Fi, kompatibilní s HA
+    * https://smlight.tech/product/slzb-06m/
+    * ESP32 už umí WireGuard (VPN)
+      * https://github.com/ciniml/WireGuard-ESP32-Arduino
+  * Požár způsobený rybou upuštěnou ptákem na elektrické vedení
+    * https://www.idnes.cz/zpravy/zahranicni/kanada-pozar-ptak-ryba-haseni-elektricke-vedeni.A250806_175000_zahranicni_Ichuc
+  * Dotaz na to, čím programovat větší Xilinxy - zatím open source asi moc není
+    * https://f4pga.org/
+    * GenZ + OpenXC7
+    * https://fosdem.org/2025/schedule/event/fosdem-2025-4850-all-open-source-toolchain-for-zynq-7000-socs/
+    * https://github.com/ICE-V-Wireless/ICE-V-Wireless
+    * https://gitlab.fel.cvut.cz/otrees/risc-v-esp32/ice-v-pmsm
+    * https://dspace.cvut.cz/bitstream/handle/10467/122779/F3-BP-2025-Bezdek-Albert-mzapo_cameras_report%20(7).pdf
+    * https://gitlab.fel.cvut.cz/otrees/fpga/mzapo-cameras
+    * https://gitlab.fel.cvut.cz/otrees/org/-/wikis/theses-defend
+    * https://dspace.cvut.cz/bitstream/handle/10467/123231/F3-BP-2025-Matias-Michal-bp.pdf
+    * https://github.com/apache/nuttx/pull/16936
+    * https://github.com/ppisa/zynq-rt-utils-and-builds
+  * Na ČVUT dorazily ESP32-C6, BeagleV Fire
+  * Niimbot B21 Pro - 300 dpi štítkovačka na plastové samolepky
+    * https://www.alza.cz/niimbot-b21-pro-green-d12813640.htm
+    * Open source alternativní aplikace
+      * https://niim.blue/
+    * Ukázka použití štítků na kabely
+      * https://x.com/polasek_petr/status/1945159578145989129
+  * Průhledný Gameboy jako ukázka průhledných plošňáků z JLC
+    * https://smartmania.cz/toto-je-nejpruhlednejsi-game-boy-na-svete-transparentni-jsou-i-plosne-spoje/
+  * Kazeťák, který má zásobník kazet, mechanicky otáčí strany kazety.
+    * https://www.youtube.com/watch?v=rObG3GddYGk
+    * https://www.youtube.com/watch?v=uBu3ZRPVov0
+    * https://www.youtube.com/watch?v=2CE_zmpHcWQ
+  * Chlapík, který opravuje letadla a povídá o nich
+    * https://www.youtube.com/@zeto.r
+  * Jak fungují EUV procesy na integráče
+    * https://www.youtube.com/watch?v=B2482h_TNwg
+  * Sovětský výkonový tranzistor zevnitř
+    * https://www.madexp.it/2018/10/27/inside-a-russian-ge-transistor/
+    * Rayerova shitparáda - obsahuje vykuchané tranzistory a jejich fejky
+      * https://rayer.g6.cz/elektro/psu4pc.htm
+      * https://www.eevblog.com/forum/projects/transistors-die-pictures/550/
+      * https://www.richis-lab.de/2N3055_08.htm
+  * Zranitelnosti Meshtasticu
+    * https://www.youtube.com/watch?v=DLvPaYZfZR4
+    * https://www.youtube.com/watch?v=0gHTO9LuPD4
+    * https://meshtastic.org/blog/that-one-time-at-defcon/
+  * Propojení mezi Strahovem, Strahovským tunelem a metrem B
+    * https://www.youtube.com/watch?v=7PN0ttBN8X8
+    * Pravděpodobně tamtudy vede i optické propojení mezi Strahovem a Karlovým náměstím
+  * Microsoft uvolnil zdrojáky 6502 basicu
+    * https://opensource.microsoft.com/blog/2025/09/03/microsoft-open-source-historic-6502-basic/
+  * Softcore “Pentium”
+    * https://github.com/lmEshoo/sp-i586/tree/master
+    * Dnešní x86 procesory mají až 32 registrů
+      * https://en.wikipedia.org/wiki/VEX_prefix
+    * Jak byly INC/DEC instrukce nahrazené za REX prefixy
+      * https://www.timdbg.com/posts/writing-a-debugger-from-scratch-part-7/
+      * INC/DEC neovládají carry, tj. působí potíže na superskalárních procesorech, kde se pak každý kus operace chová jinak
+      * 16b move do 32b registru neovlivňuje horních 16b, takže pak nefunguje detekce závislostí a instruction reordering - v 64b režimu se horní část smaže
+  * https://github.com/mit-pdos
+  * https://ondrejcertik.com/
+    * Člověk z Los Alamos, napsal si SymPy, SymEngine a později se stal vedoucím vývoje Fortranu
+  * Zajímavý mikrokernel, který se neuchytil (autor dělá v Microsoftu)
+    * https://en.wikipedia.org/wiki/EROS_(microkernel)
+    * https://web.archive.org/web/20060203013048/http://www.coyotos.org/
+    * https://www.osnews.com/story/21262/jonathan-shapiro-of-coyotos-bitc-joins-microsoft/
+  * Diskuze o různých neobvyklých architekturách
+    * Motorola 68xxx
+    * Blackfin
+      * https://gcc.gnu.org/onlinedocs/gcc/Blackfin-Options.html
+      * https://www.linkedin.com/posts/viniciuszein_nuttx-autosar-sdv-activity-7321243748682633216-Jtwa
+    * Hitachi 6303
+      * https://cowlark.com/2020-10-19-6303-arithmetic/index.html
+    * Qualcomm Hexagon
+    * https://sourceforge.net/projects/sdcc/
+  * Satelity, obsazené spektrum, boje o frekvence, útlumová okna v atmosféře
+    * https://www.esa.int/ESA_Multimedia/Images/2023/06/W-band_on_the_run
