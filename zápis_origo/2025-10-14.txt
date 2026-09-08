@@ -1,0 +1,133 @@
+====== ⚡ Virtuální Bastlírna LV. (14.10.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:30 |
+^ Celkem se vystřídalo | 67 účastníků |
+^ Ve špičce | 60 účastníků online (rekord) |
+^ Celkem prokecáno | 193.5 člověkohodin (rekord) |
+
+===== Úvodník =====
+S pokračujícím podzimem klesá počet věcí, které jde dělat večer venku. A pokud už jste doma, proč se nepřipojit na Virtuální Bastlírnu?
+
+Již toto úterý, tedy 14.10. od 20:00, proběhne každoměsíční akce Virtuální Bastlírna, kterou pořádá projekt MacGyver ze studentského klubu Silicon Hill. Jde o virtuální posezení u piva a volné klábosení o různých zajímavostech ze světa elektroniky, softwaru i techniky, které jsme zaznamenali od poslední VB.
+
+V posledním měsíci se stalo nemálo zajímavostí týkajících se spousty bastlířů - kupříkladu Arduino nyní patří pod Qualcomm, Raspberry vydalo nový počítač, ale potichu i miniaturní compute module. Pro AMS od Bambu Lab se začala prodávat sušička a začaly se množit spekulace o novém Flipperu. A také proběhly Linux Days, kde se mluvilo i o radarech.
+
+Raspberry však nevydalo jen 2 nové počítače, ale i vlastní řadu SSD. Linus Torvalds se pustil i do vývoje hardwaru (pozornost třeba pomůže KiCADu), objevila se v prodeji levná 3 GHz aktivní sonda (má být časem open source) a 2 GHz open source osciloskop.
+
+Abychom však nezůstali jen u tvrdého hardwarového světa, zjemníme a dostaneme se i k softwaru. Povedlo se vydumpovat software z iPhone 15 přes USB-C, EEZstudio už běží i na Raspberry Pico a ukážeme si software, který umí identifikovat z binárku procesor, na kterém má běžet, což se může hodit před dekompilací.
+
+A jako vždy přijde řeč i na bizarní témata, tentokrát třeba na AI nástroj navrhující nečitelná elektronická schémata, vnitřek nebezpečné kombinace světla a ventilátoru do edisonova závitu nebo že i J-Link má potíže správně navrhnout zapojení USB-C.
+
+Pokud vás některé z témat oslovilo, doražte již v úterý na VB, která se pořádá od 20:00 na platformě Zoom. Pokud se neobjevilo pro vás zajímavé téma, nevěšte hlavu, zde zmíněná tvoří jen třetinu připravených a vždy je možnost přijít s vlastním tématem! Více informací bude dostupných na https://virtualni.bastlirna.online/
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Hraní si s kamerou Topdon TS001 (na Androidu a Windows) a 
+    * https://www.alza.cz/hobby/topdon-termalni-infra-kamera-ts001-d12758635.htm?o=9
+  * další povídání o termokamerách
+    * https://www.printables.com/model/1156355-pvs-420-thermal-vision-50hz-low-budget-18650-monoc	
+    * https://github.com/Jacob-OTW/BCOTI
+    * UNV TIC2A32SA-F3-4F4AC-I1
+    * https://www.axis.com/products/thermal-cameras
+    * https://oem.flir.com/en-150/products/tau-2/?model=46640001X&vertical=lwir&segment=oem
+    * https://www.banggood.com/INFIRAY-P2-Pro-Mobile-Phone-Infrared-Thermal-Imager-PCB-Circuit-Industrial-Test-Floor-Heating-Temperature-Thermal-Camera-p-1993799.html?cur_warehouse=HK&rmmds=search
+  * https://events.nuttx.apache.org/
+    * Bude workshop
+    * Už funguje i na Raspberry Pi Pico (a měl by i na Pi)
+      * https://nuttx.apache.org/docs/latest/platforms/arm64/bcm2711/boards/r aspberrypi-4b/index.html
+    * Funguje i na x86
+  * z chatu: (4) BalCCon - Balkan Computer Congress - YouTube 
+  * Flipper One
+    * zatím ještě není, nedávno vývojáři sháněli někoho na vývoj Linuxu
+    * V API je target pro One (tehdy Nano) už dávno
+    * https://sapsan-sklep.pl/en/blogs/articles/discover-flipper-one-what-it-has-to-offer?redirected=true
+    * https://x.com/zhovner/status/1956376140182081573
+    * https://x.com/giammaiot2/status/1976766013292093918?s=19
+    * Prototypy vypadají významně větší než Zero
+  * J-Link BASE Compact a problémy s USB-C
+    * Funguje jen s některými kabely (nesmí mít e-marker)
+    * Na USB-C zkratovali CCx piny (jde vyřešit přeškrábnutím a náhradou 10k odporů za 5k1
+    * https://alvarop.com/2025/09/j-link-compact-usb-c-issues/
+  * Blower z Lidlu - pěkně fouká, ale nemá pořádně udělané USB-C, je potřeba redukce A–C
+    * https://www.lidl.cz/p/parkside-aku-univerzalni-maly-fukar-paukgb-a1/p100394508
+  * Zárovkovětrák ničící kabeláž, před kterým se varovalo v Anglii
+    * Uvnitř procesor a 3f motor
+    * https://www.youtube.com/watch?v=gNzbYIYIBgM
+  * Jak kdo vyfukuje / vysává prach z elektroniky
+    * https://www.datavac.cz/products/datavac-ed-500/
+    * diskuze o kompresorech z chladničky
+      * https://www.cesky-obchodak.eu/Aircraft-Airboy-Silence-50-PRO-prenosny-tichy-kompresor-d5430.htm
+  * Diskuze o laserových tiskárnách, čištění tiskáren a chvalozpěvy na nesmrtelné staré laserovky řady HP 100x
+    * Canon 2900 a HP100x měly obě mechaniku od Canonu
+  * HaasoScope Pro - 2 GHz osciloskop
+    * https://hackaday.io/project/200773-haasoscope-pro
+    * Původní verze byla hrozně nakreslená, recenzoval Dave Jones z EEVBlogu
+      * https://youtu.be/R_Ud-FxUw0g?si=n2oyxBlq_B0M8u8W 
+    * https://youtu.be/XcwzCpw295I?si=u0tjHzubxS1e6CmT 
+  * Rant na sigrok / Pulseview (autor nebere pull requesty, poslední verze z března 2020)
+    * Adafruit dělá pysigrok
+  * https://wiki.sipeed.com/hardware/en/logic_analyzer/slogic16u3/Introduction.html
+    * Logický analyzátor s vlastním forkem Pulseview
+    * Vypadá jako levnější DSLogic
+  * Diskuze o prohlížečích, zmínka o Ladybird
+    * https://ladybird.org/
+    * https://github.com/LadybirdBrowser/ladybird
+  * Diskuze o Linuxových aplikacích na WSL, o Windows, ioring, NT jádře
+  * Nástroj pro identifikaci procesorové architektury z binárky (dump FW) před nacpáním do Ghidry
+    * https://github.com/airbus-seclab/cpu_rec
+  * RFSoC PYNQ 10Gsps DAC + pomalejší ADC
+    * http://www.rfsoc-pynq.io/
+    * https://www.amd.com/en/products/adaptive-socs-and-fpgas/soc/zynq-ultrascale-plus-rfsoc.html
+    * RFSoC - FPGA a rychlé ADC/DAC přímo na stejném křemíku
+    * https://github.com/cocotb/cocotb
+    * https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4850-all-open-source-toolchain-for-zynq-7000-socs/
+    * https://www.beagleboard.org/boards/beaglev-fire
+  * LinuxDays
+    * https://pretalx.linuxdays.cz/linuxdays-2025/talk/BJANGG/
+    * https://social.kernel.org/notice/Aysf6V7aDxemMEWkTY
+    * Jenda a jeho přednášky
+      * https://pretalx.linuxdays.cz/media/linuxdays-2025/submissions/MGAKKK/resources/rad21-linuxdays_jpObXpt.pdf
+      * https://jenda.hrach.eu/f/aesa.mp4
+    * https://pretalx.linuxdays.cz/linuxdays-2025/talk/AHXMGX/
+  * Qualcomm sežral Arduino
+    * https://www.arduino.cc/qualcomm/
+  * Už se chystá InstallFest
+  * Levná 3 GHz aktivní sonda
+    * https://www.crowdsupply.com/euler-precision/esap-30
+    * https://www.youtube.com/watch?v=pN8wHRxeny4
+  * Bude OpenAlt
+    * Vyšlo demo Brno Transit
+  * OpenPrinter - open source inkjetová tiskárna
+    * https://www.crowdsupply.com/open-tools/open-printer
+  * Přecházíme do bizáru
+    * Videa kapely OK Go s tiskárnami
+      * https://www.youtube.com/watch?v=LgmxMuW6Fsc
+  * Niimbot B21 Pro - podporuje dvoubarevné štítky (červená nižší teplotou, černá vyšší)
+    * Používá Mifare Ultralight s heslem 0x123456
+    * https://github.com/MultiMote/niimbluelib/issues/1 - podporované tiskárny
+    * https://github.com/dtgreene/niimbotjs?tab=readme-ov-file 
+    * https://github.com/dtgreene/niimbotjs-tools 
+    * https://github.com/MultiMote/niimblue-node 
+  * Bude mikrovlnný seminář
+    * https://mt.ces-csvts.cz/index.php/novinky/2-uncategorised/75-poz202502
+  * Bambu vydala novou tiskárnu P2S
+    * https://www.youtube.com/watch?v=a1p7p1ATP9Q
+    * https://forbes.cz/last-man-standing-buduji-3d-tisk-sestnact-let-a-cine-ho-nechat-nehodlam-rika-prusa/
+  * V nových routerech od Vodafonu (cihla podepřená válečkem) je x86 a ARM
+  * Nový pražský výrobce plošňáků
+    * https://circuitninja.cz/
+    * Obě adresy vypadají virtuálně
+  * Linus Torvalds se dal na stavbu analogových kytarových pedálů
+    * https://www.root.cz/zpravicky/linus-torvalds-stavi-kytarove-pedaly-navrhy-uvolnil-pod-gnu-gpl/
+  * Plugin pro KiCAD pro import EasyEDA součástek
+    * https://github.com/joanbono/awesome-kicad/issues/22
+  * V Brně bude strojírenský veletrh a také Maker Faire
+    * https://www.rychlovarky.cz/
+    * https://www.youtube.com/watch?v=dDLw1Rx_cAI
+    * Na ohřátí 0.5 l vody na 90°C by stačilo 1*10^-12 g antihmoty
+    * Šlo by i bržděním setrvačníku
+    * Nebo třeba vybíjení VN kondenzátoru
+    * Kremační pece se bohužel nedají sehnat ve velikosti  přenosné v jednom člověku, ale mají aplikaci pro mobil i tablet
+  * Novinky z tokamaku - nová instalovaná technika, průběh přestavby
+  * Jak se vozí CO2 (Jetro viděl kamion na dálnici…)
