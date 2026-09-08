@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function setSearchHash(query) {
     if (query) {
       window.location.hash = '#search:' + encodeURIComponent(query);
-    } else {
-      window.location.hash = '';
+    } else if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
     }
   }
 
@@ -257,5 +257,60 @@ document.addEventListener('DOMContentLoaded', function() {
     filterSections();
     updateClearButton();
     searchInput.focus();
+  });
+
+  const sidebar = document.getElementById('session-sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+
+  function updateSidebarStickyOffset() {
+    if (window.matchMedia('(max-width: 800px)').matches) {
+      sidebar.style.removeProperty('--sidebar-sticky-top');
+      return;
+    }
+
+    const viewportPadding = 32;
+    const stickyTop = Math.min(
+      viewportPadding,
+      window.innerHeight - sidebar.offsetHeight - viewportPadding
+    );
+    sidebar.style.setProperty('--sidebar-sticky-top', `${stickyTop}px`);
+  }
+
+  function setSidebarOpen(isOpen) {
+    sidebar.classList.toggle('is-open', isOpen);
+    sidebarToggle.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  updateSidebarStickyOffset();
+  window.addEventListener('resize', updateSidebarStickyOffset);
+
+  sidebarToggle.addEventListener('click', function() {
+    setSidebarOpen(sidebarToggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  document.querySelectorAll('.session-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+      const target = document.getElementById(link.dataset.target);
+      if (!target) return;
+
+      event.preventDefault();
+      searchInput.value = '';
+      filterSections();
+      updateClearButton();
+      setSidebarOpen(false);
+      window.history.replaceState(
+        null,
+        '',
+        window.location.pathname + window.location.search + '#' + target.id
+      );
+      target.scrollIntoView({ block: 'start' });
+    });
+  });
+
+  sidebar.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && sidebar.classList.contains('is-open')) {
+      setSidebarOpen(false);
+      sidebarToggle.focus();
+    }
   });
 });

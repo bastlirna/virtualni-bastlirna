@@ -107,7 +107,22 @@ function convertMarkdownFiles(markdownArray, filePaths) {
     .sort((a, b) => b[1] - a[1])
     .map(([tag, count]) => ({ tag, count }));
 
-  return { files, tagList };
+  const sidebarYears = [];
+  files.forEach((file, index) => {
+    const [year, month, day] = file.fileName.split('-').map(Number);
+    let yearGroup = sidebarYears.at(-1);
+    if (!yearGroup || yearGroup.year !== year) {
+      yearGroup = { year, entries: [] };
+      sidebarYears.push(yearGroup);
+    }
+    yearGroup.entries.push({
+        fileName: file.fileName,
+        number: files.length - index,
+        date: `${day}. ${month}.`
+    });
+  });
+
+  return { files, sidebarYears, tagList };
 }
 
 function loadTemplate(templateFilePath) {
@@ -132,10 +147,10 @@ function writeOutput(html, outputPath) {
 function main() {
   const mdFilePaths = getMarkdownFilePaths(srcDir);
   const mdContents = readMarkdownFiles(mdFilePaths);
-  const { files, tagList } = convertMarkdownFiles(mdContents, mdFilePaths);
+  const { files, sidebarYears, tagList } = convertMarkdownFiles(mdContents, mdFilePaths);
   //console.log(files);
   const templateSource = loadTemplate(templatePath);
-  const html = renderHtml({ files, tagList }, templateSource);
+  const html = renderHtml({ files, sidebarYears, tagList }, templateSource);
   writeOutput(html, outputFile);
   copyStaticFiles(path.join(__dirname, './web'), publicDir);
   console.log(`Vygenerováno: ${outputFile}`);
