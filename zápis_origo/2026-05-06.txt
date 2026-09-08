@@ -1,0 +1,109 @@
+====== ⚡ Virtuální Bastlírna LXII. (14.5.2026) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:59 |
+^ Celkem se vystřídalo | xx účastníků |
+^ Ve špičce | 43 účastníků online |
+^ Celkem prokecáno | xxx,x člověkohodin |
+
+===== Úvodník =====
+Chybí vám někdo, s kým byste si popovídali o bastlení, technice a vědě? Nechcete riskovat, s kým byste se museli bavit u piva v hospodě? Pak doražte na virtuální pokec u virtuálního piva (opravdová nejsou zakázána) v rámci Virtuální Bastlírny již tento čtvrtek.
+
+Možná se ptáte, co se tak může probírat? Můžeme probrat slavná výročí - kromě 55 let obvodu 555 (což je mimochodem prý andělské číslo) a vzpomínky na firmu Signetics zavzpomínáme na 40 let od černobylské havárie. V rámci toho se podíváme na repliku chybového panelu tehdejšího řídicího počítače SKALA, ale i jiné jeho části. Když už budeme u neslavných událostí, zavzpomínáme ukázkou, jak je možné provozovat linuxový kernel pod Windows 98.
+
+V podivnostech je možné jako obvykle pokračovat, třeba barevnými fotografiemi používajícími opravdové barvy místo pigmentů. A testem, kolikrát jde přepsat DVD-RW. Nebo kde sehnat pyrotechnické SMD odpory.
+
+A je to vše, Horste? Zdaleka ne! Tvůrci Virtuálních Bastlíren jste totiž hlavně vy! Naše nachystaná témata jsou jen záloha pro případy trapného ticha. Zavolejte tedy hned… tedy ve čtvrtek od 20:00 přes Zoom na https://virtualni.bastlirna.online Mikrofony a ideálně i kamery s sebou!
+
+https://fb.me/e/84Yj0vhNc
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Proběhl mikrovlnný seminář
+    * https://mt.ces-csvts.cz/index.php/novinky/2-uncategorised/75-poz202502
+  * Dotaz na měření infrazvuku, hlavně čím
+    * https://systemy-pomiarowe.com/wp-content/uploads/2021/07/GRAS_46AZ.pdf
+    * Vyplynulo z diskuze o škodlivosti infrazvuku z větrných elektráren
+    * https://www.rtl-sdr.com/guest-post-listening-to-the-jet-stream-100-days-of-wind-sensing-with-stock-rtl-sdr-hardware/comment-page-1/
+  * Jenda ukazuje věci z Maker Faire
+    * Zuri - české letadlo s vertikálním vzletem
+    * HWLAB - otevřená dílna, mají pěkné vybavení
+      * https://hwlab.praha.eu/
+      * Podobnou má i NTK
+        * https://www.techlib.cz/cs/84997-polytechnicka-dilna
+    * ČVUT má předmět Jak vyrobit téměř cokoli
+      * https://kyr.fel.cvut.cz/jak-vyrobit-temer-cokoli
+      * https://b242_b3b35jvc.pages.fel.cvut.cz/prednasky/
+    * Mapa keramických pecí
+      * https://www.kerastudio.cz/cs/mapa-peci
+    * https://www.sdilny.cz/ 
+    * 3D tištěné robotické rameno
+      * Ukázka převodovek - https://www.sweepdynamics.com/products
+    * Opravář, co umí pájet BGAčka
+      * www.pajecka.cz
+    * Návod, jak provozovat makerspace
+      * https://inesan.eu/wp-content/uploads/2026/05/Tvor-oprav-sdilej-Pruvodce-cirkularni-dilnou-2.pdf 
+    * Průšův tisk ze silikonu - zatím se neprodává, už dlouho oznámeno
+      * https://www.prusa3d.com/cs/produkt/original-prusa-xl-silicone-printing-toolhead/
+  * Stížnosti na infantilnost současných elektronických kitů pro děti
+    * https://lcamtuf.substack.com/p/goodbye-real-electronic-lab-kits
+  * PlutoSDR+ - SDR použitelné i pro radary (Jenda říká, že spíš je to devkit na Zynq)
+    * oproti původnímu má ethernet, alternativní firmware a další rozdíly
+  * Dotaz na watchdog na Rpi
+    * Linux má API pro watchdog
+      * https://docs.kernel.org/watchdog/index.html 
+    * Ukázka P. Píši, jak se to nastavuje a kde to je v kernelu
+    * https://forums.raspberrypi.com/viewtopic.php?t=258042 
+  * ISD1420 - analogová 20s audio paměť (uvnitř 128k EEPROM a trocha smetí okolo)
+    * https://www.ok1vm.cz/projekty/isd1420.htm
+    * ADS-B
+  * https://czadsb.cz/CzADSB_Navod.pdf
+  * CMD2000 stack (CDMA síť s SDR)
+    * https://1xbts.org
+    * https://github.com/chrismoos/1xbts
+  * Nový Rohde & Schwarz EMI měřák umí real-time pásmo 1 GHz, EZÚ už ho má
+    * https://www.rohde-schwarz.com/us/products/test-and-measurement/emi-test-receivers/rs-esw-emi-test-receiver_63493-121280.html
+    * high-end SDR s rozumnou cenou
+      * https://www.pervices.com/
+  * Nový KiCAD
+    * CERN uvolnil jako open source svoji knihovnu součástek
+    * https://home.cern/cerns-kicad-component-library-now-open-source/
+    * https://be-cem-epr.web.cern.ch/cad-component-libraries-altium-cadence-kicad/
+  * Letos je 55 let obvodu 555
+    * diskuze o 556 a 558 a jejich rozdíly
+  * WSL98 - Linux Kernel pod Windows 98
+    * https://codeberg.org/hails/wsl9x
+    * ukázka Windows 98 pod Virtualboxem s Retrozillou na internetu
+  * uLAN - komunikační protokol pro RS485
+    * https://ulan.sourceforge.net/
+  * BBS a multitasking pod DOSem
+    * https://www.pcjs.org/software/pcx86/sys/dos/microsoft/4.0M/
+  * Starý radar přemístěný do údolí Berounky, používá se na komunikaci odrazem přes Měsíc
+    * https://www.ok1kir.cz/index.php?page=gals&gallery=55&name=Antennas_New%C2%A0dish%C2%A0construction&galpart=2
+  * Pyrotechnické odpory, slouží k odpalování primárních výbušnin
+    * https://cz.mouser.com/ProductDetail/Vishay-Sfernice/MEPIC8805WTT?qs=4JX4e57RtWxowxcq0q%252BuWA%3D%3D
+    * https://www.vishay.com/docs/53058/mepic.pdf
+    * https://www.vishay.com/docs/53078/anepicmepic.pdf
+  * ESD a energie
+    * https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7107659
+    * jednotky až nižší desítky mJ
+    * Bzukna od Tesly - vypadalo jako páječka, používalo se při testování vakuových komponent
+  * https://www.mff.cuni.cz/data/nodes/34971/Neubert90bw06_terminaly.jpg
+    * https://www.retrobajty.cz/jednotny-program-jsep/
+  * Diskuze o trackballech a 3D myších
+    * 3Dconnexion je podporovaný skoro ve všem, monopolně
+    * https://github.com/AndunHH/spacemouse
+  * Diskuze o konkrétních řešeních akumulátorů v různých elektroautech a jak jsou bezpečné / servisovatelné
+    * HE3DA stále nějak existuje, navazuje na ni Magna Energy Storage
+    * Nedávno hořelo menší úložiště u Jičína
+    * https://oenergetice.cz/elektrina/sodikove-baterie-konstrukce-princip-cinnosti-a-aplikace
+  * Rekonstrukce chybového panelu černobylského počítače Skala
+    * https://www.youtube.com/watch?v=8_azCaCShy8
+  * Copilot mění ceník, místo předplatného se začnou platit tokeny, pro část lidí může jít o zdražení o víc než o řád
+    * Proxy, která redukuje spotřebu tokenů při dotazech
+      * https://github.com/rtk-ai/rtk
+  * Nástroj na dekódování QR kódů z TME a Mouseru
+      * https://github.com/frostyice57/parts-inventory-scanner
+  * ukázka Inventree
+  * Lippmannova metoda fotografování - zápis stojatého vlnění do tlustého fotocitlivého substrátu v želatinovém nosiči, vznik braggovských zrcadel, zaznamenává přímo vlnové délky, ne rozklad do bázového prostoru lidského oka jako tříbarevná fotografie
+    * https://www.youtube.com/watch?v=-DyrBDsKA5s 

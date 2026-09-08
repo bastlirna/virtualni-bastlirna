@@ -1,0 +1,113 @@
+====== ⚡ Virtuální Bastlírna LVII. (12.12.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:01 |
+^ Celkem se vystřídalo | 53 účastníků |
+^ Ve špičce | 43 účastníků online |
+^ Celkem prokecáno | 154.0 člověkohodin |
+
+===== Úvodník =====
+Téměř každý už si všiml významného zdražení RAM a SSD, jsou zde ale i příjemnější zprávy. Průša uvádí novou velkou 3D tiskárnu s výměnnými nástroji. Totéž zároveň dělá Bambu a několik dalších značek. ST chystá nové automotive procesory STM32A.
+
+Pokud vás některé z témat zaujalo, pak o něm více uslyšíte a můžete se i doptat na čtvrteční Virtuální Bastlírně, tedy každoměsíčním virtuálním posezení u piva, u kterého si inženýři, vědci, ale i nadšenci a kutilové povídají o technických tématech. Stačí se připojit s mikrofonem, případně s kamerou. To však není vše!
+
+Slyšeli jste někdy o RF konektorech s integorvaným přepínačem? Jak vypadá anténa z auta zevnitř? Nebo snad kde se v česku vyvíjí mikroskopy snímající atomové síly? Nejen to probereme v hardwarovém okénku.
+
+Samozřejmě bez softwaru se dnes ani nerozbliká LEDka, podíváme se tedy na modernizovaný fork build prostředí pro procesory WCH32W00x nebo jak se hackuje nebootující starý Kindle.
+
+A také nikdy nesmí chybět okénko s obskurními tématy, tentokrát třeba o síťových discích na MS-DOSu nebo jak se může kamera namontovaná v toaletě pro lékařské účely stát bezpečnostní dírou.
+
+O těchto, ale i dalších tématech si přijďte popovídat již ve čtvrtek 11.12. ve 20:00 na https://virtualni.bastlirna.online/
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Co si kdo objednal sobě k Vánocům za hračky
+    * UV lampička, brýle z kriminálky na hledání stop krve pod UV
+  * 3D tisk z nerezu u JLC metodami SLM a BJ - ukázka pěkného dílu, je poměrně přesný, není porézní, jde obrábět a řezat do něj závity
+    * Umí i titan
+  * JLC umí dělat levně vyhřívací podložky (silikonové nebo PI)
+    * Nakreslíte jen tvar, pozici vývodů a měření teploty, sami vygenerují tvar cestiček podle požadovaného napětí a proudu
+    * 10x10 cm asi $7
+  * Diskuze o NASech a domácích serverových počítačích
+  * Síťový disk na MS-DOSu
+    * https://mateusz.fr/etherdfs/
+    * Diskuze o IPX/SPX
+  * Vyteklé alkalické baterie jde z plošňáků vyčistit octem
+  * Dělají se SMA konektory s přepínačem, dělají se i SMD podobné u.fl s přepínačem
+    * https://cz.mouser.com/ProductDetail/Amphenol-RF/901-10416?qs=8uyp%2Fy7yFW4C3Mpn5iUMqA%3D%3D
+    * https://cz.mouser.com/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D&srsltid=AfmBOorC1_ollhfPtkUKFXg3CGKDJtrQfxi456EUQs6agsNR7HpGgo4o
+    * https://www.i-pex.com/product/mhf-sw23
+  * Mikrovlnný seminář
+    * Sledování sršňů, barvy nožiček, invazní sršni
+    * Odraz o měsíc na 47 GHz (Mirek Kasal), má i zajímavou knihu Slabé signály
+      * https://www.vut.cz/lide/miroslav-kasal-1033
+      * https://mt.ces-csvts.cz/index.php/novinky/2-uncategorised/75-poz202502
+      * Ve skutečnosti vidíme cca 70 % povrchu měsíce - pohybuje se lehce, způsobuje dopplerův jev
+      * Mají v plánu vyzkoušet i 76 GHz pásmo
+    * Jenda Hrach měl na Linux Days přednášku o zpracování signálů v mikrovlnné technice
+      * Diskuze o tom, proč se ve školách učí Matlab - používá se kvůli Simulinku v automotive na řízení a překlad do C/FPGA
+      * Scilab má i software Scicos (skončil) a Xcos podobný simulinku
+        * https://www.scilab.org/software/xcos
+  * Na 60 GHz má kyslík velký útlum
+    * Používají se pojítka na 60 GHz, využívají toho, že mají malý dosah
+    * Hádka o tom, jak funguje free space loss (na frekvenci závisí jen kvůli efektivní apertuře antény)
+    * Povídání o starších levných mikrovlnných pojítkách s 6x6 beamformingem
+      * Jde o levný up/down-konvertor na wifi (neběží na tom nic speciálního)
+      * QCA6320
+      * Údajně to bylo mnohem horší než Summit/Orcavy, méně spolehlivé, ale velmi levné
+    * Pásmo je bezlicenční, ale venku je potřeba se registrovat
+      * https://rlan.ctu.gov.cz/cs/
+      * Přehlednější podoba na http://60g.bkralik.cz/
+      * Má i statistiku délky spojů
+      * V mapě jsou i mýtné brány
+  * Muzeum ZX Spectra a jeho klonů, má i pěkně zpracovanou virtuální prohlídku
+    * https://my.matterport.com/show/?m=zxxTR9xqscd
+  * Home computer Museum v Holandsku
+    * vše zapnuté, funkční a smí se na tom hrát, mají domácí počítače i konzole
+    * https://www.homecomputermuseum.nl
+  * Zmínka o Nanocomputer
+    * https://youtu.be/fkiClSNFV7M?si=Bg7UWr1kMR5vqOV8
+    * https://www.istitutomontani.edu.it/museovirtuale/sistema-didattico-nanocomputers-cgs-ates/
+  * Jak vypadá vnitřek antény v autě
+    * https://x.com/mikelectricstuf/status/1988953946166292811/photo/1
+    * Je tam AM/FM/DAB + GSM + GPS
+  * ST chystá automotive řadu STM32A odvozenou od Stellarů, ale s klasickým jádrem
+    * https://www.st.com/content/st_com/en/campaigns/automotive-microcontrollers-mcu-st-strategy-for-future-zonal-architectures-and-electrification-systems.html
+    * https://www.eletimes.ai/sts-automotive-mcu-technology-for-next-generation-vehicles
+    * https://en.eeworld.com.cn/news/mcu/eic688635.html
+  * STM32WB moduly s multifunkční bezdrátovou sekcí mají velmi malé rozměry a jsou celkem levné
+    * https://cz.mouser.com/ProductDetail/STMicroelectronics/STM32WB1MMCH6TR?qs=amGC7iS6iy8Tg6Lh9DHHcw%3D%3D
+  * ST má i moduly dělané v kooperaci s Qualcommem s Wi-Fi 6
+    * https://newsroom.st.com/media-center/press-item.html/p4666.html
+  * Průtokoměr na sprchu od IKEY, obsahuje ultrazvukový průtokoměr, má i pozici na Zigbee/Thread modul, ale je neosazený
+    * https://www.ikea.com/cz/en/p/bergvattnet-water-meter-for-shower-40590746/
+  * Dotaz na to, jak začít s domácí automatizací - doporučení nepoužívat WiFi / BT, používat Zigbee / Thread, skoro všechno jde udělat v Home Assistantu, ESPHome
+    * https://smlight.tech/product/slzb-06m
+  * Povídání o kazeťácích, Walkmanech, opravách, řemínkách, mazání, ukázky závad, Sony Walkmany, videa, gramofony, audiofilské bizarnosti
+  * Akustický radiometr
+    * https://www.youtube.com/watch?v=lAeJvZfVLbE
+    * https://theses.cz/id/7m10ny/BP_Havel.pdf
+  * Radioburza
+    * https://3px.cz/ok1kfx/
+  * Stíněné sondy magnetického pole
+    * https://www.uniteng.com/neildocs/references/Probing_the_Magnetic_Field_Probe.htm
+    * https://www.we-online.com/files/pdf1/wurth-electronics---diy-rf-current-probe---april-2025_de.pdf
+  * Novinky v 3D tisku
+    * Rozdíly mezi Průša Core One L a Bambu H2C
+    * Průšovo řešení od Bondtechu
+  * česká kombinace skenovacího elektronu a AFM
+    * https://www.nenovision.com/
+    * https://hackaday.io/project/21831-3d-printed-scanning-electron-microscope
+  * CaribouLite SDR
+    * https://www.crowdsupply.com/cariboulabs/cariboulite-rpi-hat
+  * Logický analyzátor na Rpi Pico
+    * https://github.com/gusmanb/logicanalyzer
+  * Streamování dat z RP2350 přes HDMI
+    * https://github.com/steve-m/hsdaoh-rp2350
+  * 3D tištěná stavebnice kompatibilní s LEGO Technics
+    * https://bitbeam.cc/cs/
+  * https://microblocks.fun/
+    * Alternativa k scratc+micropython, od lidí kolem lisp/smalltalk ze Stenfordu
+    * Vlastní VM (běží na HW i v prohlížeči přes wasm) a nad ním grafické programování ala scetch 
+    * https://bitbucket.org/john_maloney/smallvm 
+    * Přednáška: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5369-program-to-learn-the-power-of-creative-coding/

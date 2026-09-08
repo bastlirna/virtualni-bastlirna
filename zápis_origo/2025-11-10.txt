@@ -1,0 +1,110 @@
+====== ⚡ Virtuální Bastlírna LVI. (10.11.2025) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:20 |
+^ Celkem se vystřídalo | 63 účastníků |
+^ Ve špičce | 53 účastníků online |
+^ Celkem prokecáno | 171.8 člověkohodin |
+
+===== Úvodník =====
+Chcete vědět, co se odehrálo ve světě techniky za poslední měsíc? Nebo si popovídat o tom, co zrovna bastlíte? Pak doražte na listopadovou Virtuální Bastlírnu s mikrofonem a kamerou, nalijte si něco k pití a ponořte se s námi do diskuze u virtuálního piva o technice i všem možném okolo.
+
+Mezi nejvýznamnější novinky patří Průšovo oznámení Core One L, zavedení RFID na filamentech, tisk silikonu nebo nový slicer. Dozvíte se ale i do které knihovny si můžete nově dojít svařit kolo.
+
+Ze světa hardwaru stojí za povšimnutí rozbor vnitřního fungování československých videoher, nové termokameře s ostřením do telefonu nebo 12b 350 MHz osciloskop za pouhých $999 nebo 3 GPx fotoaparát.
+
+Za software můžeme zmínit MeshCom německých radioamatérů a novinky u RFID zařízení Chameleon.
+
+Čeho se však za poslední měsíc urodilo nejvíce, je témat podivných a úsměvných. To máte přehřívající se postele kvůli výpadku AWS, odposlech pomocí optických myší nebo jak se může robotický vysavač stát šmírákem.
+
+Témat k probrání máme samozřejmě mnohem více, ale ještě raději budeme, když donesete témata vlastní! Sejdeme se jako obvykle na https://virtualni.bastlirna.online již v pondělí 8.11. od 20:00.
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Immich, HomeGallery
+    * https://immich.app/
+    * https://home-gallery.org/
+    * diskuze o Nextcloud vs, Owncloud vs nový Owncloud v OCISu
+      * https://github.com/owncloud/ocis
+  * Zmínka o robotech řízených na dálku z indického open spacu, potíže s bezpečností robotů
+    * https://share.google/dT4AQZdYO2QZVjfrk
+    * https://pctuning.cz/article/nase-herni-mysi-nas-umi-odposlouchavat-ukazala-studie
+    * https://codetiger.github.io/blog/the-day-my-smart-vacuum-turned-against-me/
+    * Obsahuje TinaLinux (derivát OpenWRT) a ADB
+    * https://docs.aw-ol.com/v853/en/hard/hard_2boraduse/
+  * Svařovna v NTK
+    * všechny možné technologie, bohužel jen jeden den v měsíci
+    * https://www.techlib.cz/cs/84997-polytechnicka-dilna
+    * bkralik ukazuje navařování nosníků na speciální nerez, doporučuje argon-vodíkovou atmosféru
+  * Kamera s 2 gigaFPS
+    * Video ukazující zpomalený let světla
+    * https://www.youtube.com/@AlphaPhoenixChannel/videos
+      * vážení vlaštovek a letadel ve vzduchu velkoplošnou citlivou váhou
+  * 3.2 GPx fotoaparát ze skeneru
+    * https://hackaday.io/project/202945-project-gigapixel-linear-ccd-camera
+    * https://www.youtube.com/watch?v=KSvjJGbFCws
+  * Rušení radaru na Slovensku vytvořilo virtuální armageddon
+    * https://drive.google.com/drive/folders/1QC9U4a99Y4wlIVN_CZBMnWvT4KyWeIEk
+  * Domácí rentgen (pozor, nebezpečné)
+    * https://www.youtube.com/watch?v=jLOBMBN8A4A
+  * Novinky u Průši
+    * https://www.youtube.com/watch?v=14U8KFThIY4
+    * Nová tiskárna Core One L - větší (30 cm ve všech směrech), vylepšený bed
+      * https://youtu.be/zR0F1lTVtSI?si=o2EP1oP5RWu91Zpc
+    * XL - tisková hlava na silikon, tiskne se z dvousložkového silikonu, automaticky se míchá, uloženo v trubičkovém filamentu
+      * https://www.filament2.com/
+      * https://www.youtube.com/@erangal-or3339/videos
+    * RFID na špulky filamentu - popisuje materiál a množství zbývajícího filamentu, otevřený standard, jde koupit samotné prázdné tagy
+      * https://openprinttag.org/
+      * https://openprinttag.org/generator/
+      * anténa je kruhová, lze číst kontinuálně, nezáleží na pozici cívky
+      * jen jeden tag na cívku, tj. nehrozí problém se synchronizací 2 tagů
+      * https://www.nxp.com/docs/en/data-sheet/SL2S2602.pdf
+    * Nový Slicer 3.0 - předělané UI (moc se zatím neví víc)
+    * Zmínka o technické složitosti nového planetária
+    * Zmínka o dalších open source standardech, třeba OpenTag3D (standard odvozený od reverzovaného formátu z Bambu tiskáren)
+  * Diskuze o RFID, čtečkách a problémech se čtečkovými systémy na Strahově, nový čvutí systém
+    * https://www.xt-card.cz/projekty/card-control-system-cvut/
+    * Povídání o různých čtečkových systémech, správě přístupů a karet, řešení stavů s vybitými zámky
+  * Rant na to, jak hypersložitě a šíleně dnes fungují e-maily
+  * Rady, jak zprovoznit Python 3 na prastarém Debianu 10 (balíček byl v jiném hrníčku)
+  * Barevné pseudoQR kódy
+    * https://github.com/sz3/cimbar?tab=readme-ov-file
+  * Nový levný 12b osciloskop od Rigolu
+    * https://www.youtube.com/watch?v=6lBU4NwmY7s
+  * Reverzní inženýrství MAS601-603
+    * https://herniarcheolog.blogspot.com/2025/10/bonus-12-obvody-mas601-603-pro.html
+  * Rozpouštědlo na vteřinové lepidlo (a laky)
+    * https://en.wikipedia.org/wiki/Propylene_carbonate
+  * Nové Arduino Uno Q ve spolupráci s Qualcommem
+    * https://x.com/hubmartin/status/1978892689610281208
+    * Velký ARM + STM32 se Zephyrem, vlastní kód běží jako loadovatelný plugin
+  * Přednáška o žižkovském mikrotronu
+    * https://www.youtube.com/watch?v=r57lmZRXIuA
+  * Jak se vyměňuje palivo v jaderném reaktoru
+    * https://www.youtube.com/watch?v=v0afQ6w3Bjw
+  * Hackaday Badge s Lorou
+    * https://hackaday.com/2025/10/23/announcing-the-2025-hackaday-superconference-communicator-badge/
+    * vlastní gumová klávesnice s žabkami
+  * 100 Mb TX-only bitbangovaný ethernet na Raspberry Pico
+    * https://github.com/steve-m/Pico-100BASE-TX/
+  * 386 na ESP32
+    * https://blog.adafruit.com/2025/11/10/tiny386-an-i386-pc-emulator-written-in-c99-that-boots-windows-95-on-esp32/
+  * MiSTer potřebuje EDO-SDRAM modul, aby věrně napodobil historický hardware
+    * https://github.com/MiSTer-devel/Wiki_MiSTer/wiki/Cores
+  * Diskuze o rok starém výbuchu plynů z akumulátorů
+    * https://danyk.cz/kniha/vlakno.php?id=113810
+    * https://www.idnes.cz/hradec-kralove/zpravy/pozar-vybuch-sonov-fotovoltaika-nove-mesto-nachodsko-pricina.A240726_081902_hradec-zpravy_tuu
+  * Diskuze o fungování MPPT
+  * Zen 5 má problém s počítáním náhodných čísel
+    * https://www.root.cz/zpravicky/amd-zen5-ma-problem-s-rdseed/
+  * Nová termokamera Thermo Master P3 má 256x192 px a manuální ostření
+  * Vnitřnosti Strahovského tunelu
+    * https://www.youtube.com/watch?v=Mdqh4sQVbhs
+  * Nadávání na všechno možné a všelijaké špekulování (Výtoňský most, rekonstrukce hlaváku, smíchovské nádraží, petřínská lanovka)
+    * https://www.metro.cz/praha/rekonstrukce-lanovky-na-petrin-pokracuje-kolejnice-jsou-na-miste-vozy-vznikaji-ve-svycarsku.A251106_161352_metro-praha_mbena
+  * Na STM32G4 můžou ADC vracet hovadiny, když se nespustí všechny současně a některé běží na liché hrany a jiné na sudé
+    * STM32F4 mají o 50-300 nA větší svod do země na PA0 než na ostatních PAx pinech
+  * Diskuze o ransomwaru, serverech, bezpečnosti
+    * Skriptík na vyčtení nejčastějších pokusů o průnik do SSH (aneb v shellu jde napsat spoustu stringových čuňáren)
+    * grep "Failed password" /var/log/auth.log | rev | cut -d " " -f 1-6 | rev | cut -d " " -f 1 | sort | uniq -c | rev | cut -d " " -f 1-2 | rev | sort -n

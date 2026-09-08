@@ -1,0 +1,151 @@
+====== ⚡ Virtuální Bastlírna LIX. (6.2.2026) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:55 (bastl se odpojil v 0:40) |
+^ Celkem se vystřídalo | 68 účastníků |
+^ Ve špičce | 53 účastníků online |
+^ Celkem prokecáno | 178,4 člověkohodin |
+
+===== Úvodník =====
+Co se děje ve zprávách, ví asi každý - válka sem, clo tam, demonstrace na jednu i druhou stranu a bastlíř už má pocit, že se snad ani nic jiného neděje. To by však byl velký omyl a Virtuální Bastlírna je zde jako každý měsíc, aby vytáhla na světlo světa události ze světa vědy a techniky. Připojte se tedy již ve čtvrtek 5.2. od 20:00 k nezávaznému povídání. Dost už ale řečí, co budeme probírat?
+
+PCBWay začalo dělat průhledné plošňáky, MARS končí s výrobou skříněk, FEL vytváří specializovaný obor na návrh polovodičů a Průša uvádí Core One+ a výměnné nástroje INDX.
+
+Ukážeme si historické dozimetry nebo vnitřek raket Orešnik, jak vypadají zevnitř levné 18650 články nebo jak fungují šrouby se zabudovanou detekcí utažení.
+
+Za software zmíníme Zigbee firmware pro Xiaomi teploměry, emulátor starých Maců, jak na bridge mezi MeshCore a Bitchatem nebo paralelizovaný SPICE simulátor.
+
+A jako vždy dojde řeč i na podivnosti, ať už hádku mezi Adafruit a Sparkfunem, jak dokáží některé bezdrátové nabíječky roztavit RFID karty nebo jak jde používat Waze na sledování lidí.
+
+To vše i mnoho dalších témat přijďte s námi probrat ve čtvrtek 5.2. od 20:00 na https://virtualni.bastlirna.online/
+https://fb.me/e/3f4Xphlcb
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Dotaz na MeshCore
+    * https://meshcore.cz/
+    * https://pretalx.linuxdays.cz/linuxdays-2024/talk/YUENWX/
+    * Zmínka o bitchatu a bridge mezi MeshCorem a Bitchatem
+      * https://github.com/jooray/MeshCore-BitChat?fbc
+    * PC: “Kolega zjistil že na meshtastic dobře fungují starší TV antény, když se jim vykuchá zesilovač (symetrák se nechá). Dosáhl tím zlepšení o 10dB.”
+    * rusty: “na telegram obsáhlý kanál @meshcore_cz”
+    * Přednáška o různých bezdrátových protokolech
+      * https://csnog.eu/public/media/1769434059/1191/
+    * https://mapa.meshcore.cz/
+    * https://www.thethingsnetwork.org/map
+    * Pico balonáři a LoRa (a jiné)
+      * https://amsat-uk.org/2013/10/12/437-700-mhz-ham-radio-balloon-heading-for-uk/
+  * MARS končí
+    * https://svitavsky.denik.cz/zpravy_region/policske-strojirny-kupuji-areal-mars-svratka-vyrobu-tam-spusti-pristi-rok-202510.html
+    * šuplata prý bude dál dělat Tokoz
+      * https://eshop.tokoz.cz/184-zasuvkove-organizery
+  * PCBWay dělá nově průsvitné pevné plošňáky
+    * https://www.youtube.com/watch?v=jDI_Xw7IoPI
+  * Ukázka dozimetrů DC-1B-74 a EDOS
+    * https://immich.msboss.sh.cvut.cz/s/DC-1B-74
+      * https://en.wikipedia.org/wiki/Quartz_fiber_dosimeter
+    * https://immich.msboss.sh.cvut.cz/s/EDOS
+  * “open source” fázovací transceiver
+    * https://open.space/#hardware
+    * Podle Jendy jde nejspíš o vaporware, nejsou k tomu žádné informace ani updaty
+    * Zatím se neví, kdy to budou prodávat ani za kolik a ani open source to není
+    * EME (odraz o Měsíc) je asi blbost vzhledem k malému výkonu a navíc na to není potřeba fázovací pole
+  * Ukázka vnitřku sovětských křemíkových tranzistorů z let 1968-9
+    * https://immich.msboss.sh.cvut.cz/s/vnitrky_tranzistoru
+  * Benzinový ohřívač rukou
+    * Od Zippo, průměrný výkon asi 15 W, spotřeba asi 20 ml benzínu na 8-12 hodin, téměř nesmrdí
+  * USB-C a potíže s různými standardy a jak to testovat
+    * https://www.eevblog.com/forum/testgear/which-usb-power-tester-do-you-recommend/ 
+    * WITRN dělá zajímavý analyzátor nabíjecích standardů K2
+      * https://www.aliexpress.com/item/1005008906433528.html 
+    * POWER-Z KM003C (lepší, ale dražší)
+      * https://www.power-z.com/products/chargerlab-power-z-km003c 
+    * Fnirsi FNB58 (starý, má nějaké bugy, viz eevblog forum)
+    * Fnirsi FNC28 (malý, hezký, ale neumí PD)
+      * https://chiptron.cz/vyzkousel-jsem-usb-tester-fnirsi-fnac-28-levny-a-zajimavy-tester-ktery-ale-nepodporuje-jeden-dulezity-protokol-rychleho-nabijeni/ 
+    * Levná nabíječka z IKEA za 99, 20W
+      * https://www.ikea.com/cz/cs/p/sjoess-20w-nabijecka-usb-s-1-portem-50621728/
+    * Diskuse o problémech víceportových nabiječek (sdílení portů, připojení k jednomu portu vynutí novou enumeraci, …)
+  * O víkendu 28.-29.3. bude InstallFest, Arduino Day, Chemnitzer Linux Tage a Trpaslicon a Oslava zničení prstenu
+  * Vnitřek raket Orešnik, vypadá to, že vevnitř je ECL logika i nějaká elektronka (bohužel video není příliš podrobné)
+    * https://edition.cnn.com/2026/01/09/world/video/ukraine-russia-oreshnik-missile-inside-npw-ldn-digvid?utm_source=www.seznam.cz&utm_medium=sekce-z-internetu
+  * Při přiložení RFID karty na Qi nabíječku na 13.56 MHz by se měla nabíječka vypnout (pokud to výrobce implementoval podle standardu), ale s 125 kHz se může stát, že se roztaví
+    * https://www.st.com/resource/en/application_note/an5364-how-to-protect-st25-tags-from-wireless-power-charging-stmicroelectronics.pdf
+    * https://diglib.tugraz.at/download.php?id=60a4eb8481fdf&location=browse
+    * https://cdn.standards.iteh.ai/samples/124159/1cbdf628d6a74f80b190c0510622a544/IEC-63563-8-2025.pdf 
+    * diskuze, jak fungují Qi nabíječky a proč tam jsou magneticky vodivé destičky
+    * planární trafa, planární motory na plošňáku
+    * https://www.youtube.com/watch?v=oa6sP-joAr8
+  * LEGO nedávno představilo “chytrou” kostku, má v sobě NFC, umí blikat a pípat, reaguje na kostičky s NFC tagy (přítomnost + natočení), nabíjí e bezdrátově
+    * https://x.com/elegantnikuryr/status/2008451551598162109
+    * Obsah kostičky jde bezdrátově upgradovat
+    * https://www.lego.com/cs-cz/smart-play
+    * https://www.abclinuxu.cz/zpravicky/ces-2026-lego-smart-play
+    * Zajimavé technicky, ale zatím nejsou technické detaijly
+      * Údajně mají vlastní ASIC
+      * NFC, nějaké radio, akcelerometr, … ??? uvidíme časem
+      * Možná používají https://nfc-forum.org/learn/use-cases/wireless-charging/ 
+  * Airtagy a Airtagy 2. generace
+    * Alza začala prodávat vlastní Airtagy
+    * originální mají Bluetooth a UWB (pro měření úhlu), neoriginální umí jen Bluetooth
+    * nová generace je spíše optimalizace původního, nově místo nRF52832 je tam nRF52840
+    * https://github.com/seemoo-lab/openhaystack
+    * https://hackaday.com/2022/05/30/check-your-mailbox-using-the-airtag-infrastructure/
+    * https://x.com/ghidraninja/status/2016474854992581040
+    * Google (Android) má Find Hub (https://en.wikipedia.org/wiki/Find_Hub)
+      * https://github.com/leonboe1/GoogleFindMyTools 
+  * AI firmy už těží data i z Anna’s Archive (knihy)
+    * Všechno z Library Genesis je tam, hledání funguje dobře
+  * diskuze, jak stahovat videa z video web
+    * yt-dlp + deno + cookies z prohlížeče (z inkognito okna)
+    * https://projects.suneweb.net/media-downloader/
+    * Video downloader plugin do prohlížeče
+  * Texas Instruments si koupilo Silicon Labs, merge proběhne v H1/2027 
+  * Jak bezpečně provozovat desktopové AI nástroje
+    * https://claude.com/product/cowork
+    * https://openclaw.ai/ 
+    * Už vznikla i sociální síť pro AI agenty i web Hiring Humans, kde si můžou AI najmout lidi na práci
+      * https://kechlibar.net/2026/02/02/kdyz-se-pytle-bavi-ve-skladisti/
+      * Podobnou věc dělal už dávno Amazon Mechanical Turk
+      * https://rentahuman.ai/
+  * Chytré šrouby, indikují utažení v závislosti na osové síle
+    * Vevnitř je tyčinka s barevným terčíkem po celé délce a asi černá kapalina, měří protažení šroubu
+    * https://www.youtube.com/watch?v=a--MKGH3HaI
+    * Dělají se i šrouby se zabudovaným tenzometrem
+    * Utažení se dá měřit i ultrazvukem přiloženým na hlavičku, měří se protažení šroubu
+    * https://jenda.hrach.eu/f2/Zvl%C3%A1%C5%A1tn%C3%AD%20%C5%A1rouby%20pro%20stroj%C3%ADrenstv/
+    * Existují šrouby určené pro použití v oblasti plastické deformace
+      * https://www.onallcylinders.com/2017/03/17/quick-tech-tty-fasteners-ls-engines-need-know/
+    * Závitová lepidla (různé typy odolnosti) a microencapsulated screw - šrouby s nanesenými kuličkami materiálu, které mají uvnitř závitové lepidlo, vylije se při zašroubování a aktivuje
+    * Dělá spousta firem, poměrně známý třeba Tuflok, kupuje se už jako šroub s nanesenou hmotou
+    * Speciální podložky
+      * Nord-lock - podložky nepovolující se pod vibracemi, zakusuje se do materiálu
+      * kónické podložky - jde napružit mnohem větší silou, delší chod
+    * SMA a správné dotahování (moment podle materiálu a konstrukce)
+      * https://www.microwaves101.com/encyclopedias/connector-torque
+    * Na propojení desek s tolerancí nesouososti jsou vhodné SMP konektory, některé jsou až do 40 GHz
+      * https://www.svmicrowave.com/connector-interfaces
+      * https://www.everythingrf.com/community/what-are-smp-connectors
+  * Proběhl FOSDEM
+    * https://fosdem.org/2026/schedule/event/3TPZSB-vrt_iq_tools_at_the_dwingeloo_radio_telescope/
+    * Údajně letos strašně přeplněné, nedalo se dostat na přednášky, celé v nějakém kampusu, přednáškovky hrozně daleko od sebe a spousta hodně divno divnolidí
+  * Visuino - takové LabView nad Arduinem
+    * https://hackaday.io/project/21388-visuino
+  * PySimCoder
+    * https://github.com/robertobucher/pysimCoder
+  * Arduino AutomationShield
+    * https://github.com/gergelytakacs/AutomationShield/wiki
+    * https://github.com/gergelytakacs/AutomationShield
+  * https://www.helenos.org/index.fcgi/wiki/Screenshots
+    * https://www.root.cz/clanky/helenos-nikdy-nebude-dokonceny-rika-jeho-autor-jakub-jermar/
+  * https://www.microkernel.info/
+  * https://managarm.org/2026/01/13/end-of-year-update.html
+  * Jak se z Wazu stala špehovací platforma
+    * https://x.com/harrris0n/status/2014197314571952167
+    * nešlo anonymně reportovat závady, šlo hromadně nagrabovat vše na mapě a zmapovat pohyb lidí včetně historie
+    * Waze už všechna hlášení přepl na anonymní
+  * Henryk Forsten si postavil 15 GHz VNA
+    * https://hforsten.com/designing-a-low-cost-high-performance-10-mhz-15-ghz-vector-network-analyzer.html
+  * Teflonové smršťovačky, potřebují asi 350 °C
+    * https://en.woer.com/product/1004/511
+  * Uprdkávačův reflektometr zmíněný ve vědeckém článku o reflektometrické tamper detekci
+    * https://hackaday.com/2026/01/24/tamper-detection-with-time-domain-reflectometry/

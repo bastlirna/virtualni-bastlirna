@@ -1,0 +1,121 @@
+====== ⚡ Virtuální Bastlírna LXIV. (1.7.2026) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 22:59 |
+^ Celkem se vystřídalo | 52 účastníků |
+^ Ve špičce | 41 účastníků online |
+^ Celkem prokecáno | 116,5 člověkohodin |
+
+===== Úvodník =====
+Blíží se prázdniny a jistě si již říkáte: Už aby byla Virtuální Bastlírna! Pak právě pro vás máme výtečnou zprávu - nač se zdržovat, Virtuální Bastlírna bude již ve středu 1. července. Co probereme tentokrát?
+
+Samozřejmě kromě zcela náhodných témat pospojovaných oslími můstky, za které by se nemusel stydět ani Douglas Adams, které můžete přinést i vy, neb VB je v zásadě takové virtuální posezení u piva s bastlíři, máme i plný pytel témat, které jsme sbírali celý měsíc. Čím tedy začneme?
+
+Určitě probereme blížící se Linux Days i jiné události. U softwaru se chvíli zdržíme a povíme si kupříkladu o tom, jak se zbavit Bambu Cloudu, ale nepřijít o možnost ovládat tiskárnu na dálku. Řeč dojde i na AI, konkrétně kde najít nejrozsáhlejší nástroj čerpající z vědeckých článků nebo jak donutit AI, aby byla línější a místo tísíce řádků psala krátké programy využívající již existující knihovny. Ovšem nesmíme zapomenout na hardware!
+
+I tentokrát dojde řeč na nástroje s RP2350, které pomáhají uživatelům historických PC. Na trhu už jsou i použitelné UV-C LED, nový český výrobce plošňáků nabízí vícebarevnou masku a za pár korun se dá sehnat i 2 GHz aktivní sonda. Radiacode dělá nový scintilátor, jehož rozsah je tak velký, že jej nejspíš nevyužijete, pokud nejste šváb žijící v reaktoru jaderné elektrárny. Ovšem HW témat máme tolik, že bychom se nemuseli dostat na oblíbenou sekci bizáru.
+
+Naší pozornosti by neměla uniknout 555, která se programuje přes SPI, rušení GPS tajným satelitem nebo jak zdánlivě náhodný pixelovaný šum na plošňáku může ve skutečnosti být mikrovlnným filtrem. A jako minule se dostaneme k Texas Instruments a jejich úporné snaze opakovaně si prostřelit nohy nahrazováním známých analogových integráčů za nejhorší pajcy.
+
+Pokud vás některé z témat zaujalo nebo máte vlastní, se kterým chcete dorazit, připravte si mikrofon a ideálně i kameru a doražte na https://virtualni.bastlirna.online/ ve středu 1.7. od 20:00. A nebojte se mluvit!
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * Jenda ukazuje jethrův velomobil, má to velmi malý aerodynamický odpor
+    * https://en.velomobiel.nl/strada/
+  * Skill pro AI Ponytail, který generuje krátký funkční kód, který je i levnější na tokeny
+    * https://github.com/DietrichGebert/ponytail 
+  * Povídání o Sci-Bot AI
+    * https://sci-bot.ru/why-does-aspergillus-nidulans-reduce-d789
+  * Nejspíš začne být nedostatek materiálů pro plošňáky, tedy pak i plošňáků
+    * https://www.gatema.cz/nedostatek-materialu-pro-vyrobu-pcb/
+    * https://www.marctech2.com/news/pcb-material-shortages-what-customers-need-to-know
+  * Analog Devices (+Linear Technologies, Maxim) teď nechce prodávat koncovým uživatelům integráče, Mouser ruší studentům objednávky
+  * Problémy s Texas Instruments se stále zhoršují
+  * Jenda Povídá o AI Fable, říká, že to výborně hledalo a opravovalo bugy (než ho zakázali)
+    * Údajně má být zase brzy dostupný
+    * Z chatu - zpracovaný jeden z možných scénářů dalšího vývoje AI 
+      * https://europe2031.ai/
+    * Diskuze o uzavřených modelech AI nedostupných celé veřejnosti
+    * https://www.xda-developers.com/open-source-tool-is-the-first-step-before-trying-out-local-ai-llms-llmfit/
+    * Kde sehnat 32 GB grafickou kartu (cca 15 000 Kč)
+      * https://www.ebay.com/itm/127832735377
+      * Dají se levně koupit i 24 GB příbuzné modely, do 6 000 Kč (P40, K80)
+    * https://blog.e-infra.cz/blog/llm3/
+    * Unifikovaný frontend s jedním API pro přístup k řadě různých AI modelů, platí se za kredity předem
+      * https://openrouter.ai/
+    * https://opencode.ai/
+    * https://pi.dev/
+    * bkralik povídá o práci s nVidia DGX Spark
+    * Opět se vracíme k BC250 (více v minulém zápisu)
+      * Zdražily asi na 5000
+      * Přišlo se na to, jak zapnout některá vypnutá jádra
+      * Má M.2 slot, kde jsou 2 linky PCI-e 2.0 a SATA, komunita se snaží je použít k propojení více modulů pro paralelní výpočty
+    * SkiDL - jazyk pro popis zapojení elektroniky
+      * https://github.com/devbisme/skidl
+      * Diskuze o použitelnosti netlistu nebo SKiDLu pro účely review člověkem a srozumitelnosti pro dalšího člověka (aneb proč stále po 40+ letech kreslíme schémata a nepoužíváme jen netlisty)
+  * https://adam.new/cadam/
+    * Umí z požadavků dělat pomocí AI modely, ale má to stále bugy
+    * Alternativa k OpenSCAD v Pythonu
+      * https://github.com/gumyr/build123d
+    * Pythoní generátor OpenSCAD modelů
+      * https://solidpython.readthedocs.io/en/stable/
+    * Současný FreeCAD je už taky celkem použitelný
+  * Levná aktivní 2 GHz sonda
+    * https://jmw.name/projects/active-probe/
+    * https://github.com/jmwilson/oshw-active-probe
+    * https://cz.mouser.com/ProductDetail/Andy-Haas/HAASOSCOPE-PRO-02?qs=bN4HulGPsrGFCkdaLr2xHw%3D%3D 
+  * VRML - kdysi měl tvořit VR 3D internet, dnes se používá jen na modely, používá se v KiCADu
+  * Jak s trochou šumu udělat miniaturní mikrovlnný filtr
+    * https://x.com/MehdiHacks/status/2061193525903999362
+  * CSS555 - 555 s interní EEPROM a děličkami, nízkou spotřebou a fungovala od 1.2 V
+  * Zajímavé “analogové” FPGA
+    * https://renesasweb.s3.us-west-2.amazonaws.com/prod/docs/X012/X0128241/REN_greenpak-cookbook_MAT_20260515.pdf?response-content-disposition=inline%3B%20filename%3D%22REN_greenpak-cookbook_MAT_20260515.pdf%22&response-content-type=application%2Fpdf&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3WXFIBJWSDVTHJX3%2F20260701%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260701T191630Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86700&X-Amz-Signature=964ba221e1d580967c884648943077b45d3d944427f4a34ac5be96e67d50ee9c
+  * PicoPCMCIA - karta emulující MIDI, CDROM, úložiště, zvukovou kartu, internetový adaptér a další
+    * https://www.yyzkevin.com/picopcmcia/
+    * Zatím není open-source, má být
+  * MoonRF update
+    * https://moonrf.com/docs/
+  * ATABoy - adaptér z USB-C na IDE pro čtení starých CHS disků
+    * https://github.com/redruM0381/ATAboy
+    * https://blog.adafruit.com/2026/06/08/ataboy-lets-your-computer-read-ancient-types-of-ide-hard-drives/
+  * Údajně už zdražují kvůli AI i DDR3 a DDR2 paměti
+  * Jak dlouhodobě napájet Lora čidlo s STM32 - návrhy na LiSOCl2 články
+  * Dotaz na USB sniffer
+    * https://hackaday.com/2023/06/13/cheap-usb-sniffer-has-wireshark-interface/
+    * https://www.xda-developers.com/usb-sniffer-raspberry-pi-pico/
+    * https://vllogic.com/quick/usb_sniffer_h7p20
+  * Ruský satelit, který zřejmě lehce ruší GPS - spekuluje se o celé soustavě
+    * https://www.youtube.com/watch?v=tz23G_UXCGA&pp=ygUKZ3BzIGphbW1lcg%3D%3D 
+    * https://resiliencemedia.co/russia-is-jamming-gps-from-space/
+    * https://hackaday.com/2026/06/08/spy-tech-the-gps-numbers-station/ 
+  * Blíží se LinuxDays
+    * https://pretalx.linuxdays.cz/linuxdays-2026/cfp
+  * V srpnu bude zatmění slunce ve Španělsku a na Islandu
+    * Příští rok bude ještě zajímavější a delsí, opět zejména ve Španělsku
+  * Opět povídání o odrazu od měsíce na 76 GHz
+  * Radiacode vyrobili nový měřák i pro extrémní intenzity záření
+    * https://www.radiacode.com/zero
+  * Mikrotik bude mít router s matter/thread 
+    * https://mikrotik.com/product/hap_be3_media
+  * Diskuze o 2.5G ethernetu a 10G optice
+  * Řečový syntetizér pro GPIB
+    * https://hackaday.com/2026/06/04/the-worlds-first-gpib-speech-synthesizer-and-its-for-a-grid-compass/
+  * Jak fungovala magnetická bublinková paměť
+    * https://www.smbaker.com/magnetic-bubble-memory-mega-post
+    * https://www.youtube.com/watch?v=SIO3dc5F2kw
+    * https://bitsofthegoldenage.org/bubble-memory-makes-a-comeback-for-me-anyway/
+    * https://randoc.wordpress.com/2022/01/07/the-fujitsu-micro-8-and-its-bubble-memory-drive/
+  * UV-C LEDky, ekvivalent cca 1/100 11W výbojky
+    * https://cz.mouser.com/ProductDetail/Vishay-Semiconductors/VLMU35CR40-275-120?qs=vvQtp7zwQdPV32pQdnrE5w%3D%3D 
+    * https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025511175/VISH-S-A0025511225-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0 
+  * Domácí cloud pro nahrazení Bambu Cloudu
+    * https://hackaday.com/2026/06/13/bambuddy-says-bye-to-bambu-lab-cloud-services/ 
+  * Průša začal rozesílat první nástroje INDX
+    * Číňani už slibují podobný systém (Sovol M1D)
+      * https://www.sovol3d.com/pages/sovol-m1d-landing-page
+  * Bude nové ESP32-S31
+  * Přenosný Apple II+
+    * https://www.tindie.com/products/cycle/book-ii-apple2-plus-compatible-laptop-computer/
+  * CircuitNinja nově nabízí vícebarevnou desku (spíš sekce než obrázky)
+  * HP nově vydává programovatelnou kalkulačku HP 16c

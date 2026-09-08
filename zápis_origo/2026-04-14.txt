@@ -1,0 +1,125 @@
+====== ⚡ Virtuální Bastlírna LXI. (14.4.2026) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 23:35 |
+^ Celkem se vystřídalo | 47 účastníků |
+^ Ve špičce | 43 účastníků online |
+^ Celkem prokecáno | 122,7 člověkohodin |
+
+===== Úvodník =====
+Protože je už den po aprílu, můžeme opět zveřejnit program další Virtuální Bastlírny, aniž by připravená témata působila dojmem, že jde o žert. Vězte tedy, že již v úterý 7.4. od 20:00 proběhne VB, kde se setkají bastlíři, technici, učitelé i nadšenci do techniky a kde i vy se můžete zapojit do družného hovoru, jako bychom všichni seděli u pomyslného piva. Co máme tento měsíc na srdci?
+
+Pravděpodobně by nás musel zasáhnout meteorit a výpadek internetu, abychom nezmínili KiCAD 10. A pro emulátory disket Gotek vznikl open-source firmware. Co ale hardware?
+
+Do bastlířských doupat už se blíží dostupné metody pro recyklaci filamentů, v Česku je nový superrychlý výrobce plošňáků, Ikea už prodává Matter zásuvky a ve volné přírodě se již vyskytly pokusy o použití x86 motherboardů jako PCI-E breakout boardů pro Raspberry Pi. Čímž se pomalu dostáváme k bizarnostem!
+
+Naše nevěřící zraky padnou na rtuťové kabely, průšovský aprílový žertík nebo třeba kuličkový šroub bez kuliček.
+
+Pokud zde nevidíte téma, které byste chtěli probrat, řešení je snadné! Doražte s mikrofonem na VB v úterý 7.4. od 20:00 přes https://virtualni.bastlirna.online/ a sami nadhoďte téma, které byste chtěli probrat.
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * KiCAD 10 - novinky s výpočtem impedance a délek, vyšla 10.0.1-rc1
+    * Diskuze, co vyvádí všichni vývojáři PCB EDA a proč to lidi štve
+    * Rozbor historie EAGLE
+  * Uzavřené lineární a kruhové poťáky
+    * https://cz.mouser.com/datasheet/3/784/1/HotPot_Series_Datasheet_v2019a.pdf
+  * Proběhl Průša meetup
+  * AliceVision - software pro fotogrammetrii, spíše na vizuální kopie, ne na přesné díly
+    * https://alicevision.org/
+    * Zmínka o gaussovském splattingu
+      * https://www.youtube.com/watch?v=H4LW2fMtSN8
+  * Patice na Raspi Pico
+    * https://magazine.raspberrypi.com/articles/clipzin-pcb-connector-review
+  * Artemis 2 - obletěla úspěšně Měsíc
+    * https://www.nasa.gov/wp-content/uploads/2026/01/a2-reference-guide-012825.pdf 
+    * Některé díly z 3D tisku
+      * https://www.theglobeandmail.com/resizer/8kBRgWEEPmLm2HOfCpq5MtLJLXk=/arc-anglerfish-tgam-prod-tgam/public/4P2X3W4CCNFBFEVUR74KO6DNZE.jpg
+  * Diskuze, zda už někdo zemřel ve vesmíru nebo jen v atmosféře (Sojuz 11 byl nad Karmánovou linií)
+  * Nedávno zmiňovaný komerční (ale open-source) radar má updaty, možná nepůjde o vaporware, nejspíš kromě FPGA bitstreamu bude otevřený
+    * https://moonrf.com/
+    * https://github.com/open-space-sdr/main
+  * Open-source 1D phased array radar
+    * https://github.com/NawfalMotii79/PLFM_RADAR?tab=readme-ov-file
+    * https://x.com/blackorbird/status/2040808373730557983
+    * Jenda říká, že to vypadá jako vygenerované AI (hlavně dokumentace) a píšou se tam blbiny a plány do budoucna spíš než aktuální dokumentace
+  * Radar z vesmíru s rozlišením na cca 20 cm, údajně i pro vojenské použití
+    * https://www.iceye.com/
+  * Free smith-chart tool
+    * http://www.fritz.dellsperger.net/smith.html
+  * Starší radar Henrika Forstena (dělá VNAčka a další RF věci)
+    * https://hforsten.com/homemade-synthetic-aperture-radar.html
+    * https://hforsten.com/synthetic-aperture-radar-autofocus-and-calibration.html
+  * AI zpracování satelitních dat, měření např. pohnojení rostlin podle odezvy rostlin na různé vlnové délky světla
+    * https://spaceknow.com/
+  * Začíná fungovat CircuitNinja
+    * https://circuitninja.cz
+  * 9.-10.5. bude Maker Faire
+    * https://makerfaire.cz/praha/
+  * 25.4. bude radioamatérská burza
+    * https://3px.cz/ok1kfx/
+  * Proběhl Installfest, přednášky jsou na Youtube
+    * https://www.youtube.com/@InstallfestCz
+    * Pořádáno v jiné budově, probíhá rekonstrukce a někde jsou prý roboti
+    * https://chronorobotics.fel.cvut.cz/
+  * 9. 5. - Setkání a radioburza Kozákov (kopec v Č. ráji, cca 100 aut)
+  * Poslední ping stále žije
+  * Depresivní okénko o vývoji AI, obavách z budoucnosti
+    * Zmínka o AI v Immichi, funguje lokálně (OCR, identifikace obsahu fotek atd.)
+    * https://immich.app/
+    * https://clockbench.ai/
+  * Útok na repozitář Axios, infikovány možná miliony zařízení, detekováno a staženo po 3 hodinách
+    * https://unit42.paloaltonetworks.com/axios-supply-chain-attack/
+    * získali přístup k balíčkovacímu systému mimo git
+  * Rtuťové kabely, zpožďovací linky, uložení optických systémů, polarograf a jiné technologie založené na rtuti
+    * https://www.youtube.com/watch?v=f5U63IGmy6Q
+    * https://hackaday.com/2026/04/01/mercury-audio-cables-so-nobody-else-has-to-do-it/ 
+  * Historie počítačů Cray
+    * https://cray-history.net/
+    * Na FI MU Brno je údajně pod schody vyřazený Cray EL98
+    * Jeden Cray údajně kdysi pravidelně selhával v noci, když si uklízečka do debugovací zásuvky pro osciloskop zapojovala vysavač
+      * https://annex.exploratorium.edu/origins/cern/place/slideshow9.html
+  * Lepení součástek na plošňáky epoxidem tvrdnoucím ve vysoké teplotě
+    * https://www.mouser.com/datasheet/2/773/3609_EN-1878795.pdf
+  * Doom na toustovači, toast nevyskočí, dokud nedohrajete level
+    * https://www.youtube.com/watch?v=8PfrCpZKCSM&t=196s
+  * Bezkuličkový kuličkový šroub, umožňuje prokluz
+    * https://www.youtube.com/watch?v=w1TeHUBbVLQ
+    * úvahy, jak se řeší homing u 3D tiskáren
+    * vzpomínky na BT-100
+  * Stroje na recyklaci plastu zpět na filament
+    * https://www.youtube.com/watch?v=Yh5EAr_pFwc
+    * https://makewithloop.com/
+  * Nástroj na aplikaci 3D textur na povrchy modelů
+    * https://bumpmesh.com/
+    * https://www.youtube.com/watch?v=rTBkjR7JvzI 
+  * Nová tiskárna Bambu X2D, dvě trysky, nízká cena
+  * Rychloinstalátor modifikovaných Windows 98 i pro současný hardware
+    * https://github.com/oerg866/win98-quickinstall?tab=readme-ov-file
+  * Ukázka digitálního ručního “mikroskopu”
+    * Poněkud čínský software, orotovaný obraz, zaostřeno velmi na blízko
+    * https://www.youtube.com/watch?v=p1UIa8nRAgA
+    * zážitky s digitálním uchošťourem
+  * Jak dostat světlo do úzké díry (nedoporučuje se 100W světla do 1 mm vlákna přes věšteckou kouli)
+  * Konečně byl hacknut VCD přehrávač pro Segu Dreamcast
+    * https://github.com/DerekPascarella/DreamMovie-UNLOCKED
+  * Průšovský aprílový vtípek
+    * https://blog.prusa3d.com/cs/predstavujeme-prusa-pro-acu-proc-prilisne-suseni-skodi-vasim-filamentum_133415/
+  * Úvaha nad zkonstruováním matematických expanzních tabulek suchých potravin určených k vaření (na jaký objem a hmotnost se roztáhne hrnek rýže, hrášek, fazole atd.)
+  * Povídání o samočisticích sušičkách, zápachu z praček u lidí, co nepoužívají látkové kapesníky (tedy praní na 100), věčných gumičkách z duší z kola (ranger bands)
+  * Záhadný pád Zoomu v živém přenosu
+  * Harmonické převodovky
+    * https://hackaday.com/2026/03/11/3d-printing-a-harmonic-pin-ring-gearing-drive/
+    * https://en.wikipedia.org/wiki/Strain_wave_gearing
+    * https://www.sweepdynamics.com/
+  * Recyklovaný radar ČHMÚ kousek za Prahou pro radioamatérské použití
+    * https://www.ok1kir.cz/index.php?page=gals&gallery=55&galpart=3&name=Antennas_Dish%C2%A0extension&list=1
+    * https://mapy.com/cs/turisticka?source=osm&id=1243013682&pid=75194582&newest=1&yaw=2.957&fov=1.570&pitch=-0.066&x=14.3132861&y=49.9362092&z=18&ovl=8
+  * Varování před odstraněním lepší stability z verze B obvodu TL431 někdy mezi lety 2014 a 2024
+    * Strana 13
+      * https://www.mouser.com/datasheet/2/405/tlv431-407204.pdf
+    * Strana 14
+      * https://www.ti.com/lit/ds/symlink/tlv431.pdf
+  * Open source software pro Gotek
+    * https://github.com/keirf/flashfloppy?tab=readme-ov-file
+  * K MiSTer FPGA jde nově připojit reálnou Floppy mechaniku
+    * https://mister.robsmithdev.co.uk/
