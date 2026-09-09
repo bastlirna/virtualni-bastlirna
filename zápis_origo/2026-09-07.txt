@@ -1,0 +1,96 @@
+====== ⚡ Virtuální Bastlírna LXVI. (7.9.2026) ======
+
+===== Statistiky =====
+
+^ Čas    | 20:00 - 00:05 |
+^ Celkem se vystřídalo | 56 účastníků |
+^ Ve špičce | 47 účastníků online |
+^ Celkem prokecáno | 182,1 člověkohodin |
+
+===== Úvodník =====
+Dětem začala škola a nedobrovolně se tak musí vzdělávat. Avšak pro dospělé, kteří se chtějí vzdělávat nebo naopak se o vědomosti podělit, je tu Virtuální Bastlírna!
+
+Jako každý měsíc si můžete online a zdarma nezávazně popovídat o vědě a technice s bastlíři, ale i vývojáři, vědci nebo profesory.
+
+A čemu se budeme věnovat? Blíží se KiCAD 11 s nespočtem novinek, z nichž zde musíme zmínit alespoň možnost kótování a závislostí z FreeCADu, grafické zobrazení nevyvážených délek cest, via stitching nebo frekvenčně závislé modely materiálů ve stackupu. Zároveň přichází pomalu Prusaslicer 3.0, který oproti dřívějším verzím přináší moderní ovládání.
+
+Ze světa hardwaru se podíváme na 2 nové 2D LiDARy, které se dají jednoduše osadit na plošňák nebo nové relativně levné VNA se 7" displejem.
+
+Za software se můžeme podívat na free nástroje pomáhající při RF designu a jako vždy dojde i na sekci bizár. Tentokrát třeba v podobě hackerspacu Bordel, který má v plánu používat chování koček jako zdroj entropie.
+
+Pokud vás některé z témat zaujalo nebo máte vlastní, doražte v pondělí 7.9. od 20:00 na https://virtualni.bastlirna.online/
+
+===== Témata (a odkazy, co jste nestihli opsat) =====
+  * LinuxDays se blíží, končí hlasování o přednáškách
+  * Nové LiteVNA 67 - větší diplej, N konektory, 6b atenuátor na generátoru, lepší dynamický rozsah, větší baterku, ale je drahé a má skoro 2 kila, pořád měří jen S11 a S21
+    * https://eleshop.eu/litevna-67-vector-network-analyser.html 
+    * https://www.youtube.com/watch?v=pIPrd9sZ920 
+    * Podobný SV4401A (asi klon NanoVNA SAA-2)
+  * Kde vzít 5 MHz 50R zátěž na 4 kW
+    * Návrh na slanovodní regulátor z kolotoče
+    * Vyzářit anténou jakožto prvním fúzním vysílačem
+  * Novinky v KiCAD 11
+    * Importér pro OrCAD, SprintLayout, Diptrace 3-5, binární Eagle <6 (jen PCB), Protrax/Tango (jen PCB), P-CAD, EasyEDA 3 Pro. Prý mají zálusk i na PADS, CADSTAR, Multisim, Xpedition, CR-5000 a CR-8000.
+    * Hromadná editace přes Find by Properties (podobná věc je v Altiu)
+    * Generování výstupů jde nejen přes CLI, ale už i přes API, může běžet headless
+    * detekce, že se změnila orientace footprintu a namatchování nového footprintu na původní piny místo tupého nahrazení
+    * Automatické placeholder 3D modely (snáz se odliší DNP a chybějící modely)
+    * Z 2D outlinu footprintu jde jendoduše extrudovat 3D model (demonstrují na TO-92)
+    * Nově jde kreslit elipsy, jejich oblouky a beziérovy křivky
+    * Ve stackupu jde definovat, pro jakou frekvenci platí elektrické parametry a definovat frekvenčně závislé modely, což pak jde použít v tuningu cest
+    * Vlastní definované DRC chyby mohou obsahovat odkazy (třeba na normy)
+    * Nevyváženost délek cest jde zobrazit graficky pomocí barev
+    * V editoru symbolů a footprintů jsou nově taby, jde editovat víc součástek najednou včetně hromadných změn, kopírovat mezi nimi, každý tab má svoji vlastní historii
+    * DRC pravidla se můžou zeptat na rodiče entity, která způsobila DRC chybu
+    * Diff a merge včetně GUI
+      * cadlab.io - prý funguje
+    * škálování footprintů pro grafické entity
+    * možnost mapovat čísla pinů ze symbolu na jiná čísla ve footprintu (jako v Eaglu), zejména kvůli různě zapojeným packagům
+    * geometrické constrainty z FreeCADu
+    * Smiťáky v simulacích
+    * Zobrazení délky nevyrotuovaných netů
+    * Zamezení vzniku ostrých rohů při interaktivním routování
+    * Optimalizace cest - zeslušní hnusně natahané křivé cesty
+    * V PCB editoru jde vytvářet lokální gridy (čtvercové i polární, můžou být libovolně natočené), jde jim nastavit priority
+    * Via stitching a guarding
+    * Ve footprint editoru jde exportovat/importovat CSV s pady (poloha, rozměry, tvar, typ)
+    * Grafické symboly na koncích čar (šipky, čtverečky atd.), funguje i na beziérech
+    * Neblokující donačítání 3D modelů
+  * Diskuze o KiCADu, MCP a AI
+    * spousta lidí blbnoucích s AI a návrhem plošňáků nikdy neviděla plošňák
+    * Existuje třeba tool pro AI review schéma
+    * Existuje MCP server v Rustu s 200+ tooly
+  * Socha Rovnováha praskla
+    * bkralik ji okopíroval z fotky pomocí AI, slepil z fotek z různých foťáků a objektivů, nechal AIčkem zrekonstruovat a udělal 3D model
+    * povídání o různých software, hardware a simulačních záležitostech, které jsme v poslední době řešili pomocí AI
+    * jak bkralik pomocí AI qwen:3.8-uncensored řešil náhradní CAN adaptér k autu, AI připojené k počítači s adaptérem mu udělalo driver, který maskuje neoriginální adaptér a tváří se jako originální
+    * https://allegro.pl/produkt/konwerter-usb-na-can-canfd-canable-v2-0-pro-z-izolacja-makerbase-920ff974-025c-4547-81ad-4d45aa64815f?offerId=17957952114&dd_referrer=
+    * https://www.csselectronics.com/pages/can-bus-reverse-engineering-ai-llm-claude
+  * https://www.youtube.com/@dgelbart/videos
+  * Sniffer na CAN zprávy
+    * https://github.com/SebastianS85/CAN-FD-TEST
+  * ESP32-S31 má MMU, teoreticky podporuje Linux
+    * https://github.com/espressif/esp-linux-bsp
+    * https://github.com/78/nuttx-esp32s31
+  * TMF8829 - pěkný 2D SMD LiDAR, 48x32 px, do 11m, cca 1 mm přesnost, demo software pro Windows, cena pár stovek
+    * VL53L9CX - podobný větší čip od ST, 55x42 px, do 9 m, hůř připravený demo software
+  * Co, jak, kdy a za jakých podmínek se bude rušit na 2G GSM (spíše diskuze)
+  * Bordel.wtf
+    * hackerspace, původně součástí paralelního Polis
+    * Mají generátor náhodných dat z koček
+    * https://proofof.cat/
+  * 75 Hz eink
+    * https://www.crowdsupply.com/modos-tech/modos-paper-monitor
+    * https://www.crowdsupply.com/modos-tech/modos-paper-monitor
+  * Diskuze o životnosti baterek ve smart hodinkách a jejich vyměnitelnost
+  * Bezdrátová sluchátka, opravitelnost, kodeky 
+  * Diskuze o kompresních algoritmech, zvuku a audiofilství
+  * Kalkulačka na stereo mikrofony
+    * https://www.stefan-kiessling.com/polarpatternscalculator.html
+  * V rámci fyzikálních čtvrtků bude brzy přednáška o misi Artemis
+  * Brno má vlastní satelit
+  * https://dashboard.satnogs.org/d/L8ywE9oMz/vzlusat-2
+  * Ukázka satelitních přijímačů v Lotyšsku
+  * https://en.wikipedia.org/wiki/AMSAT-OSCAR_7
+  * Offsetové paraboly mají lepší SNR, protože do určité míry ignorují tepelný šum z okolí (více v Příjmu slabých signálů od Kasala)
+  * https://mikrotik.com/supportsec/september-2026-vulnerability/
